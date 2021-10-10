@@ -15,7 +15,7 @@ class AddRoleInTbuser extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             //
-            $table->integer('role')->after('id');
+            $table->integer('role')->after('id')->nullabe();
         });
     }
 
