@@ -132,7 +132,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row d-flex justify-contnet-center">
+                <div class="row d-flex justify-contnet-center" style="z-index:2;">
                     <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
                         <div class="single-services text-center mb-30">
                             <div class="services-ion">
