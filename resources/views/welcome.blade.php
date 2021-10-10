@@ -22,6 +22,7 @@
             <link rel="stylesheet" href="frontend/assets/css/slick.css">
             <link rel="stylesheet" href="frontend/assets/css/nice-select.css">
             <link rel="stylesheet" href="frontend/assets/css/style.css">
+            @livewireStyles
    </head>
 
    <body>
@@ -64,6 +65,6 @@
 		<!-- Jquery Plugins, main Jquery -->	
         <script src="frontend/assets/js/plugins.js"></script>
         <script src="frontend/assets/js/main.js"></script>
-        @yield('scripts')
+        @livewireScripts
     </body>
 </html>
