@@ -29,26 +29,27 @@
                                 <div class="main-menu">
                                     <nav class="d-none d-lg-block">
                                         <ul id="navigation">
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="job_listing.html">Find a Jobs </a></li>
-                                            <li><a href="about.html">About</a></li>
-                                            <li><a href="#">Page</a>
+                                            <li><a href="#cari_lowongan">Cari Lowongan </a></li>
+                                            <li><a href="#kategori_lowongan">Kategori Lowongan</a></li>
+                                            <li><a href="#lowongan_tersedia">Lowongan Tersedia</a></li>
+                                            <li><a href="#cara_pendaftaran">Cara Pendaftaran</a></li>
+
+                                            <!-- <li><a href="#">Page</a>
                                                 <ul class="submenu">
                                                     <li><a href="blog.html">Blog</a></li>
                                                     <li><a href="single-blog.html">Blog Details</a></li>
                                                     <li><a href="elements.html">Elements</a></li>
                                                     <li><a href="job_details.html">job Details</a></li>
                                                 </ul>
-                                            </li>
-                                            <li><a href="contact.html">Contact</a></li>
+                                            </li> -->
                                         </ul>
                                     </nav>
                                 </div>          
                                 <!-- Header-btn -->
-                                <div class="header-btn d-none f-right d-lg-block">
+                                <!-- <div class="header-btn d-none f-right d-lg-block">
                                     <a href="#" class="btn head-btn1">Register</a>
                                     <a href="#" class="btn head-btn2">Login</a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <!-- Mobile Menu -->
@@ -77,7 +78,7 @@
                             </div>
                         </div>
                         <!-- Search Box -->
-                        <div class="row">
+                        <div id="cari_lowongan" class="row">
                             <div class="col-xl-8">
                                 <!-- form -->
                                 <form action="#" class="search-box">
@@ -109,7 +110,7 @@
         <div class="our-services section-pad-t30">
             <div class="container">
                 <!-- Section Tittle -->
-                <div class="row">
+                <div id="kategori_lowongan" class="row">
                     <div class="col-lg-12">
                         <div class="section-tittle text-center">
                             <span>FEATURED TOURS Packages</span>
@@ -246,7 +247,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row justify-content-center">
+                <div id="lowongan_tersedia" class="row justify-content-center">
                     <div class="col-xl-10">
                         <!-- single-job-content -->
                         <div class="single-job-items mb-30">
@@ -346,7 +347,7 @@
                     </div>
                 </div>
                 <!-- Apply Process Caption -->
-                <div class="row">
+                <div id="cara_pendaftaran" class="row">
                     <div class="col-lg-4 col-md-6">
                         <div class="single-process text-center mb-30">
                             <div class="process-ion">
