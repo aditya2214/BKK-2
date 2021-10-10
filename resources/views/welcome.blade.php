@@ -35,7 +35,9 @@
         <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 		<!-- All JS Custom Plugins Link Here here -->
         <script src="frontend/assets/js/vendor/modernizr-3.5.0.min.js"></script>
-		<!-- Jquery, Popper, Bootstrap -->
+        <!-- Jquery, Popper, Bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+
 		<script src="frontend/assets/js/vendor/jquery-1.12.4.min.js"></script>
         <script src="frontend/assets/js/popper.min.js"></script>
         <script src="frontend/assets/js/bootstrap.min.js"></script>
