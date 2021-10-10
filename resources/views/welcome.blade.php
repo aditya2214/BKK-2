@@ -69,7 +69,7 @@
 		<!-- Jquery Plugins, main Jquery -->	
         <script src="frontend/assets/js/plugins.js"></script>
         <script src="frontend/assets/js/main.js"></script>
-        @livewireScripts
         @yield('scripts')
+        @livewireScripts
     </body>
 </html>
