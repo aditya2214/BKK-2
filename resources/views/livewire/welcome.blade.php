@@ -85,26 +85,26 @@
                                 <div class="select-form">
                                         <div class="select-itms">
                                             <select name="select" id="select1">
-                                                <option style="z-index:1;" value="">OPERATOR</option>
-                                                <option style="z-index:1;" value="">ADMIN</option>
-                                                <option style="z-index:1;" value="">QC</option>
-                                                <option style="z-index:1;" value="">MOULDING</option>
-                                                <option style="z-index:1;" value="">WELDING</option>
-                                                <option style="z-index:1;" value="">AKUNTING</option>
-                                                <option style="z-index:1;" value="">PURCHASING</option>
-                                                <option style="z-index:1;" value="">PROGRAMMER</option>
-                                                <option style="z-index:1;" value="">LAIN - LAIN</option>                                      
+                                                <option style="z-index:2;" value="">OPERATOR</option>
+                                                <option style="z-index:2;" value="">ADMIN</option>
+                                                <option style="z-index:2;" value="">QC</option>
+                                                <option style="z-index:2;" value="">MOULDING</option>
+                                                <option style="z-index:2;" value="">WELDING</option>
+                                                <option style="z-index:2;" value="">AKUNTING</option>
+                                                <option style="z-index:2;" value="">PURCHASING</option>
+                                                <option style="z-index:2;" value="">PROGRAMMER</option>
+                                                <option style="z-index:2;" value="">LAIN - LAIN</option>                                      
                                             </select>
                                         </div>
                                     </div>
                                     <div class="select-form">
                                         <div class="select-itms" >
                                             <select name="select" id="select1">
-                                                <option style="z-index:1;" value="">Kawasan Surya Cipta</option>
-                                                <option style="z-index:1;" value="">Kawasan KIM</option>
-                                                <option style="z-index:1;" value="">Kawasan KIIC</option>
-                                                <option style="z-index:1;" value="">Kawasan BIC</option>
-                                                <option style="z-index:1;" value="">Kawasan Indotaisei</option>
+                                                <option style="z-index:2;" value="">Kawasan Surya Cipta</option>
+                                                <option style="z-index:2;" value="">Kawasan KIM</option>
+                                                <option style="z-index:2;" value="">Kawasan KIIC</option>
+                                                <option style="z-index:2;" value="">Kawasan BIC</option>
+                                                <option style="z-index:2;" value="">Kawasan Indotaisei</option>
 
                                             </select>
                                         </div>
