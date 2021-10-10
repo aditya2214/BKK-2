@@ -82,7 +82,7 @@
                             <div class="col-xl-8">
                                 <!-- form -->
                                 <form action="#" class="search-box">
-                                <div class="select-form">
+                                <div class="select-form" style="z-index:1;">
                                         <div class="select-itms">
                                             <select name="select" id="select1">
                                                 <option value="">OPERATOR</option>
@@ -99,7 +99,7 @@
                                         </div>
                                     </div>
                                     <div class="select-form">
-                                        <div class="select-itms">
+                                        <div class="select-itms" style="z-index:1;">
                                             <select name="select" id="select1">
                                                 <option value="">Kawasan Surya Cipta</option>
                                                 <option value="">Kawasan KIM</option>
@@ -132,7 +132,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row d-flex justify-contnet-center" style="z-index:2;">
+                <div class="row d-flex justify-contnet-center" >
                     <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
                         <div class="single-services text-center mb-30">
                             <div class="services-ion">
