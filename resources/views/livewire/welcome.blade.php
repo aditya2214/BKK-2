@@ -73,7 +73,7 @@
                         <div class="row">
                             <div class="col-xl-6 col-lg-9 col-md-10">
                                 <div class="hero__caption">
-                                    <h1>Find the most exciting startup jobs</h1>
+                                    <h1>BKK SMK PGRI 2 Karawang</h1>
                                 </div>
                             </div>
                         </div>
@@ -82,21 +82,36 @@
                             <div class="col-xl-8">
                                 <!-- form -->
                                 <form action="#" class="search-box">
-                                    <div class="input-form">
-                                        <input type="text" placeholder="Job Tittle or keyword">
+                                <div class="select-form">
+                                        <div class="select-itms">
+                                            <select name="select" id="select1">
+                                                <option value="">OPERATOR</option>
+                                                <option value="">ADMIN</option>
+                                                <option value="">QC</option>
+                                                <option value="">MOULDING</option>
+                                                <option value="">WELDING</option>
+                                                <option value="">AKUNTING</option>
+                                                <option value="">PURCHASING</option>
+                                                <option value="">PROGRAMMER</option                                                <option value="">WELDING</option>
+                                                <option value="">LAIN - LAIN</option>
+
+                                            </select>
+                                        </div>
                                     </div>
                                     <div class="select-form">
                                         <div class="select-itms">
                                             <select name="select" id="select1">
-                                                <option value="">Location BD</option>
-                                                <option value="">Location PK</option>
-                                                <option value="">Location US</option>
-                                                <option value="">Location UK</option>
+                                                <option value="">Kawasan Surya Cipta</option>
+                                                <option value="">Kawasan KIM</option>
+                                                <option value="">Kawasan KIIC</option>
+                                                <option value="">Kawasan BIC</option>
+                                                <option value="">Kawasan Indotaisei</option>
+
                                             </select>
                                         </div>
                                     </div>
                                     <div class="search-form">
-                                        <a href="#">Find job</a>
+                                        <a href="#">Cari Lowongan</a>
                                     </div>	
                                 </form>	
                             </div>
@@ -113,8 +128,7 @@
                 <div  class="row">
                     <div class="col-lg-12">
                         <div class="section-tittle text-center">
-                            <span>FEATURED TOURS Packages</span>
-                            <h2>Browse Top Categories </h2>
+                            <h2>Kategori Lowongan </h2>
                         </div>
                     </div>
                 </div>
@@ -125,7 +139,7 @@
                                 <span class="flaticon-tour"></span>
                             </div>
                             <div class="services-cap">
-                               <h5><a href="job_listing.html">Design & Creative</a></h5>
+                               <h5><a href="job_listing.html">OPERATOR</a></h5>
                                 <span>(653)</span>
                             </div>
                         </div>
@@ -136,7 +150,7 @@
                                 <span class="flaticon-cms"></span>
                             </div>
                             <div class="services-cap">
-                               <h5><a href="job_listing.html">Design & Development</a></h5>
+                               <h5><a href="job_listing.html">ADMIN</a></h5>
                                 <span>(658)</span>
                             </div>
                         </div>
@@ -147,7 +161,7 @@
                                 <span class="flaticon-report"></span>
                             </div>
                             <div class="services-cap">
-                               <h5><a href="job_listing.html">Sales & Marketing</a></h5>
+                               <h5><a href="job_listing.html">QC</a></h5>
                                 <span>(658)</span>
                             </div>
                         </div>
@@ -158,7 +172,7 @@
                                 <span class="flaticon-app"></span>
                             </div>
                             <div class="services-cap">
-                               <h5><a href="job_listing.html">Mobile Application</a></h5>
+                               <h5><a href="job_listing.html">MOULDING</a></h5>
                                 <span>(658)</span>
                             </div>
                         </div>
@@ -169,7 +183,7 @@
                                 <span class="flaticon-helmet"></span>
                             </div>
                             <div class="services-cap">
-                               <h5><a href="job_listing.html">Construction</a></h5>
+                               <h5><a href="job_listing.html">WELDING</a></h5>
                                 <span>(658)</span>
                             </div>
                         </div>
@@ -180,7 +194,7 @@
                                 <span class="flaticon-high-tech"></span>
                             </div>
                             <div class="services-cap">
-                               <h5><a href="job_listing.html">Information Technology</a></h5>
+                               <h5><a href="job_listing.html">AKUNTING</a></h5>
                                 <span>(658)</span>
                             </div>
                         </div>
@@ -191,7 +205,7 @@
                                 <span class="flaticon-real-estate"></span>
                             </div>
                             <div class="services-cap">
-                               <h5><a href="job_listing.html">Real Estate</a></h5>
+                               <h5><a href="job_listing.html">PURCHASING</a></h5>
                                 <span>(658)</span>
                             </div>
                         </div>
@@ -202,7 +216,7 @@
                                 <span class="flaticon-content"></span>
                             </div>
                             <div class="services-cap">
-                               <h5><a href="job_listing.html">Content Writer</a></h5>
+                               <h5><a href="job_listing.html">PROGRAMMER</a></h5>
                                 <span>(658)</span>
                             </div>
                         </div>
@@ -210,13 +224,13 @@
                 </div>
                 <!-- More Btn -->
                 <!-- Section Button -->
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-lg-12">
                         <div class="browse-btn2 text-center mt-50">
                             <a href="job_listing.html" class="border-btn2">Browse All Sectors</a>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
         <!-- Our Services End -->
@@ -226,9 +240,8 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-10">
                         <div class="cv-caption text-center">
-                            <p class="pera1">FEATURED TOURS Packages</p>
-                            <p class="pera2"> Make a Difference with Your Online Resume!</p>
-                            <a href="#" class="border-btn2 border-btn4">Upload your cv</a>
+                            <p class="pera2"> Daftar Member Online</p>
+                            <a href="#" class="border-btn2 border-btn4">Daftar</a>
                         </div>
                     </div>
                 </div>
@@ -242,8 +255,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="section-tittle text-center">
-                            <span>Recent Job</span>
-                            <h2>Featured Jobs</h2>
+                            <h2>Lowongan Tersedia</h2>
                         </div>
                     </div>
                 </div>
@@ -341,8 +353,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="section-tittle white-text text-center">
-                            <span>Apply process</span>
-                            <h2> How it works</h2>
+                            <h2> Cara Pendaftaran</h2>
                         </div>
                     </div>
                 </div>
@@ -385,70 +396,6 @@
              </div>
         </div>
         <!-- How  Apply Process End-->
-        <!-- Testimonial Start -->
-        <div class="testimonial-area testimonial-padding">
-            <div class="container">
-                <!-- Testimonial contents -->
-                <div class="row d-flex justify-content-center">
-                    <div class="col-xl-8 col-lg-8 col-md-10">
-                        <div class="h1-testimonial-active dot-style">
-                            <!-- Single Testimonial -->
-                            <div class="single-testimonial text-center">
-                                <!-- Testimonial Content -->
-                                <div class="testimonial-caption ">
-                                    <!-- founder -->
-                                    <div class="testimonial-founder  ">
-                                        <div class="founder-img mb-30">
-                                            <img src="frontend/assets/img/testmonial/testimonial-founder.png" alt="">
-                                            <span>Margaret Lawson</span>
-                                            <p>Creative Director</p>
-                                        </div>
-                                    </div>
-                                    <div class="testimonial-top-cap">
-                                        <p>“I am at an age where I just want to be fit and healthy our bodies are our responsibility! So start caring for your body and it will care for you. Eat clean it will care for you and workout hard.”</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Single Testimonial -->
-                            <div class="single-testimonial text-center">
-                                <!-- Testimonial Content -->
-                                <div class="testimonial-caption ">
-                                    <!-- founder -->
-                                    <div class="testimonial-founder  ">
-                                        <div class="founder-img mb-30">
-                                            <img src="frontend/assets/img/testmonial/testimonial-founder.png" alt="">
-                                            <span>Margaret Lawson</span>
-                                            <p>Creative Director</p>
-                                        </div>
-                                    </div>
-                                    <div class="testimonial-top-cap">
-                                        <p>“I am at an age where I just want to be fit and healthy our bodies are our responsibility! So start caring for your body and it will care for you. Eat clean it will care for you and workout hard.”</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Single Testimonial -->
-                            <div class="single-testimonial text-center">
-                                <!-- Testimonial Content -->
-                                <div class="testimonial-caption ">
-                                    <!-- founder -->
-                                    <div class="testimonial-founder  ">
-                                        <div class="founder-img mb-30">
-                                            <img src="frontend/assets/img/testmonial/testimonial-founder.png" alt="">
-                                            <span>Margaret Lawson</span>
-                                            <p>Creative Director</p>
-                                        </div>
-                                    </div>
-                                    <div class="testimonial-top-cap">
-                                        <p>“I am at an age where I just want to be fit and healthy our bodies are our responsibility! So start caring for your body and it will care for you. Eat clean it will care for you and workout hard.”</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Testimonial End -->
          <!-- Support Company Start-->
          <div class="support-company-area support-padding fix">
             <div class="container">
@@ -487,8 +434,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="section-tittle text-center">
-                            <span>Our latest blog</span>
-                            <h2>Our recent news</h2>
+                            <h2>Pengumuman</h2>
                         </div>
                     </div>
                 </div>
