@@ -84,7 +84,7 @@
                                 <form action="#" class="search-box">
                                 <div class="select-form">
                                         <div class="select-itms">
-                                            <select name="select" id="select1">
+                                            <select name="select" class="js-example-basic-single" id="select1">
                                                 <option style="z-index:2;" value="">OPERATOR</option>
                                                 <option style="z-index:2;" value="">ADMIN</option>
                                                 <option style="z-index:2;" value="">QC</option>
@@ -99,7 +99,7 @@
                                     </div>
                                     <div class="select-form">
                                         <div class="select-itms" >
-                                            <select name="select" id="select1">
+                                            <select name="select" class="js-example-basic-single" id="select2">
                                                 <option style="z-index:2;" value="">Kawasan Surya Cipta</option>
                                                 <option style="z-index:2;" value="">Kawasan KIM</option>
                                                 <option style="z-index:2;" value="">Kawasan KIIC</option>
@@ -220,6 +220,13 @@
                             </div>
                         </div>
                     </div>
+                    @section('scripts')
+                        <script>
+                            $(document).ready(function() {
+                                $('.js-example-basic-single').select2();
+                            });
+                        </script>
+                    @endsection
                 </div>
                 <!-- More Btn -->
                 <!-- Section Button -->
