@@ -44,7 +44,8 @@ class HomeController extends Controller
     }
 
     public function attendance(){
+        $vacancy = \App\Vacancy::all();
 
-        return view('attendance');
+        return view('attendance',compact('vacancy'));
     }
 }
