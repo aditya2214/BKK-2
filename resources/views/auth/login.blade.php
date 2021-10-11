@@ -39,7 +39,7 @@
                                     @enderror
                                 </div>
                                 <div class="form-group">
-                                    <div class="custom-control custom-checkbox small">
+                                    <div class="">
                                         <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
                                         <label class="custom-control-label" for="customCheck">Remember
                                             Me</label>
