@@ -6,7 +6,7 @@
 
 <!-- Page Heading -->
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-    <h1 class="h3 mb-0 text-gray-800">Posting Lowongan</h1>
+    <h1 class="h3 mb-0 text-gray-800">Absensi</h1>
     <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
             class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
 </div>
@@ -23,6 +23,9 @@
                     </div>
                     <div class="col-auto">
                         <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                    </div>
+                    <div class="">
+                        <button class="btn btn-outline-primary btn-sm">Absensi Calon</button>
                     </div>
                 </div>
             </div>
