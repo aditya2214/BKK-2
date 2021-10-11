@@ -26,17 +26,18 @@
 
     <!-- Page Wrapper -->
     <div id="wrapper">
-
+        @if(Auth::user() != null)
         @include('layouts.component.sidebar')
+        @endif
 
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
 
             <!-- Main Content -->
             <div id="content">
-
+                @if(Auth::user() != null)
                 @include('layouts.component.navbar')
-
+                @endif
                 @yield('content')
 
             </div>
