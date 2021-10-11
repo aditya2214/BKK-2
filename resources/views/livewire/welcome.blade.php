@@ -278,7 +278,7 @@
                             </div>
                             <div class="items-link f-right">
                                 <a href="job_details.html">Full Time</a>
-                                <span>{{$vac->created_at}}</span>
+                                <span><small>Di Posting</small>{{$vac->created_at}}</span>
                             </div>
                         </div>
                         @endforeach
