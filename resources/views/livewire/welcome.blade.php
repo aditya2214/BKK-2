@@ -277,8 +277,8 @@
                                 </div>
                             </div>
                             <div class="items-link f-right">
-                                <a href="job_details.html">Full Time</a>
-                                <span><small>Di Posting</small>{{$vac->created_at}}</span>
+                                <a href="job_details.html">Detail</a>
+                                <span><small>Di Posting &nbsp;</small>{{$vac->created_at}}</span>
                             </div>
                         </div>
                         @endforeach
