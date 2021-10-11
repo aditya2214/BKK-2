@@ -28,4 +28,4 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 // Jobs
 Route::get('/posting_lowongan', 'HomeController@posting_lowongan')->name('posting_lowongan');
-Route::get('/store_jobs', 'HomeController@store_jobs')->name('store_jobs');
+Route::post('/store_jobs', 'HomeController@store_jobs')->name('store_jobs');
