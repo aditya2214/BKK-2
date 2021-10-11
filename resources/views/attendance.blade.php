@@ -27,7 +27,7 @@
                     </div>
                 </div>
                 <div class="">
-                    <button class="btn btn-outline-primary btn-sm">Absensi Calon</button>
+                    <button class="btn btn-outline-primary btn-sm">Daftar Peserta</button>
                 </div>
             </div>
         </div>

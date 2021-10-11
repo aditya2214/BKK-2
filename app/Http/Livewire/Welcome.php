@@ -8,6 +8,8 @@ class Welcome extends Component
 {
     public function render()
     {
-        return view('livewire.welcome');
+        $vacancy = \App\Vacancy::all();
+
+        return view('livewire.welcome',compact('vacancy'));
     }
 }
