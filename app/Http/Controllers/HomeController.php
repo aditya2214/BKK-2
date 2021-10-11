@@ -30,4 +30,8 @@ class HomeController extends Controller
 
         return view('posting_lowongan');
     }
+
+    public function store_jobs(Request $request){
+        return $request->all();
+    }
 }

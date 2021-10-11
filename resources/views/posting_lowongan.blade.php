@@ -15,29 +15,33 @@
     <div class="col-md-12">
         <div class="card">
             <div class="card-body">
-                <form action="{{ url ('posting_jobs') }}" method="POST" >
+                <form action="{{ url ('store-jobs') }}" method="POST" >
                 @csrf
                     <div class="form-group">
-                        <label for="">Title Jobs</label>
-                        <input type="text" name="" id="" class="form-control">
+                        <label for="">Job Code</label>
+                        <input type="text" name="job_kode" id="job_kode" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Job Title</label>
+                        <input type="text" name="title_job" id="title_job" class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">Place And Date</label>
-                        <textarea class="form-control" id="place_and_date" rows="3"></textarea>
+                        <textarea class="form-control" name="place_and_date" id="place_and_date" rows="3"></textarea>
                         <script>
                             CKEDITOR.replace( 'place_and_date' );
                         </script>
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">Other Requirement</label>
-                        <textarea class="form-control" id="other_requirement" rows="3"></textarea>
+                        <textarea class="form-control"name="other_requirement"  id="other_requirement" rows="3"></textarea>
                         <script>
                             CKEDITOR.replace( 'other_requirement' );
                         </script>
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">Notes</label>
-                        <textarea class="form-control" id="notes" rows="3"></textarea>
+                        <textarea class="form-control" name="notes"  id="notes" rows="3"></textarea>
                         <script>
                             CKEDITOR.replace( 'notes' );
                         </script>
