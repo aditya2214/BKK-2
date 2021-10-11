@@ -15,7 +15,7 @@
     <div class="col-md-12">
         <div class="card">
             <div class="card-body">
-                <form action="{{ url ('store-jobs') }}" method="POST" >
+                <form action="{{ url ('store_jobs') }}" method="POST" >
                 @csrf
                     <div class="form-group">
                         <label for="">Job Code</label>
