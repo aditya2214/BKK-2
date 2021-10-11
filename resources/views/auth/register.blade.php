@@ -26,7 +26,7 @@
                                         @enderror
                                     </div>
                                 </div>
-                                <div class="form-group">
+                                <div class="form-group row">
                                     <div class="col-sm-12 mb-6 mb-sm-0">
                                         <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
 
