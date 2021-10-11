@@ -39,10 +39,12 @@
                                     @enderror
                                 </div>
                                 <div class="form-group">
-                                    <div class="">
+                                    <div class="form-check">
                                         <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-                                        <label class="custom-control-label" for="customCheck">Remember
-                                            Me</label>
+
+                                        <label class="form-check-label" for="remember">
+                                            {{ __('Remember Me') }}
+                                        </label>
                                     </div>
                                 </div>
                                 <button type="submit" class="btn btn-primary">
