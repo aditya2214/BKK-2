@@ -25,4 +25,9 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    public function posting_lowongan(){
+
+        return view('posting_lowongan');
+    }
 }
