@@ -12,10 +12,11 @@
 </div>
 <hr>
 <div class="row">
-    <div class="col-md-8 offset-md-2">
+    <div class="col-md-12">
         <div class="card">
             <div class="card-body">
-                <form action="">
+                <form action="{{ url ('posting_jobs') }}" method="POST" >
+                @csrf
                     <div class="form-group">
                         <label for="">Title Jobs</label>
                         <input type="text" name="" id="" class="form-control">
