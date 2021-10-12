@@ -30,6 +30,19 @@
     <!-- Custom styles for this template -->
     <link href="/frontend/css/style.css" rel="stylesheet" id="style">
     <link href="/frontend/css/style-blue.css" rel="stylesheet" id="dark_purple">
+    <link href="/frontend/css/style-amber.css" rel="stylesheet" id="dark_purple">
+    <link href="/frontend/css/style-dark-blue.css" rel="stylesheet" id="dark_purple">
+    <link href="/frontend/css/style-dark-brown.css" rel="stylesheet" id="dark_purple">
+    <link href="/frontend/css/style-drak-gray.css" rel="stylesheet" id="dark_purple">
+    <link href="/frontend/css/style-dark-green.css" rel="stylesheet" id="dark_purple">
+    <link href="/frontend/css/style-dark-pink.css" rel="stylesheet" id="dark_purple">
+    <link href="/frontend/css/style-dark-purple.css" rel="stylesheet" id="dark_purple">
+    <link href="/frontend/css/style-gray.css" rel="stylesheet" id="dark_purple">
+    <link href="/frontend/css/style-maroon.css" rel="stylesheet" id="dark_purple">
+    <link href="/frontend/css/style-purple.css" rel="stylesheet" id="dark_purple">
+    <link href="/frontend/css/style-red.css" rel="stylesheet" id="dark_purple">
+    <link href="/frontend/css/style-skyblue.css" rel="stylesheet" id="dark_purple">
+    <link href="/frontend/css/style-teal.css" rel="stylesheet" id="dark_purple">
 
 </head>
 
