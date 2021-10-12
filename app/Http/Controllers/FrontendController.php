@@ -28,4 +28,15 @@ class FrontendController extends Controller
 
         return view('front.kode_vacancy',compact('cek_kode_vacancy'));
     }
+
+    public function absen(Request $request,$id){
+        $cek_kode_vacancy = \App\Vacancy::where('id',$id)->first();
+        $cek_request = $request->kode_loker;
+
+        if ($cek_request == $cek_kode_vacancy->kode_vacancy) {
+            return "ok";
+        }else{
+            return "gagal";
+        }
+    }
 }

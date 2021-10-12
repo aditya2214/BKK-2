@@ -10,8 +10,9 @@
                     <div class="col-xl-12">
                         <div class="hero-cap text-center">
                             <form action="{{ url ('absen/'.$cek_kode_vacancy->id) }}" method="post">
+                            @csrf
                                 <div class="form-group">
-                                    <h1>Masukan Kode Loker</h1>
+                                    <h1><b>Masukan Kode Loker</b> </h1>
                                     <i><p class="text-danger">Kode loker akan di berikan oleh admin saat tes</p></i>
                                     <input type="password" name="kode_loker" id="kode_loker" placeholder="Kode Loker" class="form-control">
                                 </div>
