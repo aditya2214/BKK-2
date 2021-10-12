@@ -236,7 +236,7 @@
 
 		<script src="/frontend/assets/js/vendor/jquery-1.12.4.min.js"></script>
         <script src="/frontend/assets/js/popper.min.js"></script>
-        <!-- <script src="/frontend/assets/js/bootstrap.min.js"></script> -->
+        <script src="/frontend/assets/js/bootstrap.min.js"></script>
 	    <!-- Jquery Mobile Menu -->
         <script src="/frontend/assets/js/jquery.slicknav.min.js"></script>
 
@@ -248,7 +248,7 @@
 		<!-- One Page, Animated-HeadLin -->
         <script src="/frontend/assets/js/wow.min.js"></script>
 		<script src="/frontend/assets/js/animated.headline.js"></script>
-        <script src="/frontend/assets/js/jquery.magnific-popup.js"></script>
+        <!-- <script src="/frontend/assets/js/jquery.magnific-popup.js"></script> -->
 
 		<!-- Scrollup, nice-select, sticky -->
         <script src="/frontend/assets/js/jquery.scrollUp.min.js"></script>
