@@ -9,7 +9,7 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="hero-cap text-center">
-                            <h2>UI/UX Designer</h2>
+                            <h2>{{$vacancy_detail->title_vacancy}}</h2>
                         </div>
                     </div>
                 </div>
@@ -54,28 +54,29 @@
                             <div class="post-details2  mb-50">
                                  <!-- Small Section Tittle -->
                                 <div class="small-section-tittle">
-                                    <h4>Required Knowledge, Skills, and Abilities</h4>
+                                    <h4>Tempat Dan Tanggal</h4>
                                 </div>
-                               <ul>
-                                   <li>System Software Development</li>
-                                   <li>Mobile Applicationin iOS/Android/Tizen or other platform</li>
-                                   <li>Research and code , libraries, APIs and frameworks</li>
-                                   <li>Strong knowledge on software development life cycle</li>
-                                   <li>Strong problem solving and debugging skills</li>
-                               </ul>
+                                <p>
+                                    {!!$vac->place_and_date!!}
+                                </p>
                             </div>
                             <div class="post-details2  mb-50">
                                  <!-- Small Section Tittle -->
                                 <div class="small-section-tittle">
-                                    <h4>Education + Experience</h4>
+                                    <h4>Persyaratan</h4>
                                 </div>
-                               <ul>
-                                   <li>3 or more years of professional design experience</li>
-                                   <li>Direct response email experience</li>
-                                   <li>Ecommerce website design experience</li>
-                                   <li>Familiarity with mobile and web apps preferred</li>
-                                   <li>Experience using Invision a plus</li>
-                               </ul>
+                                <p>
+                                {!!$vac->recruitment!!}
+                                </p>
+                            </div>
+                            <div class="post-details2  mb-50">
+                                 <!-- Small Section Tittle -->
+                                <div class="small-section-tittle">
+                                    <h4>Catatan</h4>
+                                </div>
+                                <p>
+                                {!!$vac->notes!!}
+                                </p>
                             </div>
                         </div>
 
