@@ -10,9 +10,14 @@
                     <div class="col-xl-12">
                         <div class="hero-cap text-center">
                             <form action="{{ url ('absen/'.$cek_kode_vacancy->id) }}" method="post">
-                                <h1>Masukan Kode Loker/</h1>
-                                <i><small class="text-danger">Kode loker akan di berikan oleh admin saat tes</small></i>
-                                <input type="password" name="kode_loker" id="kode_loker" placeholder="Kode Loker" class="form-control">
+                                <div class="form-group">
+                                    <h1>Masukan Kode Loker</h1>
+                                    <i><p class="text-danger">Kode loker akan di berikan oleh admin saat tes</p></i>
+                                    <input type="password" name="kode_loker" id="kode_loker" placeholder="Kode Loker" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-primary">Masuk</button>
+                                </div>
                             </form>
                         </div>
                     </div>
