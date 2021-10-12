@@ -236,7 +236,7 @@
 
 		<script src="/frontend/assets/js/vendor/jquery-1.12.4.min.js"></script>
         <script src="/frontend/assets/js/popper.min.js"></script>
-        <script src="/frontend/assets/js/bootstrap.min.js"></script>
+        <!-- <script src="/frontend/assets/js/bootstrap.min.js"></script> -->
 	    <!-- Jquery Mobile Menu -->
         <script src="/frontend/assets/js/jquery.slicknav.min.js"></script>
 
