@@ -29,6 +29,8 @@
 
     <!-- Custom styles for this template -->
     <link href="/frontend/css/style.css" rel="stylesheet" id="style">
+    <link href="/frontend/css/style-dark-purple.css" rel="stylesheet" id="dark_purple">
+
 </head>
 
 <body class="body-scroll d-flex flex-column h-100 menu-overlay" data-page="homepage">
