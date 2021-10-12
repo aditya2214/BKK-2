@@ -23,12 +23,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return view('back.home');
     }
 
     public function posting_lowongan(){
 
-        return view('posting_lowongan');
+        return view('back.posting_lowongan');
     }
 
     public function store_jobs(Request $request){
@@ -46,6 +46,6 @@ class HomeController extends Controller
     public function attendance(){
         $vacancy = \App\Vacancy::all();
 
-        return view('attendance',compact('vacancy'));
+        return view('back.attendance',compact('vacancy'));
     }
 }
