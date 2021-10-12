@@ -57,7 +57,7 @@
                                     <h4>Tempat Dan Tanggal</h4>
                                 </div>
                                 <p>
-                                    {!!$vac->place_and_date!!}
+                                    {!!$vacancy_detail->place_and_date!!}
                                 </p>
                             </div>
                             <div class="post-details2  mb-50">
@@ -66,7 +66,7 @@
                                     <h4>Persyaratan</h4>
                                 </div>
                                 <p>
-                                {!!$vac->recruitment!!}
+                                {!!$vacancy_detail->recruitment!!}
                                 </p>
                             </div>
                             <div class="post-details2  mb-50">
@@ -75,7 +75,7 @@
                                     <h4>Catatan</h4>
                                 </div>
                                 <p>
-                                {!!$vac->notes!!}
+                                {!!$vacancy_detail->notes!!}
                                 </p>
                             </div>
                         </div>
