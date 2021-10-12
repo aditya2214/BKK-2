@@ -10,7 +10,7 @@ class FrontendController extends Controller
     public function index(){
         $vacancy = \App\Vacancy::all();
 
-        return view('welcome',compact('vacancy'));
+        return view('front.home',compact('vacancy'));
     }
 
     // public function job_details($id){
