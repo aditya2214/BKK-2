@@ -231,12 +231,12 @@
                                     </div>
                                 </div>
                                 <div class="col-4 align-self-center">
-                                    <h6 class="mb-1">EMI</h6>
-                                    <p class="small text-secondary">Home Loan</p>
+                                    <h6 class="mb-1">title_vacancy</h6>
+                                    <p class="small text-secondary"></p>
                                 </div>
                                 <div class="col-auto align-self-center border-left">
-                                    <h6 class="mb-1">$ 1548.00</h6>
-                                    <p class="small text-secondary">Due: 15-12-2019</p>
+                                    <button class="btn btn-outline-primary">Detail</button>
+                                    <p class="small text-secondary">Di Post Tgl : {{$vac->created_at}}</p>
                                 </div>
                             </div>
                         </div>
