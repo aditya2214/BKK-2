@@ -49,7 +49,7 @@
                         <div class="col-lg-3 col-md-2">
                             <!-- Logo -->
                             <div class="logo">
-                                <a href="index.html"><img src="/frontend/assets/img/logo/logo1.png" style="width:170px;" alt=""></a>
+                                <a href="{{ url ('/') }}"><img src="/frontend/assets/img/logo/logo1.png" style="width:170px;" alt=""></a>
                             </div>  
                         </div>
                         <div class="col-lg-9 col-md-9">
