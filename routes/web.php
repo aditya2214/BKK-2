@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'FrontendController@index')->name('home');
+Route::get('/job_details/{id}', 'FrontendController@job_details')->name('job_details');
 
 
 Route::get('/logout', function () {

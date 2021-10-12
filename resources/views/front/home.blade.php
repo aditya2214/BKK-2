@@ -215,7 +215,7 @@
                             </div>
                         </div>
                         <div class="items-link f-right">
-                            <a  wire:click="job_details" >Detail</a>
+                            <a  href="{{ url ('job_details/'.$vac->id) }}" >Detail</a>
                             <span><small>Di Posting &nbsp;</small>{{$vac->created_at}}</span>
                         </div>
                     </div>
