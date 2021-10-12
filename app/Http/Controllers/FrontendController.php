@@ -26,6 +26,6 @@ class FrontendController extends Controller
     public function masukan_kode($id){
         $cek_kode_vacancy = \App\Vacancy::where('id',$id)->first();
 
-        return view('kode_vacancy',compact('cek_kode_vacancy'));
+        return view('front.kode_vacancy',compact('cek_kode_vacancy'));
     }
 }
