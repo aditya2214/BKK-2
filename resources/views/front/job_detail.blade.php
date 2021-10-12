@@ -63,9 +63,10 @@
                                <h4>Job Overview</h4>
                            </div>
                          <div class="apply-btn2">
-                            <a href="#" data-toggle="modal" data-target="#daftar" class="btn btn-primary">Daftar</a>
+                            <a href="#" data-toggle="modal" data-target="#daftar" class="btn btn-primary">Daftar</a>>
+                         </div>
+                         <div class="apply-btn2">
                             <a href="{{ url ('masukan_kode/'.$vacancy_detail->id) }}" class="btn btn-warning">Absen</a>
-
                          </div>
                        </div>
                     </div>

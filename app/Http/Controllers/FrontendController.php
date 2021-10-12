@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Alert;
 
 class FrontendController extends Controller
 {
@@ -34,7 +35,8 @@ class FrontendController extends Controller
         $cek_request = $request->kode_loker;
 
         if ($cek_request == $cek_kode_vacancy->kode_vacancy) {
-            return "ok";
+            Alert::error('Gagal', 'Kode Tes Salah!!!');
+            return redirect()->back();
         }else{
             return "gagal";
         }
