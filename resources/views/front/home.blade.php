@@ -6,7 +6,7 @@
   <div class="slider-area ">
         <!-- Mobile Menu -->
         <div class="slider-active">
-            <div class="single-slider slider-height d-flex align-items-center" data-background="frontend/assets/img/hero/h1_hero.jpg">
+            <div class="single-slider slider-height d-flex align-items-center" data-background="/frontend/assets/img/hero/h1_hero.jpg">
                 <div  id="cari_lowongan" class="container">
                     <div class="row">
                         <div class="col-xl-6 col-lg-9 col-md-10">
@@ -172,7 +172,7 @@
     </div>
     <!-- Our Services End -->
     <!-- Online CV Area Start -->
-    <div class="online-cv cv-bg section-overly pt-90 pb-120"  data-background="frontend/assets/img/gallery/cv_bg.jpg">
+    <div class="online-cv cv-bg section-overly pt-90 pb-120"  data-background="/frontend/assets/img/gallery/cv_bg.jpg">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-10">
@@ -203,7 +203,7 @@
                     <div class="single-job-items mb-30">
                         <div class="job-items">
                             <div class="company-img">
-                                <a href="job_details.html"><img src="frontend/assets/img/logo/logo1.png"style="width:100px;"  alt=""></a>
+                                <a href="job_details.html"><img src="/frontend/assets/img/logo/logo1.png"style="width:100px;"  alt=""></a>
                             </div>
                             <div class="job-tittle">
                                 <a href="job_details.html"><h4>{{$vac->title_vacancy}}</h4></a>
@@ -226,7 +226,7 @@
     </section>
     <!-- Featured_job_end -->
     <!-- How  Apply Process Start-->
-    <div class="apply-process-area apply-bg pt-150 pb-150" data-background="frontend/assets/img/gallery/how-applybg.png">
+    <div class="apply-process-area apply-bg pt-150 pb-150" data-background="/frontend/assets/img/gallery/how-applybg.png">
         <div id="cara_pendaftaran" class="container">
             <!-- Section Tittle -->
             <div class="row">
@@ -295,7 +295,7 @@
                 </div>
                 <div class="col-xl-6 col-lg-6">
                     <div class="support-location-img">
-                        <img src="frontend/assets/img/service/support-img.jpg" alt="">
+                        <img src="/frontend/assets/img/service/support-img.jpg" alt="">
                         <div class="support-img-cap text-center">
                             <p>Since</p>
                             <span>1994</span>
@@ -322,7 +322,7 @@
                     <div class="home-blog-single mb-30">
                         <div class="blog-img-cap">
                             <div class="blog-img">
-                                <img src="frontend/assets/img/blog/home-blog1.jpg" alt="">
+                                <img src="/frontend/assets/img/blog/home-blog1.jpg" alt="">
                                 <!-- Blog date -->
                                 <div class="blog-date text-center">
                                     <span>24</span>
@@ -341,7 +341,7 @@
                     <div class="home-blog-single mb-30">
                         <div class="blog-img-cap">
                             <div class="blog-img">
-                                <img src="frontend/assets/img/blog/home-blog2.jpg" alt="">
+                                <img src="/frontend/assets/img/blog/home-blog2.jpg" alt="">
                                 <!-- Blog date -->
                                 <div class="blog-date text-center">
                                     <span>24</span>
