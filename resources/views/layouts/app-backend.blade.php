@@ -17,6 +17,7 @@
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
+        <script src="ckeditor/ckeditor.js"></script>
     <!-- Custom styles for this template-->
     <link href="backend/css/sb-admin-2.min.css" rel="stylesheet">
 
@@ -101,6 +102,10 @@
     <script src="backend/js/demo/chart-area-demo.js"></script>
     <script src="backend/js/demo/chart-pie-demo.js"></script>
 
+    <!-- select 2 -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    @yield('scripts')
 </body>
 
 </html>

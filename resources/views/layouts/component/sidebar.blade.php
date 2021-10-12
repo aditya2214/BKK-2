@@ -93,14 +93,14 @@
 
 <!-- Nav Item - Charts -->
 <li class="nav-item">
-    <a class="nav-link" href="charts.html">
+    <a class="nav-link" href="{{ url ('attendance') }}">
         <i class="fas fa-fw fa-chart-area"></i>
         <span>Absensi</span></a>
 </li>
 
 <!-- Nav Item - Tables -->
 <li class="nav-item">
-    <a class="nav-link" href="tables.html">
+    <a class="nav-link" href="{{ url ('posting_lowongan') }}">
         <i class="fas fa-fw fa-table"></i>
         <span>Posting Lowongan </span></a>
 </li>
