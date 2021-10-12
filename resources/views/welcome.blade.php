@@ -264,7 +264,7 @@
         
 		<!-- Jquery Plugins, main Jquery -->	
         <script src="/frontend/assets/js/plugins.js"></script>
-        <script src="/frontend/assets/js/main.js"></script>
+        <!-- <script src="/frontend/assets/js/main.js"></script> -->
         @livewireScripts
     </body>
 </html>
