@@ -23,25 +23,6 @@
                 <div class="row justify-content-between">
                     <!-- Left Content -->
                     <div class="col-xl-7 col-lg-8">
-                        <!-- job single -->
-                        <div class="single-job-items mb-50">
-                            <div class="job-items">
-                                <div class="company-img company-img-details">
-                                    <a href="#"><img src="assets/img/icon/job-list1.png" alt=""></a>
-                                </div>
-                                <div class="job-tittle">
-                                    <a href="#">
-                                        <h4>{{$vacancy_detail->title_vacancy}}</h4>
-                                    </a>
-                                    <ul>
-                                        <li>Creative Agency</li>
-                                        <li><i class="fas fa-map-marker-alt"></i>Athens, Greece</li>
-                                        <li>$3500 - $4000</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                          <!-- job single End -->
                        
                         <div class="job-post-details">
                             <div class="post-details2  mb-50">
@@ -73,6 +54,20 @@
                             </div>
                         </div>
 
+                    </div>
+                    <!-- Right Content -->
+                    <div class="col-xl-4 col-lg-4">
+                        <div class="post-details3  mb-50">
+                            <!-- Small Section Tittle -->
+                           <div class="small-section-tittle">
+                               <h4>Job Overview</h4>
+                           </div>
+                         <div class="apply-btn2">
+                            <a href="#" class="btn btn-primary">Daftar</a>
+                            <a href="#" class="btn btn-warning">Absen</a>
+
+                         </div>
+                       </div>
                     </div>
                 </div>
             </div>
