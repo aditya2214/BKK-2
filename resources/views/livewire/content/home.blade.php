@@ -1,6 +1,4 @@
 <div>
-<main>
-
 <!-- slider Area Start-->
 <div class="slider-area ">
     <!-- Mobile Menu -->
@@ -360,5 +358,4 @@
 </div>
 <!-- Blog Area End -->
 
-</main>
 </div>

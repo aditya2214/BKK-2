@@ -62,12 +62,13 @@
        </div>
         <!-- Header End -->
     </header>
-   
-    @if($content == "home")
-    <livewire:content.home>
-    @else
-    <livewire:content.job-single>
-    @endif
+   <main>
+       @if($content == "home")
+       <livewire:content.home>
+       @else
+       <livewire:content.job-single>
+       @endif
+   </main>
     <footer>
         <!-- Footer Start-->
         <div class="footer-area footer-bg footer-padding">
