@@ -7,7 +7,7 @@
         <h2 class="text-white">BKK-Karawang</h2>
     </div>
 
-    <div class="main-container">\
+    <div class="main-container">
         
     </div>
 @endsection
