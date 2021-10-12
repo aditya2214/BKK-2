@@ -76,7 +76,7 @@
 
 
         <!-- Modal -->
-        <div class="modal fade" id="daftar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="daftar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"  aria-hidden="true" style="position:relative; width:50%; top:50%;">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
             <div class="modal-header">
