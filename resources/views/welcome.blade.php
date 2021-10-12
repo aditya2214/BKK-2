@@ -49,7 +49,7 @@
                         <div class="col-lg-3 col-md-2">
                             <!-- Logo -->
                             <div class="logo">
-                                <a href="{{ url ('/') }}"><img src="/frontend/assets/img/logo/logo1.png" style="width:170px;" alt=""></a>
+                                <a href="{{url ('/') }}"><img src="/frontend/assets/img/logo/logo1.png" style="width:170px;" alt=""></a>
                             </div>  
                         </div>
                         <div class="col-lg-9 col-md-9">
@@ -231,14 +231,14 @@
   <!-- JS here -->
     
 		<!-- All JS Custom Plugins Link Here here -->
-        <!-- <script src="/frontend/assets/js/vendor/modernizr-3.5.0.min.js"></script> -->
+        <script src="/frontend/assets/js/vendor/modernizr-3.5.0.min.js"></script>
         <!-- Jquery, Popper, Bootstrap -->
 
 		<script src="/frontend/assets/js/vendor/jquery-1.12.4.min.js"></script>
         <script src="/frontend/assets/js/popper.min.js"></script>
         <script src="/frontend/assets/js/bootstrap.min.js"></script>
 	    <!-- Jquery Mobile Menu -->
-        <!-- <script src="/frontend/assets/js/jquery.slicknav.min.js"></script> -->
+        <script src="/frontend/assets/js/jquery.slicknav.min.js"></script>
 
 		<!-- Jquery Slick , Owl-Carousel Plugins -->
         <script src="/frontend/assets/js/owl.carousel.min.js"></script>
@@ -264,7 +264,7 @@
         
 		<!-- Jquery Plugins, main Jquery -->	
         <script src="/frontend/assets/js/plugins.js"></script>
-        <!-- <script src="/frontend/assets/js/main.js"></script> -->
+        <script src="/frontend/assets/js/main.js"></script>
         @livewireScripts
     </body>
 </html>
