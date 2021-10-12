@@ -8,14 +8,18 @@ class Welcome extends Component
 {
     public $content = "home";
 
+    protected $listeners = [
+        'job_details' => 'handle_job_details'
+    ];
+
     public function render()
     {
-        $vacancy = \App\Vacancy::all();
-
-        return view('livewire.welcome',compact('vacancy'));
+        return view('livewire.welcome');
     }
 
-    public function job_details(){
-        $this->content = "job_details";
+    public function handle_job_details($content){
+        $this->content = $content;
     }
+
+    
 }

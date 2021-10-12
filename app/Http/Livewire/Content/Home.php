@@ -8,6 +8,15 @@ class Home extends Component
 {
     public function render()
     {
-        return view('livewire.content.home');
+
+        $vacancy = \App\Vacancy::all();
+
+        return view('livewire.content.home',compact('vacancy'));
+    }
+
+    public function job_details(){
+        $content = "job_details";
+
+        $this->emit('job_details',$content);
     }
 }
