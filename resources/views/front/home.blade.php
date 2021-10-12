@@ -1,6 +1,6 @@
   @extends('welcome')
 
-  @endsection('content')
+  @section('content')
   
   <!-- slider Area Start-->
   <div class="slider-area ">
