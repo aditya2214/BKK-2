@@ -38,7 +38,7 @@
             <div class="align-self-center col">
                 <div class="logo-loading">
                     <div class="icon icon-100 mb-4 rounded-circle">
-                        <img src="/frontend/img/favicon144.png" alt="" class="w-100">
+                        <img src="frontend/img/favicon144.png" alt="" class="w-100">
                     </div>
                     <h4 class="text-default">BKK-Karawang</h4>
                     <p class="text-secondary">Mobile BKK</p>
@@ -62,7 +62,7 @@
             <div class="col-auto">
                 <div class="avatar avatar-40 rounded-circle position-relative">
                     <figure class="background">
-                        <img src="/frontend/img/user1.png" alt="">
+                        <img src="frontend/img/user1.png" alt="">
                     </figure>
                 </div>
             </div>
@@ -284,25 +284,25 @@
 
 
     <!-- Required jquery and libraries -->
-    <script src="/frontend/js/jquery-3.3.1.min.js"></script>
-    <script src="/frontend/js/popper.min.js"></script>
-    <script src="/frontend/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="frontend/js/jquery-3.3.1.min.js"></script>
+    <script src="frontend/js/popper.min.js"></script>
+    <script src="frontend/vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- cookie js -->
-    <script src="/frontend/js/jquery.cookie.js"></script>
+    <script src="frontend/js/jquery.cookie.js"></script>
 
     <!-- Swiper slider  js-->
-    <script src="/frontend/vendor/swiper/js/swiper.min.js"></script>
+    <script src="frontend/vendor/swiper/js/swiper.min.js"></script>
 
     <!-- Customized jquery file  -->
-    <script src="/frontend/js/main.js"></script>
-    <script src="/frontend/js/color-scheme-demo.js"></script>
+    <script src="frontend/js/main.js"></script>
+    <script src="frontend/js/color-scheme-demo.js"></script>
 
     <!-- PWA app service registration and works -->
-    <script src="/frontend/js/pwa-services.js"></script>
+    <script src="frontend/js/pwa-services.js"></script>
 
     <!-- page level custom script -->
-    <script src="/frontend/js/app.js"></script>
+    <script src="frontend/js/app.js"></script>
 </body>
 
 </html>
