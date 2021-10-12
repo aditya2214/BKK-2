@@ -29,6 +29,7 @@
 
     <!-- Custom styles for this template -->
     <link href="/frontend/css/style.css" rel="stylesheet" id="style">
+    <link href="/frontend/css/style-blue.css" rel="stylesheet" id="dark_purple">
 
 </head>
 
