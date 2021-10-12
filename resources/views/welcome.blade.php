@@ -26,8 +26,8 @@
    </head>
 
    <body>
-   @include('sweetalert::alert')
-   <div>
+       <div>
+       @include('sweetalert::alert')
     <!-- Preloader Start -->
     <!-- <div id="preloader-active">
         <div class="preloader d-flex align-items-center justify-content-center">
