@@ -231,7 +231,7 @@
   <!-- JS here -->
     
 		<!-- All JS Custom Plugins Link Here here -->
-        <script src="/frontend/assets/js/vendor/modernizr-3.5.0.min.js"></script>
+        <!-- <script src="/frontend/assets/js/vendor/modernizr-3.5.0.min.js"></script> -->
         <!-- Jquery, Popper, Bootstrap -->
 
 		<script src="/frontend/assets/js/vendor/jquery-1.12.4.min.js"></script>
@@ -248,7 +248,7 @@
 		<!-- One Page, Animated-HeadLin -->
         <script src="/frontend/assets/js/wow.min.js"></script>
 		<script src="/frontend/assets/js/animated.headline.js"></script>
-        <!-- <script src="/frontend/assets/js/jquery.magnific-popup.js"></script> -->
+        <script src="/frontend/assets/js/jquery.magnific-popup.js"></script>
 
 		<!-- Scrollup, nice-select, sticky -->
         <script src="/frontend/assets/js/jquery.scrollUp.min.js"></script>
