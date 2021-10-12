@@ -9,20 +9,7 @@
         <link rel="manifest" href="/frontend/site.webmanifest">
 		<link rel="shortcut icon" type="image/x-icon" href="/frontend/assets/img/favicon.ico">
 
-		<!-- CSS here -->
-            <link rel="stylesheet" href="/frontend/assets/css/bootstrap.min.css">
-            <link rel="stylesheet" href="/frontend/assets/css/owl.carousel.min.css">
-            <link rel="stylesheet" href="/frontend/assets/css/flaticon.css">
-            <link rel="stylesheet" href="/frontend/assets/css/price_rangs.css">
-            <link rel="stylesheet" href="/frontend/assets/css/slicknav.css">
-            <link rel="stylesheet" href="/frontend/assets/css/animate.min.css">
-            <link rel="stylesheet" href="/frontend/assets/css/magnific-popup.css">
-            <link rel="stylesheet" href="/frontend/assets/css/fontawesome-all.min.css">
-            <link rel="stylesheet" href="/frontend/assets/css/themify-icons.css">
-            <link rel="stylesheet" href="/frontend/assets/css/slick.css">
-            <link rel="stylesheet" href="/frontend/assets/css/nice-select.css">
-            <link rel="stylesheet" href="/frontend/assets/css/style.css">
-            @livewireStyles
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
    </head>
 
    <body>
@@ -227,44 +214,8 @@
     </footer>
 </div>
 
-
-  <!-- JS here -->
-    
-		<!-- All JS Custom Plugins Link Here here -->
-        <script src="/frontend/assets/js/vendor/modernizr-3.5.0.min.js"></script>
-        <!-- Jquery, Popper, Bootstrap -->
-
-		<script src="/frontend/assets/js/vendor/jquery-1.12.4.min.js"></script>
-        <script src="/frontend/assets/js/popper.min.js"></script>
-        <script src="/frontend/assets/js/bootstrap.min.js"></script>
-	    <!-- Jquery Mobile Menu -->
-        <script src="/frontend/assets/js/jquery.slicknav.min.js"></script>
-
-		<!-- Jquery Slick , Owl-Carousel Plugins -->
-        <script src="/frontend/assets/js/owl.carousel.min.js"></script>
-        <script src="/frontend/assets/js/slick.min.js"></script>
-        <script src="/frontend/assets/js/price_rangs.js"></script>
-        
-		<!-- One Page, Animated-HeadLin -->
-        <script src="/frontend/assets/js/wow.min.js"></script>
-		<script src="/frontend/assets/js/animated.headline.js"></script>
-        <script src="/frontend/assets/js/jquery.magnific-popup.js"></script>
-
-		<!-- Scrollup, nice-select, sticky -->
-        <script src="/frontend/assets/js/jquery.scrollUp.min.js"></script>
-        <script src="/frontend/assets/js/jquery.nice-select.min.js"></script>
-		<script src="/frontend/assets/js/jquery.sticky.js"></script>
-        
-        <!-- contact js -->
-        <script src="/frontend/assets/js/contact.js"></script>
-        <script src="/frontend/assets/js/jquery.form.js"></script>
-        <script src="/frontend/assets/js/jquery.validate.min.js"></script>
-        <script src="/frontend/assets/js/mail-script.js"></script>
-        <script src="/frontend/assets/js/jquery.ajaxchimp.min.js"></script>
-        
-		<!-- Jquery Plugins, main Jquery -->	
-        <script src="/frontend/assets/js/plugins.js"></script>
-        <script src="/frontend/assets/js/main.js"></script>
-        @livewireScripts
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
 </html>
