@@ -64,7 +64,7 @@
                            </div>
                          <div class="apply-btn2">
                             <a href="#" data-toggle="modal" data-target="#daftar" class="btn btn-primary">Daftar</a>
-                            <a href="#" class="btn btn-warning">Absen</a>
+                            <a href="{{ url ('masukan_kode/'.$vacancy_detail->id }}" class="btn btn-warning">Absen</a>
 
                          </div>
                        </div>
@@ -76,7 +76,7 @@
 
 
         <!-- Modal -->
-        <div class="modal fade" id="daftar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"  aria-hidden="true" style="position:relative; width:50%; top:50%;">
+        <div class="modal fade" id="daftar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"  aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
             <div class="modal-header">
@@ -86,7 +86,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form action="" method="post">
+                <form action="{{ url ('daftar') }}" method="post">
                     <div class="form-group">
                         <label for="">No Hp</label>
                         <input type="text" name="no_hp" id="no_hp" class="form-control">

@@ -15,6 +15,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'FrontendController@index')->name('home');
 Route::get('/job_details/{id}', 'FrontendController@job_details')->name('job_details');
+Route::post('/daftar', 'FrontendController@daftar')->name('daftar');
+Route::post('/absen/{id}', 'FrontendController@absen')->name('absen');
+Route::get('/masukan_kode/{id}', 'FrontendController@masukan_kode')->name('masukan_kode');
 
 
 Route::get('/logout', function () {

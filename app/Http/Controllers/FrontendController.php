@@ -17,4 +17,15 @@ class FrontendController extends Controller
 
         return view('front.job_detail',compact('vacancy_detail'));
     }
+
+    public function daftar(Request $request){
+        return $request->all();
+
+    }
+
+    public function masukan_kode($id){
+        $cek_kode_vacancy = \App\Vacancy::where('id',$id)->first();
+
+        return view('kode_vacancy',compact('cek_kode_vacancy'));
+    }
 }
