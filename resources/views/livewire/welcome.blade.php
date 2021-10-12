@@ -63,7 +63,7 @@
         <!-- Header End -->
     </header>
    
-    @if($content == home)
+    @if($content == "home")
     <livewire:content.home>
     @else
     <livewire:content.job-single>
