@@ -35,10 +35,11 @@ class FrontendController extends Controller
         $cek_request = $request->kode_loker;
 
         if ($cek_request == $cek_kode_vacancy->kode_vacancy) {
+            Alert::success('Berhasil', 'Silahkan Isi Biodata Anda!!!');
+            return view('front.form_peserta');
+        }else{
             Alert::error('Gagal', 'Kode Tes Salah!!!');
             return redirect()->back();
-        }else{
-            return "gagal";
         }
     }
 }
