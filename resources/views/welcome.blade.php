@@ -257,7 +257,7 @@
         
         <!-- contact js -->
         <script src="/frontend/assets/js/contact.js"></script>
-        <!-- <script src="/frontend/assets/js/jquery.form.js"></script> -->
+        <script src="/frontend/assets/js/jquery.form.js"></script>
         <script src="/frontend/assets/js/jquery.validate.min.js"></script>
         <script src="/frontend/assets/js/mail-script.js"></script>
         <script src="/frontend/assets/js/jquery.ajaxchimp.min.js"></script>
