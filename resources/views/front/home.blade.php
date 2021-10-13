@@ -225,11 +225,6 @@
                     <div class="card border-0 mb-4">
                         <div class="card-body">
                             <div class="row align-items-center">
-                                <div class="col-auto pr-0">
-                                    <div class="avatar avatar-50 border-0 bg-default-light rounded-circle text-default">
-                                        <i class="material-icons vm text-template">local_atm</i>
-                                    </div>
-                                </div>
                                 <div class="col-12 align-self-center">
                                     <h6 class="mb-1">{{$vac->title_vacancy}}</h6>
                                     <p class="small text-secondary"></p>
