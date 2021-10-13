@@ -23,14 +23,14 @@
                         <th>Email</th>
                         <th>NIK</th>
                         <th>Kabupaten</th>
-                        <th>Alamat</th>
+                        <th style="width:200px;">Alamat</th>
                         <th>TTL</th>
                         <th>Umur</th>
                         <th>Tinggi_Badan</th>
                         <th>Berat_Badan</th>
                         <th>Asal_Sekolah</th>
                         <th>Tahun_lulus</th>
-                        <th>Pengalaman</th>
+                        <th style="width:200px;">Pengalaman</th>
                         <th>No_Handphone</th>
                     </tr>
                 </thead>
@@ -43,14 +43,14 @@
                         <td>{{$get_attendance->active_email}}</td>
                         <td>{{$get_attendance->nik}}</td>
                         <td>{{$get_attendance->kabupaten}}</td>
-                        <td style="width:200px;">{!!$get_attendance->address!!}</td>
+                        <td>{!!$get_attendance->address!!}</td>
                         <td>{{$get_attendance->place}},{{$get_attendance->date_and_place}}</td>
                         <td>{{$get_attendance->age}}</td>
                         <td>{{$get_attendance->height}}</td>
                         <td>{{$get_attendance->weight}}</td>
                         <td>{{$get_attendance->school}}</td>
                         <td>{{$get_attendance->graduation_year}}</td>
-                        <td style="width:200px;">{!!$get_attendance->experience!!}</td>
+                        <td>{!!$get_attendance->experience!!}</td>
                         <td>{{$get_attendance->no_handphone}}</td>
                     </tr>
                     @endforeach
