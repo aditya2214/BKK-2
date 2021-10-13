@@ -42,4 +42,8 @@ class FrontendController extends Controller
             return redirect()->back();
         }
     }
+
+    public function storeAbsensi(Request $request, $id){
+        return $request->all();
+    }
 }

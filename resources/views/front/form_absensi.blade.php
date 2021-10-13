@@ -12,66 +12,66 @@
                     <h6 class="mb-0">Form Absensi | {{$cek_kode_vacancy->title_vacancy}}</h6>
                 </div>
                 <div class="card-body">
-                    <form>
+                    <form action="{{url ('storeAbsensi/'.{{$cek_kode_vacancy->id) }}" method="post">
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Nama Lengkap</label>
-                            <input required type="text" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
+                            <input required type="text" name="full_name" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Jenis Kelamin</label>
-                            <input required type="text" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
+                            <input required type="text" name="gender" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Email (Aktif)</label>
-                            <input required type="email" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
+                            <input required type="email" name="active_email" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">NIK KTP</label>
-                            <input required type="number" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
+                            <input required type="number" name="nik" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Kabupaten</label>
-                            <input required type="text" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
+                            <input required type="text" name="kabupaten" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlTextarea1">Alamat Lengkap</label>
-                            <textarea  required class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <textarea  required class="form-control" name="address" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Tempat Lahir</label>
-                            <input required type="text" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
+                            <input required type="text" name="place" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Tanggal Lahir</label>
-                            <input required type="date" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
+                            <input required type="date" name="date_and_place" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Usia</label>
-                            <input required type="number" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
+                            <input required type="number" name="age" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Berat Badan</label>
-                            <input required type="number" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
+                            <input required type="number" name="height" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Tinggi Badan</label>
-                            <input required type="number" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
+                            <input required type="number" name="weight" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Asal Sekolah</label>
-                            <input required type="text" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
+                            <input required type="text" name="school" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Jurusan</label>
-                            <input required type="text" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
+                            <input required type="date" name="graduation_year" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlTextarea1">Pengalaman Kerja</label>
-                            <textarea required class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <textarea required class="form-control" name="experience" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">No Hp</label>
-                            <input required type="text" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
+                            <input required type="text" name="no_handphone" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
                         </div>
                         <div class="form-group">
                             <button class="btn btn-primary">Absen Sekarang</button>
