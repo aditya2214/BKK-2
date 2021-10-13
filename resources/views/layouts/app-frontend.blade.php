@@ -53,12 +53,12 @@
             </div>
         </div>
     </div>
-    @include('sweetalert::alert')
-
     
- <!-- Begin page content -->
+    
+    <!-- Begin page content -->
     <main class="flex-shrink-0 main has-footer">
         
+        @include('sweetalert::alert')
         @yield('content')
 
     </main>
@@ -99,25 +99,6 @@
         </div>
     </div>
 
-
-    <!-- color settings style switcher -->
-    <div class="color-picker">
-        <div class="row">
-            <div class="col text-left">
-                <div class="selectoption">
-                    <input type="checkbox" id="darklayout" name="darkmode">
-                    <label for="darklayout">Dark</label>
-                </div>
-                <div class="selectoption mb-0">
-                    <input type="checkbox" id="rtllayout" name="layoutrtl">
-                    <label for="rtllayout">RTL</label>
-                </div>
-            </div>
-            <div class="col-auto">
-                <button class="btn btn-link text-secondary btn-round colorsettings2"><span class="material-icons">close</span></button>
-            </div>
-        </div>
-    </div>
 
 
 
