@@ -105,6 +105,12 @@
         <span>Posting Lowongan </span></a>
 </li>
 
+<li class="nav-item">
+    <a class="nav-link" href="{{ url ('pengumuman') }}">
+        <i class="fas fa-fw fa-table"></i>
+        <span>Pengumuman</span></a>
+</li>
+
 <!-- Divider -->
 <hr class="sidebar-divider d-none d-md-block">
 

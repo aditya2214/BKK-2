@@ -54,4 +54,9 @@ class HomeController extends Controller
 
         return view('back.daftar_peserta',compact('get_attendances'));
     }
+
+    public function pengumuman(){
+
+        return view('front.pengumuman');
+    }
 }

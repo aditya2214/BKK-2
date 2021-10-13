@@ -67,4 +67,6 @@ class FrontendController extends Controller
         Alert::success('Berhasil', 'Data Absensi Anda Sudah Masuk!!!');
         return redirect('/');
     }
+
+
 }
