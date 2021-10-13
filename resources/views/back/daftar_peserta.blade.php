@@ -13,7 +13,7 @@
 <hr>
 <div class="row">
     <div class="card">
-        <div class="cad-body">
+        <div class="card-body">
             <table class="table" id="dataTable">
                 <thead>
                     <tr>
