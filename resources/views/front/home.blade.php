@@ -230,7 +230,7 @@
                                         <i class="material-icons vm text-template">local_atm</i>
                                     </div>
                                 </div>
-                                <div class="col-4 align-self-center">
+                                <div class="col-8 align-self-center">
                                     <h6 class="mb-1">{{$vac->title_vacancy}}</h6>
                                     <p class="small text-secondary"></p>
                                 </div>
