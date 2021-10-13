@@ -59,6 +59,9 @@
     <main class="flex-shrink-0 main has-footer">
         
         @include('sweetalert::alert')
+        <div class="container mt-3 mb-4 text-center">
+            <a href="{{ url ('/') }}"><h2 class="text-white">BKK-Karawang</h2></a>
+        </div>
         @yield('content')
 
     </main>
