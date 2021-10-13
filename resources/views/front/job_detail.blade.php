@@ -11,7 +11,7 @@
                 <div class="card-header border-bottom">
                     <div class="row">
                         <div class="col pl-0 align-self-center">
-                            <h6 class="mb-1">{{$vacancy_detail->title_vacancy}} </h6>
+                            <h6 class="mb-1">&nbsp;&nbsp;{{$vacancy_detail->title_vacancy}} </h6>
                         </div>
                     </div>
                 </div>
@@ -29,8 +29,8 @@
                     </p>
                 </div>
                 <div class="card-footer">
-                    <div class="btn btn btn-primary">Daftar</div>
-                    <div class="btn btn btn-warning">Absen</div>
+                    <a href="" class="btn btn btn-primary">Daftar</a>
+                    <a href="{{url ('masukan_kode/'.$vacancy_detail->id) }}" class="btn btn btn-warning">Absen</a>
                 </div>
             </div>
         </div>
