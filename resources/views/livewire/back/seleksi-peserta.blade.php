@@ -17,7 +17,7 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="">Pilih Loker</label>
-                            <select wire:model="pilih_loker" required name="" id="" class="form-control">
+                            <select wire:model="pilih_loker" class="form-control">
                                     <option class="bg-primary text-white" value="">Pilih</option>
                                 @foreach($vacancy as $vac)
                                     <option value="{{$vac->id}}">{{$vac->title_vacancy}}</option>
@@ -26,6 +26,7 @@
                         </div>
                     </div>
                 </div>
+                {{$pilih_loker}}
                 <hr>
                 @if($pilih_loker == null)
                 <p class="text-danger">Pilih Loker Terlebih Dulu</p>
