@@ -29,6 +29,7 @@
 
     <!-- Custom styles for this template -->
     <link href="/frontend/css/style.css" rel="stylesheet" id="style">
+    <script src="/ckeditor/ckeditor.js"></script>
 
 </head>
 

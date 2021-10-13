@@ -34,7 +34,10 @@
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlTextarea1">Alamat Lengkap</label>
-                            <textarea  required class="form-control" name="address" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <textarea  required class="form-control" name="address" id="address" rows="3"></textarea>
+                            <script>
+                                CKEDITOR.replace( 'address' );
+                            </script>
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Tempat Lahir</label>
@@ -66,7 +69,10 @@
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlTextarea1">Pengalaman Kerja</label>
-                            <textarea required class="form-control" name="experience" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <textarea required class="form-control" name="experience" id="experience" rows="3"></textarea>
+                            <script>
+                                CKEDITOR.replace( 'experience' );
+                            </script>
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">No Hp</label>
