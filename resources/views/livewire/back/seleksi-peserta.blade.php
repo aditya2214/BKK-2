@@ -15,15 +15,20 @@
             <div class="card-body">
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="">Pilih Loker</label>
-                            <select wire:model="pilih_loker" class="form-control">
-                                    <option class="bg-primary text-white" value="">Pilih</option>
-                                @foreach($vacancy as $vac)
-                                    <option value="{{$vac->id}}">{{$vac->title_vacancy}}</option>
-                                @endforeach
-                            </select>
-                        </div>
+                        <form wire:submit.prevent="storePilihan">
+                            <div class="form-group">
+                                <label for="">Pilih Loker</label>
+                                <select wire:model="pilih_loker" class="form-control">
+                                        <option class="bg-primary text-white" value="">Pilih</option>
+                                        @foreach($vacancy as $vac)
+                                            <option value="{{$vac->id}}">{{$vac->title_vacancy}}</option>
+                                        @endforeach
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-primary">Select</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
                 {{$pilih_loker}}
