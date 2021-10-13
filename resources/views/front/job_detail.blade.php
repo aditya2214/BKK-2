@@ -11,7 +11,7 @@
                 <div class="card-header border-bottom">
                     <div class="row">
                         <div class="col pl-0 align-self-center">
-                            <h6 class="mb-1">{$vacancy_detail->title_vacancy}} </h6>
+                            <h6 class="mb-1">{{$vacancy_detail->title_vacancy}} </h6>
                         </div>
                     </div>
                 </div>
@@ -19,9 +19,11 @@
                     <p class="text-secondary">
                         {!!$vacancy_detail->place_and_date!!}
                     </p>
+                    <br><br>
                     <p class="text-secondary">
                         {!!$vacancy_detail->recruitment!!}
                     </p>
+                    <br><br>
                     <p class="text-secondary">
                         {!!$vacancy_detail->notes!!}
                     </p>
