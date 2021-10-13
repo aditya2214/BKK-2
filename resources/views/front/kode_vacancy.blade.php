@@ -13,7 +13,7 @@
                     <div class="card-header border-bottom">
                         <div class="row">
                             <div class="col pl-0 align-self-center">
-                                <label class="text-center" for=""><b>Kode Loker</b></label>
+                                <label style="text-align:center;" for=""><b>Kode Loker</b></label>
                                 <input type="password" placeholder="Masukan Kode Loker" name="kode_loker" class="form-control">
                             </div>
                         </div>
