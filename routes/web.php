@@ -34,3 +34,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/posting_lowongan', 'HomeController@posting_lowongan')->name('posting_lowongan');
 Route::post('/store_jobs', 'HomeController@store_jobs')->name('store_jobs');
 Route::get('/attendance', 'HomeController@attendance')->name('attendance');
+Route::get('/daftar_peserta/{id}', 'HomeController@daftar_peserta')->name('daftar_peserta');

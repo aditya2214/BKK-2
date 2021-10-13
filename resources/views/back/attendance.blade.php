@@ -27,7 +27,7 @@
                     </div>
                 </div>
                 <div class="">
-                    <button class="btn btn-outline-primary btn-sm">Daftar Peserta</button>
+                    <a href="{{ url ('daftar_peserta/'.$vac->id) }}" class="btn btn-outline-primary btn-sm">Daftar Peserta</a>
                 </div>
             </div>
         </div>

@@ -48,4 +48,10 @@ class HomeController extends Controller
 
         return view('back.attendance',compact('vacancy'));
     }
+
+    public function daftar_peserta($id){
+        $get_attendances = \App\Attendance::where('id_vacancy',$id)->get();
+
+        return view('back.daftar_peserta',compact('get_attendances'));
+    }
 }
