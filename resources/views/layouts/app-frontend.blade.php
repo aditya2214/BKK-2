@@ -53,6 +53,7 @@
             </div>
         </div>
     </div>
+    @include('sweetalert::alert')
 
     
  <!-- Begin page content -->
