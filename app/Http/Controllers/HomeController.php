@@ -57,6 +57,6 @@ class HomeController extends Controller
 
     public function pengumuman(){
 
-        return view('front.pengumuman');
+        return view('back.pengumuman');
     }
 }
