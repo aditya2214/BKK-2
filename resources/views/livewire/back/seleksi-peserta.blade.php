@@ -13,7 +13,14 @@
     <div class="col-md-12">
         <div class="card">
             <div class="card-body">
-                
+                <div class="for-group">
+                    <label for="">Pilih Loker</label>
+                    <select name="" id="" class="form-control">
+                        @foreach($vacancy as $vac)
+                        <option value="{{$vac->id}}">{{$vac->title_vacancy}}</option>
+                        @endforeach
+                    </select>
+                </div>
             </div>
         </div>
     </div>

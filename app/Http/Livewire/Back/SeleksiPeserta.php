@@ -8,6 +8,8 @@ class SeleksiPeserta extends Component
 {
     public function render()
     {
-        return view('livewire.back.seleksi-peserta');
+        $vacancy = \App\Vacancy::all();
+        
+        return view('livewire.back.seleksi-peserta',compact('vacancy'));
     }
 }
