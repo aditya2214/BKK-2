@@ -12,7 +12,12 @@ class SeleksiPeserta extends Component
     {
         // dd($this->pilih_loker);
         $vacancy = \App\Vacancy::all();
-        $get_attendances = \App\Attendance::where('id_vacancy',$this->pilih_loker)->get();
-        return view('livewire.back.seleksi-peserta',compact('vacancy','get_attendances'));
+        return view('livewire.back.seleksi-peserta',compact('vacancy'));
+    }
+
+    public function show_peserta(){
+
+        $peserts_table = $this->pilih_loker;
+        $this->emit('show_peserta',$peserts_table);
     }
 }
