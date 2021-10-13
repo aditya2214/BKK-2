@@ -59,8 +59,9 @@ class FrontendController extends Controller
             'height' => $request->height,
             'weight' => $request->weight,
             'school' => $request->school,
-            'graduation_year' => $request->experience,
-            'experience' => $request->no_handphone
+            'graduation_year' => $request->graduation_year,
+            'experience' => $request->experience,
+            'no_handphone' => $request->no_handphone
         ]);
 
         Alert::error('Berhasil', 'Data Absensi Anda Sudah Masuk!!!');
