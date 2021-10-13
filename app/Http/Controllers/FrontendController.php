@@ -45,7 +45,7 @@ class FrontendController extends Controller
 
     public function storeAbsensi(Request $request, $id){
         
-        $storeAbsen = \App\Attendances::create([
+        $storeAbsen = \App\Attendance::create([
             'id_vacancy' => $id,
             'full_name'  => $request->full_name,
             'gender' => $request-> gender,
