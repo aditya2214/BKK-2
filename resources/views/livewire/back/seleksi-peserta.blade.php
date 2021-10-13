@@ -17,7 +17,7 @@
                     <label for="">Pilih Loker</label>
                     <select name="" id="" class="form-control">
                         @foreach($vacancy as $vac)
-                        <option value="{{$vac->id}}">{{$vac->title_vacancy}}</option>
+                            <option value="{{$vac->id}}">{{$vac->title_vacancy}}</option>
                         @endforeach
                     </select>
                 </div>
