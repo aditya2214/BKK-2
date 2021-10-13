@@ -41,6 +41,7 @@
                     <div class="icon icon-100 mb-4 rounded-circle">
                         <img src="/frontend/img/favicon144.png" alt="" class="w-100">
                     </div>
+                    @include('sweetalert::alert')
                     <h4 class="text-default">BKK-Karawang</h4>
                     <p class="text-secondary">Mobile BKK</p>
                     <div class="loader-ellipsis">
@@ -58,7 +59,7 @@
     <!-- Begin page content -->
     <main class="flex-shrink-0 main has-footer">
         
-        @include('sweetalert::alert')
+        
         <div class="container mt-3 mb-4 text-center">
             <a href="{{ url ('/') }}"><h2 class="text-white">BKK-Karawang</h2></a>
         </div>
