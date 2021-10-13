@@ -10,20 +10,20 @@
             <div class="card">
                 <div class="card-header border-bottom">
                     <div class="row">
-                        <div class="col-auto">
-                            <div class="icon icon-40 rounded bg-default-light"><i class="material-icons text-default">{{$vacancy_detail->title_vacancy}}</i></div>
+                        <div class="col pl-0 align-self-center">
+                            <h6 class="mb-1">{$vacancy_detail->title_vacancy}} </h6>
                         </div>
                     </div>
                 </div>
                 <div class="card-body">
                     <p class="text-secondary">
-                        {{$vacancy_detail->place_and_date}}
+                        {!!$vacancy_detail->place_and_date!!}
                     </p>
                     <p class="text-secondary">
-                        {{$vacancy_detail->recruitment}}
+                        {!!$vacancy_detail->recruitment!!}
                     </p>
                     <p class="text-secondary">
-                        {{$vacancy_detail->notes}}
+                        {!!$vacancy_detail->notes!!}
                     </p>
                 </div>
                 <div class="card-footer">
