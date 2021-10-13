@@ -6,7 +6,7 @@ use Livewire\Component;
 
 class SeleksiPeserta extends Component
 {
-    public $pilih_loker = 1;
+    public $pilih_loker;
 
     public function render()
     {
