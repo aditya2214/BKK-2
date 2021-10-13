@@ -21,7 +21,7 @@
         <script src="/ckeditor/ckeditor.js"></script>
     <!-- Custom styles for this template-->
     <link href="/backend/css/sb-admin-2.min.css" rel="stylesheet">
-
+    @livewireStyles
 </head>
 
 <body id="page-top">
@@ -116,6 +116,7 @@
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
     @yield('scripts')
+    @livewireScripts
 </body>
 
 </html>

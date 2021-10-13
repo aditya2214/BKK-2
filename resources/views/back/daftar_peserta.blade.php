@@ -23,14 +23,14 @@
                         <th>Email</th>
                         <th>NIK</th>
                         <th>Kabupaten</th>
-                        <th style="width:200px;">Alamat</th>
+                        <th>Alamat</th>
                         <th>TTL</th>
                         <th>Umur</th>
                         <th>Tinggi_Badan</th>
                         <th>Berat_Badan</th>
                         <th>Asal_Sekolah</th>
                         <th>Tahun_lulus</th>
-                        <th style="width:200px;">Pengalaman</th>
+                        <th>Pengalaman</th>
                         <th>No_Handphone</th>
                     </tr>
                 </thead>

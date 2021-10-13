@@ -59,4 +59,9 @@ class HomeController extends Controller
 
         return view('back.pengumuman');
     }
+
+    public function seleksi_peserta(){
+
+        return view('back.seleksi_peserta');
+    }
 }

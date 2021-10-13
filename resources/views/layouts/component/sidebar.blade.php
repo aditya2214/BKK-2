@@ -95,7 +95,7 @@
 <li class="nav-item">
     <a class="nav-link" href="{{ url ('attendance') }}">
         <i class="fas fa-fw fa-chart-area"></i>
-        <span>Absensi</span></a>
+        <span>Master Data Absensi</span></a>
 </li>
 
 <!-- Nav Item - Tables -->
@@ -103,6 +103,12 @@
     <a class="nav-link" href="{{ url ('posting_lowongan') }}">
         <i class="fas fa-fw fa-table"></i>
         <span>Posting Lowongan </span></a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link" href="{{ url ('seleksi_peserta') }}">
+        <i class="fas fa-fw fa-table"></i>
+        <span>Seleksi Peserta</span></a>
 </li>
 
 <li class="nav-item">
