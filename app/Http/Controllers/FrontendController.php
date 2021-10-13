@@ -64,7 +64,7 @@ class FrontendController extends Controller
             'no_handphone' => $request->no_handphone
         ]);
 
-        Alert::error('Berhasil', 'Data Absensi Anda Sudah Masuk!!!');
+        Alert::success('Berhasil', 'Data Absensi Anda Sudah Masuk!!!');
         return redirect('/');
     }
 }
