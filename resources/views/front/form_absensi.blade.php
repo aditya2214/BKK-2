@@ -15,63 +15,63 @@
                     <form>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Nama Lengkap</label>
-                            <input type="text" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
+                            <input required type="text" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Jenis Kelamin</label>
-                            <input type="text" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
+                            <input required type="text" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Email (Aktif)</label>
-                            <input type="email" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
+                            <input required type="email" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">NIK KTP</label>
-                            <input type="number" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
+                            <input required type="number" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Kabupaten</label>
-                            <input type="text" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
+                            <input required type="text" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlTextarea1">Alamat Lengkap</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <textarea  required class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Tempat Lahir</label>
-                            <input type="text" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
+                            <input required type="text" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Tanggal Lahir</label>
-                            <input type="date" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
+                            <input required type="date" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Usia</label>
-                            <input type="number" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
+                            <input required type="number" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Berat Badan</label>
-                            <input type="number" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
+                            <input required type="number" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Tinggi Badan</label>
-                            <input type="number" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
+                            <input required type="number" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Asal Sekolah</label>
-                            <input type="text" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
+                            <input required type="text" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Jurusan</label>
-                            <input type="text" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
+                            <input required type="text" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlTextarea1">Pengalaman Kerja</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <textarea required class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">No Hp</label>
-                            <input type="text" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
+                            <input required type="text" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
                         </div>
                         <div class="form-group">
                             <button class="btn btn-primary">Absen Sekarang</button>
