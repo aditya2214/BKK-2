@@ -13,6 +13,7 @@
                 </div>
                 <div class="card-body">
                     <form action="{{url ('storeAbsensi/'.$cek_kode_vacancy->id) }}" method="post">
+                    @csrf
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Nama Lengkap</label>
                             <input required type="text" name="full_name" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
