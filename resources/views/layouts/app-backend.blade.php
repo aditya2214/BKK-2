@@ -104,8 +104,8 @@
     <script src="/backend/js/demo/chart-pie-demo.js"></script>
 
     
-    <script src="/backecnd/vendor/datatables/jquery.dataTables.min.js"></script>
-    <script src="/backecnd/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+    <script src="/backend/vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="/backend/vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
     <!-- select 2 -->
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
