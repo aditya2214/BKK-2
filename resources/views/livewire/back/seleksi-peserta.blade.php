@@ -16,6 +16,7 @@
                 <div class="for-group">
                     <label for="">Pilih Loker</label>
                     <select name="" id="" class="form-control">
+                            <option class="bg-primary text-white" value="xnxx.com">Pilih</option>
                         @foreach($vacancy as $vac)
                             <option value="{{$vac->id}}">{{$vac->title_vacancy}}</option>
                         @endforeach
