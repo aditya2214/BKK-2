@@ -8,7 +8,7 @@
     <div class="main-container">
         <div class="container">
             <form action="{{ url ('absen/'.$cek_kode_vacancy->id) }}" method="post">
-        
+                @csrf
                 <div class="card">
                     <div class="card-header border-bottom">
                         <div class="row">
