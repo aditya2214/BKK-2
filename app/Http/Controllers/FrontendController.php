@@ -44,6 +44,26 @@ class FrontendController extends Controller
     }
 
     public function storeAbsensi(Request $request, $id){
-        return $request->all();
+        
+        $storeAbsen = \App\Attendances::create([
+            'id_vacancy' => $id,
+            'full_name'  => $request->full_name,
+            'gender' => $request-> gender,
+            'active_email' => $request->active_email,
+            'nik' => $request->nik,
+            'kabupaten' => $request->kabupaten,
+            'address' => $request->address,
+            'place' => $request->place,
+            'date_and_place' => $request->date_and_place,
+            'age' => $request->age,
+            'height' => $request->height,
+            'weight' => $request->weight,
+            'school' => $request->school,
+            'graduation_year' => $request->experience,
+            'experience' => $request->no_handphone
+        ]);
+
+        Alert::error('Berhasil', 'Data Absensi Anda Sudah Masuk!!!');
+        return redirect('/');
     }
 }
