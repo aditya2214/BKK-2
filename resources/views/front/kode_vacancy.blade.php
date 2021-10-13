@@ -18,7 +18,7 @@
                         </div>
                     </div>
                     <div class="card-footer">
-                        <a href="{{url ('masukan_kode/'.$vacancy_detail->id) }}" class="btn btn btn-warning">Masuk</a>
+                        <a href="{{url ('masukan_kode/'.$cek_kode_vacancy->id) }}" class="btn btn btn-warning">Masuk</a>
                     </div>
                 </div>
                         
