@@ -9,7 +9,7 @@
         <div class="container">
             <div class="card mb-4">
                 <div class="card-header">
-                    <h6 class="mb-0">Form Absensi</h6>
+                    <h6 class="mb-0">Form Absensi | {{$cek_kode_vacancy->title_vacancy}}</h6>
                 </div>
                 <div class="card-body">
                     <form>
