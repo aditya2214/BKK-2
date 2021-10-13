@@ -21,6 +21,7 @@
                         <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                             {{$vac->title_vacancy}}</div>
                         <div class="h5 mb-0 font-weight-bold text-gray-800"></div>
+                        <p><b>{{$vac->kode_vacancy}}</b></p>
                     </div>
                     <div class="col-auto">
                         <i class="fas fa-calendar fa-2x text-gray-300"></i>

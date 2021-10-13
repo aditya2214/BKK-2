@@ -17,6 +17,7 @@
             <table class="table" id="dataTable">
                 <thead>
                     <tr>
+                        <th>No</th>
                         <th>Nama_Lengkap</th>
                         <th>Jenis_Kelamin</th>
                         <th>Email</th>
@@ -34,8 +35,9 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach($get_attendances as $get_attendance)
+                    @foreach($get_attendances as $key=>$get_attendance)
                     <tr>
+                        <td>{{$key+1}}</td>
                         <td>{{$get_attendance->full_name}}</td>
                         <td>{{$get_attendance->gender}}</td>
                         <td>{{$get_attendance->active_email}}</td>
