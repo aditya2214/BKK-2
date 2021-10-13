@@ -10,9 +10,9 @@ class SeleksiPeserta extends Component
 
     public function render()
     {
+        dd($this->pilih_loker);
         $vacancy = \App\Vacancy::all();
         $get_attendances = \App\Attendance::where('id_vacancy',$this->pilih_loker)->get();
-        dd($get_attendances);
         return view('livewire.back.seleksi-peserta',compact('vacancy','get_attendances'));
     }
 }
