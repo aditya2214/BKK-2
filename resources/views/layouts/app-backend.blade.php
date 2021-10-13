@@ -13,6 +13,7 @@
 
     <!-- Custom fonts for this template-->
     <link href="/backend/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="/backend/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
@@ -101,6 +102,10 @@
     <!-- Page level custom scripts -->
     <script src="/backend/js/demo/chart-area-demo.js"></script>
     <script src="/backend/js/demo/chart-pie-demo.js"></script>
+
+    
+    <script src="/backecnd/vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="/backecnd/vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
     <!-- select 2 -->
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
