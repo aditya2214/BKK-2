@@ -95,8 +95,13 @@
                     <input type="text" name="tes_apa" id="tes_apa" class="form-control">
                 </div>
                 <div class="form-group">
-                    <button class="btn btn-success">Lolos</button>
-                    <button class="btn btn-Danger">Gagal</button>
+                    <select name="" id="" class="form-control">
+                        <option value="lolos">Lolos</option>
+                        <option value="gagal">Gagal</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <div class="btn btn btn-primary">Seleksi</div>
                 </div>
                 </form>
                 @endif
