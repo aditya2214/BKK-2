@@ -104,4 +104,8 @@ class HomeController extends Controller
 
         return $app;
     }
+
+    public function delete(){
+        $delete = \App\absenSortir::delete();
+    }
 }
