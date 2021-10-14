@@ -128,3 +128,17 @@
 
 <!-- /.container-fluid -->
 @endsection
+@section('scripts')
+<script>
+   $(document).ready(function() {
+    $('#dataTable').DataTable( {
+        dom: 'Bfrtip',
+        buttons: [
+            'copyHtml5',
+            'excelHtml5',
+            'csvHtml5',
+        ]
+    } );
+} );
+</script>
+@endsection
