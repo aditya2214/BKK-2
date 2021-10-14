@@ -94,4 +94,10 @@ class HomeController extends Controller
 
         return redirect('/seleksi_peserta');
     }
+
+    public function test(){
+        $app = \App\absenSortir::all();
+
+        return $app;
+    }
 }

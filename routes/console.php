@@ -17,3 +17,10 @@ use Illuminate\Support\Facades\Artisan;
 Artisan::command('inspire', function () {
     $this->comment(Inspiring::quote());
 })->describe('Display an inspiring quote');
+
+
+Artisan::command('test', function () {
+    $part = DB::table('absen_sortirs')->get();
+    
+    $this->info(json_encode($part,JSON_PRETTY_PRINT));
+})->describe('Display an inspiring quote');
