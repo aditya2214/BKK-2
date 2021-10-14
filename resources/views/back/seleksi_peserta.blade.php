@@ -45,7 +45,7 @@
                         <thead>
                             <tr>
                                 <th>
-                                    <input type="checkbox" name="" id="">
+                                    *
                                 </th>
                                 <th>No</th>
                                 <th>Nama_Lengkap</th>

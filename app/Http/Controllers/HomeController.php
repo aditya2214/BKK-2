@@ -80,6 +80,8 @@ class HomeController extends Controller
 
     public function seleksi(Request $request){
     
+        return $request->all();
+        
         $id_peserta = $request->checked;
 
         foreach ($id_peserta as $key => $value) {
