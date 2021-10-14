@@ -47,6 +47,7 @@
                                 <th>
                                     *
                                 </th>
+                                <td>Status</td>
                                 <th>No</th>
                                 <th>Nama_Lengkap</th>
                                 <th>Jenis_Kelamin</th>
@@ -70,6 +71,19 @@
                                 <td>
                                     <input type="checkbox" name="id_peserta[]" value="{{$get_attendance->id}}" id="checked">
                                 </td>
+                                @if($get_attendance->Seleksi_r == null)
+                                <td>
+                                    <span class="badge badge-secondary">Belum Di Sortir</span>
+                                </td>
+                                @elseif($get_attendance->seleksi_r->status_tes == "lulus")
+                                <td>
+                                    <span class="badge badge-success">{{$get_attendance->Seleksi_r->status_tes}}</span>
+                                </td>
+                                @else
+                                <td>
+                                    <span class="badge badge-danger">{{$get_attendance->Seleksi_r->status_tes}}</span>
+                                </td>
+                                @endif
                                 <td>{{$key+1}}</td>
                                 <td>{{$get_attendance->full_name}}</td>
                                 <td>{{$get_attendance->gender}}</td>
