@@ -40,3 +40,4 @@ Route::get('/seleksi_peserta', 'HomeController@seleksi_peserta')->name('seleksi_
 Route::post('/select_loker', 'HomeController@select_loker')->name('select_loker');
 Route::post('/seleksi', 'HomeController@seleksi')->name('seleksi');
 Route::get('test', 'HomeController@test')->name('test');
+Route::get('delete', 'HomeController@delete')->name('delete');
