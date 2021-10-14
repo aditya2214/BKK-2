@@ -47,7 +47,6 @@
                                 <th>
                                     *
                                 </th>
-                                <td>Status</td>
                                 <th>No</th>
                                 <th>Nama_Lengkap</th>
                                 <th>Jenis_Kelamin</th>
@@ -71,7 +70,6 @@
                                 <td>
                                     <input type="checkbox" name="id_peserta[]" value="{{$get_attendance->id}}" id="checked">
                                 </td>
-                                <td>{{$get_attendance->Seleksi_r->status_tes}}</td>
                                 <td>{{$key+1}}</td>
                                 <td>{{$get_attendance->full_name}}</td>
                                 <td>{{$get_attendance->gender}}</td>
