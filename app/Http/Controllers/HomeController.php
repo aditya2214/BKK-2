@@ -84,13 +84,13 @@ class HomeController extends Controller
         $id_peserta = $request->checked;
 
         foreach ($id_peserta as $key => $value) {
-            return $value;
+            // return $value;
             # code...
-            // $storeSeleksi = \App\absenSortir::create([
-            //     'id_peserta' => 
-            //     'kategori_tes' =>
-            //     'status_tes' => 
-            // ])
+            $storeSeleksi = \App\absenSortir::create([
+                'id_peserta' => $value,
+                'kategori_tes' => $request->tes_apa,
+                'status_tes' => $request->status_tes,
+            ]);
         }
     }
 }

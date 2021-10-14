@@ -24,4 +24,8 @@ class Attendance extends Model
         'experience',
         'no_handphone'
     ];
+
+    public function Seleksi_r(){
+        return $this->belongsTo(absenSortir::class. 'id');
+    }
 }

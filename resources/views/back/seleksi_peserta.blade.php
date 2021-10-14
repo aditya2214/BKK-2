@@ -48,6 +48,7 @@
                                     <input type="checkbox" name="" id="">
                                 </th>
                                 <th>No</th>
+                                <th>Status</th>
                                 <th>Nama_Lengkap</th>
                                 <th>Jenis_Kelamin</th>
                                 <th>Email</th>
@@ -71,6 +72,7 @@
                                     <input type="checkbox" name="checked[]" value="{{$get_attendance->id}}" id="checked">
                                 </td>
                                 <td>{{$key+1}}</td>
+                                <td>{{$get_attendance->Seleksi_r->status_tes}}</td>
                                 <td>{{$get_attendance->full_name}}</td>
                                 <td>{{$get_attendance->gender}}</td>
                                 <td>{{$get_attendance->active_email}}</td>
@@ -95,7 +97,7 @@
                         <input type="text" name="tes_apa" id="tes_apa" class="form-control">
                     </div>
                     <div class="form-group">
-                        <select name="" id="" class="form-control">
+                        <select name="status_tes" id="" class="form-control">
                             <option value="lolos">Lolos</option>
                             <option value="gagal">Gagal</option>
                         </select>
