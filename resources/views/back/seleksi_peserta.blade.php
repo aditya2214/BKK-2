@@ -89,20 +89,20 @@
                             @endforeach
                         </tbody>
                     </table>
-                <hr>
-                <div class="form-group">
-                    <label for="">Tes Apa?</label>
-                    <input type="text" name="tes_apa" id="tes_apa" class="form-control">
-                </div>
-                <div class="form-group">
-                    <select name="" id="" class="form-control">
-                        <option value="lolos">Lolos</option>
-                        <option value="gagal">Gagal</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <div class="btn btn btn-primary">Seleksi</div>
-                </div>
+                    <hr>
+                    <div class="form-group">
+                        <label for="">Tes Apa?</label>
+                        <input type="text" name="tes_apa" id="tes_apa" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <select name="" id="" class="form-control">
+                            <option value="lolos">Lolos</option>
+                            <option value="gagal">Gagal</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn btn-primary">Seleksi</button>
+                    </div>
                 </form>
                 @endif
             </div>
