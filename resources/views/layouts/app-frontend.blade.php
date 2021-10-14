@@ -109,7 +109,7 @@
 
 
     <!-- Required jquery and libraries -->
-    <script src="/frontend/js/jquery-3.3.1.min.js"></script>
+    <!-- <script src="/frontend/js/jquery-3.3.1.min.js"></script> -->
     <script src="/frontend/js/popper.min.js"></script>
     <script src="/frontend/vendor/bootstrap/js/bootstrap.min.js"></script>
 
