@@ -74,108 +74,68 @@
                                 </td>
                                 <td>
                                 <style>
-                                    .wrapper {
-                                    width: 330px;
-                                    font-family: 'Helvetica';
-                                    font-size: 14px;
-                                    border: 1px solid #CCC;
-                                    }
-
-                                    .StepProgress {
-                                    position: relative;
-                                    padding-left: 45px;
-                                    list-style: none;
-                                    
-                                    &::before {
-                                        display: inline-block;
-                                        content: '';
-                                        position: absolute;
-                                        top: 0;
-                                        left: 15px;
-                                        width: 10px;
-                                        height: 100%;
-                                        border-left: 2px solid #CCC;
-                                    }
-                                    
-                                    &-item {
-                                        position: relative;
-                                        counter-increment: list;
-                                        
-                                        &:not(:last-child) {
-                                        padding-bottom: 20px;
+                                  .container {
+                                            width: 600px;
+                                            margin: 100px auto; 
                                         }
-                                        
-                                        &::before {
-                                        display: inline-block;
-                                        content: '';
-                                        position: absolute;
-                                        left: -30px;
-                                        height: 100%;
-                                        width: 10px;
+                                        .progressbar {
+                                            counter-reset: step;
                                         }
-                                        
-                                        &::after {
-                                        content: '';
-                                        display: inline-block;
-                                        position: absolute;
-                                        top: 0;
-                                        left: -37px;
-                                        width: 12px;
-                                        height: 12px;
-                                        border: 2px solid #CCC;
-                                        border-radius: 50%;
-                                        background-color: #FFF;
-                                        }
-                                        
-                                        &.is-done {
-                                        &::before {
-                                            border-left: 2px solid green;
-                                        }
-                                        &::after {
-                                            content: "✔";
-                                            font-size: 10px;
-                                            color: #FFF;
+                                        .progressbar li {
+                                            list-style-type: none;
+                                            width: 25%;
+                                            float: left;
+                                            font-size: 12px;
+                                            position: relative;
                                             text-align: center;
-                                            border: 2px solid green;
-                                            background-color: green;
+                                            text-transform: uppercase;
+                                            color: #7d7d7d;
                                         }
-                                        }
-                                        
-                                        &.current {
-                                        &::before {
-                                            border-left: 2px solid green;
-                                        }
-                                        
-                                        &::after {
-                                            content: counter(list);
-                                            padding-top: 1px;
-                                            width: 19px;
-                                            height: 18px;
-                                            top: -4px;
-                                            left: -40px;
-                                            font-size: 14px;
+                                        .progressbar li:before {
+                                            width: 30px;
+                                            height: 30px;
+                                            content: counter(step);
+                                            counter-increment: step;
+                                            line-height: 30px;
+                                            border: 2px solid #7d7d7d;
+                                            display: block;
                                             text-align: center;
-                                            color: green;
-                                            border: 2px solid green;
+                                            margin: 0 auto 10px auto;
+                                            border-radius: 50%;
                                             background-color: white;
                                         }
+                                        .progressbar li:after {
+                                            width: 100%;
+                                            height: 2px;
+                                            content: '';
+                                            position: absolute;
+                                            background-color: #7d7d7d;
+                                            top: 15px;
+                                            left: -50%;
+                                            z-index: -1;
                                         }
-                                    }
-                                    
-                                    strong {
-                                        display: block;
-                                    }
-                                    }
+                                        .progressbar li:first-child:after {
+                                            content: none;
+                                        }
+                                        .progressbar li.active {
+                                            color: green;
+                                        }
+                                        .progressbar li.active:before {
+                                            border-color: #55b776;
+                                        }
+                                        .progressbar li.active + li:after {
+                                            background-color: #55b776;
+                                        }
                                     </style>
-                                    <div class="wrapper">
-                                        <ul class="StepProgress">
+                                     <div class="container">
+                                        <ul class="progressbar">
                                             @foreach($get_attendance->Seleksi_r as $kal)
                                                 @if($kal == null)
-                                                <li class="StepProgress-item is-done"><strong>Belum Di Sortir</strong></li>
+                                                <li class=""><strong>Belum Di Sortir</strong></li>
                                                 @elseif($kal->status_tes == "lolos")
-                                                <li class="StepProgress-item is-done"><strong>{{$kal->status_tes}} {{$kal->kategori_tes}}</strong></li>
+                                                <li class="active"><strong>{{$kal->status_tes}} {{$kal->kategori_tes}}</strong></li>
                                                 @else
-                                                <li class="StepProgress-item is-done"><strong>{{$kal->status_tes}}</strong></li>
+                                                <li class="active"><strong>{{$kal->status_tes}}</strong></li>
                                                 @endif
                                             @endforeach
                                         </ul>
