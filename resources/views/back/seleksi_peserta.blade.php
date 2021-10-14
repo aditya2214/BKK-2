@@ -1,6 +1,100 @@
 @extends('layouts.app-backend')
 
 @section('content')
+<style>
+.wrapper {
+  width: 330px;
+  font-family: 'Helvetica';
+  font-size: 14px;
+  border: 1px solid #CCC;
+}
+
+.StepProgress {
+  position: relative;
+  padding-left: 45px;
+  list-style: none;
+  
+  &::before {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 10px;
+    height: 100%;
+    border-left: 2px solid #CCC;
+  }
+  
+  &-item {
+    position: relative;
+    counter-increment: list;
+    
+    &:not(:last-child) {
+      padding-bottom: 20px;
+    }
+    
+    &::before {
+      display: inline-block;
+      content: '';
+      position: absolute;
+      left: -30px;
+      height: 100%;
+      width: 10px;
+    }
+    
+    &::after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: -37px;
+      width: 12px;
+      height: 12px;
+      border: 2px solid #CCC;
+      border-radius: 50%;
+      background-color: #FFF;
+    }
+    
+    &.is-done {
+      &::before {
+        border-left: 2px solid green;
+      }
+      &::after {
+        content: "✔";
+        font-size: 10px;
+        color: #FFF;
+        text-align: center;
+        border: 2px solid green;
+        background-color: green;
+      }
+    }
+    
+    &.current {
+      &::before {
+        border-left: 2px solid green;
+      }
+      
+      &::after {
+        content: counter(list);
+        padding-top: 1px;
+        width: 19px;
+        height: 18px;
+        top: -4px;
+        left: -40px;
+        font-size: 14px;
+        text-align: center;
+        color: green;
+        border: 2px solid green;
+        background-color: white;
+      }
+    }
+  }
+  
+  strong {
+    display: block;
+  }
+}
+</style>
      <!-- Begin Page Content -->
      <div class="container-fluid">
 
@@ -65,160 +159,6 @@
                                 <th>No_Handphone</th>
                             </tr>
                         </thead>
-                        <style>
-                        // COMPASS
-                        @import "compass";
-                        // FONT
-                        @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700");
-
-                        // CONFIG
-                        $SPACER_XS: 0.5rem;
-                        $SPACER_SM: 0.75rem;
-                        $SPACER: 1rem;
-                        $SPACER_MD: 1.5rem;
-                        $SPACER_LG: 2rem;
-                        $BORDER_RADIUS: 3px;
-                        $PROGRESS_HEIGHT: 600px;
-                        $PROGRESS_LIST_HEIGHT: 75px;
-                        $PROGRESS_COUNTER_WIDTH: 26px;
-                        $LIST_ITEM_WIDTH: 100px;
-                        $PROGRESS_BG: #392A60;
-                        $BODY_BG: #2E1F47;
-                        $ICON_COLOR: #F3597D;
-
-                        // BASE
-                        html {
-                        font-size: 13px;
-                        font-family: "Roboto Slab", serif;
-                        font-weight: 400;
-                        line-height: 13px;
-                        -webkit-font-smoothing: auto;
-                        text-rendering: optimizeLegibility;
-                        color: #fff;
-                        overflow: hidden;
-                        }
-
-                        body {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        background:$BODY_BG;
-                        letter-spacing: 0.6px;
-
-                        }
-
-                        p {
-                        font-size: 13px;
-                        margin: 0 0 11px;
-                        }
-
-                        a {
-                        color: #fff;
-                        text-decoration: none;
-                        }
-
-                        header {
-                        text-align: center;
-                        margin-bottom: $SPACER_LG*2;
-                        h1 {
-                            font-size: 1.8rem;
-                            line-height: 2.1rem;
-                        }
-                        p {
-                            margin-top: $SPACER;
-                        }
-                        .icon {
-                            color: $ICON_COLOR; 
-                        }
-                        }
-
-                        // THE GOOD STUFF
-                        .progressContainer {
-                        position: relative;
-                        width: 300px;
-                        height: 100vh;
-                        margin: 0 auto;
-                        overflow: hidden;
-                        padding: $SPACER_LG;
-                        color: #fff;
-                        background: $PROGRESS_BG;
-                        @include box-shadow(0 0 15px rgba(0, 0, 0, 0.3));
-                        }
-
-                        .progress {
-                        position: relative;
-                        padding: 0 $SPACER 0 3.5rem;
-                        margin: $SPACER_LG 0 0;
-                        list-style: none;
-                        }
-
-                        .progress__item {
-                        position: relative;
-                        min-height: $PROGRESS_LIST_HEIGHT;
-                        counter-increment: list;
-                        padding-left: $SPACER_XS;
-                        &:before {
-                            content: "";
-                            position: absolute;
-                            left: -1.5rem;
-                            top: 33px;
-                            height: 60%;
-                            width: 1px;
-                            border-left: 1px solid #fff;
-                        }
-                        &:after {
-                            content: counter(list);
-                            position: absolute;
-                            top: 0;
-                            left: -2.5rem;
-                            width: $PROGRESS_COUNTER_WIDTH;
-                            height: $PROGRESS_COUNTER_WIDTH;
-                            border-radius: 50%;
-                            background: transparent;
-                            color: #fff;
-                            font-weight: 400;
-                            font-size: 13px;
-                            line-height: 2rem;
-                            text-align: center;
-                            border: 1px solid #fff;
-                        }
-                        //Hide border for Last Step
-                        &:last-child {
-                            &:before {
-                            border: none;
-                            }
-                        }
-                        //Completed
-                        &.progress__item--completed {
-                            opacity: 0.6;
-                            color: #fff;
-                            &:after {
-                            content: "\2713";
-                            font-weight: 400;
-                            background: #fff;
-                            color: $PROGRESS_BG;
-                            }
-                        }
-                        //Active
-                        &.progress__item--active {
-                            &:after {
-                            background: #fff;
-                            color: $PROGRESS_BG;
-                            }
-                        }
-                        }
-
-                        .progress__title {
-                        padding: 0.4rem 0 $SPACER_XS;
-                        margin: 0;
-                        font-size: 1.5rem;
-                        }
-
-                        .progress__info {
-                        font-size: 13px;
-                        }
-
-                        </style>
                         <tbody>
                             @foreach($get_attendances as $key=>$get_attendance)
                             <tr>
@@ -226,28 +166,18 @@
                                     <input type="checkbox" name="id_peserta[]" value="{{$get_attendance->id}}" id="checked">
                                 </td>
                                 <td>
-                                    <div class="progressContainer">
-
-                                    <ul class="progress">
-                                    @foreach($get_attendance->Seleksi_r as $kal)
-                                        @if($kal == null)
-                                        <li class="progress__item progress__item--completed">
-                                            <p class="progress__title">Belum Di Sortir </p>
-                                        </li>
-                                        @elseif($kal->status_tes == "lolos")
-                                        
-                                                <li class="progress__item progress__item--completed">
-                                                <p class="progress__title">{{$kal->status_tes}} </p>
-                                                <p class="progress__info">{{$kal->kategori_tes}}</p>
-                                                </li>
-                                        @else
-                                        <li class="progress__item progress__item--completed">
-                                        <p class="progress__title">{{$kal->status_tes}} </p>
-                                        </li>
-                                        @endif
-                                    @endforeach
-                                    </ul>
-
+                                    <div class="wrapper">
+                                        <ul class="StepProgress">
+                                            @foreach($get_attendance->Seleksi_r as $kal)
+                                                @if($kal == null)
+                                                <li class="StepProgress-item is-done"><strong>Belum Di Sortir</strong></li>
+                                                @elseif($kal->status_tes == "lolos")
+                                                <li class="StepProgress-item is-done"><strong>{{$kal->status_tes}} {{$kal->kategori_tes}}</strong></li>
+                                                @else
+                                                <li class="StepProgress-item is-done"><strong>{{$kal->status_tes}}</strong></li>
+                                                @endif
+                                            @endforeach
+                                        </ul>
                                     </div>
                                 </td>
                                 <td>{{$key+1}}</td>
