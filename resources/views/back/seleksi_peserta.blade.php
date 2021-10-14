@@ -67,41 +67,41 @@
                         </thead>
                         <tbody>
                             @foreach($get_attendances as $key=>$get_attendance)
-                            <tr>
-                                <td>
-                                    <input type="checkbox" name="id_peserta[]" value="{{$get_attendance->id}}" id="checked">
-                                </td>
                                 @foreach($get_attendance->Seleksi_r as $kal)
-                                @if($get_attendance->Seleksi_r == null)
-                                <td>
-                                    <span class="badge badge-secondary">Belum Di Sortir</span>
-                                </td>
-                                @elseif($kal->status_tes == "lolos")
-                                <td>
-                                    <span class="badge badge-success">{{$kal->status_tes}} {{$kal->kategori_tes}}</span>
-                                </td>
-                                @else
-                                <td>
-                                    <span class="badge badge-danger">{{$kal->status_tes}}</span>
-                                </td>
-                                @endif
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" name="id_peserta[]" value="{{$get_attendance->id}}" id="checked">
+                                        </td>
+                                        @if($get_attendance->Seleksi_r == null)
+                                        <td>
+                                            <span class="badge badge-secondary">Belum Di Sortir</span>
+                                        </td>
+                                        @elseif($kal->status_tes == "lolos")
+                                        <td>
+                                            <span class="badge badge-success">{{$kal->status_tes}} {{$kal->kategori_tes}}</span>
+                                        </td>
+                                        @else
+                                        <td>
+                                            <span class="badge badge-danger">{{$kal->status_tes}}</span>
+                                        </td>
+                                        @endif
+                                        <td>{{$key+1}}</td>
+                                        <td>{{$get_attendance->full_name}}</td>
+                                        <td>{{$get_attendance->gender}}</td>
+                                        <td>{{$get_attendance->active_email}}</td>
+                                        <td>{{$get_attendance->nik}}</td>
+                                        <td>{{$get_attendance->kabupaten}}</td>
+                                        <td>{!!$get_attendance->address!!}</td>
+                                        <td>{{$get_attendance->place}},{{$get_attendance->date_and_place}}</td>
+                                        <td>{{$get_attendance->age}}</td>
+                                        <td>{{$get_attendance->height}}</td>
+                                        <td>{{$get_attendance->weight}}</td>
+                                        <td>{{$get_attendance->school}}</td>
+                                        <td>{{$get_attendance->graduation_year}}</td>
+                                        <td>{!!$get_attendance->experience!!}</td>
+                                        <td>{{$get_attendance->no_handphone}}</td>
+                                    </tr>
                                 @endforeach
-                                <td>{{$key+1}}</td>
-                                <td>{{$get_attendance->full_name}}</td>
-                                <td>{{$get_attendance->gender}}</td>
-                                <td>{{$get_attendance->active_email}}</td>
-                                <td>{{$get_attendance->nik}}</td>
-                                <td>{{$get_attendance->kabupaten}}</td>
-                                <td>{!!$get_attendance->address!!}</td>
-                                <td>{{$get_attendance->place}},{{$get_attendance->date_and_place}}</td>
-                                <td>{{$get_attendance->age}}</td>
-                                <td>{{$get_attendance->height}}</td>
-                                <td>{{$get_attendance->weight}}</td>
-                                <td>{{$get_attendance->school}}</td>
-                                <td>{{$get_attendance->graduation_year}}</td>
-                                <td>{!!$get_attendance->experience!!}</td>
-                                <td>{{$get_attendance->no_handphone}}</td>
-                            </tr>
                             @endforeach
                         </tbody>
                     </table>
