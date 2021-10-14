@@ -48,7 +48,6 @@
                                     <input type="checkbox" name="" id="">
                                 </th>
                                 <th>No</th>
-                                <!-- <th>Status</th> -->
                                 <th>Nama_Lengkap</th>
                                 <th>Jenis_Kelamin</th>
                                 <th>Email</th>
@@ -72,9 +71,6 @@
                                     <input type="checkbox" name="checked[]" value="{{$get_attendance->id}}" id="checked">
                                 </td>
                                 <td>{{$key+1}}</td>
-                                <!-- <td>
-                                    <span class="badge badge-primary">{{$get_attendance->Seleksi_r->status_tes}}</span>
-                                </td> -->
                                 <td>{{$get_attendance->full_name}}</td>
                                 <td>{{$get_attendance->gender}}</td>
                                 <td>{{$get_attendance->active_email}}</td>
