@@ -75,7 +75,7 @@
                                 <td>
                                     <ul>
                                         @foreach($get_attendance->Seleksi_r as $kal)
-                                            @if($$get_attendance->Seleksi_r == null)
+                                            @if($get_attendance->Seleksi_r == null)
                                             <li>
                                                 <span class="badge badge-secondary">Belum Di Sortir</span>
                                             </li>
