@@ -39,7 +39,7 @@
                 <p class="text-danger">Pilih Loker Terlebih Dulu</p>
                 @else
                 <p><b>Daftar Peserta</b></p>
-                <form action="{{url('seleksi')}}" method="post">
+                <form action="{{url('seleksi')}}" method="POST">
                     @csrf
                     <table class="table" id="dataTable">
                         <thead>
