@@ -63,9 +63,9 @@ class HomeController extends Controller
 
     public function seleksi_peserta(){
 
+        $pilih_loker = $this->id_loker;
         $vacancy = \App\Vacancy::all();
-
-        return view('back.seleksi_peserta',compact('vacancy','get_attendances','pilih_loker'));
+        return view('back.seleksi_peserta',compact('vacancy','pilih_loker'));
     }
 
     public function select_loker(Request $request){
@@ -74,12 +74,13 @@ class HomeController extends Controller
 
         $pilih_loker = $this->id_loker;
         $vacancy = \App\Vacancy::all();
-        return view('back.seleksi_peserta',compact('vacancy','pilih_loker'));
+        $get_attendances = \App\Attendance::where('id_vacancy',$this->id_loker)->get();
+        return view('back.seleksi_peserta',compact('vacancy','get_attendances','pilih_loker'));
     }
 
     public function seleksi(Request $request){
-    
         return $request->all();
+        
         $id_peserta = $request->checked;
 
         foreach ($id_peserta as $key => $value) {
