@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
+    public $id_loker = 0;
     /**
      * Create a new controller instance.
      *
@@ -65,5 +66,10 @@ class HomeController extends Controller
         $vacancy = \App\Vacancy::all();
         $get_attendances = \App\Attendance::where('id_vacancy',$this->id_loker)->get();
         return view('back.seleksi_peserta',compact('vacancy','get_attendances'));
+    }
+
+    public function select_loker(Request $request){
+        return $request->all();
+        $this->id_loker = $request->select;
     }
 }

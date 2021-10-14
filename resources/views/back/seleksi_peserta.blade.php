@@ -17,10 +17,11 @@
             <div class="card-body">
                 <div class="row">
                     <div class="col-md-6">
-                        <form wire:submit.prevent="storePilihan">
+                        <form action="select_loker" method="POST">
+                            @csrf
                             <div class="form-group">
                                 <label for="">Pilih Loker</label>
-                                <select wire:model="pilih_loker" class="form-control">
+                                <select name="select" class="form-control">
                                         <option class="bg-primary text-white" value="">Pilih</option>
                                         @foreach($vacancy as $vac)
                                             <option value="{{$vac->id}}">{{$vac->title_vacancy}}</option>
@@ -33,7 +34,6 @@
                         </form>
                     </div>
                 </div>
-                {{$pilih_loker}}
                 <hr>
                 @if($pilih_loker == null)
                 <p class="text-danger">Pilih Loker Terlebih Dulu</p>

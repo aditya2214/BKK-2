@@ -37,3 +37,4 @@ Route::get('/attendance', 'HomeController@attendance')->name('attendance');
 Route::get('/daftar_peserta/{id}', 'HomeController@daftar_peserta')->name('daftar_peserta');
 Route::get('/pengumuman', 'HomeController@pengumuman')->name('pengumuman');
 Route::get('/seleksi_peserta', 'HomeController@seleksi_peserta')->name('seleksi_peserta');
+Route::post('/select_loker', 'HomeController@select_loker')->name('select_loker');
