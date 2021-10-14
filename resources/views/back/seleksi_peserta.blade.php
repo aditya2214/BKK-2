@@ -18,7 +18,7 @@
             <div class="card-body">
                 <div class="row">
                     <div class="col-md-6">
-                        <form action="select_loker" method="POST">
+                        <form action="{{ url ('select_loker') }}" method="POST">
                             @csrf
                             <div class="form-group">
                                 <label for="">Pilih Loker</label>
