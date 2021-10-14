@@ -40,7 +40,7 @@
                 @else
                 <p><b>Daftar Peserta</b></p>
                 <form action="{{url('seleksi')}}" method="post">
-                    
+                    @csrf
                     <table class="table" id="dataTable">
                         <thead>
                             <tr>
