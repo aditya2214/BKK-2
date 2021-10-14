@@ -106,9 +106,12 @@
 </li>
 
 <li class="nav-item">
-    <a class="nav-link" href="{{ url ('seleksi_peserta') }}">
+<form action="{{ url ('seleksi_peserta') }}" method="post">
+
+    <a class="nav-link" href="">
         <i class="fas fa-fw fa-table"></i>
         <span>Seleksi Peserta</span></a>
+</form>
 </li>
 
 <li class="nav-item">
