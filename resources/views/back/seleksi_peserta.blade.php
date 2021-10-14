@@ -73,71 +73,17 @@
                                     <input type="checkbox" name="id_peserta[]" value="{{$get_attendance->id}}" id="checked">
                                 </td>
                                 <td>
-                                <style>
-                                 .container {
-  width: 100%;
-}
-
-.progressbar {
-  counter-reset: step;
-}
-.progressbar li {
-  list-style: none;
-  display: inline-block;
-  width: 30.33%;
-  position: relative;
-  text-align: center;
-  cursor: pointer;
-}
-.progressbar li:before {
-  content: counter(step);
-  counter-increment: step;
-  width: 30px;
-  height: 30px;
-  line-height : 30px;
-  border: 1px solid #ddd;
-  border-radius: 100%;
-  display: block;
-  text-align: center;
-  margin: 0 auto 10px auto;
-  background-color: #fff;
-}
-.progressbar li:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  background-color: #ddd;
-  top: 15px;
-  left: -50%;
-  z-index : -1;
-}
-.progressbar li:first-child:after {
-  content: none;
-}
-.progressbar li.active {
-  color: green;
-}
-.progressbar li.active:before {
-  border-color: green;
-} 
-.progressbar li.active + li:after {
-  background-color: green;
-}
-                                    </style>
-                                     <div class="container">
-                                        <ul class="progressbar">
-                                            @foreach($get_attendance->Seleksi_r as $kal)
-                                                @if($kal == null)
-                                                <li>Belum Di Sortir</li>
-                                                @elseif($kal->status_tes == "lolos")
-                                                <li>{{$kal->status_tes}} {{$kal->kategori_tes}}</li>
-                                                @else
-                                                <li>{{$kal->status_tes}}</li>
-                                                @endif
-                                            @endforeach
-                                        </ul>
-                                    </div>
+                                    <ul class="progressbar">
+                                        @foreach($get_attendance->Seleksi_r as $kal)
+                                            @if($kal == null)
+                                            <li>Belum Di Sortir</li>
+                                            @elseif($kal->status_tes == "lolos")
+                                            <li>{{$kal->status_tes}} {{$kal->kategori_tes}}</li>
+                                            @else
+                                            <li>{{$kal->status_tes}}</li>
+                                            @endif
+                                        @endforeach
+                                    </ul>
                                 </td>
                                 <td>{{$key+1}}</td>
                                 <td>{{$get_attendance->full_name}}</td>
