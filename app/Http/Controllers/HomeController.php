@@ -70,7 +70,7 @@ class HomeController extends Controller
     }
 
     public function select_loker(Request $request){
-        return $request->all();
+        // return $request->all();
         $this->id_loker = $request->select;
     }
 }
