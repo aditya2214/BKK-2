@@ -70,7 +70,7 @@
                             @foreach($get_attendances as $key=>$get_attendance)
                             <tr>
                                 <td>
-                                    <input type="checkbox" required name="id_peserta[]" value="{{$get_attendance->id}}" id="checked">
+                                    <input type="checkbox" name="id_peserta[]" value="{{$get_attendance->id}}" id="checked">
                                 </td>
                                 <td>
                                     <ul>
@@ -113,7 +113,7 @@
                     <hr>
                     <div class="form-group">
                         <label for="">Tes Apa?</label>
-                        <input type="text" name="tes_apa" id="tes_apa" class="form-control">
+                        <input type="text" required name="tes_apa" id="tes_apa" class="form-control">
                     </div>
                     <div class="form-group">
                         <select name="status_tes" id="" class="form-control">
