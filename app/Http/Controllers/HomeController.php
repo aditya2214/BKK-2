@@ -65,7 +65,7 @@ class HomeController extends Controller
 
         $vacancy = \App\Vacancy::all();
 
-        return view('back.seleksi_peserta',compact('vacancy','get_attendances','pilih_loker'));
+        return view('back.seleksi_peserta',compact('vacancy'));
     }
 
     public function select_loker(Request $request){
