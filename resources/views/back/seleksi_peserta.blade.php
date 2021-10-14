@@ -83,6 +83,7 @@ color: white
                                     <input type="checkbox" name="id_peserta[]" value="{{$get_attendance->id}}" id="checked">
                                 </td>
                                 <td>
+                                <div class="container">
                                     <ul class="progressbar">
                                         @foreach($get_attendance->Seleksi_r as $kal)
                                             @if($kal == null)
@@ -100,6 +101,7 @@ color: white
                                             @endif
                                         @endforeach
                                     </ul>
+                                </div>
                                 </td>
                                 <td>{{$key+1}}</td>
                                 <td>{{$get_attendance->full_name}}</td>
