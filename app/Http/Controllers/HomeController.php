@@ -83,6 +83,10 @@ class HomeController extends Controller
 
     public function seleksi(Request $request){
         // return $request->all();
+        if ($request->id_peserta == null) {
+            Alert::error('Error', 'Harap Pilih Data Peserta!!!');
+            return redirect()->back();
+        }
         $id_peserta = $request->id_peserta;
 
         foreach ($id_peserta as $key => $value) {
