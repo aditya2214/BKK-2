@@ -74,68 +74,66 @@
                                 </td>
                                 <td>
                                 <style>
-                                  .container {
-                                            width: 600px;
-                                            margin: 100px auto; 
-                                        }
-                                        .progressbar {
-                                            counter-reset: step;
-                                        }
-                                        .progressbar li {
-                                            list-style-type: none;
-                                            width: 25%;
-                                            float: left;
-                                            font-size: 12px;
-                                            position: relative;
-                                            text-align: center;
-                                            text-transform: uppercase;
-                                            color: #7d7d7d;
-                                        }
-                                        .progressbar li:before {
-                                            width: 30px;
-                                            height: 30px;
-                                            content: counter(step);
-                                            counter-increment: step;
-                                            line-height: 30px;
-                                            border: 2px solid #7d7d7d;
-                                            display: block;
-                                            text-align: center;
-                                            margin: 0 auto 10px auto;
-                                            border-radius: 50%;
-                                            background-color: white;
-                                        }
-                                        .progressbar li:after {
-                                            width: 100%;
-                                            height: 2px;
-                                            content: '';
-                                            position: absolute;
-                                            background-color: #7d7d7d;
-                                            top: 15px;
-                                            left: -50%;
-                                            z-index: -1;
-                                        }
-                                        .progressbar li:first-child:after {
-                                            content: none;
-                                        }
-                                        .progressbar li.active {
-                                            color: green;
-                                        }
-                                        .progressbar li.active:before {
-                                            border-color: #55b776;
-                                        }
-                                        .progressbar li.active + li:after {
-                                            background-color: #55b776;
-                                        }
+                                 .container {
+  width: 100%;
+}
+
+.progressbar {
+  counter-reset: step;
+}
+.progressbar li {
+  list-style: none;
+  display: inline-block;
+  width: 30.33%;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+.progressbar li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 30px;
+  height: 30px;
+  line-height : 30px;
+  border: 1px solid #ddd;
+  border-radius: 100%;
+  display: block;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  background-color: #fff;
+}
+.progressbar li:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+  top: 15px;
+  left: -50%;
+  z-index : -1;
+}
+.progressbar li:first-child:after {
+  content: none;
+}
+.progressbar li.active {
+  color: green;
+}
+.progressbar li.active:before {
+  border-color: green;
+} 
+.progressbar li.active + li:after {
+  background-color: green;
+}
                                     </style>
                                      <div class="container">
                                         <ul class="progressbar">
                                             @foreach($get_attendance->Seleksi_r as $kal)
                                                 @if($kal == null)
-                                                <li class=""><strong>Belum Di Sortir</strong></li>
+                                                <li>Belum Di Sortir</li>
                                                 @elseif($kal->status_tes == "lolos")
-                                                <li class="active"><strong>{{$kal->status_tes}} {{$kal->kategori_tes}}</strong></li>
+                                                <li>{{$kal->status_tes}} {{$kal->kategori_tes}}</li>
                                                 @else
-                                                <li class="active"><strong>{{$kal->status_tes}}</strong></li>
+                                                <li>{{$kal->status_tes}}</li>
                                                 @endif
                                             @endforeach
                                         </ul>
