@@ -75,7 +75,7 @@
                                 <td>
                                     <span class="badge badge-secondary">Belum Di Sortir</span>
                                 </td>
-                                @elseif($get_attendance->seleksi_r->status_tes == "lulus")
+                                @elseif($get_attendance->seleksi_r->status_tes == "lolos")
                                 <td>
                                     <span class="badge badge-success">{{$get_attendance->Seleksi_r->status_tes}}</span>
                                 </td>
