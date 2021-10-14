@@ -38,9 +38,13 @@
                 @if($pilih_loker == null)
                 <p class="text-danger">Pilih Loker Terlebih Dulu</p>
                 @else
+                <p><b>Daftar Peserta</b></p>
                 <table class="table" id="dataTable">
                     <thead>
                         <tr>
+                            <th>
+                                <input type="checkbox" name="" id="">
+                            </th>
                             <th>No</th>
                             <th>Nama_Lengkap</th>
                             <th>Jenis_Kelamin</th>
@@ -61,6 +65,9 @@
                     <tbody>
                         @foreach($get_attendances as $key=>$get_attendance)
                         <tr>
+                            <td>
+                                <input type="checkbox" name="checked" value="{{$get_attendance->id}}" id="checked">
+                            </td>
                             <td>{{$key+1}}</td>
                             <td>{{$get_attendance->full_name}}</td>
                             <td>{{$get_attendance->gender}}</td>
