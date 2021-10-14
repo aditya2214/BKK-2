@@ -67,48 +67,14 @@
                             </tr>
                         </thead>
                         <style>
-                            .events time { 
-  position: relative;
-  padding: 0 1.5em;  }
-
-.events time::after { 
-   content: "";
-   position: absolute;
-   z-index: 2;
-   right: 0;
-   top: 0;
-   transform: translateX(50%);
-   border-radius: 50%;
-   background: #fff;
-   border: 1px #ccc solid;
-   width: .8em;
-   height: .8em;
+                        .progressbar li.active + li:after{
+ background: #3aac5d;
 }
-
-
-.events span {
-  padding: 0 1.5em 1.5em 1.5em;
-  position: relative;
+.progressbar li.active + li:before{
+border-color: #3aac5d;
+background: #3aac5d;
+color: white
 }
-
-.events span::before {
-   content: "";
-   position: absolute;
-   z-index: 1;
-   left: 0;
-   height: 100%;
-   border-left: 1px #ccc solid;
-}
-
-.events strong {
-   display: block;
-   font-weight: bolder;
-}
-
-.events { margin: 1em; width: 50%; }
-.events, 
-.events *::before, 
-.events *::after { box-sizing: border-box; font-family: arial; }
                         </style>
                         <tbody>
                             @foreach($get_attendances as $key=>$get_attendance)
@@ -117,19 +83,19 @@
                                     <input type="checkbox" name="id_peserta[]" value="{{$get_attendance->id}}" id="checked">
                                 </td>
                                 <td>
-                                    <ul class="events">
+                                    <ul class="progressbar">
                                         @foreach($get_attendance->Seleksi_r as $kal)
                                             @if($kal == null)
                                             <li>
-                                                <span><strong>Belum Di Sortir</strong></span>
+                                                Belum Di Sortir
                                             </li>
                                             @elseif($kal->status_tes == "lolos")
                                             <li>
-                                                <span><strong>{{$kal->status_tes}} {{$kal->kategori_tes}}</strong></span>
+                                                {{$kal->status_tes}} {{$kal->kategori_tes}}
                                             </li>
                                             @else
                                             <li>
-                                                <span><strong>{{$kal->status_tes}}</strong></span>
+                                                {{$kal->status_tes}}
                                             </li>
                                             @endif
                                         @endforeach
