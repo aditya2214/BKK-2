@@ -39,7 +39,7 @@
                 <p class="text-danger">Pilih Loker Terlebih Dulu</p>
                 @else
                 <p><b>Daftar Peserta</b></p>
-                <form action="">
+                <form action="{{url('seleksi')}}" method="post">
                     
                     <table class="table" id="dataTable">
                         <thead>
