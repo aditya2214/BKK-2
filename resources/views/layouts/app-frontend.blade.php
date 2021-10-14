@@ -30,7 +30,7 @@
     <!-- Custom styles for this template -->
     <link href="/frontend/css/style.css" rel="stylesheet" id="style">
     <script src="/ckeditor/ckeditor.js"></script>
-
+    @livewireStyles
 </head>
 
 <body class="body-scroll d-flex flex-column h-100 menu-overlay" data-page="homepage">
@@ -128,6 +128,7 @@
 
     <!-- page level custom script -->
     <script src="/frontend/js/app.js"></script>
+     @livewireScripts
 </body>
 
 </html>
