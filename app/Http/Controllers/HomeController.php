@@ -80,7 +80,7 @@ class HomeController extends Controller
 
     public function seleksi(Request $request){
         // return $request->all();
-        $id_peserta = $request->checked;
+        $id_peserta = $request->id_peserta;
 
         foreach ($id_peserta as $key => $value) {
             // return $value;
@@ -92,6 +92,6 @@ class HomeController extends Controller
             ]);
         }
 
-        return redirect()->back();
+        return redirect('/seleksi_peserta');
     }
 }
