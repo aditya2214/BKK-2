@@ -68,7 +68,7 @@
                             @foreach($get_attendances as $key=>$get_attendance)
                             <tr>
                                 <td>
-                                    <input type="checkbox" name="checked[]" value="{{$get_attendance->id}}" id="checked">
+                                    <input type="checkbox" name="id_peserta[]" value="{{$get_attendance->id}}" id="checked">
                                 </td>
                                 <td>{{$key+1}}</td>
                                 <td>{{$get_attendance->full_name}}</td>
