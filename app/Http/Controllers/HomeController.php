@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use DB;
+use Alert;
 
 class HomeController extends Controller
 {
@@ -42,6 +43,7 @@ class HomeController extends Controller
             'notes'=>$request->notes,
         ]);
 
+        Alert::success('Berhasil', 'Loker Telah Di Publish!!!');
         return redirect()->back();
     }
 
@@ -92,8 +94,8 @@ class HomeController extends Controller
                 'status_tes' => $request->status_tes,
             ]);
         }
-
-        return redirect('/seleksi_peserta');
+        Alert::success('Berhasil', 'Sukses Sortir Data!!!');
+        return redirect()->back();
     }
 
     public function test(){
