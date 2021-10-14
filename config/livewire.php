@@ -54,7 +54,7 @@ return [
     |
     */
 
-    'asset_url' => 'https://bkk-pgri-2-karawang.herokuapp.com',
+    'asset_url' => 'http://bkk-pgri-2-karawang.herokuapp.com',
 
     /*
     |--------------------------------------------------------------------------
