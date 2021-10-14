@@ -72,23 +72,23 @@
                                     <input type="checkbox" name="id_peserta[]" value="{{$get_attendance->id}}" id="checked">
                                 </td>
                                 @foreach($get_attendance->Seleksi_r as $kal)
-                                @if($kal == null)
                                 <td>
-                                    <tr>
-                                        <td>
+                                    <ul>
+                                        @if($kal == null)
+                                        <li>
                                             <span class="badge badge-secondary">Belum Di Sortir</span>
-                                        </td>
+                                        </li>
                                         @elseif($kal->status_tes == "lolos")
-                                        <td>
+                                        <li>
                                             <span class="badge badge-success">{{$kal->status_tes}} {{$kal->kategori_tes}}</span>
-                                        </td>
+                                        </li>
                                         @else
-                                        <td>
+                                        <li>
                                             <span class="badge badge-danger">{{$kal->status_tes}}</span>
-                                        </td>
-                                    </tr>
+                                        </li>
+                                        @endif
+                                    </ul>
                                 </td>
-                                @endif
                                 @endforeach
                                 <td>{{$key+1}}</td>
                                 <td>{{$get_attendance->full_name}}</td>
