@@ -92,5 +92,7 @@ class HomeController extends Controller
                 'status_tes' => $request->status_tes,
             ]);
         }
+
+        return redirect()->back();
     }
 }
