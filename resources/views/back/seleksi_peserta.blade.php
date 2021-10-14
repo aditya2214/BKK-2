@@ -85,6 +85,7 @@
                                     <span class="badge badge-danger">{{$kal->status_tes}}</span>
                                 </td>
                                 @endif
+                                @endforeach
                                 <td>{{$key+1}}</td>
                                 <td>{{$get_attendance->full_name}}</td>
                                 <td>{{$get_attendance->gender}}</td>
