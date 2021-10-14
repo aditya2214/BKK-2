@@ -63,9 +63,10 @@ class HomeController extends Controller
 
     public function seleksi_peserta(){
 
+        $pilih_loker = $this->id_loker;
         $vacancy = \App\Vacancy::all();
         $get_attendances = \App\Attendance::where('id_vacancy',$this->id_loker)->get();
-        return view('back.seleksi_peserta',compact('vacancy','get_attendances'));
+        return view('back.seleksi_peserta',compact('vacancy','get_attendances','id_loker'));
     }
 
     public function select_loker(Request $request){
