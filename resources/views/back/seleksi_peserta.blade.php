@@ -66,16 +66,6 @@
                                 <th>No_Handphone</th>
                             </tr>
                         </thead>
-                        <style>
-                        .progressbar li.active + li:after{
- background: #3aac5d;
-}
-.progressbar li.active + li:before{
-border-color: #3aac5d;
-background: #3aac5d;
-color: white
-}
-                        </style>
                         <tbody>
                             @foreach($get_attendances as $key=>$get_attendance)
                             <tr>
@@ -83,25 +73,23 @@ color: white
                                     <input type="checkbox" name="id_peserta[]" value="{{$get_attendance->id}}" id="checked">
                                 </td>
                                 <td>
-                                <div class="container">
-                                    <ul class="progressbar">
+                                    <ul>
                                         @foreach($get_attendance->Seleksi_r as $kal)
                                             @if($kal == null)
                                             <li>
-                                                Belum Di Sortir
+                                                <span class="badge badge-secondary">Belum Di Sortir</span>
                                             </li>
                                             @elseif($kal->status_tes == "lolos")
                                             <li>
-                                                {{$kal->status_tes}} {{$kal->kategori_tes}}
+                                                <span class="badge badge-success">{{$kal->status_tes}} {{$kal->kategori_tes}}</span>
                                             </li>
                                             @else
                                             <li>
-                                                {{$kal->status_tes}}
+                                            <span class="badge badge-danger">{{$kal->status_tes}} {{$kal->kategori_tes}}</span>
                                             </li>
                                             @endif
                                         @endforeach
                                     </ul>
-                                </div>
                                 </td>
                                 <td>{{$key+1}}</td>
                                 <td>{{$get_attendance->full_name}}</td>
