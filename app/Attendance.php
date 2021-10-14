@@ -26,6 +26,6 @@ class Attendance extends Model
     ];
 
     public function Seleksi_r(){
-        return $this->belongsTo(\App\absenSortir::class,'id');
+        return $this->belongsTo(\App\absenSortir::class,'id_peserta','id');
     }
 }
