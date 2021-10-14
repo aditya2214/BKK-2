@@ -73,19 +73,21 @@
                                 </td>
                                 @foreach($get_attendance->Seleksi_r as $kal)
                                 @if($kal == null)
-                                <tr>
                                 <td>
-                                    <span class="badge badge-secondary">Belum Di Sortir</span>
+                                    <tr>
+                                        <td>
+                                            <span class="badge badge-secondary">Belum Di Sortir</span>
+                                        </td>
+                                        @elseif($kal->status_tes == "lolos")
+                                        <td>
+                                            <span class="badge badge-success">{{$kal->status_tes}} {{$kal->kategori_tes}}</span>
+                                        </td>
+                                        @else
+                                        <td>
+                                            <span class="badge badge-danger">{{$kal->status_tes}}</span>
+                                        </td>
+                                    </tr>
                                 </td>
-                                @elseif($kal->status_tes == "lolos")
-                                <td>
-                                    <span class="badge badge-success">{{$kal->status_tes}} {{$kal->kategori_tes}}</span>
-                                </td>
-                                @else
-                                <td>
-                                    <span class="badge badge-danger">{{$kal->status_tes}}</span>
-                                </td>
-                                </tr>
                                 @endif
                                 @endforeach
                                 <td>{{$key+1}}</td>
