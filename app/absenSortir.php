@@ -13,6 +13,6 @@ class absenSortir extends Model
     ];
 
     public function Seleksi_r(){
-        return $this->belongsTo(\App\absenSortir::class,'id_peserta','id');
+        return $this->belongsTo(\App\Attendance::class,'id','id_peserta');
     }
 }
