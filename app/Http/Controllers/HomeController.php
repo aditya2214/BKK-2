@@ -80,6 +80,6 @@ class HomeController extends Controller
     }
 
     public function seleksi(Request $request){
-
+        return $request->all();
     }
 }
