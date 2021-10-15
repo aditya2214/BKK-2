@@ -66,7 +66,7 @@ li {
 <div class="main-container">
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="col-sm-12>
                 <div class="card mb-4">
                     <div class="card-header">
                         <form action="{{ url ('searching') }}" method="post">
