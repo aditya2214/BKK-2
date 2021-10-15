@@ -15,7 +15,7 @@
     <div class="col-md-12">
         <div class="card">
             <div class="card-body">
-                <form action="{{ url ('update_jobs/'.$update_vac->id ) }}" method="POST" >
+                <form action="{{ url ('update_vac/'.$update_vac->id ) }}" method="POST" >
                 @csrf
                     <div class="form-group">
                         <label for="">Job Code</label>
