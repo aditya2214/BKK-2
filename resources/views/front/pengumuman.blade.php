@@ -66,8 +66,8 @@ li {
 <div class="main-container">
     <div class="container">
         <div class="row">
-            <div class="col-sm-12>
-                <div class="card mb-4">
+            <div class="col-mb-8 ofsset-mb-2">
+                <div class="card">
                     <div class="card-header">
                         <form action="{{ url ('searching') }}" method="post">
                             @csrf
