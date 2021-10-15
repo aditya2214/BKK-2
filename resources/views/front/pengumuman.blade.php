@@ -90,7 +90,7 @@ li {
                     </div>
                     @endforeach
                     <div class="card-body ">
-                        <p class="mb-0 text-mute f-sm"><b>{{$get_attendance->id_vacancy}}</b></p>
+                        <p class="mb-0 text-mute f-sm"><b>{{$get_attendance->vacancy_r->title_vacancy}}</b></p>
                     </div>
                     <div class="card-footer">
                         <button class="btn btn-primary"> Footer Button</button>
