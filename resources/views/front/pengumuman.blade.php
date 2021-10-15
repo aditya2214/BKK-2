@@ -70,6 +70,7 @@ li {
                 <div class="card mb-4">
                     <div class="card-header">
                         <form action="{{ url ('searching') }}" method="post">
+                            @csrf
                             <label for="">Kode Unik</label><br>
                             <small><i>NIK,NO HP,EMAIL</i></small>
                             <input type="tel" name="search" class="form-control" id="">
