@@ -27,21 +27,21 @@
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">Place And Date</label>
-                        <textarea class="form-control" name="place_and_date" value="{{$update_vac->place_and_date}}" id="place_and_date" rows="3"></textarea>
+                        <textarea class="form-control" name="place_and_date" id="place_and_date" rows="3">{{$update_vac->place_and_date}}</textarea>
                         <script>
                             CKEDITOR.replace( 'place_and_date' );
                         </script>
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">Other Requirement</label>
-                        <textarea class="form-control"name="other_requirement"  value="{{$update_vac->recruitment}}" id="other_requirement" rows="3"></textarea>
+                        <textarea class="form-control"name="other_requirement"  id="other_requirement" rows="3">{{$update_vac->recruitment}}</textarea>
                         <script>
                             CKEDITOR.replace( 'other_requirement' );
                         </script>
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">Notes</label>
-                        <textarea class="form-control" name="notes"  value="{{$update_vac->notes}}" id="notes" rows="3"></textarea>
+                        <textarea class="form-control" name="notes" id="notes" rows="3">{{$update_vac->notes}}</textarea>
                         <script>
                             CKEDITOR.replace( 'notes' );
                         </script>
