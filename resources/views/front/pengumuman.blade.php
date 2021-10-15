@@ -90,7 +90,7 @@ li {
                         </ul>
                     </div>
                     <div class="card-body ">
-                        <p class="mb-0 text-mute f-sm"><b>{{$get_attendance->vacancy_r->title_vacancy}}&nbsp;{{$get_attendance->vacancy_r->kategori_tes}}</b></p>
+                        <p class="mb-0 text-mute f-sm"><b>{{$get_attendance->vacancy_r->title_vacancy}} :{{$get_attendance->vacancy_r->kategori_tes}}</b></p>
                     </div>
                     @endforeach
                     @endif
