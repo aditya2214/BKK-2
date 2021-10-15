@@ -25,7 +25,11 @@
                     </div>
                     <div class="col-auto">
                         <i class="fas fa-calendar fa-2x text-gray-300"></i><br>
-                        <span class="badge badge-success">{{$vac->switch}}</span>
+                        @if{$vac->switch == 1)
+                        <span class="badge badge-success">Published</span>
+                        @else
+                        <span class="badge badge-danger">Unpublished</span>
+                        @endif
                     </div>
                 </div>
                 <div class="btn-group">

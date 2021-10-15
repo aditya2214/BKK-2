@@ -47,6 +47,10 @@
                         </script>
                     </div>
                     <div class="form-group">
+                        <input type="radio" name="switch" value="1" id=""> Published
+                        <input type="radio" name="switch" value="0" id=""> Unpublished
+                    </div>
+                    <div class="form-group">
                         <button class="btn btn-success form-control">Update & Posting</button>
                     </div>
                 </form>
