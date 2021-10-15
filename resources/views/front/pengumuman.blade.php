@@ -66,7 +66,7 @@ li {
 <div class="main-container">
     <div class="container">
         <div class="row">
-            <div class="col-md-8 offset-md-4">
+            <div class="col-md-8 offset-md-2">
                 <div class="card">
                     <div class="card-header">
                         <form action="{{ url ('searching') }}" method="post">
