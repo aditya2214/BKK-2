@@ -22,9 +22,6 @@
                             {{$vac->title_vacancy}}</div>
                         <div class="h5 mb-0 font-weight-bold text-gray-800"></div>
                         <p><b>{{$vac->kode_vacancy}}</b></p>
-                        @foreach($vac->attendance_r as $col)
-                        <p><b>{{$col->count()}}</b></p>
-                        @endforeach
                     </div>
                     <div class="col-auto">
                         <i class="fas fa-calendar fa-2x text-gray-300"></i>
