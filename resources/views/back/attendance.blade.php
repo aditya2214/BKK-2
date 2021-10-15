@@ -24,7 +24,8 @@
                         <p><b>{{$vac->kode_vacancy}}</b></p>
                     </div>
                     <div class="col-auto">
-                        <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                        <i class="fas fa-calendar fa-2x text-gray-300"></i><br>
+                        <span class="badge badge-success">{{$vac->switch}}</span>
                     </div>
                 </div>
                 <div class="btn-group">
