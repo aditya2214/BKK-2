@@ -114,9 +114,10 @@ class HomeController extends Controller
     }
 
 
-    public function delete_vac($id){
-        Alert::error('Error', 'Fiktur Belum Tersedia!!!');
-        return redirect()->back();
+    public function update_vac($id){
+        $update_vac = \App\Vacancy::where('id',$id)->first();
+
+        return view('back.update_vac',compact('update_vac'));
     }
 
 
