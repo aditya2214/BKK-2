@@ -78,15 +78,15 @@
                                             @foreach($get_attendance->Seleksi_r as $kal)
                                                 @if($get_attendance->Seleksi_r == null)
                                                 <li>
-                                                    <button class="btn btn-danger btn-sm" style="border-radius:20px;">X</button> &nbsp; <span class="badge badge-secondary">Belum Di Sortir</span>
+                                                    <a href="{{ url ('delete_kategori_test/'.$kal->id) }}" class="btn btn-danger btn-sm" style="border-radius:15px;"><i class="far fa-times-circle"></i></a> &nbsp; <span class="badge badge-secondary">Belum Di Sortir</span>
                                                 </li>
                                                 @elseif($kal->status_tes == "lolos")
                                                 <li>
-                                                <button class="btn btn-danger btn-sm" style="border-radius:20px;">X</button> &nbsp; <span class="badge badge-success">{{$kal->status_tes}} {{$kal->kategori_tes}}</span>
+                                                <a href="{{ url ('delete_kategori_test/'.$kal->id) }}" class="btn btn-danger btn-sm" style="border-radius:15px;"><i class="far fa-times-circle"></i></a> &nbsp; <span class="badge badge-success">{{$kal->status_tes}} {{$kal->kategori_tes}}</span>
                                                 </li>
                                                 @else
                                                 <li>
-                                                <button class="btn btn-danger btn-sm" style="border-radius:20px;">X</button> &nbsp; <span class="badge badge-danger">{{$kal->status_tes}} {{$kal->kategori_tes}}</span>
+                                                <a href="{{ url ('delete_kategori_test/'.$kal->id) }}" class="btn btn-danger btn-sm" style="border-radius:15px;"><i class="far fa-times-circle"></i></a> &nbsp; <span class="badge badge-danger">{{$kal->status_tes}} {{$kal->kategori_tes}}</span>
                                                 </li>
                                                 @endif
                                             @endforeach
