@@ -97,6 +97,7 @@ li {
                     <div class="card-body ">
                         <p class="mb-0 text-mute f-sm"><b>{{$get_attendance->vacancy_r->title_vacancy}}</b></p>
                     </div>
+                    <hr>
                     @endforeach
                     @endif
                 </div>
