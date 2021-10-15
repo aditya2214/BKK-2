@@ -69,13 +69,23 @@ li {
             <div class="col-sm-12 col-md-6 col-lg-4">
                 <div class="card mb-4">
                     <div class="card-header">
-                        <div class="container">
-                            <ul class="progressbar">
-                                <li><a href="#" class="active" data-toggle="popover" data-placement="bottom" title="Popover Header" data-content="Some content inside the popover">Step 1</a></li>
-                                <li><a href="#" class="none-active" >Step 2</a></li>
-                                <li><a href="#">Step 3</a></li>
-                            </ul>
-                        </div>
+                        <form action="{{ url ('searching') }}" method="post">
+                            <label for="">Kode Unik</label><br>
+                            <small><i>NIK,NO HP,EMAIL</i></small>
+                            <input type="tel" name="search" class="form-control" id="">
+                            <br>
+                            <button class="btn btn-primary btn-sm">Searching</button>
+                        </form>
+                    </div>
+                    @if($search_cek == null)
+                        <p><i>Masukan Kode Unik</i></p>
+                    @else
+                    <div class="container">
+                        <ul class="progressbar">
+                            <li><a href="#" class="active" data-toggle="popover" data-placement="bottom" title="Popover Header" data-content="Some content inside the popover">Step 1</a></li>
+                            <li><a href="#" class="none-active" >Step 2</a></li>
+                            <li><a href="#">Step 3</a></li>
+                        </ul>
                     </div>
                     <div class="card-body ">
                         <p class="mb-0 text-mute f-sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
@@ -83,6 +93,7 @@ li {
                     <div class="card-footer">
                         <button class="btn btn-primary"> Footer Button</button>
                     </div>
+                    @endif
                 </div>
             </div>
         </div>

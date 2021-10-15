@@ -7,6 +7,8 @@ use Alert;
 
 class FrontendController extends Controller
 {
+    public $searching;
+
     public function index(){
         $vacancy = \App\Vacancy::all();
 
@@ -70,7 +72,18 @@ class FrontendController extends Controller
 
     public function pengumuman(){
 
-        return view('front.pengumuman');
+        $search_cek = $this->searching;
+
+        return view('front.pengumuman',compact('search_cek'));
+    }
+
+    public function searching(Request $request){
+        $this->searching = $request->searching;
+
+        $get_attendances = \App\Attendance::where('nik',$request->searching)->orWhere('active_email',$request->searching)->orWhere('no_handphone',$request->searching)->get();
+
+        return view('front.pengumuman',compact('get_attendances'));
+
     }
 
 

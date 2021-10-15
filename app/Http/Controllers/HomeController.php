@@ -98,23 +98,81 @@ class HomeController extends Controller
         return redirect('/seleksi_peserta');
     }
 
-    public function test(){
-        $app = DB::table('absen_sortirs')
-            ->join('attendances','absen_sortirs.id_peserta','attendances.id')
-            ->join('vacancies','attendances.id_vacancy','vacancies.id')
-            ->get();
-
-        return $app;
-    }
-
-    public function delete(){
-        $delete = \App\absenSortir::truncate();
-    }
-
+    
     public function delete_kategori_test($id){
         $delete_kategori_test = \App\absenSortir::where('id',$id)->delete();
 
         Alert::success('Berhasil', 'Sukses Hapus Tes!!!');
         return redirect('/seleksi_peserta');
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    public function test(){
+        $app = DB::table('absen_sortirs')
+            ->join('attendances','absen_sortirs.id_peserta','attendances.id')
+            ->join('vacancies','attendances.id_vacancy','vacancies.id')
+            ->get();
+    
+        return $app;
+    }
+    
+    public function delete(){
+        $delete = \App\absenSortir::truncate();
     }
 }

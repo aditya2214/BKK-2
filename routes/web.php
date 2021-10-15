@@ -20,6 +20,7 @@ Route::post('/absen/{id}', 'FrontendController@absen')->name('absen');
 Route::get('/masukan_kode/{id}', 'FrontendController@masukan_kode')->name('masukan_kode');
 Route::post('/storeAbsensi/{id}', 'FrontendController@storeAbsensi')->name('storeAbsensi');
 Route::get('/pengumuman', 'FrontendController@pengumuman')->name('pengumuman');
+Route::post('/searching', 'FrontendController@searching')->name('searching');
 
 
 Route::get('/logout', function () {
