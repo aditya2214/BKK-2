@@ -25,7 +25,7 @@
                     </div>
                     <div class="col-auto">
                         <i class="fas fa-calendar fa-2x text-gray-300"></i><br>
-                        @if{$vac->switch == 1)
+                        @if($vac->switch == 1)
                         <span class="badge badge-success">Published</span>
                         @else
                         <span class="badge badge-danger">Unpublished</span>
