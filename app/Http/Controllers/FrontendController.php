@@ -83,7 +83,7 @@ class FrontendController extends Controller
         // return $search_cek;
         $get_attendances = \App\Attendance::where('nik','like','%'.$request->search.'%')->orWhere('active_email','like','%'.$request->search.'%')->orWhere('no_handphone','like','%'.$request->search.'%')->get();
 
-        return $get_attendances;
+        // return $get_attendances;
 
         return view('front.pengumuman',compact('get_attendances','search_cek'));
 
