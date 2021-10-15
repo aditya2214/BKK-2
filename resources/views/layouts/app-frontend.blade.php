@@ -83,7 +83,7 @@
                     <p>Pengumuman</p>
                 </a>
             </div>
-            <div class="col-auto">
+            <!-- <div class="col-auto">
                 <a href="wallet.html" class="">
                     <i class="material-icons">account_balance_wallet</i>
                     <p>Wallet</p>
@@ -100,7 +100,7 @@
                     <i class="material-icons">account_circle</i>
                     <p>Profile</p>
                 </a>
-            </div>
+            </div> -->
         </div>
     </div>
 
