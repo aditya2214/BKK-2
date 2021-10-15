@@ -91,6 +91,9 @@
                                         @endforeach
                                     </ul>
                                 </td>
+                                <td>
+                                    <button class="btn btn-danger btn-sm" style="border-radius:20px;">X</button>
+                                </td>
                                 <td>{{$key+1}}</td>
                                 <td>{{$get_attendance->full_name}}</td>
                                 <td>{{$get_attendance->gender}}</td>
