@@ -85,7 +85,7 @@ li {
                     <div class="container">
                         <ul class="progressbar">
                             @foreach($get_attendance->Seleksi_r as $kal)
-                            @if($kal->status_test == "gagal")
+                            @if($kal->status_tes == "gagal")
                             <li><a href="#" class="text-danger" data-toggle="popover" data-placement="bottom" title="Popover Header" data-content="Some content inside the popover">{{$kal->status_tes}}: {{$kal->kategori_tes}}</a></li>
                             @else
                             <li><a href="#" class="active" data-toggle="popover" data-placement="bottom" title="Popover Header" data-content="Some content inside the popover">{{$kal->status_tes}}: {{$kal->kategori_tes}}</a></li>
