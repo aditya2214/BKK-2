@@ -78,7 +78,7 @@
                 </a>
             </div>
             <div class="col-auto">
-                <a href="analytics.html" class="">
+                <a href="{{ url ('Pengumuman') }}" class="">
                 <i class="fas fa-bullhorn"></i>
                     <p>Pengumuman</p>
                 </a>

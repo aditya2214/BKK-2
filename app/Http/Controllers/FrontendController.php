@@ -68,5 +68,10 @@ class FrontendController extends Controller
         return redirect('/');
     }
 
+    public function pengumuman(){
+
+        return view('front.pengumuman');
+    }
+
 
 }
