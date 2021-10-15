@@ -42,74 +42,76 @@
                 <p><b>Daftar Peserta</b></p>
                 <form action="{{url('seleksi')}}" method="POST">
                     @csrf
-                    <table class="table" id="dataTable">
-                        <thead>
-                            <tr>
-                                <th>
-                                    *
-                                </th>
-                                <td>Status</td>
-                                <th>No</th>
-                                <th>Nama_Lengkap</th>
-                                <th>Jenis_Kelamin</th>
-                                <th>Email</th>
-                                <th>NIK</th>
-                                <th>Kabupaten</th>
-                                <th>Alamat</th>
-                                <th>TTL</th>
-                                <th>Umur</th>
-                                <th>Tinggi_Badan</th>
-                                <th>Berat_Badan</th>
-                                <th>Asal_Sekolah</th>
-                                <th>Tahun_lulus</th>
-                                <th>Pengalaman</th>
-                                <th>No_Handphone</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach($get_attendances as $key=>$get_attendance)
-                            <tr>
-                                <td>
-                                    <input type="checkbox" name="id_peserta[]" value="{{$get_attendance->id}}" id="checked">
-                                </td>
-                                <td>
-                                    <ul>
-                                        @foreach($get_attendance->Seleksi_r as $kal)
-                                            @if($get_attendance->Seleksi_r == null)
-                                            <li>
-                                                 <button class="btn btn-danger btn-sm" style="border-radius:20px;">X</button> &nbsp; <span class="badge badge-secondary">Belum Di Sortir</span>
-                                            </li>
-                                            @elseif($kal->status_tes == "lolos")
-                                            <li>
-                                            <button class="btn btn-danger btn-sm" style="border-radius:20px;">X</button> &nbsp; <span class="badge badge-success">{{$kal->status_tes}} {{$kal->kategori_tes}}</span>
-                                            </li>
-                                            @else
-                                            <li>
-                                            <button class="btn btn-danger btn-sm" style="border-radius:20px;">X</button> &nbsp; <span class="badge badge-danger">{{$kal->status_tes}} {{$kal->kategori_tes}}</span>
-                                            </li>
-                                            @endif
-                                        @endforeach
-                                    </ul>
-                                </td>
-                                <td>{{$key+1}}</td>
-                                <td>{{$get_attendance->full_name}}</td>
-                                <td>{{$get_attendance->gender}}</td>
-                                <td>{{$get_attendance->active_email}}</td>
-                                <td>{{$get_attendance->nik}}</td>
-                                <td>{{$get_attendance->kabupaten}}</td>
-                                <td>{!!$get_attendance->address!!}</td>
-                                <td>{{$get_attendance->place}},{{$get_attendance->date_and_place}}</td>
-                                <td>{{$get_attendance->age}}</td>
-                                <td>{{$get_attendance->height}}</td>
-                                <td>{{$get_attendance->weight}}</td>
-                                <td>{{$get_attendance->school}}</td>
-                                <td>{{$get_attendance->graduation_year}}</td>
-                                <td>{!!$get_attendance->experience!!}</td>
-                                <td>{{$get_attendance->no_handphone}}</td>
-                            </tr>
-                            @endforeach
-                        </tbody>
-                    </table>
+                    <div style="overflow-x:auto;">
+                        <table class="table" id="dataTable">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        *
+                                    </th>
+                                    <td>Status</td>
+                                    <th>No</th>
+                                    <th>Nama_Lengkap</th>
+                                    <th>Jenis_Kelamin</th>
+                                    <th>Email</th>
+                                    <th>NIK</th>
+                                    <th>Kabupaten</th>
+                                    <th>Alamat</th>
+                                    <th>TTL</th>
+                                    <th>Umur</th>
+                                    <th>Tinggi_Badan</th>
+                                    <th>Berat_Badan</th>
+                                    <th>Asal_Sekolah</th>
+                                    <th>Tahun_lulus</th>
+                                    <th>Pengalaman</th>
+                                    <th>No_Handphone</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach($get_attendances as $key=>$get_attendance)
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="id_peserta[]" value="{{$get_attendance->id}}" id="checked">
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            @foreach($get_attendance->Seleksi_r as $kal)
+                                                @if($get_attendance->Seleksi_r == null)
+                                                <li>
+                                                    <button class="btn btn-danger btn-sm" style="border-radius:20px;">X</button> &nbsp; <span class="badge badge-secondary">Belum Di Sortir</span>
+                                                </li>
+                                                @elseif($kal->status_tes == "lolos")
+                                                <li>
+                                                <button class="btn btn-danger btn-sm" style="border-radius:20px;">X</button> &nbsp; <span class="badge badge-success">{{$kal->status_tes}} {{$kal->kategori_tes}}</span>
+                                                </li>
+                                                @else
+                                                <li>
+                                                <button class="btn btn-danger btn-sm" style="border-radius:20px;">X</button> &nbsp; <span class="badge badge-danger">{{$kal->status_tes}} {{$kal->kategori_tes}}</span>
+                                                </li>
+                                                @endif
+                                            @endforeach
+                                        </ul>
+                                    </td>
+                                    <td>{{$key+1}}</td>
+                                    <td>{{$get_attendance->full_name}}</td>
+                                    <td>{{$get_attendance->gender}}</td>
+                                    <td>{{$get_attendance->active_email}}</td>
+                                    <td>{{$get_attendance->nik}}</td>
+                                    <td>{{$get_attendance->kabupaten}}</td>
+                                    <td>{!!$get_attendance->address!!}</td>
+                                    <td>{{$get_attendance->place}},{{$get_attendance->date_and_place}}</td>
+                                    <td>{{$get_attendance->age}}</td>
+                                    <td>{{$get_attendance->height}}</td>
+                                    <td>{{$get_attendance->weight}}</td>
+                                    <td>{{$get_attendance->school}}</td>
+                                    <td>{{$get_attendance->graduation_year}}</td>
+                                    <td>{!!$get_attendance->experience!!}</td>
+                                    <td>{{$get_attendance->no_handphone}}</td>
+                                </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                    </div>
                     <hr>
                     <div class="form-group">
                         <label for="">Tes Apa?</label>
