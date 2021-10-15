@@ -48,7 +48,7 @@ class HomeController extends Controller
     }
 
     public function attendance(){
-        $vacancy = \App\Vacancy::with('attendance_r');
+        $vacancy = \App\Vacancy::with('attendance_r')->get();
 
         return $vacancy;
 
