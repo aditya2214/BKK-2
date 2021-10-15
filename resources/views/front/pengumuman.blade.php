@@ -82,13 +82,13 @@ li {
                         <p><i>Masukan Kode Unik</i></p>
                     @else
                     @foreach($get_attendances as $get_attendance)
-                   @foreach($get_attendance->Seleksi_r as $kal)
                     <div class="container">
                         <ul class="progressbar">
+                            @foreach($get_attendance->Seleksi_r as $kal)
                             <li><a href="#" class="active" data-toggle="popover" data-placement="bottom" title="Popover Header" data-content="Some content inside the popover">{{$kal->status_tes}}</a></li>
+                            @endforeach
                         </ul>
                     </div>
-                    @endforeach
                     <div class="card-body ">
                         <p class="mb-0 text-mute f-sm"><b>{{$get_attendance->vacancy_r->title_vacancy}}</b></p>
                     </div>
