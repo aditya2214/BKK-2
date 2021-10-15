@@ -110,7 +110,7 @@ class HomeController extends Controller
     public function delete_vac(){
         $delete_vac = DB::table('absen_sortirs')
         ->join('attendances','absen_sortirs.id_peserta','=','attendances.id')
-        ->join('vacancies','Attendance.id_vacancy','=','vacancies.id')
+        ->join('vacancies','attendances.id_vacancy','=','vacancies.id')
         ->get();
 
         return $delete_vac;
