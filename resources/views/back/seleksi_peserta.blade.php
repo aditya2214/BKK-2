@@ -46,8 +46,8 @@
                         <table class="table" id="dataTable">
                             <thead>
                                 <tr>
-                                    <th>
-                                        *
+                                    <th width="50px">
+                                        <input type="checkbox" id="master">
                                     </th>
                                     <td>Status</td>
                                     <th>No</th>
@@ -69,9 +69,9 @@
                             </thead>
                             <tbody>
                                 @foreach($get_attendances as $key=>$get_attendance)
-                                <tr>
+                                <tr id="tr_{{$product->id}}">
                                     <td>
-                                        <input type="checkbox" name="id_peserta[]" value="{{$get_attendance->id}}" id="checked">
+                                        <input type="checkbox" name="id_peserta[]" value="{{$get_attendance->id}}" iclass="sub_chk" data-id="{{$product->id}}">
                                     </td>
                                     <td>
                                         <ul>
@@ -149,5 +149,18 @@
         ]
     } );
 } );
+
+$(document).ready(function () {
+
+
+$('#master').on('click', function(e) {
+ if($(this).is(':checked',true))  
+ {
+    $(".sub_chk").prop('checked', true);  
+ } else {  
+    $(".sub_chk").prop('checked',false);  
+ }  
+});
+});
 </script>
 @endsection
