@@ -78,7 +78,7 @@
                 </a>
             </div>
             <div class="col-auto">
-                <a href="{{ url ('Pengumuman') }}" class="">
+                <a href="{{ url ('pengumuman') }}" class="">
                 <i class="fas fa-bullhorn"></i>
                     <p>Pengumuman</p>
                 </a>
