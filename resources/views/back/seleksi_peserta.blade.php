@@ -69,9 +69,9 @@
                             </thead>
                             <tbody>
                                 @foreach($get_attendances as $key=>$get_attendance)
-                                <tr id="tr_{{$product->id}}">
+                                <tr id="tr_{{$get_attendance->id}}">
                                     <td>
-                                        <input type="checkbox" name="id_peserta[]" value="{{$get_attendance->id}}" iclass="sub_chk" data-id="{{$product->id}}">
+                                        <input type="checkbox" name="id_peserta[]" value="{{$get_attendance->id}}" iclass="sub_chk" data-id="{{$get_attendance->id}}">
                                     </td>
                                     <td>
                                         <ul>
