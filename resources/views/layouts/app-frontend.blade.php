@@ -26,6 +26,7 @@
 
     <!-- swiper CSS -->
     <link href="frontend/vendor/swiper/css/swiper.min.css" rel="stylesheet">
+    <link href="/backend/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
     <!-- Custom styles for this template -->
     <link href="/frontend/css/style.css" rel="stylesheet" id="style">
@@ -72,14 +73,14 @@
         <div class="row no-gutters justify-content-center">
             <div class="col-auto">
                 <a href="{{ url ('/')}}" class="active">
-                    <i class="material-icons">home</i>
+                <i class="fas fa-home"></i>
                     <p>Home</p>
                 </a>
             </div>
             <div class="col-auto">
                 <a href="analytics.html" class="">
-                    <i class="material-icons">insert_chart_outline</i>
-                    <p>Analytics</p>
+                <i class="fas fa-bullhorn"></i>
+                    <p>Pengumuman</p>
                 </a>
             </div>
             <div class="col-auto">
