@@ -25,7 +25,7 @@ Route::get('/pengumuman', 'FrontendController@pengumuman')->name('pengumuman');
 Route::get('/logout', function () {
     Auth::logout();
     
-    return view('welcome');
+    return redirect('/');
 });
 
 Auth::routes();
