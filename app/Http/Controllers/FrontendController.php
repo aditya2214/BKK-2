@@ -80,8 +80,8 @@ class FrontendController extends Controller
     public function searching(Request $request){
         $this->searching = $request->search;
         $search_cek = $this->searching;
-        return $search_cek;
-        $get_attendances = \App\Attendance::where('nik',$request->searching)->orWhere('active_email',$request->searching)->orWhere('no_handphone',$request->searching)->get();
+        // return $search_cek;
+        $get_attendances = \App\Attendance::where('nik','like','%'.$request->searching.'%')->orWhere('active_email','like','%'.$request->searching.'%')->orWhere('no_handphone','like','%'.$request->searching.'%')->get();
 
         return view('front.pengumuman',compact('get_attendances','search_cek'));
 
