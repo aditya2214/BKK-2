@@ -115,7 +115,9 @@ class HomeController extends Controller
         ->where('vacancies.id',$id)
         ->get();
 
-        $delete_vac->delete();
+        foreach ($delete_vac as $key => $value) {
+            $value->delete();
+        }
 
         return redirect()->back();
 
