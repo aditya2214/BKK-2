@@ -95,7 +95,7 @@ class HomeController extends Controller
             ]);
         }
         Alert::success('Berhasil', 'Sukses Sortir Data!!!');
-        return redirect('/select_loker');
+        return redirect()->back();
     }
 
     
