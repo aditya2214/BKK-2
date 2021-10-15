@@ -48,5 +48,5 @@ Route::get('delete_vac', 'HomeController@delete_vac')->name('delete_vac');
 
 
 
-Route::get('test', 'HomeController@test')->name('test');
-Route::get('delete', 'HomeController@delete')->name('delete');
+// Route::get('test', 'HomeController@test')->name('test');
+// Route::get('delete', 'HomeController@delete')->name('delete');
