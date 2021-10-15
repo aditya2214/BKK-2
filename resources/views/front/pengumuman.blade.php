@@ -89,7 +89,7 @@ li {
     </div>
 </div>
 @endsection
-@section(scripts)
+@section('scripts')
 <script>
     $(document).ready(function(){
     $('[data-toggle="popover"]').popover();   
