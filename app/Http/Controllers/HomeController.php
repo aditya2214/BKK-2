@@ -49,8 +49,12 @@ class HomeController extends Controller
 
     public function attendance(){
         $vacancy = \App\Vacancy::with('attendance_r')->get();
+        foreach ($vacancy as $key => $value) {
+            $count = $value->attendance_r->count();
+        }
+        return $count;
 
-        return $vacancy;
+        
 
         return view('back.attendance',compact('vacancy'));
     }
