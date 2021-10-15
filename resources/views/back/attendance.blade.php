@@ -29,7 +29,7 @@
                 </div>
                 <div class="btn-group">
                     <a href="{{ url ('daftar_peserta/'.$vac->id) }}" class="btn btn-outline-primary btn-sm">Daftar Peserta</a>
-                    <a href="{{ url ('/delete_vac') }}" class="btn btn-outline-danger btn-sm">Hapus</a>
+                    <a href="{{ url ('delete_vac/'.$vac->id) }}" onclick="return confirm('Yakin Ambil Langkah Ini?')" class="btn btn-outline-danger btn-sm">Hapus</a>
                 </div>
             </div>
         </div>

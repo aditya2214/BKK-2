@@ -107,13 +107,24 @@ class HomeController extends Controller
     }
 
 
-    public function delete_vac(){
-        $delete_vac = DB::table('absen_sortirs')
-        ->join('attendances','absen_sortirs.id_peserta','=','attendances.id')
-        ->join('vacancies','attendances.id_vacancy','=','vacancies.id')
-        ->get();
+    public function delete_vac($id){
+        // $delete_vac = DB::table('absen_sortirs')
+        // ->join('attendances','absen_sortirs.id_peserta','=','attendances.id')
+        // ->join('vacancies','attendances.id_vacancy','=','vacancies.id')
+        // ->get();
 
-        return $delete_vac;
+        // return $delete_vac;
+
+        $vac = \App\Vacancy::where('id',$id)->first();
+        $atten = \App\Attendance::where('id_vacancy',$vac->id)->get();
+        $abs = \App\absenSortir::where('id_peserta',$atten->id)->get();
+
+        $abs->delete();
+        $atten->delete();
+        $vac->delete();
+        
+        return redirect()->back();
+
     }
 
 
