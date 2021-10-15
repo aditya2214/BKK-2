@@ -81,19 +81,21 @@ li {
                     @if($search_cek == null)
                         <p><i>Masukan Kode Unik</i></p>
                     @else
+                    @foreach($get_attendances as $get_attendance)
+                    $get_attendance->Seleksi_r as $kal
                     <div class="container">
                         <ul class="progressbar">
-                            <li><a href="#" class="active" data-toggle="popover" data-placement="bottom" title="Popover Header" data-content="Some content inside the popover">Step 1</a></li>
-                            <li><a href="#" class="none-active" >Step 2</a></li>
-                            <li><a href="#">Step 3</a></li>
+                            <li><a href="#" class="active" data-toggle="popover" data-placement="bottom" title="Popover Header" data-content="Some content inside the popover">{{$kal->status_tes}}</a></li>
                         </ul>
                     </div>
+                    @endforeach
                     <div class="card-body ">
-                        <p class="mb-0 text-mute f-sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+                        <p class="mb-0 text-mute f-sm"><b>{{$get_attendance->id_vacancy}}</b></p>
                     </div>
                     <div class="card-footer">
                         <button class="btn btn-primary"> Footer Button</button>
                     </div>
+                    @endforeach
                     @endif
                 </div>
             </div>
