@@ -77,22 +77,19 @@
                                         @foreach($get_attendance->Seleksi_r as $kal)
                                             @if($get_attendance->Seleksi_r == null)
                                             <li>
-                                                <span class="badge badge-secondary">Belum Di Sortir</span>
+                                                 <button class="btn btn-danger btn-sm" style="border-radius:20px;">X</button> &nbsp; <span class="badge badge-secondary">Belum Di Sortir</span>
                                             </li>
                                             @elseif($kal->status_tes == "lolos")
                                             <li>
-                                                <span class="badge badge-success">{{$kal->status_tes}} {{$kal->kategori_tes}}</span>
+                                            <button class="btn btn-danger btn-sm" style="border-radius:20px;">X</button> &nbsp; <span class="badge badge-success">{{$kal->status_tes}} {{$kal->kategori_tes}}</span>
                                             </li>
                                             @else
                                             <li>
-                                            <span class="badge badge-danger">{{$kal->status_tes}} {{$kal->kategori_tes}}</span>
+                                            <button class="btn btn-danger btn-sm" style="border-radius:20px;">X</button> &nbsp; <span class="badge badge-danger">{{$kal->status_tes}} {{$kal->kategori_tes}}</span>
                                             </li>
                                             @endif
                                         @endforeach
                                     </ul>
-                                </td>
-                                <td>
-                                    <button class="btn btn-danger btn-sm" style="border-radius:20px;">X</button>
                                 </td>
                                 <td>{{$key+1}}</td>
                                 <td>{{$get_attendance->full_name}}</td>
