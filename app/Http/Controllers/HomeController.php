@@ -108,19 +108,8 @@ class HomeController extends Controller
 
 
     public function delete_vac($id){
-        $delete_vac = DB::table('absen_sortirs')
-        ->join('attendances','absen_sortirs.id_peserta','=','attendances.id')
-        ->join('vacancies','attendances.id_vacancy','=','vacancies.id')
-        ->select('vacancies.id')
-        ->where('vacancies.id',$id)
-        ->get();
-
-        foreach ($delete_vac as $key => $value) {
-            $value->delete();
-        }
-
+        Alert::error('Error', 'Fiktur Belum Tersedia!!!');
         return redirect()->back();
-
     }
 
 
