@@ -42,7 +42,7 @@ Route::get('/seleksi_peserta', 'HomeController@seleksi_peserta')->name('seleksi_
 Route::get('/select_loker', 'HomeController@select_loker')->name('select_loker');
 Route::post('/seleksi', 'HomeController@seleksi')->name('seleksi');
 Route::get('/delete_kategori_test/{id}', 'HomeController@delete_kategori_test')->name('delete_kategori_test');
-Route::get('update_vac/{id}', 'HomeController@update_vac')->name('update_vac');
+Route::post('update_vac/{id}', 'HomeController@update_vac')->name('update_vac');
 
 
 
