@@ -103,7 +103,7 @@ class HomeController extends Controller
         $delete_kategori_test = \App\absenSortir::where('id',$id)->delete();
 
         Alert::success('Berhasil', 'Sukses Hapus Tes!!!');
-        return redirect('/seleksi_peserta');
+        return redirect()->back();
     }
 
 
