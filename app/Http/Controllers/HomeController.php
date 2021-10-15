@@ -74,14 +74,14 @@ class HomeController extends Controller
         $pilih_loker = $this->id_loker;
         $vacancy = \App\Vacancy::all();
         $get_attendances = \App\Attendance::where('id_vacancy',$this->id_loker)->get();
-        return view('back.seleksi_peserta',compact('vacancy','get_attendances','pilih_loker'));
+        return view('back.select_loker',compact('vacancy','get_attendances','pilih_loker'));
     }
 
     public function seleksi(Request $request){
         // return $request->all();
         if ($request->id_peserta == null) {
             Alert::error('Error', ' Halaman hanya 1 sesi <br> Harap Pilih Data Peserta!!!');
-            return redirect('/seleksi_peserta');
+            return redirect('/select_loker');
         }
         $id_peserta = $request->id_peserta;
 
@@ -95,7 +95,7 @@ class HomeController extends Controller
             ]);
         }
         Alert::success('Berhasil', 'Sukses Sortir Data!!!');
-        return redirect('/seleksi_peserta');
+        return redirect('/select_loker');
     }
 
     
