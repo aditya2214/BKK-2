@@ -212,7 +212,7 @@
                 <div class="col">
                     <h6 class="subtitle mb-3">Lowongan Tersedia </h6>
                 </div>
-                <div class="col-auto"><a href="" class="text-default">View all</a></div>
+                <!-- <div class="col-auto"><a href="" class="text-default">View all</a></div> -->
             </div>
             <div class="row">
                 @foreach($vacancy as $key=>$vac)
