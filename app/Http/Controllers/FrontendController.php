@@ -10,7 +10,7 @@ class FrontendController extends Controller
     public $searching;
 
     public function index(){
-        $vacancy = \App\Vacancy::all();
+        $vacancy = \App\Vacancy::where('switch',1)->get();
 
         return view('front.home',compact('vacancy'));
     }
