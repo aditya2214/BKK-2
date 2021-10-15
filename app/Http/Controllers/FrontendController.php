@@ -78,7 +78,7 @@ class FrontendController extends Controller
     }
 
     public function searching(Request $request){
-        $this->searching = $request->searching;
+        $this->searching = $request->search;
         $search_cek = $this->searching;
         return $search_cek;
         $get_attendances = \App\Attendance::where('nik',$request->searching)->orWhere('active_email',$request->searching)->orWhere('no_handphone',$request->searching)->get();
