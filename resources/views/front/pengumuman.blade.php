@@ -73,7 +73,7 @@ li {
                             @csrf
                             <label for="">Kode Unik</label><br>
                             <small><i>NIK,NO HP,EMAIL</i></small>
-                            <input type="tel" name="search" class="form-control" id="">
+                            <input type="text" name="search" class="form-control" id="">
                             <br>
                             <button class="btn btn-primary btn-sm">Searching</button>
                         </form>
