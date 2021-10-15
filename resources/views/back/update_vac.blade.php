@@ -15,7 +15,7 @@
     <div class="col-md-12">
         <div class="card">
             <div class="card-body">
-                <form action="{{ url ('store_jobs') }}" method="POST" >
+                <form action="{{ url ('update_jobs/'.$update_vac->id ) }}" method="POST" >
                 @csrf
                     <div class="form-group">
                         <label for="">Job Code</label>
@@ -47,7 +47,7 @@
                         </script>
                     </div>
                     <div class="form-group">
-                        <button class="btn btn-success form-control">Posting</button>
+                        <button class="btn btn-success form-control">Update & Posting</button>
                     </div>
                 </form>
             </div>

@@ -48,6 +48,20 @@ class HomeController extends Controller
         return redirect()->back();
     }
 
+    public function update_jobs(Request $request,$id){
+        $storeVacancy = \App\Vacancy::where('id',$id)->update([
+            'kode_vacancy'=>$request->job_kode,
+            'title_vacancy'=>$request->title_job,
+            'place_and_date'=>$request->place_and_date,
+            'recruitment'=>$request->other_requirement,
+            'notes'=>$request->notes,
+            'switch' => 1
+        ]);
+
+        Alert::success('Berhasil', 'Loker Telah Di Update!!!');
+        return redirect()->back();
+    }
+
     public function attendance(){
         $vacancy = \App\Vacancy::all();
         // foreach ($vacancy as $key => $value) {
