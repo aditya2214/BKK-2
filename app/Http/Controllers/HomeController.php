@@ -162,7 +162,7 @@ class HomeController extends Controller
 
 
 
-    
+
     public function test(){
         $app = DB::table('absen_sortirs')
             ->join('attendances','absen_sortirs.id_peserta','attendances.id')
@@ -174,5 +174,6 @@ class HomeController extends Controller
     
     public function delete(){
         $delete = \App\absenSortir::truncate();
+        $attendance =  \App\Attendance::truncate();
     }
 }
