@@ -71,15 +71,14 @@ li {
                     <div class="card-header">
                         <form action="{{ url ('searching') }}" method="post">
                             @csrf
-                            <label for="">Kode Unik</label><br>
-                            <small><i>NIK,NO HP,EMAIL</i></small>
+                            <label class="text-center" for=""><b>KODE UNIK</b></label><br>
                             <input type="text" name="search" class="form-control" id="">
                             <br>
-                            <button class="btn btn-primary btn-sm">Searching</button>
+                            <button class="btn btn-primary form-control btn-sm">Searching</button>
                         </form>
                     </div>
                     @if($search_cek == null)
-                        <p><i>Masukan Kode Unik</i></p>
+
                     @else
                     <hr>
                     @foreach($get_attendances as $get_attendance)
