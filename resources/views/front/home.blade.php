@@ -5,11 +5,11 @@
     <div class="main-container">
         <!-- page content start -->
 
-        <!-- <div class="container mb-4 text-center">
+        <div class="container mb-4 text-center">
             <div class="card bg-default-secondary shadow-default">
-                <div class="card-body"> -->
+                <div class="card-body">
                     <!-- Swiper -->
-                    <!-- <div class="swiper-container addsendcarousel text-center">
+                    <div class="swiper-container addsendcarousel text-center">
                         <div class="swiper-wrapper mb-4">
                             <a href="add_money.html" class="swiper-slide text-white">
                                 <div class="icon icon-50 rounded-circle mb-2 bg-white-light"><span class="material-icons">add</span></div>
@@ -35,15 +35,15 @@
                                 <div class="icon icon-50 rounded-circle mb-2 bg-white-light"><span class="material-icons">receipt</span></div>
                                 <p><small>Receipt</small></p>
                             </a>
-                        </div> -->
+                        </div>
                         <!-- Add Pagination -->
-                        <!-- <div class="swiper-pagination"></div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
         <!-- Swiper -->
-        <!-- <div class="container mb-4">
+        <div class="container mb-4">
             <div class="swiper-container swiper-users text-center ">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -158,9 +158,9 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
 
-        <!-- <div class="container mb-4">
+        <div class="container mb-4">
             <div class="card">
                 <div class="card-body text-center ">
                     <div class="row justify-content-equal no-gutters">
@@ -206,7 +206,7 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
         <div class="container mb-4">
             <div class="row">
                 <div class="col">
@@ -238,7 +238,7 @@
         </div>
 
         <!-- PWA add to home display -->
-        <!-- <div class="container mb-4">
+        <div class="container mb-4">
             <div class="card" id="addtodevice">
                 <div class="card-body text-center">
                     <div class="row mb-3">
@@ -250,10 +250,10 @@
                     <button class="btn btn-sm btn-default px-4 rounded" id="addtohome">Install</button>
                 </div>
             </div>
-        </div> -->
+        </div>
         <!-- PWA add to home display -->
 
-        <!-- <div class="container mb-4">
+        <div class="container mb-4">
             <div class="card border-0 mb-3">
                 <div class="card-body">
                     <div class="row align-items-center">
@@ -427,7 +427,7 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
     </div>
 
 @endsection
