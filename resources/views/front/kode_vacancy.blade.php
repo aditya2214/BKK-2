@@ -3,18 +3,20 @@
 @section('content')
 
     <div class="main-container">
-        <div class="container">
-            <form action="{{ url ('absen/'.$cek_kode_vacancy->id) }}" method="post">
-                @csrf
-                <div class="row">
-                    <div class="col pl-0 align-self-center"  style="text-align:center;" >
-                        <labelfor=""><b>Kode Loker</b></label>
-                        <input type="password" placeholder="Masukan Kode Loker" name="kode_loker" class="form-control">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="card">
+                    <div class="card-header">
+                        <form action="{{ url ('absen/'.$cek_kode_vacancy->id) }}" method="post">
+                            @csrf
+                            <label class="text-center" for=""><b>KODE LOWONGAN</b></label><br>
+                            <input type="text" name="search" class="form-control" id="">
+                            <br>
+                            <button class="btn btn-primary form-control btn-sm">Searching</button>
+                        </form>
                     </div>
                 </div>
-                <br>
-                <button class="btn btn btn-warning">Masuk</button>
-            </form>
+            </div>
         </div>
     </div>
 @endsection
