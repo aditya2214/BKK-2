@@ -10,7 +10,7 @@
                         <form action="{{ url ('absen/'.$cek_kode_vacancy->id) }}" method="post">
                             @csrf
                             <label class="text-center" for=""><b>KODE LOWONGAN</b></label><br>
-                            <input type="password" name="search" class="form-control" id="">
+                            <input type="password" name="kode_loker" class="form-control" id="">
                             <br>
                             <button class="btn btn-primary form-control btn-sm">Searching</button>
                         </form>
