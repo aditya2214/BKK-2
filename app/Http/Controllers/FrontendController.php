@@ -78,6 +78,7 @@ class FrontendController extends Controller
     }
 
     public function searching(Request $request){
+        Alert::success('Berhasil', 'Data Di Temukan');
         $this->searching = $request->search;
         $search_cek = $this->searching;
         // return $search_cek;
