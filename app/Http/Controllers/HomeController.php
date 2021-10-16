@@ -113,6 +113,7 @@ class HomeController extends Controller
                 'id_peserta' => $value,
                 'kategori_tes' => $request->tes_apa,
                 'status_tes' => $request->status_tes,
+                'notes' => $request->catatan
             ]);
         }
         Alert::success('Berhasil', 'Sukses Sortir Data!!!');
