@@ -47,7 +47,7 @@
                         </script>
                     </div>
                     <div class="form-group">
-                        <label for="">Switch</label>
+                        <label for="">Switch</label><br>
                         <input type="radio" name="switch" value="1" id=""> Published <br>
                         <input type="radio" name="switch" value="0" id=""> Unpublished
                     </div>
