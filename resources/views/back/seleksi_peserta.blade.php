@@ -78,15 +78,15 @@
                                             @foreach($get_attendance->Seleksi_r as $kal)
                                                 @if($get_attendance->Seleksi_r == null)
                                                 <li>
-                                                    <a href="{{ url ('delete_kategori_test/'.$kal->id) }}" class="btn btn-danger btn-sm" style="border-radius:15px;"><i class="far fa-times-circle"></i></a><small class="badge badge-secondary">Belum Di Sortir</small>
+                                                    <a href="{{ url ('delete_kategori_test/'.$kal->id) }}" style="border-radius:15px;"><i class="far fa-times-circle"></i></a><small class="badge badge-secondary">Belum Di Sortir</small>
                                                 </li>
                                                 @elseif($kal->status_tes == "lolos")
                                                 <li>
-                                                <a href="{{ url ('delete_kategori_test/'.$kal->id) }}" class="btn btn-danger btn-sm" style="border-radius:15px;"><i class="far fa-times-circle"></i></a><small class="badge badge-success">{{$kal->status_tes}} {{$kal->kategori_tes}}</small>
+                                                <a href="{{ url ('delete_kategori_test/'.$kal->id) }}" style="border-radius:15px;"><i class="far fa-times-circle"></i></a><small class="badge badge-success">{{$kal->status_tes}} {{$kal->kategori_tes}}</small>
                                                 </li>
                                                 @else
                                                 <li>
-                                                <a href="{{ url ('delete_kategori_test/'.$kal->id) }}" class="btn btn-danger btn-sm" style="border-radius:15px;"><i class="far fa-times-circle"></i></a><small class="badge badge-danger">{{$kal->status_tes}} {{$kal->kategori_tes}}</small>
+                                                <a href="{{ url ('delete_kategori_test/'.$kal->id) }}" style="border-radius:15px;"><i class="far fa-times-circle"></i></a><small class="badge badge-danger">{{$kal->status_tes}} {{$kal->kategori_tes}}</small>
                                                 </li>
                                                 @endif
                                             @endforeach
