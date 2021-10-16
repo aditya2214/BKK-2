@@ -62,7 +62,7 @@
         
         
         <div class="container mt-3 mb-4 text-center">
-            <a href="{{ url ('/') }}"><h2 class="text-white">BKK-Karawang</h2></a>
+            <a href="{{ url ('/') }}"><h2 class="text-white">BKK-CILAMAYA WETAN</h2></a>
         </div>
         @yield('content')
 
