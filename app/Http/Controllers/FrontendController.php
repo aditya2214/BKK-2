@@ -78,15 +78,23 @@ class FrontendController extends Controller
     }
 
     public function searching(Request $request){
-        Alert::success('Berhasil', 'Data Di Temukan');
+        
         $this->searching = $request->search;
         $search_cek = $this->searching;
         // return $search_cek;
         $get_attendances = \App\Attendance::where('nik','like','%'.$request->search.'%')->orWhere('active_email','like','%'.$request->search.'%')->orWhere('no_handphone','like','%'.$request->search.'%')->get();
 
         // return $get_attendances;
+        if ($get_attendances != null) {
+            Alert::success('Berhasil', 'Data Di Temukan');
+            # code...
+            return view('front.pengumuman',compact('get_attendances','search_cek'));
+        }else{
+            Alert::error('Gagal', 'Data Tidak Di temukan');
+            # code...
+            return view('front.pengumuman',compact('get_attendances','search_cek'));
+        }
 
-        return view('front.pengumuman',compact('get_attendances','search_cek'));
 
     }
 
