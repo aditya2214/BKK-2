@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Faker;
 
 class Attendances extends Seeder
 {
