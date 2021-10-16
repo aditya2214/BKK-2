@@ -96,6 +96,7 @@ li {
                           <td>{{$get_attendance->no_handphone}}</td>
                         </tr>
                     </table>
+                    <br><br>
                     <div class="container">
                         <ul class="progressbar">
                             @foreach($get_attendance->Seleksi_r as $kal)
