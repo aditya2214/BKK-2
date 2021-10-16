@@ -5,7 +5,7 @@
 use App\Attendance;
 use Faker\Generator as Faker;
 
-$factory->define(Attendance::class, function (Faker $faker) {
+$factory->define(\App\Attendance::class, function (Faker $faker) {
     return [
         'id_vacancy' => $i,
         'full_name'  => $faker->name,
