@@ -82,6 +82,20 @@ li {
                     @else
                     <hr>
                     @foreach($get_attendances as $get_attendance)
+                    <table>
+                        <tr>
+                          <td>Nama :</td>
+                          <td>{{$get_attendance->full_name}}</td>
+                        </tr>
+                        <tr>
+                          <td>TTL  :</td>
+                          <td>{{$get_attendance->place}},{{$get_attendance->date_and_place}}</td>
+                        </tr>
+                        <tr>
+                          <td>No HP :</td>
+                          <td>{{$get_attendance->no_handphone}}</td>
+                        </tr>
+                    </table>
                     <div class="container">
                         <ul class="progressbar">
                             @foreach($get_attendance->Seleksi_r as $kal)
