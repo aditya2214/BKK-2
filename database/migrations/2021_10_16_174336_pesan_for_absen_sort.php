@@ -15,7 +15,7 @@ class PesanForAbsenSort extends Migration
     {
         Schema::table('absen_sortirs', function (Blueprint $table) {
             //
-        $table->integer('notes')->nullable()->after('status_tes');
+        $table->text('notes')->nullable()->after('status_tes');
         });
     }
 

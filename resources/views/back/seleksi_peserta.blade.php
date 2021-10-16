@@ -124,6 +124,13 @@
                         </select>
                     </div>
                     <div class="form-group">
+                        <label for="">Catatan</label>
+                        <textarea class="form-control" name="catatan" id="catatan" rows="3"></textarea>
+                        <script>
+                            CKEDITOR.replace( 'catatan' );
+                        </script>
+                    </div>
+                    <div class="form-group">
                         <button class="btn btn btn-primary">Seleksi</button>
                     </div>
                 </form>
