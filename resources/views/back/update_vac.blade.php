@@ -48,8 +48,8 @@
                     </div>
                     <div class="form-group">
                         <label for="">Switch</label>
-                        <input type="radio" class="form-control" name="switch" value="1" id=""> Published
-                        <input type="radio" class="form-control" name="switch" value="0" id=""> Unpublished
+                        <input type="radio" name="switch" value="1" id=""> Published <br>
+                        <input type="radio" name="switch" value="0" id=""> Unpublished
                     </div>
                     <div class="form-group">
                         <button class="btn btn-success form-control">Update & Posting</button>
