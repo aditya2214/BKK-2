@@ -34,15 +34,15 @@
 </head>
 
 <body class="body-scroll d-flex flex-column h-100 menu-overlay" data-page="homepage">
+    @include('sweetalert::alert')
     <!-- screen loader -->
-    <div class="container-fluid h-100 loader-display">
+    <!-- <div class="container-fluid h-100 loader-display">
         <div class="row h-100">
             <div class="align-self-center col">
                 <div class="logo-loading">
                     <div class="icon icon-100 mb-4 rounded-circle">
                         <img src="/frontend/img/favicon144.png" alt="" class="w-100">
                     </div>
-                    @include('sweetalert::alert')
                     <h4 class="text-default">BKK-Karawang</h4>
                     <p class="text-secondary">Mobile BKK</p>
                     <div class="loader-ellipsis">
@@ -54,7 +54,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     
     
     <!-- Begin page content -->
