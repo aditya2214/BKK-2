@@ -30,7 +30,19 @@
         </button>
       </div>
       <div class="modal-body">
-        ...
+        <form action="{{ url ('store_mitra') }}" method="POST" enctype="multipart/form-data" >
+            <div class="form-group">
+                <label for="">Nama Perusahaan</label>
+                <input type="text" name="nama_perusahaan" id="nama_perusahaan">
+            </div>
+            <div class="form-group">
+                <label for="">Img</label>
+                <input type="File" name="images" id="images">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary">Post</button>
+            </div>
+        </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -41,7 +53,7 @@
 </div>
 <hr>
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-4">
         <div class="card">
             <div class="card-body">
                 <img src="" alt="">

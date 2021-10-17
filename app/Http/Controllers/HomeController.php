@@ -143,6 +143,15 @@ class HomeController extends Controller
         return view('back.mitra_bkk');
     }
 
+    public function store_mitra(Request $request){
+        $store_mitra = \App\MitraBkk::create([
+            'nama_perusahaan' => $request->nama_perusahaan,
+            'images' => $request->images->store('photos','public')
+        ]);
+
+        return redirect()->back();
+    }
+
 
 
 
