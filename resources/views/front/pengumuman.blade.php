@@ -54,7 +54,7 @@
 
 
                       .events span {
-                        padding: 0;
+                        padding: 0 1.5em 1.5em 1.5em;
                         position: relative;
                       }
 
