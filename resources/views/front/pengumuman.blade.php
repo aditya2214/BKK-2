@@ -83,11 +83,11 @@
                         @if($kal->status_tes == "gagal")
                         <li>
                           <p><b class="text-danger">{{$key+1}}</b></p> 
-                          <span><strong class="text-danger">{{$kal->status_tes}}: {{$kal->kategori_tes}}</strong>{{$kal->notes2}}</span></li>
+                          <span><strong class="text-danger">{{$kal->status_tes}}: {{$kal->kategori_tes}}</strong>{!!$kal->notes2!!}</span></li>
                         @else
                           <li>
                           <p><b class="text-success">{{$key+1}}</b></p> 
-                          <span><strong class="text-success">{{$kal->status_tes}}: {{$kal->kategori_tes}}</strong>{{$kal->notes2}}</span></li>
+                          <span><strong class="text-success">{{$kal->status_tes}}: {{$kal->kategori_tes}}</strong>{!!$kal->notes2!!}</span></li>
                         @endif
                       @endforeach
                     </ul>
