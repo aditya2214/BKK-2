@@ -13,10 +13,10 @@ class PesanForAbsenSort extends Migration
      */
     public function up()
     {
-        Schema::table('absen_sortirs', function (Blueprint $table) {
-            //
-        $table->integer('notes')->nullable()->after('status_tes');
-        });
+        // Schema::table('absen_sortirs', function (Blueprint $table) {
+        //     //
+        // $table->integer('notes')->nullable()->after('status_tes');
+        // });
     }
 
     /**

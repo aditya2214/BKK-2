@@ -13,9 +13,9 @@ class Change extends Migration
      */
     public function up()
     {
-        Schema::table('absen_sortirs', function ($table) {
-            $table->text('notes')->change();
-        });
+        // Schema::table('absen_sortirs', function ($table) {
+        //     $table->text('notes')->change();
+        // });
     }
 
     /**

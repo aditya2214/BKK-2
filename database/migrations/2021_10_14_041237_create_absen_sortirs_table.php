@@ -18,6 +18,7 @@ class CreateAbsenSortirsTable extends Migration
             $table->integer('id_peserta');
             $table->string('kategori_tes',100)->nullable();
             $table->string('status_tes',20);
+            $table->text('notes');
             $table->timestamps();
         });
     }

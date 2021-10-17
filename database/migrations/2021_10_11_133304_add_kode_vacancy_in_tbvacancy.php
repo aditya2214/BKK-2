@@ -13,10 +13,10 @@ class AddKodeVacancyInTbvacancy extends Migration
      */
     public function up()
     {
-        Schema::table('vacancies', function (Blueprint $table) {
-            //
-        $table->integer('code_vacancy')->nullable()->after('id');
-        });
+        // Schema::table('vacancies', function (Blueprint $table) {
+        //     //
+        // $table->integer('code_vacancy')->nullable()->after('id');
+        // });
     }
 
     /**

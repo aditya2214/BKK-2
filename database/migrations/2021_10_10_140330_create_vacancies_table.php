@@ -20,6 +20,7 @@ class CreateVacanciesTable extends Migration
             $table->text('place_and_date');
             $table->text('recruitment');
             $table->text('notes');
+            $table->integer('switch');
             $table->timestamps();
         });
     }
