@@ -41,7 +41,6 @@ class HomeController extends Controller
             'place_and_date'=>$request->place_and_date,
             'recruitment'=>$request->other_requirement,
             'notes'=>$request->notes,
-            'switch' => 1
         ]);
 
         Alert::success('Berhasil', 'Loker Telah Di Publish!!!');
