@@ -357,6 +357,17 @@
                                 <img src="/img/1.jpg" style="width:100px" alt="">
                             </div>
                             <h3 class="mt-3 mb-0 font-weight-normal">2015</h3>
+                            <p class="text-secondary small">PT EXEDY INDONESIA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card border-0 mb-4">
+                        <div class="card-body">
+                            <div class="avatar avatar-60 bg-default-light rounded-circle text-default">
+                                <img src="/img/2.jpg" style="width:100px" alt="">
+                            </div>
+                            <h3 class="mt-3 mb-0 font-weight-normal">2015</h3>
                             <p class="text-secondary small">PT Yamaha Motor Manufacturing West Java</p>
                         </div>
                     </div>
@@ -365,18 +376,7 @@
                     <div class="card border-0 mb-4">
                         <div class="card-body">
                             <div class="avatar avatar-60 bg-default-light rounded-circle text-default">
-                            <img src="/img/2.jpg" style="width:100px" alt="">
-                            </div>
-                            <h3 class="mt-3 mb-0 font-weight-normal">2015</h3>
-                            <p class="text-secondary small">PT JVC ELECTRONIK INDONESIA</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="card border-0 mb-4">
-                        <div class="card-body">
-                            <div class="avatar avatar-60 bg-default-light rounded-circle text-default">
-                            <img src="/img/3.jpg" style="width:100px" alt="">
+                                <img src="/img/3.jpg" style="width:100px" alt="">
                             </div>
                             <h3 class="mt-3 mb-0 font-weight-normal">2015</h3>
                             <p class="text-secondary small">PT MUSASHI AUTO PART INDONESIA</p>
@@ -387,10 +387,10 @@
                     <div class="card border-0 mb-4">
                         <div class="card-body">
                             <div class="avatar avatar-60 bg-default-light rounded-circle text-default">
-                            <img src="/img/4.jpg" style="width:100px" alt="">
+                                <img src="/img/4.jpg" style="width:100px" alt="">
                             </div>
-                            <h3 class="mt-3 mb-0 font-weight-normal">2021A</p>
-                            <p class="text-secondary small">PT EXEDY INDONESIA</p>
+                            <h3 class="mt-3 mb-0 font-weight-normal">2021</h3>
+                            <p class="text-secondary small">PT JVC ELECTRONIK INDONESIA</p>
 
                         </div>
                     </div>
