@@ -82,11 +82,9 @@
                       @foreach($get_attendance->Seleksi_r as $key=>$kal)
                         @if($kal->status_tes == "gagal")
                         <li>
-                          <p><b class="text-danger">{{$key+1}}</b></p> 
                           <span><strong class="text-danger">{{$kal->status_tes}}: {{$kal->kategori_tes}}</strong> On time</span></li>
                         @else
                           <li>
-                          <p><b class="text-success">{{$key+1}}</b></p> 
                           <span><strong class="text-success">{{$kal->status_tes}}: {{$kal->kategori_tes}}</strong> On time</span></li>
                         @endif
                       @endforeach
