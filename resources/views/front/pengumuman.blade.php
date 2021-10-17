@@ -166,44 +166,19 @@ li {
                       }
                     </style>
                     <div class="stepper-wrapper">
-                      <div class="stepper-item completed">
-                        <div class="step-counter">1</div>
-                        <div class="step-name">First</div>
-                      </div>
-                      <div class="stepper-item completed">
-                        <div class="step-counter">2</div>
-                        <div class="step-name">Second</div>
-                      </div>
-                      <div class="stepper-item active">
-                        <div class="step-counter">3</div>
-                        <div class="step-name">Third</div>
-                      </div>
+                      @foreach($get_attendance->Seleksi_r as $key=>$kal)
+                      @if($kal->status_tes == "gagal")
                       <div class="stepper-item">
-                        <div class="step-counter">4</div>
-                        <div class="step-name">Forth</div>
+                        <div class="step-counter">{{$key+1}}</div>
+                        <div class="step-name">{{$kal->status_tes}}: {{$kal->kategori_tes}}</div>
                       </div>
-                    </div>
-                    <div class="container">
-                        <ul class="progressbar">
-                            @foreach($get_attendance->Seleksi_r as $kal)
-                            @if($kal->status_tes == "gagal")
-                            <li><a href="#" class="text-danger" data-toggle="popover" data-placement="bottom" title="Popover Header" data-content="Some content inside the popover">{{$kal->status_tes}}: {{$kal->kategori_tes}}</a></li>
-                            @else
-                            <div class="card">
-                              <div class="card-header">
-                                  <li><a href="#" class="active" data-toggle="popover" data-placement="bottom" title="Popover Header" data-content="Some content inside the popover">{{$kal->status_tes}}: {{$kal->kategori_tes}}</a></li>
-                              </div>
-                              <div class="card-body">
-                                  <p><b>{!!$kal->notes2!!}</b></p>
-                              </div>
-                            </div>
-                            <br>
-                            @endif
-                            @endforeach
-                        </ul>
-                    </div>
-                    <div class="card-body ">
-                        <p class="mb-0 text-mute f-sm"><b>{{$get_attendance->vacancy_r->title_vacancy}}</b></p>
+                      @else
+                      <div class="stepper-item complited">
+                        <div class="step-counter">{{$key+1}}</div>
+                        <div class="step-name">{{$kal->status_tes}}: {{$kal->kategori_tes}}</div>
+                      </div>
+                      @endif
+                      @endforeach
                     </div>
                     <hr>
                     @endforeach
