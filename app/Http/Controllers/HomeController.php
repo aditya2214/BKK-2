@@ -138,6 +138,11 @@ class HomeController extends Controller
         return view('back.update_vac',compact('update_vac'));
     }
 
+    public function mitra_bkk(){
+
+        return view('back.mitra_bkk');
+    }
+
 
 
 

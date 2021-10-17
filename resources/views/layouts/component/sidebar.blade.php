@@ -112,9 +112,9 @@
 </li>
 
 <li class="nav-item">
-    <a class="nav-link" href="{{ url ('pengumuman') }}">
+    <a class="nav-link" href="{{ url ('mitra_bkk') }}">
         <i class="fas fa-fw fa-table"></i>
-        <span>Pengumuman</span></a>
+        <span>Mitra BKK</span></a>
 </li>
 
 <!-- Divider -->
