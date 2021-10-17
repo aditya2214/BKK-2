@@ -24,9 +24,9 @@
                     <ul>
                       <li class="badge badge-primary" >{{$get_attendance->full_name}}</li><br>
                       <li class="badge badge-primary" >{{$get_attendance->place}} , {{$get_attendance->date_and_place}}</li><br>
-                      <li class="badge badge-primary" >{{$get_attendance->no_handphone}}</li>
+                      <li class="badge badge-primary" >{{$get_attendance->no_handphone}}</li><br>
+                      <li><p><b>{{$get_attendance->vacancy_r->title_vacancy}}</b></p></li>
                     </ul>
-                    <p><b>$get_attendance->vacancy_r->title_vacancy}}</b></p>
                     <br><br>
                     <style>
                       .events li { 
@@ -48,8 +48,8 @@
                         border-radius: 50%;
                         background: #fff;
                         border: 1px #ccc solid;
-                        width: .8em;
-                        height: .8em;
+                        width: .18em;
+                        height: .18em;
                       }
 
 
