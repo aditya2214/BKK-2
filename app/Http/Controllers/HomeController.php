@@ -194,6 +194,8 @@ class HomeController extends Controller
 
     public function test(){
         $app = DB::table('absen_sortirs')
+            ->join('attendances','absen_sortirs.id_peserta','attendances.id')
+            ->join('vacancies','attendances.id_vacancy','vacancies.id')
             ->get();
     
         return $app;
