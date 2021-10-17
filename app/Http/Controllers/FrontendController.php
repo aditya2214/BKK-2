@@ -61,7 +61,7 @@ class FrontendController extends Controller
             'height' => $request->height,
             'weight' => $request->weight,
             'school' => $request->school,
-            'graduation_year' => $request->graduation_year,
+            'graduation_year' => $request->graduation_year.'-'.date('d'),
             'experience' => $request->experience,
             'no_handphone' => $request->no_handphone
         ]);
