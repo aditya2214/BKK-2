@@ -57,7 +57,7 @@
                 <p><b>{{$mitra->nama_perusahaan}}</b></p>
             </div>
             <div class="card-body">
-                <img src="/storage/.{{$mitra->images}}" alt="">
+                <img src="/storage/{{$mitra->images}}" alt="">
             </div>
         </div>
     </div>
