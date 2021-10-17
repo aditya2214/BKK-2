@@ -173,7 +173,7 @@ li {
                         <div class="step-name">{{$kal->status_tes}}: {{$kal->kategori_tes}}</div>
                       </div>
                       @else
-                      <div class="stepper-item complited">
+                      <div class="stepper-item active">
                         <div class="step-counter">{{$key+1}}</div>
                         <div class="step-name">{{$kal->status_tes}}: {{$kal->kategori_tes}}</div>
                       </div>
