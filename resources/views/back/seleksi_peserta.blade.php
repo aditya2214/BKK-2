@@ -70,15 +70,9 @@
                             <tbody>
                                 @foreach($get_attendances as $key=>$get_attendance)
                                 <tr>
-                                    @foreach($get_attendance->Seleksi_r as $kal)
-                                    @if($kal->status_tes == "gagal")
-
-                                    @else
                                     <td>
                                         <input type="checkbox" name="id_peserta[]" value="{{$get_attendance->id}}" id="checked">
                                     </td>
-                                    @endif
-                                    @endforeach
                                     <td>
                                         <ul>
                                             @foreach($get_attendance->Seleksi_r as $kal)
