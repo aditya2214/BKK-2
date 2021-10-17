@@ -142,7 +142,7 @@ li {
 
                       .stepper-item.active {
                         font-weight: bold;
-                        color:"green";
+                        color:green;
                       }
 
                       .stepper-item.completed .step-counter {
