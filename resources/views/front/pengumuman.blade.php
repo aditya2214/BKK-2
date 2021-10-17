@@ -77,55 +77,16 @@ li {
                             <button class="btn btn-primary form-control btn-sm">Searching</button>
                         </form>
                     </div>
-
-                    <div class="card-body px-0">
-                        <div class="list-group list-group-flush">
-                            <a class="list-group-item bg-default-light" href="notification_details.html">
-                                <div class="row">
-                                    <div class="col-auto align-self-center">
-                                        <i class="material-icons text-default">local_mall</i>
-                                    </div>
-                                    <div class="col pl-0">
-                                        <div class="row mb-1">
-                                            <div class="col">
-                                                <p class="mb-0">New Order received</p>
-                                            </div>
-                                            <div class="col-auto pl-0">
-                                                <p class="small text-secondary">2/12/2020</p>
-                                            </div>
-                                        </div>
-                                        <p class="small text-secondary">Order from Anand Mhatva recieved for Electronics with 6 quanity.</p>
-                                    </div>
-
-                                </div>
-                            </a>
-                          </div>
-                      </div>
                     @if($search_cek == null)
 
                     @else
                     <hr>
                     @foreach($get_attendances as $get_attendance)
-                    <table>
-                        <tr>
-                          <td>*</td>
-                          <td>Nama</td>
-                          <td>:</td>
-                          <td>{{$get_attendance->full_name}}</td>
-                        </tr>
-                        <tr>
-                         <td>*</td>
-                          <td>TTL </td>
-                          <td>:</td>
-                          <td>{{$get_attendance->place}},{{$get_attendance->date_and_place}}</td>
-                        </tr>
-                        <tr>
-                         <td>*</td>
-                          <td>No HP</td>
-                          <td>:</td>
-                          <td>{{$get_attendance->no_handphone}}</td>
-                        </tr>
-                    </table>
+                    <ul>
+                      <li class="badge badge-primary" >{{$get_attendance->full_name}}</li>
+                      <li class="badge badge-primary" >{{$get_attendance->place}} , {{$get_attendance->date_and_place}}</li>
+                      <li class="badge badge-primary" >{{$get_attendance->no_handphone}}</li>
+                    </ul>
                     <br><br>
                     <div class="container">
                         <ul class="progressbar">
