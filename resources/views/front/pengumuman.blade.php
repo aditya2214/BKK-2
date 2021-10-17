@@ -109,9 +109,15 @@ li {
                             @if($kal->status_tes == "gagal")
                             <li><a href="#" class="text-danger" data-toggle="popover" data-placement="bottom" title="Popover Header" data-content="Some content inside the popover">{{$kal->status_tes}}: {{$kal->kategori_tes}}</a></li>
                             @else
-                            <li><a href="#" class="active" data-toggle="popover" data-placement="bottom" title="Popover Header" data-content="Some content inside the popover">{{$kal->status_tes}}: {{$kal->kategori_tes}}</a></li>
+                            <div class="card">
+                              <div class="card-header">
+                                  <li><a href="#" class="active" data-toggle="popover" data-placement="bottom" title="Popover Header" data-content="Some content inside the popover">{{$kal->status_tes}}: {{$kal->kategori_tes}}</a></li>
+                              </div>
+                              <div class="card-body">
+                                  <p><b>{!!$kal->notes2!!}</b></p>
+                              </div>
+                            </div>
                             <br>
-                            <p><b>{!!$kal->notes2!!}</b></p>
                             @endif
                             @endforeach
                         </ul>
