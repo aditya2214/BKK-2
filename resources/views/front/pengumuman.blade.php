@@ -34,11 +34,11 @@
                         color: #999;
                       }
 
-                      .events time { 
+                      .events p { 
                         position: relative;
                         padding: 0;  }
 
-                      .events time::after { 
+                      .events p::after { 
                         content: "";
                         position: absolute;
                         z-index: 2;
@@ -48,8 +48,8 @@
                         border-radius: 50%;
                         background: #fff;
                         border: 1px #ccc solid;
-                        width: .18em;
-                        height: .18em;
+                        width: .8em;
+                        height: .8em;
                       }
 
 
@@ -82,11 +82,11 @@
                       @foreach($get_attendance->Seleksi_r as $key=>$kal)
                         @if($kal->status_tes == "gagal")
                         <li>
-                          <time datetime="10:03">Tes Ke {{$key+1}}</time> 
+                          <p><b class="text-danger">{{$key+1}}</b></p> 
                           <span><strong class="text-danger">{{$kal->status_tes}}: {{$kal->kategori_tes}}</strong> On time</span></li>
                         @else
                           <li>
-                          <time datetime="10:03">Tes Ke {{$key+1}}</time> 
+                          <p><b class="text-success">{{$key+1}}</b></p> 
                           <span><strong class="text-success">{{$kal->status_tes}}: {{$kal->kategori_tes}}</strong> On time</span></li>
                         @endif
                       @endforeach
