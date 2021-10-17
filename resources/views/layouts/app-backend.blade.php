@@ -12,15 +12,15 @@
     <title>SB Admin 2 - Dashboard</title>
 
     <!-- Custom fonts for this template-->
-    <link href="https://bkk-pgri-2-karawang.herokuapp.com/backend/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://bkk-pgri-2-karawang.herokuapp.com/backend/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="/backend/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="/backend/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
         <script src="/ckeditor/ckeditor.js"></script>
     <!-- Custom styles for this template-->
-    <link href="https://bkk-pgri-2-karawang.herokuapp.com/backend/css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="/backend/css/sb-admin-2.min.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -87,25 +87,25 @@
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="https://bkk-pgri-2-karawang.herokuapp.com/backend/vendor/jquery/jquery.min.js"></script>
-    <script src="https://bkk-pgri-2-karawang.herokuapp.com/backend/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/backend/vendor/jquery/jquery.min.js"></script>
+    <script src="/backend/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="https://bkk-pgri-2-karawang.herokuapp.com/backend/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="/backend/vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="https://bkk-pgri-2-karawang.herokuapp.com/backend/js/sb-admin-2.min.js"></script>
+    <script src="/backend/js/sb-admin-2.min.js"></script>
 
     <!-- Page level plugins -->
-    <script src="https://bkk-pgri-2-karawang.herokuapp.com/backend/vendor/chart.js/Chart.min.js"></script>
+    <script src="/backend/vendor/chart.js/Chart.min.js"></script>
 
     <!-- Page level custom scripts -->
-    <script src="https://bkk-pgri-2-karawang.herokuapp.com/backend/js/demo/chart-area-demo.js"></script>
-    <script src="https://bkk-pgri-2-karawang.herokuapp.com/backend/js/demo/chart-pie-demo.js"></script>
+    <script src="/backend/js/demo/chart-area-demo.js"></script>
+    <script src="/backend/js/demo/chart-pie-demo.js"></script>
 
     
-    <script src="https://bkk-pgri-2-karawang.herokuapp.com/backend/vendor/datatables/jquery.dataTables.min.js"></script>
-    <script src="https://bkk-pgri-2-karawang.herokuapp.com/backend/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+    <script src="/backend/vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="/backend/vendor/datatables/dataTables.bootstrap4.min.js"></script>
     <script src="https://cdn.datatables.net/buttons/2.0.1/js/dataTables.buttons.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
