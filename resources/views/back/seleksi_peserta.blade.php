@@ -71,7 +71,7 @@
                                 @foreach($get_attendances as $key=>$get_attendance)
                                 <tr>
                                     @foreach($get_attendance->Seleksi_r as $kal)
-                                    @if($kal->status_tes->first() == "gagal")
+                                    @if($kal->status_tes == "gagal")
 
                                     @else
                                     <td>
