@@ -49,7 +49,7 @@
                         <td>{{$get_attendance->height}}</td>
                         <td>{{$get_attendance->weight}}</td>
                         <td>{{$get_attendance->school}}</td>
-                        <td>{{date('Y m',strtotime($kal->graduation_year))}}</td>
+                        <td>{{date('Y m',strtotime($get_attendance->graduation_year))}}</td>
                         <td>{!!$get_attendance->experience!!}</td>
                         <td>{{$get_attendance->no_handphone}}</td>
                     </tr>
