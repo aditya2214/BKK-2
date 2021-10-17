@@ -13,10 +13,10 @@ class SwitchVacancy extends Migration
      */
     public function up()
     {
-        Schema::table('vacancies', function (Blueprint $table) {
-            //
-        $table->integer('switch')->nullable()->after('notes');
-        });
+        // Schema::table('vacancies', function (Blueprint $table) {
+        //     //
+        // $table->integer('switch')->nullable()->after('notes');
+        // });
     }
 
     /**
