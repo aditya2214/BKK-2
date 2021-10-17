@@ -99,8 +99,8 @@ class HomeController extends Controller
     }
 
     public function seleksi(Request $request){
-        return $request->all();
-        
+        // return $request->all();
+
         // return $request->all();
         if ($request->id_peserta == null) {
             Alert::error('Error', ' Halaman hanya 1 sesi : Harap Pilih Data Peserta!!!');
@@ -115,7 +115,7 @@ class HomeController extends Controller
                 'id_peserta' => $value,
                 'kategori_tes' => $request->tes_apa,
                 'status_tes' => $request->status_tes,
-                'notes' => $request->catatan
+                'notes' => 1
             ]);
         }
         Alert::success('Berhasil', 'Sukses Sortir Data!!!');
