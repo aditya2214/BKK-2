@@ -98,7 +98,7 @@ class HomeController extends Controller
 
         foreach ($get_attendances as $key => $value) {
             # code...
-            $cek_abs = $value->status_tes->first();
+            $cek_abs = $value->status_tes->get();
     
             return $cek_abs;
         }
