@@ -22,9 +22,9 @@
                     <hr>
                     @foreach($get_attendances as $get_attendance)
                     <ul>
-                      <li class="badge badge-primary" >{{$get_attendance->full_name}}</li><br>
-                      <li class="badge badge-primary" >{{$get_attendance->place}} , {{$get_attendance->date_and_place}}</li><br>
-                      <li class="badge badge-primary" >{{$get_attendance->no_handphone}}</li><br>
+                      <li>{{$get_attendance->full_name}}</li>
+                      <li>{{$get_attendance->place}} , {{$get_attendance->date_and_place}}</li>
+                      <li>{{$get_attendance->no_handphone}}</li>
                       <li><p><b>{{$get_attendance->vacancy_r->title_vacancy}}</b></p></li>
                     </ul>
                     <br><br>
@@ -82,10 +82,10 @@
                       @foreach($get_attendance->Seleksi_r as $key=>$kal)
                         @if($kal->status_tes == "gagal")
                         <li>
-                          <span><strong class="text-danger">{{$kal->status_tes}}: {{$kal->kategori_tes}}</strong> On time</span></li>
+                          <span><strong class="text-danger">{{$kal->status_tes}}: {{$kal->kategori_tes}}</strong> {{$kal_notes2}}</span></li>
                         @else
                           <li>
-                          <span><strong class="text-success">{{$kal->status_tes}}: {{$kal->kategori_tes}}</strong> On time</span></li>
+                          <span><strong class="text-success">{{$kal->status_tes}}: {{$kal->kategori_tes}}</strong> {{$kal_notes2}}</span></li>
                         @endif
                       @endforeach
                     </ul>
