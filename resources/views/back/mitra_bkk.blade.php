@@ -50,15 +50,18 @@
 </div>
 <hr>
 <div class="row">
+    @foreach($mitra_bkk as $key=>$mitra)
     <div class="col-md-4">
         <div class="card">
+            <div class="card-header">
+                <p><b>{{$mitra->nama_perusahaan}}</b></p>
+            </div>
             <div class="card-body">
-                <img src="" alt="">
-                <br>
-                <p><b>Nama PT</b></p>
+
             </div>
         </div>
     </div>
+    @endfore
 </div>
 
 <!-- Content Row -->

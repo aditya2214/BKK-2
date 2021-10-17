@@ -140,7 +140,9 @@ class HomeController extends Controller
 
     public function mitra_bkk(){
 
-        return view('back.mitra_bkk');
+        $mitra_bkk = \App\MitraBkk::all();
+
+        return view('back.mitra_bkk',compact('mitra_bkk'));
     }
 
     public function store_mitra(Request $request){
