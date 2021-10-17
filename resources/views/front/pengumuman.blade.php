@@ -81,11 +81,11 @@
                       @foreach($get_attendance->Seleksi_r as $key=>$kal)
                         @if($kal->status_tes == "gagal")
                         <li>
-                          <time datetime="10:03">{{$kal->createrd_at}} | {{$key+1}}</time> 
+                          <time datetime="10:03">Tes Ke {{$key+1}}</time> 
                           <span><strong class="text-danger">{{$kal->status_tes}}: {{$kal->kategori_tes}}</strong> On time</span></li>
                         @else
                           <li>
-                          <time datetime="10:03">{{$key+1}}</time> 
+                          <time datetime="10:03">Tes Ke {{$key+1}}</time> 
                           <span><strong class="text-success">{{$kal->status_tes}}: {{$kal->kategori_tes}}</strong> On time</span></li>
                         @endif
                       @endforeach
