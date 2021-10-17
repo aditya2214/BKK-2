@@ -22,10 +22,11 @@
                     <hr>
                     @foreach($get_attendances as $get_attendance)
                     <ul>
-                      <li class="badge badge-primary" >{{$get_attendance->full_name}}</li>
-                      <li class="badge badge-primary" >{{$get_attendance->place}} , {{$get_attendance->date_and_place}}</li>
+                      <li class="badge badge-primary" >{{$get_attendance->full_name}}</li><br>
+                      <li class="badge badge-primary" >{{$get_attendance->place}} , {{$get_attendance->date_and_place}}</li><br>
                       <li class="badge badge-primary" >{{$get_attendance->no_handphone}}</li>
                     </ul>
+                    <p><b>$get_attendance->vacancy_r->title_vacancy}}</b></p>
                     <br><br>
                     <style>
                       .events li { 
@@ -35,7 +36,7 @@
 
                       .events time { 
                         position: relative;
-                        padding: 0 1.5em;  }
+                        padding: 0;  }
 
                       .events time::after { 
                         content: "";
