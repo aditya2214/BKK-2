@@ -10,6 +10,7 @@ class absenSortir extends Model
         'id_peserta',
         'kategori_tes',
         'status_tes',
+        'notes2'
     ];
 
     public function Seleksi_r(){
