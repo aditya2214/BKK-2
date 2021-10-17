@@ -355,7 +355,7 @@
                     <div class="card border-0 mb-4">
                         <div class="card-body">
                             <div class="avatar avatar-60 bg-default-light rounded-circle text-default">
-                                <img src="/img/1.jpeg" alt="">
+                                <img src="/img/1.jpg" alt="">
                             </div>
                             <h3 class="mt-3 mb-0 font-weight-normal">2546</h3>
                             <p class="text-secondary small">Gift it out</p>
@@ -366,7 +366,7 @@
                     <div class="card border-0 mb-4">
                         <div class="card-body">
                             <div class="avatar avatar-60 bg-default-light rounded-circle text-default">
-                            <img src="/img/2.jpeg" alt="">
+                            <img src="/img/2.jpg" alt="">
                             </div>
                             <h3 class="mt-3 mb-0 font-weight-normal">635</h3>
                             <p class="text-secondary small">Monthly Billed</p>
@@ -377,7 +377,7 @@
                     <div class="card border-0 mb-4">
                         <div class="card-body">
                             <div class="avatar avatar-60 bg-default-light rounded-circle text-default">
-                            <img src="/img/3.jpeg" alt="">
+                            <img src="/img/3.jpg" alt="">
                             </div>
                             <h3 class="mt-3 mb-0 font-weight-normal">1542</h3>
                             <p class="text-secondary small">Eco environment</p>
@@ -388,7 +388,7 @@
                     <div class="card border-0 mb-4">
                         <div class="card-body">
                             <div class="avatar avatar-60 bg-default-light rounded-circle text-default">
-                            <img src="/img/4.jpeg" alt="">
+                            <img src="/img/4.jpg" alt="">
                             </div>
                             <h3 class="mt-3 mb-0 font-weight-normal">154</h3>
                             <p class="text-secondary small">Four Offices</p>
