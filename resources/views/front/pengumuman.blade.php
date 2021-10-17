@@ -16,182 +16,80 @@
                         </form>
                     </div>
                     <style>
-                      // COMPASS
-@import "compass";
-// FONT
-@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700");
-
-// CONFIG
-$SPACER_XS: 0.5rem;
-$SPACER_SM: 0.75rem;
-$SPACER: 1rem;
-$SPACER_MD: 1.5rem;
-$SPACER_LG: 2rem;
-$BORDER_RADIUS: 3px;
-$PROGRESS_HEIGHT: 600px;
-$PROGRESS_LIST_HEIGHT: 75px;
-$PROGRESS_COUNTER_WIDTH: 26px;
-$LIST_ITEM_WIDTH: 100px;
-$PROGRESS_BG: #392A60;
-$BODY_BG: #2E1F47;
-$ICON_COLOR: #F3597D;
-
-// BASE
-html {
-  font-size: 13px;
-  font-family: "Roboto Slab", serif;
-  font-weight: 400;
-  line-height: 13px;
-  -webkit-font-smoothing: auto;
-  text-rendering: optimizeLegibility;
-  color: #fff;
-  overflow: hidden;
+         .events li { 
+  display: flex; 
+  color: #999;
 }
 
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background:$BODY_BG;
-  letter-spacing: 0.6px;
-
-}
-
-p {
-  font-size: 13px;
-  margin: 0 0 11px;
-}
-
-a {
-  color: #fff;
-  text-decoration: none;
-}
-
-header {
-  text-align: center;
-  margin-bottom: $SPACER_LG*2;
-  h1 {
-    font-size: 1.8rem;
-    line-height: 2.1rem;
-  }
-  p {
-    margin-top: $SPACER;
-  }
-  .icon {
-    color: $ICON_COLOR; 
-  }
-}
-
-// THE GOOD STUFF
-.progressContainer {
+.events time { 
   position: relative;
-  width: 300px;
-  height: 100vh;
-  margin: 0 auto;
-  overflow: hidden;
-  padding: $SPACER_LG;
-  color: #fff;
-  background: $PROGRESS_BG;
-  @include box-shadow(0 0 15px rgba(0, 0, 0, 0.3));
+  padding: 0 1.5em;  }
+
+.events time::after { 
+   content: "";
+   position: absolute;
+   z-index: 2;
+   right: 0;
+   top: 0;
+   transform: translateX(50%);
+   border-radius: 50%;
+   background: #fff;
+   border: 1px #ccc solid;
+   width: .8em;
+   height: .8em;
 }
 
-.progress {
+
+.events span {
+  padding: 0 1.5em 1.5em 1.5em;
   position: relative;
-  padding: 0 $SPACER 0 3.5rem;
-  margin: $SPACER_LG 0 0;
-  list-style: none;
 }
 
-.progress__item {
-  position: relative;
-  min-height: $PROGRESS_LIST_HEIGHT;
-  counter-increment: list;
-  padding-left: $SPACER_XS;
-  &:before {
-    content: "";
-    position: absolute;
-    left: -1.5rem;
-    top: 33px;
-    height: 60%;
-    width: 1px;
-    border-left: 1px solid #fff;
-  }
-  &:after {
-    content: counter(list);
-    position: absolute;
-    top: 0;
-    left: -2.5rem;
-    width: $PROGRESS_COUNTER_WIDTH;
-    height: $PROGRESS_COUNTER_WIDTH;
-    border-radius: 50%;
-    background: transparent;
-    color: #fff;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 2rem;
-    text-align: center;
-    border: 1px solid #fff;
-  }
-  //Hide border for Last Step
-  &:last-child {
-    &:before {
-      border: none;
-    }
-  }
-  //Completed
-  &.progress__item--completed {
-    opacity: 0.6;
-    color: #fff;
-    &:after {
-      content: "\2713";
-      font-weight: 400;
-      background: #fff;
-      color: $PROGRESS_BG;
-    }
-  }
-  //Active
-  &.progress__item--active {
-    &:after {
-      background: #fff;
-      color: $PROGRESS_BG;
-    }
-  }
+.events span::before {
+   content: "";
+   position: absolute;
+   z-index: 1;
+   left: 0;
+   height: 100%;
+   border-left: 1px #ccc solid;
 }
 
-.progress__title {
-  padding: 0.4rem 0 $SPACER_XS;
-  margin: 0;
-  font-size: 1.5rem;
+.events strong {
+   display: block;
+   font-weight: bolder;
 }
 
-.progress__info {
-  font-size: 13px;
-}
+.events { margin: 1em; width: 50%; }
+.events, 
+.events *::before, 
+.events *::after { box-sizing: border-box; font-family: arial; }
 
                     </style>
-                    <div class="progressContainer">
-
-                      <header>
-                        <h1>CSS Vertical Progress Steps Tracker</h1>
-                        <p>Made with <i class="fa fa-heart icon" aria-hidden="true"></i> at <a href="https://goo.gl/jQbwCk">Later.com</a></p>
-                      </header>
-
-                      <ul class="progress">
-                        <li class="progress__item progress__item--completed">
-                          <p class="progress__title">Step 1</p>
-                          <p class="progress__info">Completed</p>
-                        </li>
-                        <li class="progress__item progress__item--active">
-                          <p class="progress__title">Step 2</p>
-                          <p class="progress__info">Current or Active</p>
-                        </li>
-                        <li class="progress__item">
-                          <p class="progress__title">Step 3</p>
-                          <p class="progress__info">Next Step</p>
-                        </li>
-                      </ul>
-
-                    </div>
+                    <ul class="events">
+  <li>
+    <time datetime="10:03">10:03</time> 
+    <span><strong>Bat &amp; Ball</strong> On time</span></li>
+    
+  <li>
+    <time datetime="10:03">10:03</time> 
+    <span><strong>Bat &amp; Ball</strong> On time</span></li>
+  
+  <li>
+    <time datetime="10:03">10:03</time> 
+    <span><strong>Bat &amp; Ball</strong> On time and other text that may span over 2 lines</span></li>
+  
+  <li>
+    <time datetime="10:03">10:03</time> 
+    <span><strong>Bat &amp; Ball</strong> On time</span></li>
+  
+  <li>
+    <time datetime="10:03">10:03</time> 
+    <span><strong>Bat &amp; Ball</strong> On time</span></li>
+  
+  <li>
+    <time datetime="10:03">10:03</time> 
+    <span><strong>Bat &amp; Ball</strong> On time</span></li>
+</ul>
                     @if($search_cek == null)
 
                     @else
