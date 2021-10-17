@@ -61,7 +61,7 @@
             </div>
         </div>
     </div>
-    @endfore
+    @endforeach
 </div>
 
 <!-- Content Row -->
