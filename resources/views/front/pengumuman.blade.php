@@ -27,7 +27,6 @@
                       <li>{{$get_attendance->no_handphone}}</li>
                       <li><p><b>{{$get_attendance->vacancy_r->title_vacancy}}</b></p></li>
                     </ul>
-                    <br><br>
                     <style>
                       .events li { 
                         display: flex; 
