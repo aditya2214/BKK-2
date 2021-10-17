@@ -72,7 +72,7 @@
                         font-weight: bolder;
                       }
 
-                      .events { margin: 1em; width: 50%; }
+                      .events { margin: 1em; width: 100%; }
                       .events, 
                       .events *::before, 
                       .events *::after { box-sizing: border-box; font-family: arial; }
