@@ -101,7 +101,7 @@ class HomeController extends Controller
     public function seleksi(Request $request){
         // return $request->all();
         if ($request->id_peserta == null) {
-            Alert::error('Error', ' Halaman hanya 1 sesi <br> Harap Pilih Data Peserta!!!');
+            Alert::error('Error', ' Halaman hanya 1 sesi : Harap Pilih Data Peserta!!!');
             return redirect('/select_loker');
         }
         $id_peserta = $request->id_peserta;
