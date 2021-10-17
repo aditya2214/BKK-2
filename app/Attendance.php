@@ -26,7 +26,7 @@ class Attendance extends Model
     ];
 
     public function Seleksi_r(){
-        return $this->hasMany(\App\absenSortir::class,'id_peserta','id');
+        return $this->hasMany(\App\absenSortir::class,'id_peserta','id')->orderBy('DESC');
     }
 
     public function vacancy_r(){
