@@ -65,7 +65,7 @@
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Tahun Lulus</label>
-                            <input required type="date" name="graduation_year" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
+                            <input required type="month" name="graduation_year" class="form-control is-valid" id="exampleFormControlInput1" placeholder="">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlTextarea1">Pengalaman Kerja</label>
