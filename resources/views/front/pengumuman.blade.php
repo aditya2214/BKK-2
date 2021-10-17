@@ -77,6 +77,24 @@ li {
                             <button class="btn btn-primary form-control btn-sm">Searching</button>
                         </form>
                     </div>
+
+                    <div class="row">
+                        <div class="col-auto align-self-center">
+                            <i class="material-icons text-default">local_mall</i>
+                        </div>
+                        <div class="col pl-0">
+                            <div class="row mb-1">
+                                <div class="col">
+                                    <p class="mb-0">New Order received</p>
+                                </div>
+                                <div class="col-auto pl-0">
+                                    <p class="small text-secondary">2/12/2020</p>
+                                </div>
+                            </div>
+                            <p class="small text-secondary">Order from Anand Mhatva recieved for Electronics with 6 quanity.</p>
+                        </div>
+
+                    </div>
                     @if($search_cek == null)
 
                     @else
