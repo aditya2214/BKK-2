@@ -88,6 +88,7 @@
                                                 <li>
                                                 <a href="{{ url ('delete_kategori_test/'.$kal->id) }}" class="text-danger" style="border-radius:15px;"><i class="far fa-times-circle"></i></a><small class="badge badge-danger">&nbsp;{{$kal->status_tes}} {{$kal->kategori_tes}}</small>
                                                 </li>
+                                                <td><a target="_blank" href="https://api.whatsapp.com/send?phone={{$get_attendance->no_handphone}}&text=Andan Dinyatakan {{$kal->status_tes}} {{$kal->kategori_tes}} Harap Datang Kembali Pada : %0A {!!$get_attendance->Seleksi_r->notes2!!}"><button class="rounded btn btn-primary">WA</button></a></td>
                                                 @endif
                                             @endforeach
                                         </ul>
@@ -106,7 +107,6 @@
                                     <td>{{$get_attendance->school}}</td>
                                     <td>{{date('Y m',strtotime($get_attendance->graduation_year))}}</td>
                                     <td>{!!$get_attendance->experience!!}</td>
-                                    <td><a target="_blank" href="https://api.whatsapp.com/send?phone={{$get_attendance->no_handphone}}&text=Andan Dinyatakan {{$kal->status_tes}} {{$kal->kategori_tes}} Harap Datang Kembali Pada : %0A {!!$get_attendance->Seleksi_r->notes2->first()!!}">Hubungi Saya</a></td>
                                 </tr>
                                 @endforeach
                             </tbody>
