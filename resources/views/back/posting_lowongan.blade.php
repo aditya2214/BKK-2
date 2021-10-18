@@ -19,11 +19,11 @@
                 @csrf
                     <div class="form-group">
                         <label for="">Job Code</label>
-                        <input type="text" name="job_kode" id="job_kode" class="form-control">
+                        <input required type="text" name="job_kode" id="job_kode" class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="">Job Title</label>
-                        <input type="text" name="title_job" id="title_job" class="form-control">
+                        <input required type="text" name="title_job" id="title_job" class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">Place And Date</label>
