@@ -59,7 +59,7 @@ class HomeController extends Controller
         ]);
 
         Alert::success('Berhasil', 'Loker Telah Di Update!!!');
-        return redirect()->back();
+        return redirect('attendance');
     }
 
     public function attendance(){
