@@ -87,7 +87,7 @@
                                                 @else
                                                 <li>
                                                 <a href="{{ url ('delete_kategori_test/'.$kal->id) }}" class="text-danger" style="border-radius:15px;"><i class="far fa-times-circle"></i></a><small class="badge badge-danger">&nbsp;{{$kal->status_tes}} {{$kal->kategori_tes}}</small>
-                                                <td><a target="_blank" class="btn btn-success " href="https://api.whatsapp.com/send?phone={{$get_attendance->no_handphone}}&text=Andan Dinyatakan {{$kal->status_tes}} {{$kal->kategori_tes}} Harap Datang Kembali Pada : %0A {!!$get_attendance->Seleksi_r->notes2!!}">Wa</a></td>
+                                                <a target="_blank" class="btn btn-success " href="https://api.whatsapp.com/send?phone={{$get_attendance->no_handphone}}&text=Andan Dinyatakan {{$kal->status_tes}} {{$kal->kategori_tes}} Harap Datang Kembali Pada : %0A {!!$get_attendance->Seleksi_r->notes2!!}">Wa</a>
                                                 </li>
                                                 @endif
                                             @endforeach
