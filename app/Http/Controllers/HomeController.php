@@ -154,6 +154,10 @@ class HomeController extends Controller
         return redirect()->back();
     }
 
+    public function whatsapp($id){
+        return "whatsapp://send?text=Hello&phone=+81385670066";
+    }
+
 
 
 
