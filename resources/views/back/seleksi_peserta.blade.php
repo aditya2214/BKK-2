@@ -87,7 +87,6 @@
                                                 @else
                                                 <li>
                                                 <a href="{{ url ('delete_kategori_test/'.$kal->id) }}" class="text-danger" style="border-radius:15px;"><i class="far fa-times-circle"></i></a><small class="badge badge-danger">&nbsp;{{$kal->status_tes}} {{$kal->kategori_tes}}</small>
-                                                <a target="_blank" class="btn btn-success " href="https://api.whatsapp.com/send?phone={{$get_attendance->no_handphone}}&text=Andan Dinyatakan {{$kal->status_tes}} {{$kal->kategori_tes}} Harap Datang Kembali Pada : %0A {!!$get_attendance->Seleksi_r->notes2!!}">Wa</a>
                                                 </li>
                                                 @endif
                                             @endforeach
@@ -107,6 +106,9 @@
                                     <td>{{$get_attendance->school}}</td>
                                     <td>{{date('Y m',strtotime($get_attendance->graduation_year))}}</td>
                                     <td>{!!$get_attendance->experience!!}</td>
+                                    @foreach($get_attendance->Seleksi_r as $kal)
+                                    <td><a target="_blank" href="https://api.whatsapp.com/send?phone={{$get_attendance->no_handphone}}&text=Andan Dinyatakan {{$kal->status_tes}} {{$kal->kategori_tes}} Harap Datang Kembali Pada : %0A {!!$kal->notes2!!}">Hubungi Saya</a></td>
+                                    @endforeach
                                 </tr>
                                 @endforeach
                             </tbody>
