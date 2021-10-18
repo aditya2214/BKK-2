@@ -106,7 +106,7 @@
                                     <td>{{$get_attendance->school}}</td>
                                     <td>{{date('Y m',strtotime($get_attendance->graduation_year))}}</td>
                                     <td>{!!$get_attendance->experience!!}</td>
-                                    <td><a href="{{ url ('href='https://wa.me/$get_attendance->no_handphone?text=I'm%20interested%20in%20your%20car%20for%20sale') }}">{{$get_attendance->no_handphone}}</a></td>
+                                    <td><a href="{{ url ('https://wa.me/$get_attendance->no_handphone?text=I'm%20interested%20in%20your%20car%20for%20sale') }}">{{$get_attendance->no_handphone}}</a></td>
                                 </tr>
                                 @endforeach
                             </tbody>
