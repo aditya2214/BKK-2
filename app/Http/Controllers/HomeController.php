@@ -155,7 +155,7 @@ class HomeController extends Controller
     }
 
     public function whatsapp($id){
-        return "whatsapp://send?text=Hello&phone=+81385670066";
+        return "https://wa.me/81385670066?text=I'm%20interested%20in%20your%20car%20for%20sale";
     }
 
 
