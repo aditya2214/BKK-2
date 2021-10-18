@@ -165,27 +165,27 @@
                 <div class="card-body text-center ">
                     <div class="row justify-content-equal no-gutters">
                         <div class="col-4 col-md-2 mb-3">
-                            <div class="icon icon-50 rounded-circle mb-1 bg-default-light text-default"><span class="material-icons">qr_code_2</span></div>
+                            <div class="icon icon-50 rounded-circle mb-1 bg-default-light text-default"><img src="/img/kiic.jpg" style="width:100px;" alt=""></div>
                             <p class="text-secondary"><small>KIIC</small></p>
                         </div>
                         <div class="col-4 col-md-2 mb-3">
-                            <div class="icon icon-50 rounded-circle mb-1 bg-default-light text-default"><span class="material-icons">swap_horiz</span></div>
+                            <div class="icon icon-50 rounded-circle mb-1 bg-default-light text-default"><img src="/img/kim.jpg" style="width:100px;" alt=""></div>
                             <p class="text-secondary"><small>KIM</small></p>
                         </div>
                         <div class="col-4 col-md-2 mb-3">
-                            <div class="icon icon-50 rounded-circle mb-1 bg-default-light text-default"><span class="material-icons">sim_card</span></div>
+                            <div class="icon icon-50 rounded-circle mb-1 bg-default-light text-default"><img src="/img/surcip.jpg" style="width:100px;" alt=""></div>
                             <p class="text-secondary"><small>SURYA CIPTA</small></p>
                         </div>
                         <div class="col-4 col-md-2 mb-3">
-                            <div class="icon icon-50 rounded-circle mb-1 bg-default-light text-default"><span class="material-icons">account_circle</span></div>
+                            <div class="icon icon-50 rounded-circle mb-1 bg-default-light text-default"><img src="/img/indotaisei.jpg" style="width:100px;" alt=""></div>
                             <p class="text-secondary"><small>INDOTAISEI</small></p>
                         </div>
                         <div class="col-4 col-md-2 mb-3">
-                            <div class="icon icon-50 rounded-circle mb-1 bg-default-light text-default"><span class="material-icons">receipt</span></div>
+                            <div class="icon icon-50 rounded-circle mb-1 bg-default-light text-default"><img src="/img/bic.jpg" style="width:100px;" alt=""></div>
                             <p class="text-secondary"><small>BIC</small></p>
                         </div>
                         <div class="col-4 col-md-2 mb-3">
-                            <div class="icon icon-50 rounded-circle mb-1 bg-default-light text-default"><span class="material-icons">wb_incandescent</span></div>
+                            <div class="icon icon-50 rounded-circle mb-1 bg-default-light text-default"><img src="/img/mm2100.jpg" style="width:100px;" alt=""></div>
                             <p class="text-secondary"><small>MM2100</small></p>
                         </div>
                     </div>
