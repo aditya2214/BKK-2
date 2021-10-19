@@ -46,11 +46,17 @@ class FrontendController extends Controller
     }
 
     public function storeAbsensi(Request $request, $id){
-        
+        $subjectVal = $request->no_handphone;
+        $str = str_replace('-','',$subjectVal);
+
+        // return $str;
+
+        $gkr = str_replace('0','62',$str);
+
         $storeAbsen = \App\Attendance::create([
             'id_vacancy' => $id,
             'full_name'  => $request->full_name,
-            'gender' => $request-> gender,
+            'gender' => $request->gender,
             'active_email' => $request->active_email,
             'nik' => $request->nik,
             'kabupaten' => $request->kabupaten,
@@ -63,7 +69,7 @@ class FrontendController extends Controller
             'school' => $request->school,
             'graduation_year' => $request->graduation_year.'-'.date('d'),
             'experience' => $request->experience,
-            'no_handphone' => $request->no_handphone
+            'no_handphone' => $request->gkr
         ]);
 
         Alert::success('Berhasil', 'Data Absensi Anda Sudah Masuk!!!');

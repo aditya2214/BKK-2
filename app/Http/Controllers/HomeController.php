@@ -107,7 +107,7 @@ class HomeController extends Controller
             // return $gkr;
 
             $update_nohp = \App\Attendance::update([
-                'no_handphone' => $str
+                'no_handphone' => $gkr
             ]);
             # code...
         }
