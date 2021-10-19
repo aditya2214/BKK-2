@@ -108,7 +108,7 @@ class HomeController extends Controller
 		// menangkap file excel
         $file = $request->file('file');
         
-        return $file;
+        dd($file);
  
 		// membuat nama file unik
 		$nama_file = rand().$file->getClientOriginalName();
