@@ -47,11 +47,6 @@ class FrontendController extends Controller
 
     public function storeAbsensi(Request $request, $id){
         $subjectVal = $request->no_handphone;
-        $str = str_replace('-','',$subjectVal);
-
-        // return $str;
-
-        $gkr = str_replace('0','62',$str);
 
         $storeAbsen = \App\Attendance::create([
             'id_vacancy' => $id,

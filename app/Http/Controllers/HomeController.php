@@ -95,23 +95,6 @@ class HomeController extends Controller
         $pilih_loker = $this->id_loker;
         $vacancy = \App\Vacancy::all();
         $get_attendances = \App\Attendance::with('seleksi_r')->where('id_vacancy',$this->id_loker)->get();
-      
-        foreach ($get_attendances as $key => $value) {
-            $subjectVal = $value->no_handphone;
-            $str = str_replace('-','',$subjectVal);
-
-            // return $str;
-
-            $gkr = str_replace('0','62',$str);
-
-            // return $gkr;
-
-            $update_nohp = \App\Attendance::update([
-                'no_handphone' => $gkr
-            ]);
-            # code...
-        }
-
         return view('back.seleksi_peserta',compact('vacancy','get_attendances','pilih_loker'));
     }
 
