@@ -136,6 +136,16 @@ class HomeController extends Controller
         return view('back.seleksi_peserta',compact('vacancy','get_attendances','pilih_loker'));
     }
 
+    public function upload_seleksi(Request $request){
+        // return $request->all();
+        $this->id_loker = $request->select;
+
+        $pilih_loker = $this->id_loker;
+        $vacancy = \App\Vacancy::all();
+        $get_attendances = \App\Attendance::with('seleksi_r')->where('id_vacancy',$this->id_loker)->get();
+        return view('back.seleksi_peserta',compact('vacancy','get_attendances','pilih_loker'));
+    }
+
     public function seleksi(Request $request){
         // return $request->all();
 
