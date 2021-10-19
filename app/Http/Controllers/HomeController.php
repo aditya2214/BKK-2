@@ -102,7 +102,7 @@ class HomeController extends Controller
 
             // return $str;
 
-            $gkr = str_replace('0','',$str);
+            $gkr = str_replace('0','62',$str);
 
             return $gkr;
 
