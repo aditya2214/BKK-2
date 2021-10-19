@@ -88,6 +88,14 @@ class HomeController extends Controller
         return view('back.seleksi_peserta',compact('vacancy','pilih_loker'));
     }
 
+    public function import_seleksi(){
+
+        $pilih_loker = $this->id_loker;
+        $vacancy = \App\Vacancy::all();
+        return view('back.import_seleksi',compact('vacancy','pilih_loker'));
+    }
+
+
     public function select_loker(Request $request){
         // return $request->all();
         $this->id_loker = $request->select;
