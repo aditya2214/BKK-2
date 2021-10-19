@@ -81,7 +81,7 @@
                                         <input type="checkbox" name="select-all" id="select-all" />
                                     </th>
                                     <td>Status</td>
-                                    <th>No</th>
+                                    <th>id</th>
                                     <th>Nama_Lengkap</th>
                                     <th>Jenis_Kelamin</th>
                                     <th>Email</th>
@@ -123,7 +123,7 @@
                                             @endforeach
                                         </ul>
                                     </td>
-                                    <td>{{$key+1}}</td>
+                                    <td>{{$get_attendance->id}}</td>
                                     <td>{{$get_attendance->full_name}}</td>
                                     <td>{{$get_attendance->gender}}</td>
                                     <td>{{$get_attendance->active_email}}</td>
