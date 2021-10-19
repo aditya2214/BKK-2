@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use DB;
 use Alert;
+use App\Exports\SiswaExport;
+use App\Imports\absenSortir2;
+use Maatwebsite\Excel\Facades\Excel;
 
 class HomeController extends Controller
 {
@@ -94,6 +97,33 @@ class HomeController extends Controller
         $vacancy = \App\Vacancy::all();
         return view('back.import_seleksi',compact('vacancy','pilih_loker'));
     }
+
+    public function import_excel(Request $request) 
+	{
+		// validasi
+		$this->validate($request, [
+			'file' => 'required|mimes:csv,xls,xlsx'
+		]);
+ 
+		// menangkap file excel
+		$file = $request->file('file');
+ 
+		// membuat nama file unik
+		$nama_file = rand().$file->getClientOriginalName();
+ 
+		// upload ke folder file_siswa di dalam folder public
+		$file->move('file_siswa',$nama_file);
+ 
+		// import data
+		Excel::import(new absenSortir2, public_path('/file_siswa/'.$nama_file));
+ 
+		// notifikasi dengan session
+        Alert::success('Berhasil', 'Sukses Sortir Data!!!');
+ 
+		// alihkan halaman kembali
+        return redirect()->back();
+	}
+
 
 
     public function select_loker(Request $request){
