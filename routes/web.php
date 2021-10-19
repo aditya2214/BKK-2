@@ -48,7 +48,7 @@ Route::get('update_vac/{id}', 'HomeController@update_vac')->name('update_vac');
 Route::get('/mitra_bkk', 'HomeController@mitra_bkk')->name('mitra_bkk');
 Route::post('/store_mitra', 'HomeController@store_mitra')->name('store_mitra');
 Route::get('/whatsapp/{id}', 'HomeController@whatsapp')->name('whatsapp');
-Route::post('/siswa/import_excel', 'SiswaController@import_excel');
+Route::post('/siswa/import_excel', 'HomeController@import_excel');
 
 
 
