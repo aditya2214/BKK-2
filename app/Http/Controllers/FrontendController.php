@@ -69,7 +69,7 @@ class FrontendController extends Controller
             'school' => $request->school,
             'graduation_year' => $request->graduation_year.'-'.date('d'),
             'experience' => $request->experience,
-            'no_handphone' => $request->gkr
+            'no_handphone' => $gkr
         ]);
 
         Alert::success('Berhasil', 'Data Absensi Anda Sudah Masuk!!!');
