@@ -104,14 +104,14 @@ class HomeController extends Controller
 
             $gkr = str_replace('0','62',$str);
 
-            return $gkr;
+            // return $gkr;
 
             \App\Attendance::update([
                 'no_handphone' => $str
-
             ]);
             # code...
         }
+        
         return view('back.seleksi_peserta',compact('vacancy','get_attendances','pilih_loker'));
     }
 
