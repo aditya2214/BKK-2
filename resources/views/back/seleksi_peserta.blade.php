@@ -106,9 +106,7 @@
                                     <td>{{$get_attendance->school}}</td>
                                     <td>{{date('Y m',strtotime($get_attendance->graduation_year))}}</td>
                                     <td>{!!$get_attendance->experience!!}</td>
-                                    @foreach($get_attendance->Seleksi_r as $kal)
-                                    <td><a target="_blank" href="https://api.whatsapp.com/send?phone={{$get_attendance->no_handphone}}&text=Andan Dinyatakan {{$kal->status_tes}} {{$kal->kategori_tes}} Harap Datang Kembali Pada : %0A {!!$kal->notes2!!}">Hubungi Saya</a></td>
-                                    @endforeach
+                                    <td>{{$get_attendance->no_handphone}}</td>
                                 </tr>
                                 @endforeach
                             </tbody>
