@@ -106,12 +106,12 @@ class HomeController extends Controller
 
             // return $gkr;
 
-            \App\Attendance::update([
+            $update_nohp = \App\Attendance::update([
                 'no_handphone' => $str
             ]);
             # code...
         }
-        
+
         return view('back.seleksi_peserta',compact('vacancy','get_attendances','pilih_loker'));
     }
 
