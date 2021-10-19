@@ -100,8 +100,10 @@ class HomeController extends Controller
             $subjectVal = $value->no_handphone;
             $str = str_replace('-','',$subjectVal);
 
+            return $str;
             \App\Attendance::update([
                 'no_handphone' => $str
+
             ]);
             # code...
         }
