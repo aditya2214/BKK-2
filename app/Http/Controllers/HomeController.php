@@ -98,9 +98,14 @@ class HomeController extends Controller
       
         foreach ($get_attendances as $key => $value) {
             $subjectVal = $value->no_handphone;
-            $str = str_replace('-','',$subjectVal);
+            $str = str_replace('-',''$subjectVal);
 
-            return $str;
+            // return $str;
+
+            $gkr = str_replace('0','',$str)
+
+            return $gkr;
+            
             \App\Attendance::update([
                 'no_handphone' => $str
 
