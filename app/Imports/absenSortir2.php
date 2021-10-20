@@ -18,8 +18,8 @@ class absenSortir2 implements ToModel,WithHeadingRow
         return new absenSortir([
             'id' => $row['id'],
             'id_peserta' => $row['id'],
-            'status_tes' => $row['Status'],
-            'kategori_tes' => $row['Kategory_Tes'],
+            'status_tes' => $row['status'],
+            'kategori_tes' => $row['kategory_tes'],
             
         ]);
     }
