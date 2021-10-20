@@ -74,7 +74,7 @@
                 </div>
  
                     <div style="overflow-x:auto;">
-                        <table class="table" id="dataTable">
+                        <table class="table table-bordered" id="dataTable">
                             <thead>
                                 <tr>
                                     <th>id</th>
@@ -101,7 +101,7 @@
                                 @foreach($get_attendances as $key=>$get_attendance)
                                 <tr>
                                     <td>{{$get_attendance->id}}</td>
-                                    <td>
+                                    <td class="bg-warning">
                                         <ul>
                                             @foreach($get_attendance->Seleksi_r as $kal)
                                                 @if($get_attendance->Seleksi_r == null)
@@ -120,7 +120,7 @@
                                             @endforeach
                                         </ul>
                                     </td>
-                                    <td>
+                                    <td class="bg-warning">
                                         <ul>
                                             @foreach($get_attendance->Seleksi_r as $kal)
                                                 @if($get_attendance->Seleksi_r == null)
@@ -139,7 +139,7 @@
                                             @endforeach
                                         </ul>
                                     </td>
-                                    <td>
+                                    <td class="bg-warning">
                                         <ul>
                                             @foreach($get_attendance->Seleksi_r as $kal)
                                                 <li>{!!$kal->notes2!!}</li>
