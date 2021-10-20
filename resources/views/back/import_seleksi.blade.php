@@ -127,7 +127,7 @@
                                                 </li>
                                                 @elseif($kal->status_tes == "lolos")
                                                 <li>
-                                                <a href="{{ url ('delete_kategori_test/'.$kal->id) }}" class="text-danger" style="border-radius:15px;"><i class="far fa-times-circle"></i></a><small class="badge badge-success">&nbsp;{{$kal->kategori_tes}}</small>
+                                                <small class="badge badge-success">&nbsp;{{$kal->kategori_tes}}</small>
                                                 </li>
                                                 @else
                                                 <li>
@@ -140,7 +140,7 @@
                                     <td>
                                         <ul>
                                             @foreach($get_attendance->Seleksi_r as $kal)
-                                                <li>{!!$kal->notes2!!}}</li>
+                                                <li>{!!$kal->notes2!!}</li>
                                             @endforeach
                                         </ul>
                                     </td>
