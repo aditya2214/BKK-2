@@ -71,40 +71,33 @@
                     </div>
                 </div>
  
-                <form action="{{url('seleksi')}}" method="POST">
-                    @csrf
                     <div style="overflow-x:auto;">
                         <table class="table" id="dataTable">
                             <thead>
                                 <tr>
-                                    <th>
-                                        <input type="checkbox" name="select-all" id="select-all" />
-                                    </th>
                                     <th>id</th>
-                                    <th>Status</th>
-                                    <th>Kategory_Tes</th>
-                                    <th>Nama_Lengkap</th>
-                                    <th>Jenis_Kelamin</th>
-                                    <th>Email</th>
-                                    <th>NIK</th>
-                                    <th>Kabupaten</th>
-                                    <th>Alamat</th>
-                                    <th>TTL</th>
-                                    <th>Umur</th>
-                                    <th>Tinggi_Badan</th>
-                                    <th>Berat_Badan</th>
-                                    <th>Asal_Sekolah</th>
-                                    <th>Tahun_lulus</th>
-                                    <th>Pengalaman</th>
-                                    <th>No_Handphone</th>
+                                    <th>status</th>
+                                    <th>kategori_tes</th>
+                                    <th>catatan</th>
+                                    <th>nama_lengkap</th>
+                                    <th>jenis_kelamin</th>
+                                    <th>email</th>
+                                    <th>nik</th>
+                                    <th>kabupaten</th>
+                                    <th>alamat</th>
+                                    <th>ttl</th>
+                                    <th>umur</th>
+                                    <th>tinggi_badan</th>
+                                    <th>berat_badan</th>
+                                    <th>asal_sekolah</th>
+                                    <th>tahun_lulus</th>
+                                    <th>pengalaman</th>
+                                    <th>no_handphone</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 @foreach($get_attendances as $key=>$get_attendance)
                                 <tr>
-                                    <td>
-                                        <input type="checkbox" name="id_peserta[]" value="{{$get_attendance->id}}" id="checked">
-                                    </td>
                                     <td>{{$get_attendance->id}}</td>
                                     <td>
                                         <ul>
@@ -138,9 +131,16 @@
                                                 </li>
                                                 @else
                                                 <li>
-                                                <a href="{{ url ('delete_kategori_test/'.$kal->id) }}" class="text-danger" style="border-radius:15px;"><i class="far fa-times-circle"></i></a><small class="badge badge-danger">&nbsp;{{$kal->kategori_tes}}</small>
+                                                <small class="badge badge-danger">&nbsp;{{$kal->kategori_tes}}</small>
                                                 </li>
                                                 @endif
+                                            @endforeach
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            @foreach($get_attendance->Seleksi_r as $kal)
+                                                <li>{!!$kal->notes2!!}}</li>
                                             @endforeach
                                         </ul>
                                     </td>
@@ -163,28 +163,6 @@
                             </tbody>
                         </table>
                     </div>
-                    <hr>
-                    <div class="form-group">
-                        <label for="">Tes Apa?</label>
-                        <input type="text" required name="tes_apa" id="tes_apa" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <select name="status_tes" id="" class="form-control">
-                            <option value="lolos">Lolos</option>
-                            <option value="gagal">Gagal</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="">Catatan</label>
-                        <textarea class="form-control" name="catatan" id="catatan" rows="3"></textarea>
-                        <script>
-                            CKEDITOR.replace( 'catatan' );
-                        </script>
-                    </div>
-                    <div class="form-group">
-                        <button class="btn btn btn-primary">Seleksi</button>
-                    </div>
-                </form>
                 @endif
             </div>
         </div>
