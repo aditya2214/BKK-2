@@ -4,8 +4,9 @@ namespace App\Imports;
 
 use App\absenSortir;
 use Maatwebsite\Excel\Concerns\ToModel;
+use Maatwebsite\Excel\Concerns\WithHeadingRow;
 
-class absenSortir2 implements ToModel
+class absenSortir2 implements ToModel,WithHeadingRow
 {
     /**
     * @param array $row
@@ -15,9 +16,10 @@ class absenSortir2 implements ToModel
     public function model(array $row)
     {
         return new absenSortir([
+            'id' => $row[1],
             'id_peserta' => $row[1],
-            'kategori_tes' => $row[2],
-            'status_tes' => $row[3],
+            'status_tes' => $row[2],
+            'kategori_tes' => $row[3],
             
         ]);
     }

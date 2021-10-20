@@ -49,8 +49,8 @@
                                     <th>
                                         <input type="checkbox" name="select-all" id="select-all" />
                                     </th>
-                                    <td>Status</td>
                                     <th>No</th>
+                                    <td>Status</td>
                                     <th>Nama_Lengkap</th>
                                     <th>Jenis_Kelamin</th>
                                     <th>Email</th>
@@ -73,6 +73,7 @@
                                     <td>
                                         <input type="checkbox" name="id_peserta[]" value="{{$get_attendance->id}}" id="checked">
                                     </td>
+                                    <td>{{$key+1}}</td>
                                     <td>
                                         <ul>
                                             @foreach($get_attendance->Seleksi_r as $kal)
@@ -92,7 +93,6 @@
                                             @endforeach
                                         </ul>
                                     </td>
-                                    <td>{{$key+1}}</td>
                                     <td>{{$get_attendance->full_name}}</td>
                                     <td>{{$get_attendance->gender}}</td>
                                     <td>{{$get_attendance->active_email}}</td>
