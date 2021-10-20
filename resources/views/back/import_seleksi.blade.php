@@ -39,11 +39,14 @@
                 @if($pilih_loker == null)
                 <p class="text-danger">Pilih Loker Terlebih Dulu</p>
                 @else
+
                 <p><b>Daftar Peserta</b></p>
                 <br>
+                <div class="float-right">
                 <button type="button" class="btn btn-primary mr-5" data-toggle="modal" data-target="#importExcel">
                     IMPORT EXCEL
                 </button>
+                </div>
 
                 <!-- Import Excel -->
                 <div class="modal fade" id="importExcel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
