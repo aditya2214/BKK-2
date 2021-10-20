@@ -123,7 +123,7 @@ class HomeController extends Controller
         Alert::success('Berhasil', 'Sukses Sortir Data!!!');
  
 		// alihkan halaman kembali
-        return redirect()->back();
+        return redirect('import_seleksi');
 	}
 
 
