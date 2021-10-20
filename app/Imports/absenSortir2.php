@@ -20,7 +20,7 @@ class absenSortir2 implements ToModel,WithHeadingRow
             'id_peserta' => $row['id'],
             'status_tes' => $row['status'],
             'kategori_tes' => $row['kategori_tes'],
-            
+            'notes2' => $row['catatan']
         ]);
     }
 }
