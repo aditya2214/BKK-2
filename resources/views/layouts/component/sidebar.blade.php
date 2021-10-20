@@ -118,7 +118,7 @@
             <a class="collapse-item" href="{{ url ('import_seleksi') }}">Otomatis</a>
         </div>
     </div>
-</li> -->
+</li> 
 
 <li class="nav-item">
     <a class="nav-link" href="{{ url ('mitra_bkk') }}">
