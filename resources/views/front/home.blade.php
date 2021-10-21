@@ -62,7 +62,7 @@
                                 <div class="avatar avatar-60 rounded mb-1">
                                     <div class="background"><img src="/img/cv/1.jfif" alt=""></div>
                                 </div>
-                                <p class="text-secondary"><small>Errica</small></p>
+                                <p class="text-secondary"><small>Sample CV</small></p>
                             </div>
                         </div>
                     </div>
@@ -72,7 +72,7 @@
                                 <div class="avatar avatar-60 rounded mb-1">
                                     <div class="background"><img src="/img/cv/2.jfif" alt=""></div>
                                 </div>
-                                <p class="text-secondary"><small>Alisia</small></p>
+                                <p class="text-secondary"><small>Sample CV</small></p>
                             </div>
                         </div>
                     </div>
@@ -82,7 +82,7 @@
                                 <div class="avatar avatar-60 rounded mb-1">
                                     <div class="background"><img src="/img/cv/3.jfif" alt=""></div>
                                 </div>
-                                <p class="text-secondary"><small>Maxsmith</small></p>
+                                <p class="text-secondary"><small>Sample CV</small></p>
                             </div>
                         </div>
                     </div>
@@ -92,7 +92,7 @@
                                 <div class="avatar avatar-60 rounded mb-1">
                                     <div class="background"><img src="/img/cv/4.jfif" alt=""></div>
                                 </div>
-                                <p class="text-secondary"><small>Jenelia</small></p>
+                                <p class="text-secondary"><small>Sample CV</small></p>
                             </div>
                         </div>
                     </div>
@@ -102,7 +102,7 @@
                                 <div class="avatar avatar-60 rounded mb-1">
                                     <div class="background"><img src="/img/cv/5.jfif" alt=""></div>
                                 </div>
-                                <p class="text-secondary"><small>Errica</small></p>
+                                <p class="text-secondary"><small>Sample CV</small></p>
                             </div>
                         </div>
                     </div>
@@ -112,7 +112,7 @@
                                 <div class="avatar avatar-60 rounded mb-1">
                                     <div class="background"><img src="/img/cv/6.jfif" alt=""></div>
                                 </div>
-                                <p class="text-secondary"><small>Errica</small></p>
+                                <p class="text-secondary"><small>Sample CV</small></p>
                             </div>
                         </div>
                     </div>
@@ -122,7 +122,7 @@
                                 <div class="avatar avatar-60 rounded mb-1">
                                     <div class="background"><img src="/img/cv/7.jfif" alt=""></div>
                                 </div>
-                                <p class="text-secondary"><small>Alisia</small></p>
+                                <p class="text-secondary"><small>Sample CV</small></p>
                             </div>
                         </div>
                     </div>
@@ -132,7 +132,7 @@
                                 <div class="avatar avatar-60 rounded mb-1">
                                     <div class="background"><img src="/img/cv/8.jfif" alt=""></div>
                                 </div>
-                                <p class="text-secondary"><small>Maxsmith</small></p>
+                                <p class="text-secondary"><small>Sample CV</small></p>
                             </div>
                         </div>
                     </div>
@@ -142,7 +142,7 @@
                                 <div class="avatar avatar-60 rounded mb-1">
                                     <div class="background"><img src="/img/cv/9.jfif" alt=""></div>
                                 </div>
-                                <p class="text-secondary"><small>Jenelia</small></p>
+                                <p class="text-secondary"><small>Sample CV</small></p>
                             </div>
                         </div>
                     </div>
@@ -152,7 +152,7 @@
                                 <div class="avatar avatar-60 rounded mb-1">
                                     <div class="background"><img src="/img/cv/10.jfif" alt=""></div>
                                 </div>
-                                <p class="text-secondary"><small>Errica</small></p>
+                                <p class="text-secondary"><small>Sample CV</small></p>
                             </div>
                         </div>
                     </div>
@@ -162,7 +162,7 @@
                                 <div class="avatar avatar-60 rounded mb-1">
                                     <div class="background"><img src="/img/cv/11.jfif" alt=""></div>
                                 </div>
-                                <p class="text-secondary"><small>Errica</small></p>
+                                <p class="text-secondary"><small>Sample CV</small></p>
                             </div>
                         </div>
                     </div>
