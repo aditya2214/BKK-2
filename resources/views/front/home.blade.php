@@ -263,7 +263,7 @@
             <div class="card" id="addtodevice">
                 <div class="card-body text-center">
                     <div class="row mb-3">
-                        <div class="col-10 col-md-4 mx-auto"><img src="/img/test/1.jpeg" alt="" class="mw-100"></div>
+                        <div class="col-10 col-md-4 mx-auto"><img src="/img/test/1.jpeg" loading="lazy" alt="" class="mw-100"></div>
                     </div>
 
                     <h5 class="text-dark">Tes PT <span class="font-weight-bold">BKK SMK PGRI 2 KARAWANG</span></h5>
