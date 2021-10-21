@@ -79,7 +79,10 @@
                     </style>
                     <ul class="events">
                       @foreach($get_attendance->Seleksi_r as $key=>$kal)
-                        @if($kal->status_tes == "gagal")
+                        @if($kal == null)
+                        <p><b class="text-warning"></b></p> 
+                          <span>{{date('M d',strtotime($kal->created_at))}}<strong class="text-danger">Hasil Tes Belum Keluar</strong></span></li>
+                        @elseif($kal->status_tes == "gagal")
                         <li>
                           <p><b class="text-danger"></b></p> 
                           <span>{{date('M d',strtotime($kal->created_at))}}<strong class="text-danger">{{$kal->status_tes}}: {{$kal->kategori_tes}}</strong><br><small>{!!$kal->notes2!!}</small></span></li>
