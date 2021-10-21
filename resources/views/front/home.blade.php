@@ -418,7 +418,7 @@
                 </div>
             </div>
         </div>
-        <div class="container mb-4">
+        <!-- <div class="container mb-4">
             <div class="card">
                 <div class="card-body text-left text-md-center">
                     <p class="text-secondary">Tentang Kami</p>
@@ -426,10 +426,10 @@
                         <div class="col-10 col-md-4 mx-auto"><img src="/img/tk.png" alt="" class="mw-100"></div>
                     </div>
                     <p class="text-secondary mt-3">Bursa Kerja Khusus (BKK) adalah sebuah lembaga yang dibentuk di Sekolah Menengah Kejuruan Negeri dan Swasta, sebagai unit pelaksana yang memberikan pelayanan dan informasi lowongan kerja, pelaksana pemasaran, penyaluran dan penempatan tenaga kerja, merupakan mitra Dinas Tenaga Kerja dan Transmigrasi.</p>
-                    <!-- <a href="about.html" class="btn btn-sm btn-default rounded">Read more</a> -->
+                    <a href="about.html" class="btn btn-sm btn-default rounded">Read more</a>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="container">
             <div class="card">
                 <div class="card-header">
