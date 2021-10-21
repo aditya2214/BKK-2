@@ -63,6 +63,7 @@
                                     <div class="background"><img src="/img/cv/1.jfif" loading="lazy" alt=""></div>
                                 </div>
                                 <p class="text-secondary"><small>Sample CV</small></p>
+                                <a href="https://api.whatsapp.com/send?phone=6281122334456&text=Halo%20Selamat%20Datang%20Di%20Toko%20Kami" class="btn btn-success btn-sm"> Pesan</a>
                             </div>
                         </div>
                     </div>
@@ -73,6 +74,7 @@
                                     <div class="background"><img src="/img/cv/2.jfif" loading="lazy" alt=""></div>
                                 </div>
                                 <p class="text-secondary"><small>Sample CV</small></p>
+                                <a href="https://api.whatsapp.com/send?phone=6281122334456&text=Halo%20Selamat%20Datang%20Di%20Toko%20Kami" class="btn btn-success btn-sm"> Pesan</a>
                             </div>
                         </div>
                     </div>
@@ -83,6 +85,7 @@
                                     <div class="background"><img src="/img/cv/3.jfif" loading="lazy" alt=""></div>
                                 </div>
                                 <p class="text-secondary"><small>Sample CV</small></p>
+                                <a href="https://api.whatsapp.com/send?phone=6281122334456&text=Halo%20Selamat%20Datang%20Di%20Toko%20Kami" class="btn btn-success btn-sm"> Pesan</a>
                             </div>
                         </div>
                     </div>
@@ -93,6 +96,7 @@
                                     <div class="background"><img src="/img/cv/4.jfif" loading="lazy" alt=""></div>
                                 </div>
                                 <p class="text-secondary"><small>Sample CV</small></p>
+                                <a href="https://api.whatsapp.com/send?phone=6281122334456&text=Halo%20Selamat%20Datang%20Di%20Toko%20Kami" class="btn btn-success btn-sm"> Pesan</a>
                             </div>
                         </div>
                     </div>
@@ -103,6 +107,7 @@
                                     <div class="background"><img src="/img/cv/5.jfif" loading="lazy" alt=""></div>
                                 </div>
                                 <p class="text-secondary"><small>Sample CV</small></p>
+                                <a href="https://api.whatsapp.com/send?phone=6281122334456&text=Halo%20Selamat%20Datang%20Di%20Toko%20Kami" class="btn btn-success btn-sm"> Pesan</a>
                             </div>
                         </div>
                     </div>
@@ -113,6 +118,7 @@
                                     <div class="background"><img src="/img/cv/6.jfif" loading="lazy" alt=""></div>
                                 </div>
                                 <p class="text-secondary"><small>Sample CV</small></p>
+                                <a href="https://api.whatsapp.com/send?phone=6281122334456&text=Halo%20Selamat%20Datang%20Di%20Toko%20Kami" class="btn btn-success btn-sm"> Pesan</a>
                             </div>
                         </div>
                     </div>
@@ -123,6 +129,7 @@
                                     <div class="background"><img src="/img/cv/7.jfif" loading="lazy" alt=""></div>
                                 </div>
                                 <p class="text-secondary"><small>Sample CV</small></p>
+                                <a href="https://api.whatsapp.com/send?phone=6281122334456&text=Halo%20Selamat%20Datang%20Di%20Toko%20Kami" class="btn btn-success btn-sm"> Pesan</a>
                             </div>
                         </div>
                     </div>
@@ -133,6 +140,7 @@
                                     <div class="background"><img src="/img/cv/8.jfif" loading="lazy" alt=""></div>
                                 </div>
                                 <p class="text-secondary"><small>Sample CV</small></p>
+                                <a href="https://api.whatsapp.com/send?phone=6281122334456&text=Halo%20Selamat%20Datang%20Di%20Toko%20Kami" class="btn btn-success btn-sm"> Pesan</a>
                             </div>
                         </div>
                     </div>
@@ -143,6 +151,7 @@
                                     <div class="background"><img src="/img/cv/9.jfif" loading="lazy" alt=""></div>
                                 </div>
                                 <p class="text-secondary"><small>Sample CV</small></p>
+                                <a href="https://api.whatsapp.com/send?phone=6281385670066&text=Halo%20Selamat%20Datang%20Di%20Toko%20Kami" class="btn btn-success btn-sm"> Pesan</a>
                             </div>
                         </div>
                     </div>
@@ -153,6 +162,7 @@
                                     <div class="background"><img src="/img/cv/10.jfif" loading="lazy" alt=""></div>
                                 </div>
                                 <p class="text-secondary"><small>Sample CV</small></p>
+                                <a href="https://api.whatsapp.com/send?phone=6281122334456&text=Halo%20Selamat%20Datang%20Di%20Toko%20Kami" class="btn btn-success btn-sm"> Pesan</a>
                             </div>
                         </div>
                     </div>
@@ -163,6 +173,7 @@
                                     <div class="background"><img src="/img/cv/11.jfif" loading="lazy" alt=""></div>
                                 </div>
                                 <p class="text-secondary"><small>Sample CV</small></p>
+                                <a href="https://api.whatsapp.com/send?phone=6281122334456&text=Halo%20Selamat%20Datang%20Di%20Toko%20Kami" class="btn btn-success btn-sm"> Pesan</a>
                             </div>
                         </div>
                     </div>
