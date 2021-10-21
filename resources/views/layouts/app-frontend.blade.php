@@ -107,7 +107,7 @@
 
 
 
-    <script src="/blueimp-load-image/js/load-image.all.min.js"></script>
+    <!-- <script src="/blueimp-load-image/js/load-image.all.min.js"></script> -->
 
     <!-- Required jquery and libraries -->
     <script src="/frontend/js/jquery-3.3.1.min.js"></script>
