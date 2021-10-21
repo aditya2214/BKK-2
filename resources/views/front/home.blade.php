@@ -433,16 +433,14 @@
         <div class="container">
             <div class="card">
                 <div class="card-header">
-                    <h6 class="mb-0">Pages</h6>
+                    <h6 class="mb-0">Keterangan Lebih Lanjut Hubungi</h6>
                 </div>
                 <div class="card-body px-0 pt-0">
                     <div class="list-group list-group-flush border-top border-color">
-                        <a href="about.html" class="list-group-item list-group-item-action border-color">About</a>
-                        <a href="analytics.html" class="list-group-item list-group-item-action border-color">Analytics</a>
-                        <a href="transactions.html" class="list-group-item list-group-item-action border-color">Transactions</a>
-                        <a href="gift_cards.html" class="list-group-item list-group-item-action border-color">Gift Cards</a>
-                        <a href="error.html" class="list-group-item list-group-item-action border-color">Error</a>
-                        <a href="pages.html" class="list-group-item list-group-item-action border-color text-primary text-center">More 20+ pages</a>
+                        <a href="#" class="list-group-item list-group-item-action border-color"><tr><td>Email   </td><td>:</td><td>admin@bkk-smkpgri2karawang.com</td></tr></a>
+                        <a href="#" class="list-group-item list-group-item-action border-color"><tr><td>Phone   </td><td>:</td><td>(0267) 401613</td></tr></a>
+                        <a href="#" class="list-group-item list-group-item-action border-color"><tr><td>Websi   </td><td>:</td><td>https://bkkkarawang.com</td></tr></a>
+                        <a href="#" class="list-group-item list-group-item-action border-color text-primary text-center">rudit coding © Copyright 2021 All Rights Reserved.</a>
                     </div>
                 </div>
             </div>
