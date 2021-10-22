@@ -181,10 +181,10 @@
     $('#dataTable').DataTable( {
         dom: 'Bfrtip',
         buttons: [{
-            extend :'excelHtml5',
-            header : false
-
-        }]
+            extend : 'excelHtml5',
+            title : ''
+        }
+        ]
     } );
 } );
 
