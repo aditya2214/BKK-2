@@ -15,7 +15,7 @@ class absenSortir2 implements ToModel,WithHeadingRow
     */
     public function model(array $row)
     {
-        $subjectVal  = $raw['status'];
+        $subjectVal  = $row['status'];
         $searchVal = array("T"," ", "G"," ");
         $replaceVal = array("t", "", "g", "");
         $stat = str_replace($searchVal, $replaceVal, $subjectVal);
