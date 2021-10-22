@@ -15,10 +15,14 @@ class absenSortir2 implements ToModel,WithHeadingRow
     */
     public function model(array $row)
     {
+        $subjectVal  = $raw['status'];
+
+        $stat = str_replace(' ', '', $subjectVal);
+
         return new absenSortir([
             'id' => $row['id'],
             'id_peserta' => $row['id'],
-            'status_tes' => $row['status'],
+            'status_tes' => $stat,
             'kategori_tes' => $row['kategori_tes'],
             'notes2' => $row['catatan']
         ]);
