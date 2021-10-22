@@ -79,14 +79,14 @@
                     </style>
                     <ul class="events">
                       @foreach($get_attendance->Seleksi_r as $key=>$kal)
-                       @if($kal->status_tes == "gagal")
+                       @if($kal->status_tes == "lolos")
+                       <li>
+                         <p><b class="text-success"></b></p> 
+                         <span>{{date('M d',strtotime($kal->created_at))}}<strong class="text-success">{{$kal->status_tes}}: {{$kal->kategori_tes}}</strong><br><small>{!!$kal->notes2!!}</small></span></li>
+                        @else
                         <li>
                           <p><b class="text-danger"></b></p> 
                           <span>{{date('M d',strtotime($kal->created_at))}}<strong class="text-danger">{{$kal->status_tes}}: {{$kal->kategori_tes}}</strong><br><small>{!!$kal->notes2!!}</small></span></li>
-                        @else
-                          <li>
-                          <p><b class="text-success"></b></p> 
-                          <span>{{date('M d',strtotime($kal->created_at))}}<strong class="text-success">{{$kal->status_tes}}: {{$kal->kategori_tes}}</strong><br><small>{!!$kal->notes2!!}</small></span></li>
                         @endif
                       @endforeach
                     </ul>
