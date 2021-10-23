@@ -21,6 +21,7 @@ Route::get('/masukan_kode/{id}', 'FrontendController@masukan_kode')->name('masuk
 Route::post('/storeAbsensi/{id}', 'FrontendController@storeAbsensi')->name('storeAbsensi');
 Route::get('/pengumuman', 'FrontendController@pengumuman')->name('pengumuman');
 Route::post('/searching', 'FrontendController@searching')->name('searching');
+Route::post('/daftarStore/{id}', 'FrontendController@daftarStore')->name('daftarStore');
 
 
 Route::get('/logout', function () {

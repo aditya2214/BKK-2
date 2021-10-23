@@ -71,6 +71,17 @@ class FrontendController extends Controller
         return redirect('/');
     }
 
+    public function daftarStore(Request $request,$id){
+        $daftarStore = \App\Pendaftaran::create([
+            'id_loker' => $id,
+            'nama_lengkap' => $request->nama_lengkap,
+            'no_handphone' => $request->no_handphone
+        ]);
+
+        Alert::success('Berhasil', 'Pendaftaran Berhasil, Silahkan Ke BKK Untuk Melakukan Pendaftaran Ulang!!!');
+        return redirect()->back();
+    }
+
     public function pengumuman(){
 
         $search_cek = $this->searching;

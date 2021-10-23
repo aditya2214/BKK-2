@@ -26,7 +26,40 @@
                     </p>
                 </div>
                 <div class="card-footer">
-                    <a href="" class="btn btn btn-primary">Daftar</a>
+                    <a data-toggle="modal" data-target="#exampleModal" class="btn btn btn-primary">Daftar</a>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">{{$vacancy_detail->title_vacancy}} </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <form action="{{ url ('daftarStore/'.{{$vacancy_detail->id}}) }}" method="post">
+                            @csrf
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label for="">Nama Lengkap</label>
+                                    <input type="text" required name="nama_lengkap" id="" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">No Handphone</label>
+                                    <input type="text" required name="no_handphone" id="" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-success">Daftar</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
                     <a href="{{url ('masukan_kode/'.$vacancy_detail->id) }}" class="btn btn btn-warning">Absen</a>
                 </div>
             </div>
