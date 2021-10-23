@@ -182,7 +182,7 @@
         dom: 'Bfrtip',
         buttons: [{
             extend : 'excelHtml5',
-            title : ''
+            title : 'DatabExport'
         }
         ]
     } );

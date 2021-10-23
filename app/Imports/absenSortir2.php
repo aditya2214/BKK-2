@@ -23,4 +23,9 @@ class absenSortir2 implements ToModel,WithHeadingRow
             'notes2' => $row['catatan']
         ]);
     }
+
+    public function headingRow(): int
+    {
+        return 2;
+    }
 }
