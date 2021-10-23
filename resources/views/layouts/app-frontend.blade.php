@@ -83,6 +83,12 @@
                     <p>Pengumuman</p>
                 </a>
             </div>
+            <div class="col-auto">
+                <a  href="https://api.whatsapp.com/send?phone=6283816336097&text=Ada Yang bisa Saya Bantu. Salam Hormat Admin BKK!!!" class="">
+                <i class="far fa-comments"></i>
+                    <p>Chat</p>
+                </a>
+            </div>
             <!-- <div class="col-auto">
                 <a href="wallet.html" class="">
                     <i class="material-icons">account_balance_wallet</i>

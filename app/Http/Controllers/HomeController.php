@@ -101,29 +101,38 @@ class HomeController extends Controller
     public function import_excel(Request $request) 
 	{
 		// validasi
-		$this->validate($request, [
-			'file' => 'required|mimes:csv,xls,xlsx'
-		]);
- 
-		// menangkap file excel
-        $file = $request->file('file');
-        
-        // dd($file);
- 
-		// membuat nama file unik
-		$nama_file = rand().$file->getClientOriginalName();
- 
-		// upload ke folder file_siswa di dalam folder public
-		$file->move('file_siswa',$nama_file);
- 
-		// import data
-		Excel::import(new absenSortir2, public_path('/file_siswa/'.$nama_file));
- 
-		// notifikasi dengan session
-        Alert::success('Berhasil', 'Sukses Sortir Data!!!');
- 
-		// alihkan halaman kembali
-        return redirect()->back();
+        try {
+            //code...
+            $this->validate($request, [
+                'file' => 'required|mimes:csv,xls,xlsx'
+            ]);
+     
+            // menangkap file excel
+            $file = $request->file('file');
+            
+            // dd($file);
+     
+            // membuat nama file unik
+            $nama_file = rand().$file->getClientOriginalName();
+     
+            // upload ke folder file_siswa di dalam folder public
+            $file->move('file_siswa',$nama_file);
+     
+            // import data
+            Excel::import(new absenSortir2, public_path('/file_siswa/'.$nama_file));
+     
+            // notifikasi dengan session
+            Alert::success('Berhasil', 'Sukses Sortir Data!!!');
+     
+            // alihkan halaman kembali
+            return redirect()->back();
+        } catch (\Throwable $th) {
+             // notifikasi dengan session
+             Alert::error('Error', 'Priksa Kembali File Excel Yang Di Import!!!');
+     
+             // alihkan halaman kembali
+             return redirect()->back();
+        }
 	}
 
 
