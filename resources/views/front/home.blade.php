@@ -265,29 +265,29 @@
                     <table>
                         <tr>
                             <td>
-                                <div class="row mb-3">
+                              
                                     <div class="col-10 col-md-4 mx-auto"><img src="/img/test/1.jpeg" loading="lazy" alt="" class="mw-100"></div>
-                                </div>
+                              
                             </td>
                             <td>
-                                <div class="row mb-3">
+                              
                                     <div class="col-10 col-md-4 mx-auto"><img src="/img/test/1.jpeg" loading="lazy" alt="" class="mw-100"></div>
-                                </div>
+                              
                             </td>
                             <td>
-                                <div class="row mb-3">
+                              
                                     <div class="col-10 col-md-4 mx-auto"><img src="/img/test/1.jpeg" loading="lazy" alt="" class="mw-100"></div>
-                                </div>
+                              
                             </td>
                             <td>
-                                <div class="row mb-3">
+                              
                                     <div class="col-10 col-md-4 mx-auto"><img src="/img/test/1.jpeg" loading="lazy" alt="" class="mw-100"></div>
-                                </div>
+                              
                             </td>
                             <td>
-                                <div class="row mb-3">
+                              
                                     <div class="col-10 col-md-4 mx-auto"><img src="/img/test/1.jpeg" loading="lazy" alt="" class="mw-100"></div>
-                                </div>
+                              
                             </td>
                         </tr>
                     </table>
