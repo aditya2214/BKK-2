@@ -297,7 +297,7 @@
         </div>
         <!-- PWA add to home display -->
 
-        <div class="container mb-4">
+        <!-- <div class="container mb-4">
             <div class="card border-0 mb-3">
                 <div class="card-body">
                     <div class="row align-items-center">
@@ -313,7 +313,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="container mb-4">
             <div class="row" id="lowongan">
                 <div class="col">
@@ -343,7 +343,7 @@
                 @endforeach
             </div>
         </div>
-        <div class="container mb-4">
+        <!-- <div class="container mb-4">
             <div class="card">
                 <div class="card-body">
                     <h6 class="mb-1">Select Menu Type</h6>
@@ -364,7 +364,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="container ">
             <div class="row">
                 <div class="col text-center">
