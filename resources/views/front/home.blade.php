@@ -272,22 +272,17 @@
                                 </td>
                                 <td>
                                 
-                                    <img src="/img/test/1.jpeg" style="width:300px;" loading="lazy" alt="">
+                                    <img src="/img/test/2.jpeg" style="width:300px;" loading="lazy" alt="">
                                 
                                 </td>
                                 <td>
                                 
-                                    <img src="/img/test/1.jpeg" style="width:300px;" loading="lazy" alt="">
+                                    <img src="/img/test/3.jpeg" style="width:300px;" loading="lazy" alt="">
                                 
                                 </td>
                                 <td>
                                 
-                                    <img src="/img/test/1.jpeg" style="width:300px;" loading="lazy" alt="">
-                                
-                                </td>
-                                <td>
-                                
-                                    <img src="/img/test/1.jpeg" style="width:300px;" loading="lazy" alt="">
+                                    <img src="/img/test/4.jpeg" style="width:300px;" loading="lazy" alt="">
                                 
                                 </td>
                             </tr>
