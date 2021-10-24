@@ -72,11 +72,24 @@ class FrontendController extends Controller
     }
 
     public function daftarStore(Request $request,$id){
-        $daftarStore = \App\Pendaftaran::create([
-            'id_loker' => $id,
-            'nama_lengkap' => $request->nama_lengkap,
-            'no_handphone' => $request->no_handphone
-        ]);
+        try {
+            $daftarStore = \App\Pendaftaran::create([
+                'id_loker' => $id,
+                'nama_lengkap' => $request->nama_lengkap,
+                'no_handphone' => $request->no_handphone
+            ]);
+
+            $dt = \App\Pendaftaran::where('id',$daftarStore->id)->first();
+            return $dt;
+ 
+            $pdf = PDF::loadview('admin.po.pdf',compact('dt'))->setPaper('a4', 'landscape');
+            return $pdf->stream();
+ 
+        } catch (\Exception $e) {
+            Alert::error('Error', 'Pendaftaran Berhasil, Silahkan Ke BKK Untuk MelakuUlang!!!');
+        }
+ 
+        return redirect()->back();
 
         Alert::success('Berhasil', 'Pendaftaran Berhasil, Silahkan Ke BKK Untuk Melakukan Pendaftaran Ulang!!!');
         return redirect()->back();
