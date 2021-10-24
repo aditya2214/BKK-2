@@ -19,7 +19,7 @@
         <span>Dashboard</span></a>
 </li>
 
-<!-- Divider -->
+<!-- Divider --> 
 <hr class="sidebar-divider">
 
 <!-- Heading -->
@@ -94,21 +94,21 @@
 <!-- Nav Item - Charts -->
 <li class="nav-item">
     <a class="nav-link" href="{{ url ('attendance') }}">
-        <i class="fas fa-fw fa-chart-area"></i>
+    <i class="fas fa-database"></i>
         <span>Master Data Absensi</span></a>
 </li>
 
 <!-- Nav Item - Tables -->
 <li class="nav-item">
     <a class="nav-link" href="{{ url ('posting_lowongan') }}">
-        <i class="fas fa-fw fa-table"></i>
+    <i class="fas fa-plus"></i>
         <span>Posting Lowongan </span></a>
 </li>
 
 <li class="nav-item">
     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
         aria-expanded="true" aria-controls="collapseTwo">
-        <i class="fas fa-fw fa-cog"></i>
+        <i class="fas fa-people-arrows"></i>
         <span>Seleksi Peserta</span>
     </a>
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
