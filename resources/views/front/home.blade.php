@@ -266,27 +266,27 @@
                         <tr>
                             <td>
                               
-                                <img src="/img/test/1.jpeg" loading="lazy" alt="" class="mw-100">
+                                <img src="/img/test/1.jpeg" loading="lazy" alt="">
                               
                             </td>
                             <td>
                               
-                                <img src="/img/test/1.jpeg" loading="lazy" alt="" class="mw-100">
+                                <img src="/img/test/1.jpeg" loading="lazy" alt="">
                               
                             </td>
                             <td>
                               
-                                <img src="/img/test/1.jpeg" loading="lazy" alt="" class="mw-100">
+                                <img src="/img/test/1.jpeg" loading="lazy" alt="">
                               
                             </td>
                             <td>
                               
-                                <img src="/img/test/1.jpeg" loading="lazy" alt="" class="mw-100">
+                                <img src="/img/test/1.jpeg" loading="lazy" alt="">
                               
                             </td>
                             <td>
                               
-                                <img src="/img/test/1.jpeg" loading="lazy" alt="" class="mw-100">
+                                <img src="/img/test/1.jpeg" loading="lazy" alt="">
                               
                             </td>
                         </tr>
