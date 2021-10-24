@@ -10,9 +10,10 @@ class FrontendController extends Controller
     public $searching;
 
     public function index(){
-        $vacancy = \App\Vacancy::where('switch',1)->get();
+        $vacancy = \App\Vacancy::where('switch',1)->orderBy('id','DESC')->limit(3)->get();
+        $vacancy2 = \App\Vacancy::where('switch',1)->orderBy('id','DESC')->get();
 
-        return view('front.home',compact('vacancy'));
+        return view('front.home',compact('vacancy','vacancy2'));
     }
 
     public function job_details($id){
