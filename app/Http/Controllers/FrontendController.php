@@ -87,6 +87,7 @@ class FrontendController extends Controller
  
         } catch (\Exception $e) {
             Alert::error('Error', 'Pendaftaran Gagal, Schreenshot Error dan Hubungi dan Kirimkan Hasil ke admin BKK!!!');
+            return redirect()->back();
         }
     }
 
