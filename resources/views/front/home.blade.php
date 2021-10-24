@@ -261,7 +261,16 @@
         <!-- PWA add to home display -->
         <div class="container mb-4">
             <div class="card" id="addtodevice">
-                <div class="card-body text-center">
+                <div class="card-body text-center" style="overflow-x:auto;">
+                    <div class="row mb-3">
+                        <div class="col-10 col-md-4 mx-auto"><img src="/img/test/1.jpeg" loading="lazy" alt="" class="mw-100"></div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-10 col-md-4 mx-auto"><img src="/img/test/1.jpeg" loading="lazy" alt="" class="mw-100"></div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-10 col-md-4 mx-auto"><img src="/img/test/1.jpeg" loading="lazy" alt="" class="mw-100"></div>
+                    </div>
                     <div class="row mb-3">
                         <div class="col-10 col-md-4 mx-auto"><img src="/img/test/1.jpeg" loading="lazy" alt="" class="mw-100"></div>
                     </div>
