@@ -262,18 +262,35 @@
         <div class="container mb-4">
             <div class="card" id="addtodevice">
                 <div class="card-body text-center" style="overflow-x:auto;">
-                    <div class="row mb-3">
-                        <div class="col-10 col-md-4 mx-auto"><img src="/img/test/1.jpeg" loading="lazy" alt="" class="mw-100"></div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col-10 col-md-4 mx-auto"><img src="/img/test/1.jpeg" loading="lazy" alt="" class="mw-100"></div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col-10 col-md-4 mx-auto"><img src="/img/test/1.jpeg" loading="lazy" alt="" class="mw-100"></div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col-10 col-md-4 mx-auto"><img src="/img/test/1.jpeg" loading="lazy" alt="" class="mw-100"></div>
-                    </div>
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="row mb-3">
+                                    <div class="col-10 col-md-4 mx-auto"><img src="/img/test/1.jpeg" loading="lazy" alt="" class="mw-100"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="row mb-3">
+                                    <div class="col-10 col-md-4 mx-auto"><img src="/img/test/1.jpeg" loading="lazy" alt="" class="mw-100"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="row mb-3">
+                                    <div class="col-10 col-md-4 mx-auto"><img src="/img/test/1.jpeg" loading="lazy" alt="" class="mw-100"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="row mb-3">
+                                    <div class="col-10 col-md-4 mx-auto"><img src="/img/test/1.jpeg" loading="lazy" alt="" class="mw-100"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="row mb-3">
+                                    <div class="col-10 col-md-4 mx-auto"><img src="/img/test/1.jpeg" loading="lazy" alt="" class="mw-100"></div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
 
                     <h5 class="text-dark">Tes PT <span class="font-weight-bold">BKK SMK PGRI 2 KARAWANG</span></h5>
                     <p class="text-secondary">Ayok daftarkan dirimu sekarang. Dapatkan Pekerjaanmu sekarang juga</p>
