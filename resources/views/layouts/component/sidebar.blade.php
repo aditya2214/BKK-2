@@ -122,8 +122,8 @@
 
 <li class="nav-item">
     <a class="nav-link" href="{{ url ('mitra_bkk') }}">
-        <i class="fas fa-fw fa-table"></i>
-        <span>Mitra BKK</span></a>
+    <i class="far fa-handshake"></i>
+    <span>Mitra BKK</span></a>
 </li>
 
 <!-- Divider -->
