@@ -46,7 +46,6 @@ class FrontendController extends Controller
     }
 
     public function storeAbsensi(Request $request, $id){
-        $subjectVal = $request->no_handphone;
 
         $storeAbsen = \App\Attendance::create([
             'id_vacancy' => $id,
@@ -64,7 +63,7 @@ class FrontendController extends Controller
             'school' => $request->school,
             'graduation_year' => $request->graduation_year.'-'.date('d'),
             'experience' => $request->experience,
-            'no_handphone' => $gkr
+            'no_handphone' => $request->no_handphone
         ]);
 
         Alert::success('Berhasil', 'Data Absensi Anda Sudah Masuk!!!');
