@@ -229,7 +229,7 @@
             </div>
         </div>
         <div class="container mb-4">
-            <div class="row" id="lowongan">
+            <div class="row" id="">
                 <div class="col">
                     <h6 class="subtitle mb-3">Lowongan Tersedia </h6>
                 </div>
@@ -317,7 +317,7 @@
         <div class="container mb-4">
             <div class="row" id="lowongan">
                 <div class="col">
-                    <h6 class="subtitle mb-3">Lowongan Lainnya </h6>
+                    <h6 class="subtitle mb-3">Semua Lowongan</h6>
                 </div>
                 <!-- <div class="col-auto"><a href="" class="text-default">View all</a></div> -->
             </div>
