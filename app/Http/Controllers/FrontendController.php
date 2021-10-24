@@ -80,19 +80,14 @@ class FrontendController extends Controller
             ]);
 
             $dt = \App\Pendaftaran::where('id',$daftarStore->id)->first();
-            return $dt;
+            // return $dt;
  
-            $pdf = PDF::loadview('admin.po.pdf',compact('dt'))->setPaper('a4', 'landscape');
+            $pdf = PDF::loadview('front.pdf_pendaftaran',compact('dt'))->setPaper('a4', 'landscape');
             return $pdf->stream();
  
         } catch (\Exception $e) {
-            Alert::error('Error', 'Pendaftaran Berhasil, Silahkan Ke BKK Untuk MelakuUlang!!!');
+            Alert::error('Error', 'Pendaftaran Gagal, Schreenshot Error dan Hubungi dan Kirimkan Hasil ke admin BKK!!!');
         }
- 
-        return redirect()->back();
-
-        Alert::success('Berhasil', 'Pendaftaran Berhasil, Silahkan Ke BKK Untuk Melakukan Pendaftaran Ulang!!!');
-        return redirect()->back();
     }
 
     public function pengumuman(){
