@@ -20,8 +20,9 @@
                         <p><b>{{date('md',strtotime($dt->created_at))}}/{{$dt->id}}</b></p>
                     </div>
                     <div class="card-body">
+                    <br>
                        <p> Yth :</p>
-                        <table class="table">
+                        <table class="table" style="border-solid:1px;">
                             <thead>
                                 <tr>
                                     <th>Nama </th>
