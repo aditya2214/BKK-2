@@ -72,7 +72,7 @@ class FrontendController extends Controller
     }
 
     public function daftarStore(Request $request,$id){
-        try {
+        // try {
             $daftarStore = \App\Pendaftaran::create([
                 'id_loker' => $id,
                 'nama_lengkap' => $request->nama_lengkap,
@@ -85,10 +85,10 @@ class FrontendController extends Controller
             $pdf = PDF::loadview('front.pdf_pendaftaran',compact('dt'))->setPaper('a4', 'landscape');
             return $pdf->stream();
  
-        } catch (\Exception $e) {
-            Alert::error('Error', 'Pendaftaran Gagal, Schreenshot Error dan Hubungi dan Kirimkan Hasil ke admin BKK!!!');
-            return redirect()->back();
-        }
+        // } catch (\Exception $e) {
+        //     Alert::error('Error', 'Pendaftaran Gagal, Schreenshot Error dan Hubungi dan Kirimkan Hasil ke admin BKK!!!');
+        //     return redirect()->back();
+        // }
     }
 
     public function pengumuman(){
