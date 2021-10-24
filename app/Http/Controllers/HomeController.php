@@ -29,9 +29,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $vacancy = \App\Vacancy::count();
-        return $vacancy;
-        
         return view('back.home');
     }
 
