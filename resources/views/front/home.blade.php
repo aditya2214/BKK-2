@@ -261,36 +261,38 @@
         <!-- PWA add to home display -->
         <div class="container mb-4">
             <div class="card" id="addtodevice">
-                <div class="card-body text-center" style="overflow-x:auto;">
-                    <table>
-                        <tr>
-                            <td>
-                              
-                                <img src="/img/test/1.jpeg" loading="lazy" alt="">
-                              
-                            </td>
-                            <td>
-                              
-                                <img src="/img/test/1.jpeg" loading="lazy" alt="">
-                              
-                            </td>
-                            <td>
-                              
-                                <img src="/img/test/1.jpeg" loading="lazy" alt="">
-                              
-                            </td>
-                            <td>
-                              
-                                <img src="/img/test/1.jpeg" loading="lazy" alt="">
-                              
-                            </td>
-                            <td>
-                              
-                                <img src="/img/test/1.jpeg" loading="lazy" alt="">
-                              
-                            </td>
-                        </tr>
-                    </table>
+                <div class="card-body text-center" >
+                    <div style="overflow-x:auto;">
+                        <table>
+                            <tr>
+                                <td>
+                                
+                                    <img src="/img/test/1.jpeg" style="width:150px;" loading="lazy" alt="">
+                                
+                                </td>
+                                <td>
+                                
+                                    <img src="/img/test/1.jpeg" style="width:150px;" loading="lazy" alt="">
+                                
+                                </td>
+                                <td>
+                                
+                                    <img src="/img/test/1.jpeg" style="width:150px;" loading="lazy" alt="">
+                                
+                                </td>
+                                <td>
+                                
+                                    <img src="/img/test/1.jpeg" style="width:150px;" loading="lazy" alt="">
+                                
+                                </td>
+                                <td>
+                                
+                                    <img src="/img/test/1.jpeg" style="width:150px;" loading="lazy" alt="">
+                                
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
 
                     <h5 class="text-dark">Tes PT <span class="font-weight-bold">BKK SMK PGRI 2 KARAWANG</span></h5>
                     <p class="text-secondary">Ayok daftarkan dirimu sekarang. Dapatkan Pekerjaanmu sekarang juga</p>
