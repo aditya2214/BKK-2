@@ -92,17 +92,18 @@
 </li> -->
 
 <!-- Nav Item - Charts -->
-<li class="nav-item">
-    <a class="nav-link" href="{{ url ('attendance') }}">
-    <i class="fas fa-database"></i>
-        <span>Master Data Absensi</span></a>
-</li>
 
 <!-- Nav Item - Tables -->
 <li class="nav-item">
     <a class="nav-link" href="{{ url ('posting_lowongan') }}">
     <i class="fas fa-plus"></i>
         <span>Posting Lowongan </span></a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link" href="{{ url ('attendance') }}">
+    <i class="fas fa-database"></i>
+        <span>Daftar Lowongan</span></a>
 </li>
 
 <li class="nav-item">

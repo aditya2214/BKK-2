@@ -30,7 +30,7 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <button class="btn btn-primary">Select</button>
+                                <button class="btn btn-primary">Pilih</button>
                             </div>
                         </form>
                     </div>

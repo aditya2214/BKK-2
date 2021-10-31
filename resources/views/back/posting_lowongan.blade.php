@@ -18,29 +18,29 @@
                 <form action="{{ url ('store_jobs') }}" method="POST" >
                 @csrf
                     <div class="form-group">
-                        <label for="">Job Code</label>
+                        <label for="">Kode Lowongan</label>
                         <input required type="text" name="job_kode" id="job_kode" class="form-control">
                     </div>
                     <div class="form-group">
-                        <label for="">Job Title</label>
+                        <label for="">Judul</label>
                         <input required type="text" name="title_job" id="title_job" class="form-control">
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Place And Date</label>
+                        <label for="exampleFormControlTextarea1">Tempat Dan Tanggal</label>
                         <textarea class="form-control" name="place_and_date" id="place_and_date" rows="3"></textarea>
                         <script>
                             CKEDITOR.replace( 'place_and_date' );
                         </script>
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Other Requirement</label>
+                        <label for="exampleFormControlTextarea1">Persyaratan</label>
                         <textarea class="form-control"name="other_requirement"  id="other_requirement" rows="3"></textarea>
                         <script>
                             CKEDITOR.replace( 'other_requirement' );
                         </script>
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Notes</label>
+                        <label for="exampleFormControlTextarea1">Catatan</label>
                         <textarea class="form-control" name="notes"  id="notes" rows="3"></textarea>
                         <script>
                             CKEDITOR.replace( 'notes' );
