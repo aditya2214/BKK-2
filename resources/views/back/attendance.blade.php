@@ -26,9 +26,11 @@
                     <div class="col-auto">
                         <i class="fas fa-calendar fa-2x text-gray-300"></i><br>
                         @if($vac->switch == 1)
-                        <span class="badge badge-success">Published</span>
+                        <a href="{{ url ('switch_01/'.$vac->id) }}"><span class="badge badge-success">Published</span></a>
+                        <a href="{{ url ('switch_02/'.$vac->id) }}"><span class="badge badge-secondary">Unpublished</span></a>
                         @else
-                        <span class="badge badge-danger">Unpublished</span>
+                        <a href="{{ url ('switch_01/'.$vac->id) }}"> <span class="badge badge-secondary">Published</span></a>
+                        <a href="{{ url ('switch_02/'.$vac->id) }}"><span class="badge badge-danger">Unpublished</span></a>
                         @endif
                     </div>
                 </div>

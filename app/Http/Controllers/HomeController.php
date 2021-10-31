@@ -216,6 +216,24 @@ class HomeController extends Controller
         return "";
     }
 
+    public function switch_01($id){
+        $sw_01 = \App\Vacancy::where('id',$id)->update([
+            'switch' => 1
+        ]);
+
+        Alert::info('SWITCH ON', 'Success');
+        return redirect()->back();
+    }
+
+    public function switch_02($id){
+        $sw_02 = \App\Vacancy::where('id',$id)->update([
+            'switch' => 0
+        ]);
+
+        Alert::info('SWITCH OFF', 'Success');
+        return redirect()->back();
+    }
+
 
 
 
