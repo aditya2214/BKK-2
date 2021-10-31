@@ -42,6 +42,7 @@
                     <div class="col mr-2">
                         <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                             Daftar Lowongan</div>
+                            <span class="badges badges-success">{{count_lowongan}}</span>
                         <!-- <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div> -->
                     </div>
                     <div class="col-auto">
