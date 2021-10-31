@@ -78,7 +78,7 @@
                             <thead>
                                 <tr>
                                     <th>id</th>
-                                    <th>status</th>
+                                    <th>status______</th>
                                     <th>kategori_tes</th>
                                     <th>catatan</th>
                                     <th>nama_lengkap</th>
