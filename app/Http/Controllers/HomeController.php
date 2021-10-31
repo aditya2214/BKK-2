@@ -222,7 +222,7 @@ class HomeController extends Controller
         ]);
 
         Alert::info('SWITCH ON', 'Success');
-        return redirect()->back();
+        return redirect('attendance');
     }
 
     public function switch_02($id){
@@ -231,7 +231,7 @@ class HomeController extends Controller
         ]);
 
         Alert::info('SWITCH OFF', 'Success');
-        return redirect()->back();
+        return redirect('attendance');
     }
 
 
