@@ -29,7 +29,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('back.home');
+        $count_lowongan = \App\Vacancy::count();
+        return view('back.home',compact('count_lowongan'));
     }
 
     public function posting_lowongan(){
