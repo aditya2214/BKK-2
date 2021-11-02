@@ -52,6 +52,8 @@ Route::get('/whatsapp/{id}', 'HomeController@whatsapp')->name('whatsapp');
 Route::post('/siswa/import_excel', 'HomeController@import_excel');
 Route::post('/test_online', 'HomeController@test_online');
 
+Route::get('/switch_01/{id}', 'HomeController@switch_01');
+Route::get('/switch_02/{id}', 'HomeController@switch_02');
 
 
 Route::get('test', 'HomeController@test')->name('test');

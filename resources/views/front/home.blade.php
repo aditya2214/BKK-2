@@ -229,7 +229,7 @@
             </div>
         </div>
         <div class="container mb-4">
-            <div class="row" id="lowongan">
+            <div class="row" id="">
                 <div class="col">
                     <h6 class="subtitle mb-3">Lowongan Tersedia </h6>
                 </div>
@@ -261,9 +261,32 @@
         <!-- PWA add to home display -->
         <div class="container mb-4">
             <div class="card" id="addtodevice">
-                <div class="card-body text-center">
-                    <div class="row mb-3">
-                        <div class="col-10 col-md-4 mx-auto"><img src="/img/test/1.jpeg" loading="lazy" alt="" class="mw-100"></div>
+                <div class="card-body text-center" >
+                    <div style="overflow-x:auto;">
+                        <table>
+                            <tr>
+                                <td>
+                                
+                                    <img src="/img/test/1.jpeg" style="width:300px;" loading="lazy" alt="">
+                                
+                                </td>
+                                <td>
+                                
+                                    <img src="/img/test/2.jpeg" style="width:300px;" loading="lazy" alt="">
+                                
+                                </td>
+                                <td>
+                                
+                                    <img src="/img/test/3.jpeg" style="width:300px;" loading="lazy" alt="">
+                                
+                                </td>
+                                <td>
+                                
+                                    <img src="/img/test/4.jpeg" style="width:300px;" loading="lazy" alt="">
+                                
+                                </td>
+                            </tr>
+                        </table>
                     </div>
 
                     <h5 class="text-dark">Tes PT <span class="font-weight-bold">BKK SMK PGRI 2 KARAWANG</span></h5>
@@ -274,7 +297,7 @@
         </div>
         <!-- PWA add to home display -->
 
-        <div class="container mb-4">
+        <!-- <div class="container mb-4">
             <div class="card border-0 mb-3">
                 <div class="card-body">
                     <div class="row align-items-center">
@@ -290,59 +313,37 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="container mb-4">
-            <div class="row mb-3">
+            <div class="row" id="lowongan">
                 <div class="col">
-                    <h6 class="subtitle mb-0">Upcoming Payments </h6>
+                    <h6 class="subtitle mb-3">Semua Lowongan</h6>
                 </div>
-                <div class="col-auto"><a href="allpayment.html" class="float-right small">View All</a></div>
+                <!-- <div class="col-auto"><a href="" class="text-default">View all</a></div> -->
             </div>
             <div class="row">
+                @foreach($vacancy2 as $key=>$vac2)
                 <div class="col-12 col-md-6">
-                    <div class="card mb-4">
+                    <div class="card border-0 mb-4">
                         <div class="card-body">
-                            <div class="row">
-                                <div class="col">
-                                    <h5 class="mb-1">$ 1548.00 </h5>
-                                    <p class="text-secondary">20d to pay electricity bill</p>
-
+                            <div class="row align-items-center">
+                                <div class="col-12 align-self-center">
+                                    <h6 class="mb-1">{{$vac2->title_vacancy}}</h6>
+                                    <p class="small text-secondary"></p>
                                 </div>
-                                <div class="col-auto pl-0">
-                                    <button class="btn btn-40 bg-default-light text-default rounded-circle">
-                                        <i class="material-icons">local_atm</i>
-                                    </button>
+                                <br>
+                                <div class="col-12 align-self-center">
+                                    <a href="{{ url ('job_details/'.$vac2->id) }}" class="btn btn-outline-primary">Detail</a href="{{ url ('job_detail/'.$vac2->id) }}">
+                                    <p class="small text-secondary">Di Post Tgl : {{$vac2->created_at}}</p>
                                 </div>
-                            </div>
-                            <div class="progress h-5 mt-3">
-                                <div class="progress-bar bg-default" role="progressbar" style="width:35%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6">
-                    <div class="card ">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col">
-                                    <h5 class="mb-1">$ 106.00</h5>
-                                    <p class="text-secondary">33 days to pay gas bill</p>
-                                </div>
-                                <div class="col-auto pl-0">
-                                    <button class="btn btn-40 bg-default-light text-default rounded-circle">
-                                        <i class="material-icons">local_atm</i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="progress h-5 mt-3">
-                                <div class="progress-bar bg-default" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
-        <div class="container mb-4">
+        <!-- <div class="container mb-4">
             <div class="card">
                 <div class="card-body">
                     <h6 class="mb-1">Select Menu Type</h6>
@@ -363,7 +364,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="container ">
             <div class="row">
                 <div class="col text-center">

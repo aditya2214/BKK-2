@@ -7,8 +7,8 @@
 <!-- Page Heading -->
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
     <h1 class="h3 mb-0 text-gray-800">Absensi</h1>
-    <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-            class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+    <a href="javascript:location.reload();" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+            class="fas fa-sync-alt fa-sm text-white-50"></i> Refresh</a>
 </div>
 <hr>
 <div class="row">
@@ -26,9 +26,11 @@
                     <div class="col-auto">
                         <i class="fas fa-calendar fa-2x text-gray-300"></i><br>
                         @if($vac->switch == 1)
-                        <span class="badge badge-success">Published</span>
+                        <a href="{{ url ('switch_01/'.$vac->id) }}"><span class="badge badge-success">Published</span></a>
+                        <a href="{{ url ('switch_02/'.$vac->id) }}"><span class="badge badge-secondary">Unpublished</span></a>
                         @else
-                        <span class="badge badge-danger">Unpublished</span>
+                        <a href="{{ url ('switch_01/'.$vac->id) }}"> <span class="badge badge-secondary">Published</span></a>
+                        <a href="{{ url ('switch_02/'.$vac->id) }}"><span class="badge badge-danger">Unpublished</span></a>
                         @endif
                     </div>
                 </div>

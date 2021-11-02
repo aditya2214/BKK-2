@@ -8,8 +8,8 @@
 <!-- Page Heading -->
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
     <h1 class="h3 mb-0 text-gray-800">Otomatis</h1>
-    <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-            class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+    <a href="javascript:location.reload();" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+            class="fas fa-sync-alt fa-sm text-white-50"></i> Refresh</a>
 </div>
 <hr>
 <div class="row">
@@ -78,7 +78,7 @@
                             <thead>
                                 <tr>
                                     <th>id</th>
-                                    <th>status</th>
+                                    <th>status______</th>
                                     <th>kategori_tes</th>
                                     <th>catatan</th>
                                     <th>nama_lengkap</th>
@@ -101,26 +101,26 @@
                                 @foreach($get_attendances as $key=>$get_attendance)
                                 <tr>
                                     <td>{{$get_attendance->id}}</td>
-                                    <td class="bg-warning">
+                                    <td >
                                         <ul>
                                             @foreach($get_attendance->Seleksi_r as $kal)
                                                 @if($get_attendance->Seleksi_r == null)
                                                 <li>
-                                                    <a href="{{ url ('delete_kategori_test/'.$kal->id) }}" class="text-danger" style="border-radius:15px;"><i class="far fa-times-circle"></i></a><small class="badge badge-secondary">&nbsp;Belum Di Sortir</small>
+                                                    <a href="{{ url ('delete_kategori_test/'.$kal->id) }}" class="text-danger" style="border-radius:15px;"><i class="far fa-times-circle"></i></a>&nbsp;<small class="badge badge-secondary">&nbsp;Belum Di Sortir</small>
                                                 </li>
                                                 @elseif($kal->status_tes == "lolos")
                                                 <li>
-                                                <a href="{{ url ('delete_kategori_test/'.$kal->id) }}" class="text-danger" style="border-radius:15px;"><i class="far fa-times-circle"></i></a><small class="badge badge-success">&nbsp;{{$kal->status_tes}}</small>
+                                                <a href="{{ url ('delete_kategori_test/'.$kal->id) }}" class="text-danger" style="border-radius:15px;"><i class="far fa-times-circle"></i></a>&nbsp;<small class="badge badge-success">&nbsp;{{$kal->status_tes}}</small>
                                                 </li>
                                                 @else
                                                 <li>
-                                                <a href="{{ url ('delete_kategori_test/'.$kal->id) }}" class="text-danger" style="border-radius:15px;"><i class="far fa-times-circle"></i></a><small class="badge badge-danger">&nbsp;{{$kal->status_tes}}</small>
+                                                <a href="{{ url ('delete_kategori_test/'.$kal->id) }}" class="text-danger" style="border-radius:15px;"><i class="far fa-times-circle"></i></a>&nbsp;<small class="badge badge-danger">&nbsp;{{$kal->status_tes}}</small>
                                                 </li>
                                                 @endif
                                             @endforeach
                                         </ul>
                                     </td>
-                                    <td class="bg-warning">
+                                    <td >
                                         <ul>
                                             @foreach($get_attendance->Seleksi_r as $kal)
                                                 @if($get_attendance->Seleksi_r == null)
@@ -139,7 +139,7 @@
                                             @endforeach
                                         </ul>
                                     </td>
-                                    <td class="bg-warning">
+                                    <td >
                                         <ul>
                                             @foreach($get_attendance->Seleksi_r as $kal)
                                                 <li>{!!$kal->notes2!!}</li>

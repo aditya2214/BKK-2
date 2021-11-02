@@ -29,7 +29,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('back.home');
+        $count_lowongan = \App\Vacancy::count();
+        return view('back.home',compact('count_lowongan'));
     }
 
     public function posting_lowongan(){
@@ -221,6 +222,24 @@ class HomeController extends Controller
 
     public function whatsapp($id){
         return "";
+    }
+
+    public function switch_01($id){
+        $sw_01 = \App\Vacancy::where('id',$id)->update([
+            'switch' => 1
+        ]);
+
+        Alert::info('SWITCH ON', 'Success');
+        return redirect('attendance');
+    }
+
+    public function switch_02($id){
+        $sw_02 = \App\Vacancy::where('id',$id)->update([
+            'switch' => 0
+        ]);
+
+        Alert::info('SWITCH OFF', 'Success');
+        return redirect('attendance');
     }
 
 

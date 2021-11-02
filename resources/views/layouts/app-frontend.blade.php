@@ -72,7 +72,7 @@
     <div class="footer">
         <div class="row no-gutters justify-content-center">
             <div class="col-auto">
-                <a href="{{ url ('/')}}" class="active">
+                <a href="{{ url ('/')}}" class="">
                 <i class="fas fa-home"></i>
                     <p>Home</p>
                 </a>

@@ -3,16 +3,17 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Alert;
+use Alert,PDF;
 
 class FrontendController extends Controller
 {
     public $searching;
 
     public function index(){
-        $vacancy = \App\Vacancy::where('switch',1)->get();
+        $vacancy = \App\Vacancy::where('switch',1)->orderBy('id','DESC')->limit(3)->get();
+        $vacancy2 = \App\Vacancy::where('switch',1)->orderBy('id','DESC')->get();
 
-        return view('front.home',compact('vacancy'));
+        return view('front.home',compact('vacancy','vacancy2'));
     }
 
     public function job_details($id){
@@ -46,7 +47,6 @@ class FrontendController extends Controller
     }
 
     public function storeAbsensi(Request $request, $id){
-        $subjectVal = $request->no_handphone;
 
         $storeAbsen = \App\Attendance::create([
             'id_vacancy' => $id,
@@ -64,7 +64,7 @@ class FrontendController extends Controller
             'school' => $request->school,
             'graduation_year' => $request->graduation_year.'-'.date('d'),
             'experience' => $request->experience,
-            'no_handphone' => $gkr
+            'no_handphone' => $request->no_handphone
         ]);
 
         Alert::success('Berhasil', 'Data Absensi Anda Sudah Masuk!!!');
@@ -72,14 +72,23 @@ class FrontendController extends Controller
     }
 
     public function daftarStore(Request $request,$id){
-        $daftarStore = \App\Pendaftaran::create([
-            'id_loker' => $id,
-            'nama_lengkap' => $request->nama_lengkap,
-            'no_handphone' => $request->no_handphone
-        ]);
+        // try {
+            $daftarStore = \App\Pendaftaran::create([
+                'id_loker' => $id,
+                'nama_lengkap' => $request->nama_lengkap,
+                'no_handphone' => $request->no_handphone
+            ]);
 
-        Alert::success('Berhasil', 'Pendaftaran Berhasil, Silahkan Ke BKK Untuk Melakukan Pendaftaran Ulang!!!');
-        return redirect()->back();
+            $dt = \App\Pendaftaran::where('id',$daftarStore->id)->first();
+            // return $dt;
+ 
+            $pdf = PDF::loadview('front.pdf_pendaftaran',compact('dt'))->setPaper('a4', 'landscape');
+            return $pdf->stream();
+ 
+        // } catch (\Exception $e) {
+        //     Alert::error('Error', 'Pendaftaran Gagal, Schreenshot Error dan Hubungi dan Kirimkan Hasil ke admin BKK!!!');
+        //     return redirect()->back();
+        // }
     }
 
     public function pengumuman(){

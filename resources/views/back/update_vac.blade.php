@@ -7,8 +7,8 @@
 <!-- Page Heading -->
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
     <h1 class="h3 mb-0 text-gray-800">Posting Lowongan</h1>
-    <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-            class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+    <a href="javascript:location.reload();" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+            class="fas fa-sync-alt fa-sm text-white-50"></i> Refresh</a>
 </div>
 <hr>
 <div class="row">
@@ -18,29 +18,29 @@
                 <form action="{{ url ('update_jobs/'.$update_vac->id ) }}" method="POST" >
                 @csrf
                     <div class="form-group">
-                        <label for="">Job Code</label>
+                        <label for="">Kode Lowongan</label>
                         <input type="text" name="job_kode" value="{{$update_vac->kode_vacancy}}" id="job_kode" class="form-control">
                     </div>
                     <div class="form-group">
-                        <label for="">Job Title</label>
+                        <label for="">Judul Lowongan</label>
                         <input type="text" name="title_job" value="{{$update_vac->title_vacancy}}" id="title_job" class="form-control">
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Place And Date</label>
+                        <label for="exampleFormControlTextarea1">Tempat Dan Tanggal</label>
                         <textarea class="form-control" name="place_and_date" id="place_and_date" rows="3">{{$update_vac->place_and_date}}</textarea>
                         <script>
                             CKEDITOR.replace( 'place_and_date' );
                         </script>
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Other Requirement</label>
+                        <label for="exampleFormControlTextarea1">Persyaratan</label>
                         <textarea class="form-control"name="other_requirement"  id="other_requirement" rows="3">{{$update_vac->recruitment}}</textarea>
                         <script>
                             CKEDITOR.replace( 'other_requirement' );
                         </script>
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Notes</label>
+                        <label for="exampleFormControlTextarea1">Catatan</label>
                         <textarea class="form-control" name="notes" id="notes" rows="3">{{$update_vac->notes}}</textarea>
                         <script>
                             CKEDITOR.replace( 'notes' );
