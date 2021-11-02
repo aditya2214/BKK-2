@@ -212,6 +212,13 @@ class HomeController extends Controller
         return redirect()->back();
     }
 
+
+    public function test_online(){
+        $vacancy = \App\Vacancy::all();
+
+        return view('test_online',compact("vacancy"));
+    }
+
     public function whatsapp($id){
         return "";
     }

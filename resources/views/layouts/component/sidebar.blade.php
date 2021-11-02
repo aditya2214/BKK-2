@@ -125,6 +125,11 @@
         <i class="fas fa-fw fa-table"></i>
         <span>Mitra BKK</span></a>
 </li>
+<li class="nav-item">
+    <a class="nav-link" href="{{ url ('test_online') }}">
+        <i class="fas fa-signal"></i>
+    <span>Tes Online</span></a>
+</li>
 
 <!-- Divider -->
 <hr class="sidebar-divider d-none d-md-block">

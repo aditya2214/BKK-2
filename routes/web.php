@@ -50,6 +50,7 @@ Route::get('/mitra_bkk', 'HomeController@mitra_bkk')->name('mitra_bkk');
 Route::post('/store_mitra', 'HomeController@store_mitra')->name('store_mitra');
 Route::get('/whatsapp/{id}', 'HomeController@whatsapp')->name('whatsapp');
 Route::post('/siswa/import_excel', 'HomeController@import_excel');
+Route::post('/test_online', 'HomeController@test_online');
 
 
 
