@@ -41,7 +41,7 @@
         @if($pilih_loker == null)
 
         @else
-        <form action="{{ url ('storeLinkGform/'.$pilih_loker) }}" method="post">
+        <form action="{{ url ('storeLinkGform/'.$pilih_loker) }}" method="get">
             <div class="form-group">
                 <label for="">Masukan Link G-Form</label>
                 <input type="text" name="link" id="link" required class="form-control">
