@@ -226,7 +226,7 @@ class HomeController extends Controller
     public function test_online(){
         $vacancy = \App\Vacancy::all();
         $pilih_loker = $this->id_loker;
-        $LinkGform = App\LinkGform::all();
+        $LinkGform = \App\LinkGform::all();
         return view('back.test_online',compact("vacancy","pilih_loker","LinkGform"));
     }
 
