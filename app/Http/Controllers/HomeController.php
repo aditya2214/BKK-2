@@ -152,8 +152,9 @@ class HomeController extends Controller
         $this->id_loker = $request->select;
         $pilih_loker = $this->id_loker;
         $vacancy = \App\Vacancy::all();
+        $LinkGform = \App\LinkGform::all();
 
-        return view('back.test_online',compact('vacancy','pilih_loker'));
+        return view('back.test_online',compact('vacancy','pilih_loker','LinkGform'));
 
     }
 
