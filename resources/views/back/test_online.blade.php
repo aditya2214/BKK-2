@@ -57,7 +57,7 @@
         <div class="card">
             <div class="card-body">
                 <p><b>{{$lgf->id_loker}}</b></p>
-                <a href="{{ url ('$lgf->link_gfom') }}">{{$lgf->link_gfom}}</a>
+                <a href="{{$lgf->link_gfom}}">{{$lgf->link_gfom}}</a>
             </div>
         </div>
         @endforeach
