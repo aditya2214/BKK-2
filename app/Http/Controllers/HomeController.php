@@ -230,7 +230,7 @@ class HomeController extends Controller
     }
 
     public function storeLinkGform(Request $request, $id){
-
+        
     }
 
     public function whatsapp($id){
