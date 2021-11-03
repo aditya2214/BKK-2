@@ -37,28 +37,24 @@
                 </div>
             </div>
         </div>
-    </div>
-</div>
-@if($pilih_loker == null)
+        <br>
+        @if($pilih_loker == null)
 
-@else
-<div class="row">
-    <div class="col-md-12">
-        <div class="card">
-            <div class="card-body">
-                <form action="" method="post">
-                    <div class="form-group">
-                        <label for="">Masukan Link G-Form</label>
-                        <input type="text" name="link" id="link" required class="form-control">
-                    </div>
-                </form>
+        @else
+        <form action="" method="post">
+            <div class="form-group">
+                <label for="">Masukan Link G-Form</label>
+                <input type="text" name="link" id="link" required class="form-control">
             </div>
-        </div>
+            <div class="form-group">
+                <div class="btn btn btn-success form-control">Simpan Link</div>
+            </div>
+        </form>
+        @endsection
     </div>
 </div>
-@endif
+
 
 <!-- Content Row -->
 
 <!-- /.container-fluid -->
-@endsection
