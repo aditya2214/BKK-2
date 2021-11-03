@@ -50,9 +50,10 @@
                 <div class="btn btn btn-success form-control">Simpan Link</div>
             </div>
         </form>
-        @endsection
+        @endif
     </div>
 </div>
+@endsection
 
 
 <!-- Content Row -->
