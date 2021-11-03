@@ -47,7 +47,7 @@
                 <input type="text" name="link" id="link" required class="form-control">
             </div>
             <div class="form-group">
-                <div class="btn btn btn-success form-control">Simpan Link</div>
+                <button class="btn btn-success form-control">Simpan Link</button>
             </div>
         </form>
         @endif
