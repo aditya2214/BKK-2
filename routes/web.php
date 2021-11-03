@@ -54,6 +54,7 @@ Route::get('/test_online', 'HomeController@test_online');
 Route::get('/select_loker_test', 'HomeController@select_loker_test')->name('select_loker_test');
 Route::get('/switch_01/{id}', 'HomeController@switch_01');
 Route::get('/switch_02/{id}', 'HomeController@switch_02');
+Route::post('/storeLinkGform', 'HomeController@storeLinkGform')->name('storeLinkGform');
 
 
 Route::get('test', 'HomeController@test')->name('test');
