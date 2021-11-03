@@ -2,8 +2,8 @@
 
 @section('content')
 
-     <!-- Begin Page Content -->
-     <div class="container-fluid">
+<!-- Begin Page Content -->
+<div class="container-fluid">
 
 <!-- Page Heading -->
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
@@ -13,7 +13,7 @@
 </div>
 <hr>
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-6">
         <div class="card">
             <div class="card-body">
                 <div class="row">
@@ -51,6 +51,16 @@
             </div>
         </form>
         @endif
+    </div>
+    <div class="col-md-6">
+        @foreach($LinkGform as $lgf)
+        <div class="card">
+            <div class="card-body">
+                <p><b>{{$lgf->id_loker}}</b></p>
+                <a href="{{ url ('$lgf->link_gfom') }}">{{$lgf->link_gfom}}</a>
+            </div>
+        </div>
+        @endforeach
     </div>
 </div>
 @endsection
