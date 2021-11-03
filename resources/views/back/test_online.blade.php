@@ -39,6 +39,24 @@
         </div>
     </div>
 </div>
+@if($pilih_loker == null)
+
+@else
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <form action="" method="post">
+                    <div class="form-group">
+                        <label for="">Masukan Link G-Form</label>
+                        <input type="text" name="link" id="link" required class="form-control">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+@endif
 
 <!-- Content Row -->
 

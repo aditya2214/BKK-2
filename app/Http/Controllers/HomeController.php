@@ -216,8 +216,8 @@ class HomeController extends Controller
 
     public function test_online(){
         $vacancy = \App\Vacancy::all();
-
-        return view('back.test_online',compact("vacancy"));
+        $pilih_loker = $this->id_loker;
+        return view('back.test_online',compact("vacancy","pilih_loker"));
     }
 
     public function whatsapp($id){
