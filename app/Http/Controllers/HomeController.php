@@ -148,6 +148,15 @@ class HomeController extends Controller
         return view('back.seleksi_peserta',compact('vacancy','get_attendances','pilih_loker'));
     }
 
+    public function select_loker_test(){
+        $this->id_loker = $request->select;
+        $pilih_loker = $this->id_loker;
+        $vacancy = \App\Vacancy::all();
+
+        return view('back.test_online',compact('vacancy','pilih_loker'));
+
+    }
+
     public function upload_seleksi(Request $request){
         // return $request->all();
         $this->id_loker = $request->select;
