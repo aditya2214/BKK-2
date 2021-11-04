@@ -20,6 +20,7 @@
                         <th>No</th>
                         <th>User</th>
                         <th>Aksi</th>
+                        <th>Created At</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -28,6 +29,7 @@
                         <td>{{$key+1}}</td>
                         <td>{{$log->id_user}}</td>
                         <td>{{$log->aksi}}</td>
+                        <td>{{$log->created_at}}</td>
                     </tr>
                     @endforeach
                 </tbody>

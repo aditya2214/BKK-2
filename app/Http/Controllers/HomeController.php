@@ -134,6 +134,10 @@ class HomeController extends Controller
             // import data
             Excel::import(new absenSortir2, public_path('/file_siswa/'.$nama_file));
      
+            $storeLog = \App\Log::create([
+                'id_user' => Auth::user()->id,
+                'aksi' => 'Seleksi Pesera '.$nama_file
+            ]);
             // notifikasi dengan session
             Alert::success('Berhasil', 'Sukses Sortir Data!!!');
      
@@ -203,6 +207,10 @@ class HomeController extends Controller
                 'notes2' => $request->catatan
             ]);
         }
+        $storeLog = \App\Log::create([
+            'id_user' => Auth::user()->id,
+            'aksi' => 'Seleksi Pesera '
+        ]);
         Alert::success('Berhasil', 'Sukses Sortir Data!!!');
         return redirect()->back();
     }
@@ -211,6 +219,10 @@ class HomeController extends Controller
     public function delete_kategori_test($id){
         $delete_kategori_test = \App\absenSortir::where('id',$id)->delete();
 
+        $storeLog = \App\Log::create([
+            'id_user' => Auth::user()->id,
+            'aksi' => 'delete_kategori_test '
+        ]);
         Alert::success('Berhasil', 'Sukses Hapus Tes!!!');
         return redirect()->back();
     }
@@ -231,6 +243,11 @@ class HomeController extends Controller
         $delete_att = \App\Attendance::where('id_vacancy',$get_vac->id)->delete();
         $delete_vac = \App\Vacancy::where('id',$id)->delete();
 
+        
+        $storeLog = \App\Log::create([
+            'id_user' => Auth::user()->id,
+            'aksi' => 'Hapus Lowongan '
+        ]);
         Alert::success('Success', 'Menghapus lowongan'.$get_vac->title_vacancy);
         return redirect()->back();
 
