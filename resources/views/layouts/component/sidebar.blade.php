@@ -96,7 +96,7 @@
 <!-- Nav Item - Tables -->
 <li class="nav-item">
     <a class="nav-link" href="{{ url ('pengguna') }}">
-    <i class="fas fa-plus"></i>
+    <i class="fas fa-users"></i>
         <span>Pengguna </span></a>
 </li>
 
