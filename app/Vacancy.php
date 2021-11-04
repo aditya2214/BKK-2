@@ -11,4 +11,8 @@ class Vacancy extends Model
     public function attendance_r(){
         return $this->hasMany(\App\Attendance::class,'id_vacancy','id');
     }
+
+    public function g_form_link(){
+        return $this->hasOne(\App\LinkGform::class,'id_loker','id');
+    }
 }
