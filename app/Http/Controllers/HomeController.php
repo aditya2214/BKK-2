@@ -48,10 +48,10 @@ class HomeController extends Controller
             'switch' => $request->switch
         ]);
 
-        $storeLog = \App\Log::create([
-            'id_user' => Auth::user()->id,
-            'aksi' => 'Created Loker '. $storeVacancy->title_job
-        ]);
+        // $storeLog = \App\Log::create([
+        //     'id_user' => Auth::user()->id,
+        //     'aksi' => 'Created Loker '.$storeVacancy->title_job
+        // ]);
 
         Alert::success('Berhasil', 'Loker Telah Di Publish!!!');
         return redirect()->back();
