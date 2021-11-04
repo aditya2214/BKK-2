@@ -48,6 +48,11 @@ class HomeController extends Controller
             'switch' => $request->switch
         ]);
 
+        $storeLog = \App\Log::create([
+            'id_user' => Auth::user()->id,
+            'aksi' => 'Created Loker '. $storeVacancy->title_job
+        ]);
+
         Alert::success('Berhasil', 'Loker Telah Di Publish!!!');
         return redirect()->back();
     }
@@ -301,6 +306,13 @@ class HomeController extends Controller
         Alert::success('Success', 'Akun Berhasil Dihapus');
         return redirect('login');
 
+    }
+
+    public function logs(){
+
+        $logs = \App\Log::orderBy('id','DESC')->limit(100)->get();
+
+        return view('back.logs',compact('logs'));
     }
 
 
