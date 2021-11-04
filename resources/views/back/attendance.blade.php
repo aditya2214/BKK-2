@@ -36,7 +36,7 @@
                 </div>
                 <div class="btn-group">
                     <a href="{{ url ('daftar_peserta/'.$vac->id) }}" class="btn btn-outline-primary btn-sm">Daftar Peserta</a>
-                    <a href="{{ url ('hapus_vac/'.$vac->id) }}" class="btn btn-outline-danger">Hapus</a>
+                    <a href="{{ url ('hapus_vac/'.$vac->id) }}" onclick="return confirm('Yakin Ambil Langkah Ini?')" class="btn btn-outline-danger">Hapus</a>
                     <a href="{{ url ('update_vac/'.$vac->id) }}" onclick="return confirm('Yakin Ambil Langkah Ini?')" class="btn btn-outline-warning btn-sm">Update</a>
                 </div>
             </div>
