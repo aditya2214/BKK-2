@@ -47,7 +47,8 @@
                 <div class="card">
                     <div class="card-body">
                         <p><b>{{$vacancy2->title_vacancy}}</b></p>
-                        <a href="https://{{$lg->link_gfom}}">click</a>
+                        <small>Link Tes</small><br>
+                        <a target="_blank" href="https://{{$lg->link_gfom}}">{{$lg->link_gfom}}</a>
                     </div>
                 </div>
             </div>
