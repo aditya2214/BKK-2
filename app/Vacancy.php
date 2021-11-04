@@ -13,6 +13,6 @@ class Vacancy extends Model
     }
 
     public function g_form_link(){
-        return $this->belongsTo(\App\LinkGform::class,'id_loker','id');
+        return $this->hasOne(\App\LinkGform::class,'id_loker','id');
     }
 }

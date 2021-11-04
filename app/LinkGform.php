@@ -9,6 +9,6 @@ class LinkGform extends Model
     protected $fillable = ['id_loker','link_gfom'];
 
     public function vacancy_rr(){
-        return $this->belongsTo(\App\Vacancy::class,'id','id_loker');
+        return $this->hasOne(\App\Vacancy::class,'id','id_loker');
     }
 }
