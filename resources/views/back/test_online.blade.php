@@ -47,7 +47,7 @@
                 <div class="card">
                     <div class="card-body">
                         <p><b>{{$vacancy2->title_vacancy}}</b></p>
-                        <small>Link Tes</small><br>
+                        <small>Link Tes|{{$lg->created_at}}</small><br>
                         <a target="_blank" href="https://{{$lg->link_gfom}}">{{$lg->link_gfom}}</a>
                     </div>
                 </div>
