@@ -13,7 +13,7 @@
 </div>
 <hr>
 <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-12">
         <div class="card">
             <div class="card-body">
                 <div class="row">
@@ -51,16 +51,6 @@
             </div>
         </form>
         @endif
-    </div>
-    <div class="col-md-6">
-        @foreach($LinkGform as $lgf)
-        <div class="card">
-            <div class="card-body">
-                <p><b>{{$lgf->id_loker}}</b></p>
-                <a href="{{$lgf->link_gfom}}">{{$lgf->link_gfom}}</a>
-            </div>
-        </div>
-        @endforeach
     </div>
 </div>
 @endsection
