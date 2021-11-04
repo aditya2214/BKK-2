@@ -37,10 +37,16 @@
                 </div>
             </div>
         </div>
-        <br>
+        <br> 
         @if($pilih_loker == null)
 
         @else
+        <div class="card">
+            <div class="card-body">
+                <p><b>{{$vacancy2->title_vacancy}}</b></p>
+                <a href="">Link</a>
+            </div>
+        </div>
         <form action="{{ url ('storeLinkGform/'.$pilih_loker) }}" method="get">
             <div class="form-group">
                 <label for="">Masukan Link G-Form</label>
