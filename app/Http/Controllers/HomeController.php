@@ -210,6 +210,19 @@ class HomeController extends Controller
         return view('back.update_vac',compact('update_vac'));
     }
 
+    public function hapus_vac($id){
+        $get_vac = \App\Vacancy::where('id',$id)->first();
+        $get_att = \App\Attendance::where('id_vacancy',$get_vac->id)->get();
+        foreach ($get_att as $key => $gt) {
+            $absenSortir_del = \App\absenSortir::where('id_peserta',$gt->id)->delete();
+        }
+        $delete_att = \App\Attendance::where('id_vacancy',$get_vac->id)->delete();
+        $delete_vac = \App\Vacancy::where('id',$id)->delete();
+
+
+
+    }
+
     public function mitra_bkk(){
 
         $mitra_bkk = \App\MitraBkk::all();

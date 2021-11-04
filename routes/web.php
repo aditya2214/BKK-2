@@ -46,6 +46,7 @@ Route::get('/upload_seleksi', 'HomeController@upload_seleksi')->name('upload_sel
 Route::post('/seleksi', 'HomeController@seleksi')->name('seleksi');
 Route::get('/delete_kategori_test/{id}', 'HomeController@delete_kategori_test')->name('delete_kategori_test');
 Route::get('update_vac/{id}', 'HomeController@update_vac')->name('update_vac');
+Route::get('hapus_vac/{id}', 'HomeController@hapus_vac')->name('hapus_vac');
 Route::get('/mitra_bkk', 'HomeController@mitra_bkk')->name('mitra_bkk');
 Route::post('/store_mitra', 'HomeController@store_mitra')->name('store_mitra');
 Route::get('/whatsapp/{id}', 'HomeController@whatsapp')->name('whatsapp');
