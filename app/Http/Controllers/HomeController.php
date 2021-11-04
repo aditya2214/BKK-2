@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use DB;
+use DB,Auth;
 use Alert;
 use App\Exports\SiswaExport;
 use App\Imports\absenSortir2;
