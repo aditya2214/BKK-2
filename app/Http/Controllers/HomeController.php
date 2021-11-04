@@ -52,7 +52,7 @@ class HomeController extends Controller
 
         $storeLog = \App\Log::create([
             'id_user' => Auth::user()->id,
-            'aksi' => 'Created Loker '.$storeVacancy->title_job
+            'aksi' => 'Created Loker '.$request->all()
         ]);
 
         Alert::success('Berhasil', 'Loker Telah Di Publish!!!');
@@ -71,7 +71,7 @@ class HomeController extends Controller
 
         $storeLog = \App\Log::create([
             'id_user' => Auth::user()->id,
-            'aksi' => 'Updated Loker '.$storeVacancy
+            'aksi' => 'Updated Loker '.$request->all()
         ]);
 
         Alert::success('Berhasil', 'Loker Telah Di Update!!!');

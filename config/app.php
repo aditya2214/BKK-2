@@ -165,9 +165,9 @@ return [
         /*
          * Package Service Providers...
          */
-        Orangehill\Iseed\IseedServiceProvider::class,
-        Maatwebsite\Excel\ExcelServiceProvider::class,
-        Barryvdh\DomPDF\ServiceProvider::class,
+        // Orangehill\Iseed\IseedServiceProvider::class,
+        // Maatwebsite\Excel\ExcelServiceProvider::class,
+        // Barryvdh\DomPDF\ServiceProvider::class,
         /*
          * Application Service Providers...
          */
