@@ -269,6 +269,12 @@ class HomeController extends Controller
         return redirect('attendance');
     }
 
+    public function delete_link_test($id){
+        $delete_link_test = \App\LinkGform::where('id',$id)->delete();
+        Alert::success('Success', 'Link Berhasil Dihapus');
+        return redirect()->back();
+    }
+
 
 
 

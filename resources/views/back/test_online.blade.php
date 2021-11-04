@@ -49,6 +49,7 @@
                         <p><b>{{$vacancy2->title_vacancy}}</b></p>
                         <small>Link Tes|{{$lg->created_at}}</small><br>
                         <a target="_blank" href="https://{{$lg->link_gfom}}">{{$lg->link_gfom}}</a>
+                        <div class="float-right"><a href="{{ url ('delete_link_test/'.$lg->id) }}" class="btn btn-danger btn-sm">Hapus</a href="{{ url ('') }}"></div>
                     </div>
                 </div>
             </div>
