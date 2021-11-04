@@ -50,10 +50,10 @@ class HomeController extends Controller
             'switch' => $request->switch
         ]);
 
-        // $storeLog = \App\Log::create([
-        //     'id_user' => Auth::user()->id,
-        //     'aksi' => 'Created Loker '.$storeVacancy->title_job
-        // ]);
+        $storeLog = \App\Log::create([
+            'id_user' => Auth::user()->id,
+            'aksi' => 'Created Loker '.$storeVacancy->title_job
+        ]);
 
         Alert::success('Berhasil', 'Loker Telah Di Publish!!!');
         return redirect()->back();
@@ -67,6 +67,11 @@ class HomeController extends Controller
             'recruitment'=>$request->other_requirement,
             'notes'=>$request->notes,
             'switch' => $request->switch
+        ]);
+
+        $storeLog = \App\Log::create([
+            'id_user' => Auth::user()->id,
+            'aksi' => 'Updated Loker '.$storeVacancy
         ]);
 
         Alert::success('Berhasil', 'Loker Telah Di Update!!!');
