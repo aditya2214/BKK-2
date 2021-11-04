@@ -233,6 +233,7 @@ class HomeController extends Controller
 
     public function storeLinkGform(Request $request, $id){
         $vacancy = \App\Vacancy::where('id',$id)->first();
+        return $vacancy;
         $storeLinkGform = \App\LinkGform::create([
             'id_loker' => $id,
             'link_gfom' => $request->link
