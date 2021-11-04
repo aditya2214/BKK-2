@@ -30,7 +30,9 @@ class HomeController extends Controller
     public function index()
     {
         $count_lowongan = \App\Vacancy::count();
-        return view('back.home',compact('count_lowongan'));
+        $count_pengguna = \App\User::count();
+
+        return view('back.home',compact('count_lowongan','count_pengguna'));
     }
 
     public function posting_lowongan(){
