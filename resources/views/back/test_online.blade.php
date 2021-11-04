@@ -57,7 +57,7 @@
         <br>
         <form action="{{ url ('storeLinkGform/'.$pilih_loker) }}" method="get">
             <div class="form-group">
-                <label for="">Masukan Link G-Form</label>
+                <label for="">Tambah Link Tes</label>
                 <input type="text" name="link" id="link" required class="form-control">
             </div>
             <div class="form-group">
