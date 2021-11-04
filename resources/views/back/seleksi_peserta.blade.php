@@ -39,7 +39,7 @@
                 @if($pilih_loker == null)
                 <p class="text-danger">Pilih Loker Terlebih Dulu</p>
                 @else
-                <p><b>Daftar Peserta</b></p>
+                <p><b>Daftar Peserta {{$vacancy2}}</b></p>
                 <form action="{{url('seleksi')}}" method="POST">
                     @csrf
                     <div style="overflow-x:auto;">
