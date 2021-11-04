@@ -41,12 +41,19 @@
         @if($pilih_loker == null)
 
         @else
-        <div class="card">
-            <div class="card-body">
-                <p><b>{{$vacancy2->title_vacancy}}</b></p>
-                <a href="">Link</a>
+        <div class="form-row">
+            @foreach($LinkGform as $lg)
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <p><b>{{$vacancy2->title_vacancy}}</b></p>
+                        <a href="{{$lg->link_gfom}}">click</a>
+                    </div>
+                </div>
             </div>
+            @endforeach
         </div>
+        <br>
         <form action="{{ url ('storeLinkGform/'.$pilih_loker) }}" method="get">
             <div class="form-group">
                 <label for="">Masukan Link G-Form</label>

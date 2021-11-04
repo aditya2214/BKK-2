@@ -154,7 +154,7 @@ class HomeController extends Controller
         $pilih_loker = $this->id_loker;
         $vacancy2 = \App\Vacancy::where('id',$pilih_loker)->first();
         $vacancy = \App\Vacancy::all();
-        $LinkGform = \App\LinkGform::all();
+        $LinkGform = \App\LinkGform::where('id_loker',$pilih_loker)->get();
 
         return view('back.test_online',compact('vacancy','pilih_loker','LinkGform','vacancy2'));
 
