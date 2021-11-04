@@ -143,14 +143,16 @@ class HomeController extends Controller
         $this->id_loker = $request->select;
 
         $pilih_loker = $this->id_loker;
+        $vacancy2 = \App\Vacancy::where('id',$pilih_loker)->first();
         $vacancy = \App\Vacancy::all();
         $get_attendances = \App\Attendance::with('seleksi_r')->where('id_vacancy',$this->id_loker)->get();
-        return view('back.seleksi_peserta',compact('vacancy','get_attendances','pilih_loker'));
+        return view('back.seleksi_peserta',compact('vacancy','get_attendances','pilih_loker','vacancy2'));
     }
 
     public function select_loker_test(Request $request){
         $this->id_loker = $request->select;
         $pilih_loker = $this->id_loker;
+        
         $vacancy = \App\Vacancy::all();
         $LinkGform = \App\LinkGform::all();
 
@@ -233,7 +235,7 @@ class HomeController extends Controller
 
     public function storeLinkGform(Request $request, $id){
         $vacancy = \App\Vacancy::where('id',$id)->first();
-        return $vacancy;
+        // return $vacancy;
         $storeLinkGform = \App\LinkGform::create([
             'id_loker' => $id,
             'link_gfom' => $request->link
