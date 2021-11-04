@@ -45,7 +45,7 @@
                     IMPORT EXCEL
                 </button>
                 </div>
-                <p><b>Daftar Peserta</b></p>
+                <p><b>Daftar Peserta {{$vacancy2->title_vacancy}}</b></p>
 
                 <!-- Import Excel -->
                 <div class="modal fade" id="importExcel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
