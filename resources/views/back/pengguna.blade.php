@@ -20,6 +20,7 @@
                         <th>No</th>
                         <th>Username</th>
                         <th>Email</th>
+                        <th><i class="fas fa-users-cog"></i></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -28,6 +29,11 @@
                         <td>{{$key+1}}</td>
                         <td>{{$user->name}}</td>
                         <td>{{$user->email}}</td>
+                        <td>
+                            @if($user-id == Auth::user()-id)
+                            <a href="{{ url ('delete_user/'.$user->id) }}" class="btn btn-danger btn-sm">Hapus</a>
+                            @endif
+                        </td>
                     </tr>
                     @endforeach
                 </tbody>

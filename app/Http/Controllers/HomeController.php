@@ -281,6 +281,14 @@ class HomeController extends Controller
         return view('back.pengguna',compact('users'));
     }
 
+    public function delete_user($id){
+        $delete_user = \App\User::where('id',$id)->delete();
+
+        Alert::success('Success', 'Akun Berhasil Dihapus');
+        return redirect('login');
+
+    }
+
 
 
 
