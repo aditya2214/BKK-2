@@ -275,6 +275,12 @@ class HomeController extends Controller
         return redirect()->back();
     }
 
+    public function pengguna(){
+        $users = \App\User::all();
+
+        return view('back.pengguna',compact('users'));
+    }
+
 
 
 

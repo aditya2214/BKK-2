@@ -95,6 +95,12 @@
 
 <!-- Nav Item - Tables -->
 <li class="nav-item">
+    <a class="nav-link" href="{{ url ('pengguna') }}">
+    <i class="fas fa-plus"></i>
+        <span>Pengguna </span></a>
+</li>
+
+<li class="nav-item">
     <a class="nav-link" href="{{ url ('posting_lowongan') }}">
     <i class="fas fa-plus"></i>
         <span>Posting Lowongan </span></a>

@@ -9,7 +9,7 @@
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
     <h1 class="h3 mb-0 text-gray-800">Tes Online</h1>
     <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-            class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+    class="fas fa-sync-alt fa-sm text-white-50"></i> Refresh</a>
 </div>
 <hr>
 <div class="row">
@@ -49,7 +49,7 @@
                         <p><b>{{$vacancy2->title_vacancy}}</b></p>
                         <small>Link Tes|{{$lg->created_at}}</small><br>
                         <a target="_blank" href="https://{{$lg->link_gfom}}">{{$lg->link_gfom}}</a>
-                        <div class="float-right"><a href="{{ url ('delete_link_test/'.$lg->id) }}" class="btn btn-danger btn-sm">Hapus</a href="{{ url ('') }}"></div>
+                        <div class="float-right"><a href="{{ url ('delete_link_test/'.$lg->id) }}" onclick="return confirm('Yakin Ambil Langkah Ini?')" class="btn btn-danger btn-sm">Hapus</a href="{{ url ('') }}"></div>
                     </div>
                 </div>
             </div>
