@@ -30,7 +30,7 @@
                         <td>{{$user->name}}</td>
                         <td>{{$user->email}}</td>
                         <td>
-                            @if($user-id == Auth::user()-id)
+                            @if($user->id == Auth::user()->id)
                             <a href="{{ url ('delete_user/'.$user->id) }}" class="btn btn-danger btn-sm">Hapus</a>
                             @endif
                         </td>
