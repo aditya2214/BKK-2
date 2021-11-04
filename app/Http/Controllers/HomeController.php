@@ -152,11 +152,11 @@ class HomeController extends Controller
     public function select_loker_test(Request $request){
         $this->id_loker = $request->select;
         $pilih_loker = $this->id_loker;
-        
+        $vacancy2 = \App\Vacancy::where('id',$pilih_loker)->first();
         $vacancy = \App\Vacancy::all();
         $LinkGform = \App\LinkGform::all();
 
-        return view('back.test_online',compact('vacancy','pilih_loker','LinkGform'));
+        return view('back.test_online',compact('vacancy','pilih_loker','LinkGform','vacancy2'));
 
     }
 
