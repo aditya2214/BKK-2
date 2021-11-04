@@ -219,7 +219,8 @@ class HomeController extends Controller
         $delete_att = \App\Attendance::where('id_vacancy',$get_vac->id)->delete();
         $delete_vac = \App\Vacancy::where('id',$id)->delete();
 
-
+        Alert::success('Success', 'Menghapus lowongan'.$get_vac);
+        return redirect()->back();
 
     }
 
