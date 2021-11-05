@@ -12,28 +12,30 @@
 </div>
 <hr>
 <div class="row">
-    <div class="card">
-        <div class="card-body" style="overflow-x:auto;">
-            <table class="table" id="dataTable">
-                <thead>
-                    <tr>
-                        <th>No</th>
-                        <th>User</th>
-                        <th>Aksi</th>
-                        <th>Created At</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach($logs as $key=>$log)
-                    <tr>
-                        <td>{{$key+1}}</td>
-                        <td>{{$log->id_user}}</td>
-                        <td>{{$log->aksi}}</td>
-                        <td>{{$log->created_at}}</td>
-                    </tr>
-                    @endforeach
-                </tbody>
-            </table>
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body" style="overflow-x:auto;">
+                <table class="table" id="dataTable">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>User</th>
+                            <th>Aksi</th>
+                            <th>Created At</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach($logs as $key=>$log)
+                        <tr>
+                            <td>{{$key+1}}</td>
+                            <td>{{$log->id_user}}</td>
+                            <td>{{$log->aksi}}</td>
+                            <td>{{$log->created_at}}</td>
+                        </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </div>
