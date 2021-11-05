@@ -16,8 +16,6 @@
                     <style>
                         .bg-login-image {
                         background: url("img/tk.png");
-                        background-position: center;
-                        background-size: cover;
                         width:70%;
                         }
                     </style>
