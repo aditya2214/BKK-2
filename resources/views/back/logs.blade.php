@@ -28,7 +28,7 @@
                         @foreach($logs as $key=>$log)
                         <tr>
                             <td>{{$key+1}}</td>
-                            <td>{{$log->id_user}}</td>
+                            <td>{{$log->user_r->name}}</td>
                             <td>{{$log->aksi}}</td>
                             <td>{{$log->created_at}}</td>
                         </tr>
