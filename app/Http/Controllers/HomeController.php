@@ -52,7 +52,7 @@ class HomeController extends Controller
 
         $storeLog = \App\Log::create([
             'id_user' => Auth::user()->id,
-            'aksi' => 'Running Function Created Loker '.$request->all()
+            'aksi' => 'Running Function Created Loker '.$request->title_job
         ]);
 
         Alert::success('Berhasil', 'Loker Telah Di Publish!!!');
@@ -71,7 +71,7 @@ class HomeController extends Controller
 
         $storeLog = \App\Log::create([
             'id_user' => Auth::user()->id,
-            'aksi' => 'Running Function Updated Loker '.$request->all()
+            'aksi' => 'Running Function Updated Loker '.$request->title_job
         ]);
 
         Alert::success('Berhasil', 'Loker Telah Di Update!!!');
