@@ -7,9 +7,9 @@
             <div class="card-body p-0">
                 <!-- Nested Row within Card Body --> 
                 <div class="row">
-                    <div class="col-lg-5 d-none d-lg-block bg-register-image"></div>
+                    <div class="col-lg-5 d-none d-lg-block logo"></div>
                     <style>
-                        .bg-register-image {
+                        .logo {
                             background: url("img/tk.png");
                             width:70%;
                             }
