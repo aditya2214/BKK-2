@@ -52,7 +52,7 @@ class HomeController extends Controller
 
         $storeLog = \App\Log::create([
             'id_user' => Auth::user()->id,
-            'aksi' => 'Created Loker '.$request->all()
+            'aksi' => 'Running Function Created Loker '.$request->all()
         ]);
 
         Alert::success('Berhasil', 'Loker Telah Di Publish!!!');
@@ -71,7 +71,7 @@ class HomeController extends Controller
 
         $storeLog = \App\Log::create([
             'id_user' => Auth::user()->id,
-            'aksi' => 'Updated Loker '.$request->all()
+            'aksi' => 'Running Function Updated Loker '.$request->all()
         ]);
 
         Alert::success('Berhasil', 'Loker Telah Di Update!!!');
@@ -136,7 +136,7 @@ class HomeController extends Controller
      
             $storeLog = \App\Log::create([
                 'id_user' => Auth::user()->id,
-                'aksi' => 'Seleksi Pesera '.$nama_file
+                'aksi' => 'Running function import seleksi tes '
             ]);
             // notifikasi dengan session
             Alert::success('Berhasil', 'Sukses Sortir Data!!!');
@@ -209,7 +209,7 @@ class HomeController extends Controller
         }
         $storeLog = \App\Log::create([
             'id_user' => Auth::user()->id,
-            'aksi' => 'Seleksi Pesera '
+            'aksi' => 'Running Function Seleksi Pesetra Manual '
         ]);
         Alert::success('Berhasil', 'Sukses Sortir Data!!!');
         return redirect()->back();
@@ -221,8 +221,9 @@ class HomeController extends Controller
 
         $storeLog = \App\Log::create([
             'id_user' => Auth::user()->id,
-            'aksi' => 'delete_kategori_test '
+            'aksi' => 'running function delete_kategori_test '
         ]);
+
         Alert::success('Berhasil', 'Sukses Hapus Tes!!!');
         return redirect()->back();
     }
@@ -230,7 +231,7 @@ class HomeController extends Controller
 
     public function update_vac($id){
         $update_vac = \App\Vacancy::where('id',$id)->first();
-
+        
         return view('back.update_vac',compact('update_vac'));
     }
 
@@ -246,7 +247,7 @@ class HomeController extends Controller
         
         $storeLog = \App\Log::create([
             'id_user' => Auth::user()->id,
-            'aksi' => 'Hapus Lowongan '
+            'aksi' => 'Running Function Hapus Lowongan '
         ]);
         Alert::success('Success', 'Menghapus lowongan'.$get_vac->title_vacancy);
         return redirect()->back();
@@ -265,6 +266,12 @@ class HomeController extends Controller
             'nama_perusahaan' => $request->nama_perusahaan,
             'images' => $request->images->store('photos','public')
         ]);
+
+        $storeLog = \App\Log::create([
+            'id_user' => Auth::user()->id,
+            'aksi' => 'running function store_mitra '
+        ]);
+
 
         return redirect()->back();
     }
@@ -286,6 +293,11 @@ class HomeController extends Controller
             'link_gfom' => $request->link
         ]);
 
+        $storeLog = \App\Log::create([
+            'id_user' => Auth::user()->id,
+            'aksi' => 'running function storeLinkGform '.$vacancy->title_vacancy
+        ]);
+        
         Alert::success('Berhasil', 'Sukses Masukan Link tes ' .$vacancy->title_vacancy);
         return redirect()->back();
     }
@@ -299,6 +311,11 @@ class HomeController extends Controller
             'switch' => 1
         ]);
 
+        $storeLog = \App\Log::create([
+            'id_user' => Auth::user()->id,
+            'aksi' => 'running function switch on '
+        ]);
+
         Alert::info('SWITCH ON', 'Success');
         return redirect('attendance');
     }
@@ -306,6 +323,11 @@ class HomeController extends Controller
     public function switch_02($id){
         $sw_02 = \App\Vacancy::where('id',$id)->update([
             'switch' => 0
+        ]);
+
+        $storeLog = \App\Log::create([
+            'id_user' => Auth::user()->id,
+            'aksi' => 'running function switch off '
         ]);
 
         Alert::info('SWITCH OFF', 'Success');
