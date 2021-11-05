@@ -10,9 +10,8 @@
                     <div class="col-lg-5 d-none d-lg-block bg-register-image"></div>
                     <style>
                         .bg-register-image {
-                            background: url("public/img/tk.png");
-                            background-position: center;
-                            background-size: cover;
+                            background: url("img/tk.png");
+                            width:70%;
                             }
                     </style>
                     <div class="col-lg-7">
