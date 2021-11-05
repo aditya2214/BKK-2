@@ -13,6 +13,13 @@
                 <!-- Nested Row within Card Body -->
                 <div class="row">
                     <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
+                    <style>
+                        .bg-login-image {
+                        background: url("public/img/tk.png");
+                        background-position: center;
+                        background-size: cover;
+                        }
+                    </style>
                     <div class="col-lg-6">
                         <div class="p-5">
                             <div class="text-center">
