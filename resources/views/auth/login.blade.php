@@ -18,6 +18,7 @@
                         background: url("img/tk.png");
                         background-position: center;
                         background-size: cover;
+                        width:100%;
                         }
                     </style>
                     <div class="col-lg-6">
