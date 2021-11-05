@@ -26,5 +26,7 @@ class AppServiceProvider extends ServiceProvider
         if(env('APP_ENV') !== 'production'){
             URL::forceScheme('https');
         }
+
+        date_default_timezone_set("Asia/Bangkok");
     }
 }
