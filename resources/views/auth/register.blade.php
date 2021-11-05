@@ -11,6 +11,7 @@
                     <style>
                         .logo {
                             background: url("img/tk.png");
+                            background-repeat:no-repeat;
                             width:70%;
                             }
                     </style>

@@ -15,7 +15,8 @@
                     <div class="col-lg-6 d-none d-lg-block logo"></div>
                     <style>
                         .logo {
-                        image: url("img/tk.png");
+                        background: url("img/tk.png");
+                        background-repeat:no-repeat;
                         width:70%;
                         }
                     </style>
