@@ -45,7 +45,7 @@
     top: 0;
     width: 4px;
     height: 100%;
-    background-color: #8E24AA;
+    background-color: #1E90FF;
     transform: scaleY(0);
     transition: all 0.5s;
     transform-origin: bottom
