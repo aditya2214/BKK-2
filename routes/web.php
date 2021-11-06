@@ -60,6 +60,7 @@ Route::get('/delete_link_test/{id}', 'HomeController@delete_link_test')->name('d
 Route::get('/pengguna', 'HomeController@pengguna');
 Route::get('/delete_user/{id}', 'HomeController@delete_user')->name('delete_user');
 Route::get('/logs', 'HomeController@logs');
+Route::get('/profile_detail', 'HomeController@profile_detail');
 
 
 Route::get('test', 'HomeController@test')->name('test');

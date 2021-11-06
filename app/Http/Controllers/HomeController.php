@@ -134,6 +134,12 @@ class HomeController extends Controller
             // import data
             Excel::import(new absenSortir2, public_path('/file_siswa/'.$nama_file));
             
+            // store log
+            $storeLog = \App\Log::create([
+                'id_user' => Auth::user()->id,
+                'aksi' => 'Running Function Seleksi Loker Otomatis' 
+            ]);
+
             // notifikasi dengan session
             Alert::success('Berhasil', 'Sukses Sortir Data!!!');
      
@@ -355,6 +361,11 @@ class HomeController extends Controller
         $logs = \App\Log::orderBy('id','DESC')->limit(100)->get();
 
         return view('back.logs',compact('logs'));
+    }
+
+    public function profile_detail(){
+
+        return view('back.profile_detail');
     }
 
 
