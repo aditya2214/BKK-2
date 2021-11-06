@@ -114,7 +114,7 @@ class HomeController extends Controller
     public function import_excel(Request $request) 
 	{
 		// validasi
-        // try {
+        try {
             //code...
             $this->validate($request, [
                 'file' => 'required|mimes:csv,xls,xlsx'
@@ -143,13 +143,13 @@ class HomeController extends Controller
      
             // alihkan halaman kembali
             return redirect()->back();
-        // } catch (\Throwable $th) {
-        //      // notifikasi dengan session
-        //      Alert::error('Error', 'Priksa Kembali File Excel Yang Di Import!!!');
+        } catch (\Throwable $th) {
+             // notifikasi dengan session
+             Alert::error('Error', 'Priksa Kembali File Excel Yang Di Import!!!');
      
-        //      // alihkan halaman kembali
-        //      return redirect()->back();
-        // }
+             // alihkan halaman kembali
+             return redirect()->back();
+        }
 	}
 
 
