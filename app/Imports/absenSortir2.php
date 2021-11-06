@@ -26,6 +26,6 @@ class absenSortir2 implements ToModel,WithHeadingRow
 
     public function headingRow(): int
     {
-        return 2;
+        return 1;
     }
 }
