@@ -16,11 +16,11 @@ class absenSortir2 implements ToModel,WithHeadingRow
     public function model(array $row)
     {
         return new absenSortir([
-            'id' => $row['*id*'],
-            'id_peserta' => $row['*id*'],
-            'status_tes' => trim($row['*status*']),
-            'kategori_tes' => $row['*kategori_tes*'],
-            'notes2' => $row['*catatan*']
+            'id' => $row['id'],
+            'id_peserta' => $row['id'],
+            'status_tes' => trim($row['status']),
+            'kategori_tes' => $row['kategori_tes'],
+            'notes2' => $row['catatan']
         ]);
     }
 
