@@ -102,49 +102,41 @@
                                 <tr>
                                     <td>{{$get_attendance->id}}</td>
                                     <td >
-                                        <ul>
-                                            @foreach($get_attendance->Seleksi_r as $kal)
-                                                @if($get_attendance->Seleksi_r == null)
-                                                <li>
-                                                    <a href="{{ url ('delete_kategori_test/'.$kal->id) }}" class="text-danger" style="border-radius:15px;"><i class="far fa-times-circle"></i></a>&nbsp;<small class="badge badge-secondary">&nbsp;Belum Di Sortir</small>
-                                                </li>
-                                                @elseif($kal->status_tes == "lolos")
-                                                <li>
-                                                <a href="{{ url ('delete_kategori_test/'.$kal->id) }}" class="text-danger" style="border-radius:15px;"><i class="far fa-times-circle"></i></a>&nbsp;<small class="badge badge-success">&nbsp;{{$kal->status_tes}}</small>
-                                                </li>
-                                                @else
-                                                <li>
-                                                <a href="{{ url ('delete_kategori_test/'.$kal->id) }}" class="text-danger" style="border-radius:15px;"><i class="far fa-times-circle"></i></a>&nbsp;<small class="badge badge-danger">&nbsp;{{$kal->status_tes}}</small>
-                                                </li>
-                                                @endif
-                                            @endforeach
-                                        </ul>
+                                        @foreach($get_attendance->Seleksi_r as $kal)
+                                            @if($get_attendance->Seleksi_r == null)
+                                            <a href="{{ url ('delete_kategori_test/'.$kal->id) }}" class="text-danger" style="border-radius:15px;"><i class="far fa-times-circle"></i></a>&nbsp;<small class="badge badge-secondary">&nbsp;Belum Di Sortir</small>
+                                            @elseif($kal->status_tes == "lolos")
+                                            <a href="{{ url ('delete_kategori_test/'.$kal->id) }}" class="text-danger" style="border-radius:15px;"><i class="far fa-times-circle"></i></a>&nbsp;<small class="badge badge-success">&nbsp;{{$kal->status_tes}}</small>
+                                            @else
+                                            <a href="{{ url ('delete_kategori_test/'.$kal->id) }}" class="text-danger" style="border-radius:15px;"><i class="far fa-times-circle"></i></a>&nbsp;<small class="badge badge-danger">&nbsp;{{$kal->status_tes}}</small>
+                                            @endif
+                                        @endforeach
                                     </td>
                                     <td >
-                                        <ul>
+                                        
                                             @foreach($get_attendance->Seleksi_r as $kal)
                                                 @if($get_attendance->Seleksi_r == null)
-                                                <li>
-                                                    <a href="{{ url ('delete_kategori_test/'.$kal->id) }}" class="text-danger" style="border-radius:15px;"><i class="far fa-times-circle"></i></a><small class="badge badge-secondary">&nbsp;Belum Di Sortir</small>
-                                                </li>
+                                                
+                                                <a href="{{ url ('delete_kategori_test/'.$kal->id) }}" class="text-danger" style="border-radius:15px;"><i class="far fa-times-circle"></i></a><small class="badge badge-secondary">&nbsp;Belum Di Sortir</small>
+                                               
                                                 @elseif($kal->status_tes == "lolos")
-                                                <li>
+                                                
                                                 <small class="badge badge-success">&nbsp;{{$kal->kategori_tes}}</small>
-                                                </li>
+                                               
                                                 @else
-                                                <li>
+                                                
                                                 <small class="badge badge-danger">&nbsp;{{$kal->kategori_tes}}</small>
-                                                </li>
+                                               
                                                 @endif
                                             @endforeach
-                                        </ul>
+                                        
                                     </td>
                                     <td >
-                                        <ul>
+                                        
                                             @foreach($get_attendance->Seleksi_r as $kal)
-                                                <li>{!!$kal->notes2!!}</li>
+                                                {!!$kal->notes2!!}
                                             @endforeach
-                                        </ul>
+                                        
                                     </td>
                                     <td>{{$get_attendance->full_name}}</td>
                                     <td>{{$get_attendance->gender}}</td>
