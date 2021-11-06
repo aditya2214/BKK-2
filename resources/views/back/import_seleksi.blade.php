@@ -77,10 +77,10 @@
                         <table class="table table-bordered" id="dataTable">
                             <thead>
                                 <tr>
-                                    <th>id</th>
-                                    <th>status______</th>
-                                    <th>kategori_tes</th>
-                                    <th>catatan</th>
+                                    <th>*id*</th>
+                                    <th>*status*</th>
+                                    <th>*kategori_tes*</th>
+                                    <th>*catatan*</th>
                                     <th>nama_lengkap</th>
                                     <th>jenis_kelamin</th>
                                     <th>email</th>
