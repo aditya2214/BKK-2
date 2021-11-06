@@ -45,7 +45,7 @@
     top: 0;
     width: 4px;
     height: 100%;
-    background-color: #1E90FF;
+    background-color: #8E24AA;
     transform: scaleY(0);
     transition: all 0.5s;
     transform-origin: bottom
@@ -68,26 +68,26 @@
 
 .social-list li {
     padding: 10px;
-    color: #8E24AA;
+    color:#6495ED;
     font-size: 19px
 }
 
 .buttons button:nth-child(1) {
-    border: 1px solid #8E24AA !important;
-    color: #8E24AA;
+    border: 1px solid#6495ED !important;
+    color:#6495ED;
     height: 40px
 }
 
 .buttons button:nth-child(1):hover {
-    border: 1px solid #8E24AA !important;
+    border: 1px solid#6495ED !important;
     color: #fff;
     height: 40px;
-    background-color: #8E24AA
+    background-color:#6495ED
 }
 
 .buttons button:nth-child(2) {
-    border: 1px solid #8E24AA !important;
-    background-color: #8E24AA;
+    border: 1px solid #6495ED !important;
+    background-color:#6495ED;
     color: #fff;
     height: 40px
 }
