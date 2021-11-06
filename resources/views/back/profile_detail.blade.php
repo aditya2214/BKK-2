@@ -99,7 +99,7 @@
                         <li><i class="fa fa-google"></i></li>
                     </ul>
                     <div class="buttons">
-                        <a class="btn btn-outline-primary px-4"><i class="fab fa-whatsapp fa-3x"></i></a> 
+                        <a class="btn btn-primary px-4"><i class="fab fa-whatsapp fa-3x"></i></a> 
                         <a class="btn btn-primary px-4 ms-3"><i class="fab fa-facebook-f fa-3x"></i></a>
                         <a class="btn btn-primary px-4 ms-3"><i class="fab fa-instagram fa-3x"></i></a>
                      
