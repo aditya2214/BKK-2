@@ -123,7 +123,7 @@ class HomeController extends Controller
             // menangkap file excel
             $file = $request->file('file');
             
-            dd($file);
+            // dd($file);
      
             // membuat nama file unik
             $nama_file = rand().$file->getClientOriginalName();
@@ -133,11 +133,7 @@ class HomeController extends Controller
      
             // import data
             Excel::import(new absenSortir2, public_path('/file_siswa/'.$nama_file));
-     
-            $storeLog = \App\Log::create([
-                'id_user' => Auth::user()->id,
-                'aksi' => 'Running function import seleksi tes '
-            ]);
+            
             // notifikasi dengan session
             Alert::success('Berhasil', 'Sukses Sortir Data!!!');
      
