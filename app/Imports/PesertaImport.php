@@ -16,22 +16,22 @@ class PesertaImport implements ToModel,WithHeadingRow
     public function model(array $row)
     {
         return new Attendance([
-            'id_vacancy' => $row['id'],
-            'full_name'  => $row['id'],
-            'gender' => $row['id'],
-            'active_email' => $row['id'],
-            'nik' => $row['id'],
-            'kabupaten' => $row['id'],
-            'address' => $row['id'],
-            'place' => $row['id'],
-            'date_and_place' =>$row['id'],
-            'age' => $row['id'],
-            'height' => $row['id'],
-            'weight' => $row['id'],
-            'school' => $row['id'],
-            'graduation_year' => $row['id'],
-            'experience' => $row['id'],
-            'no_handphone' => $row['id']
+            'id_vacancy' => $row['id_lowongan'],
+            'full_name'  => $row['nama_lengkap'],
+            'gender' => $row['jenis_kelamin'],
+            'active_email' => $row['email'],
+            'nik' => $row['nik'],
+            'kabupaten' => $row['kabupaten'],
+            'address' => $row['alamat'],
+            'place' => $row['tempat'],
+            'date_and_place' =>$row['ttl'],
+            'age' => $row['umur'],
+            'height' => $row['tinggi_badan'],
+            'weight' => $row['berat_badan'],
+            'school' => $row['asal_sekolah'],
+            'graduation_year' => $row['tahun_lulus'],
+            'experience' => $row['pengalaman'],
+            'no_handphone' => $row['no_handphone']
         ]);
 
     }
