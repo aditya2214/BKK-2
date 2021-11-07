@@ -152,7 +152,7 @@ class FrontendController extends Controller
 
         if ($cek_request == $cek_kode_vacancy->kode_vacancy) {
             Alert::success('Berhasil', 'Silahkan Isi Biodata Anda!!!');
-            return redirect($link->link_gfom);
+            return redirect('https://'.$link->link_gfom);
         }else{
             Alert::error('Gagal', 'Kode Tes Salah!!!');
             return redirect()->back();
