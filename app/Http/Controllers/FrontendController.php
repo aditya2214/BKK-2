@@ -118,7 +118,7 @@ class FrontendController extends Controller
 
         $tes_online = $this->tes_online;
 
-        return view('daftar_loker',compact('tes_online'));
+        return view('front.daftar_loker',compact('tes_online'));
     }
 
 
