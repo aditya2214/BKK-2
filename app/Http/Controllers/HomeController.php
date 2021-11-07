@@ -152,7 +152,52 @@ class HomeController extends Controller
              // alihkan halaman kembali
              return redirect()->back();
         }
-	}
+    }
+
+    public function peserta_import_excel(Request $request) 
+	{
+		// validasi
+        try {
+            //code...
+            $this->validate($request, [
+                'file' => 'required|mimes:csv,xls,xlsx'
+            ]);
+     
+            // menangkap file excel
+            $file = $request->file('file');
+            
+            // dd($file);
+     
+            // membuat nama file unik
+            $nama_file = rand().$file->getClientOriginalName();
+     
+            // upload ke folder file_siswa di dalam folder public
+            $file->move('file_peserta',$nama_file);
+     
+            // import data
+            Excel::import(new PesertaImport, public_path('/file_peserta/'.$nama_file));
+            
+            // store log
+            $storeLog = \App\Log::create([
+                'id_user' => Auth::user()->id,
+                'aksi' => 'Running Function Seleksi Loker Otomatis' 
+            ]);
+
+            // notifikasi dengan session
+            Alert::success('Berhasil', 'Sukses Sortir Data!!!');
+     
+            // alihkan halaman kembali
+            return redirect()->back();
+        } catch (\Throwable $th) {
+             // notifikasi dengan session
+             Alert::error('Error', '!!!'.$th);
+     
+             // alihkan halaman kembali
+             return redirect()->back();
+        }
+    }
+    
+
 
 
 

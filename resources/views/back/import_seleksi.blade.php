@@ -41,11 +41,45 @@
                 @else
 
                 <div class="float-right">
+                
+                <button type="button" class="btn btn-primary mr-5" data-toggle="modal" data-target="#importpeserta">
+                    IMPORT DATA PESERTA
+                </button>
+
+                </div>
+                <div class="float-right">
+                
                 <button type="button" class="btn btn-primary mr-5" data-toggle="modal" data-target="#importExcel">
-                    IMPORT EXCEL
+                    IMPORT HASIL SELEKSI
                 </button>
                 </div>
                 <p><b>Daftar Peserta {{$vacancy2->title_vacancy}}</b></p>
+
+                <!-- Import peserta -->
+                <div class="modal fade" id="importpeserta" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <form method="post" action="/peserta/import_excel" enctype="multipart/form-data">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Import Hasil Seleksi</h5>
+                                </div>
+                                <div class="modal-body">
+
+                                    @csrf
+                                    <label>Pilih file excel</label>
+                                    <div class="form-group">
+                                        <input type="file" name="file" required="required">
+                                    </div>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-primary">Import</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
 
                 <!-- Import Excel -->
                 <div class="modal fade" id="importExcel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -53,7 +87,7 @@
                         <form method="post" action="/siswa/import_excel" enctype="multipart/form-data">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Import Excel</h5>
+                                    <h5 class="modal-title" id="exampleModalLabel">Import Hasil Seleksi</h5>
                                 </div>
                                 <div class="modal-body">
 
