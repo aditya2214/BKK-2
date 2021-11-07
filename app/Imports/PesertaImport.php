@@ -29,7 +29,7 @@ class PesertaImport implements ToModel,WithHeadingRow
             'height' => $row['tinggi_badan'],
             'weight' => $row['berat_badan'],
             'school' => $row['asal_sekolah'],
-            'graduation_year' => $row['tahun_lulus'],
+            'graduation_year' => $this->ExcelToPHPObject($row['tahun_lulus']),
             'experience' => $row['pengalaman'],
             'no_handphone' => $row['no_handphone']
         ]);
