@@ -23,9 +23,9 @@
                                             <p class="small text-secondary">{{$vacancy->created_at}}</p>
                                         </div>
                                     </div>
-                                    <button class="btn btn-warning btn-sm " data-toggle="modal" data-target=".Kode_Tes_Online">Ikuti Tes</button>
+                                    <button class="btn btn-warning btn-sm " data-toggle="modal" data-target="#{{$vacancy->id}}">Ikuti Tes</button>
                                     <!-- Modal -->
-                                    <div class="modal fade Kode_Tes_Online" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal fade" id="{{$vacancy->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
                                         <div class="modal-header">
