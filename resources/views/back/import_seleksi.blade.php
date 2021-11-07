@@ -39,7 +39,8 @@
                 @if($pilih_loker == null)
                 <p class="text-danger">Pilih Loker Terlebih Dulu</p>
                 @else
-
+                <p><b>Daftar Peserta {{$vacancy2->title_vacancy}}</b></p>
+                
                 <div class="float-left">
                 
                 <button type="button" class="btn btn-primary mr-5" data-toggle="modal" data-target="#importpeserta">
@@ -53,7 +54,7 @@
                     IMPORT HASIL SELEKSI
                 </button>
                 </div>
-                <p><b>Daftar Peserta {{$vacancy2->title_vacancy}}</b></p>
+                
 
                 <!-- Import peserta -->
                 <div class="modal fade" id="importpeserta" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
