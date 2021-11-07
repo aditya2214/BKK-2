@@ -7,7 +7,7 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-body">
-                        <iframe src="https://{{$link->link_gfom}}" style="width:100%; height:1000px;" title="description"></iframe>
+                        {{$link->link_gfom}}
                     </div>
                 </div>
             </div>
