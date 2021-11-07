@@ -22,7 +22,6 @@
                                         <p class="small text-secondary">{{$vacancy->crated_at}}</p>
                                     </div>
                                 </div>
-                                <p class="small text-secondary">{!!$vacancy->recruitment!!}</p>
                             </div>
                         </div>
                     </a>
