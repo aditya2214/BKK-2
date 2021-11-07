@@ -7,7 +7,7 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-body">
-                        {{$link->link_gfom}}
+                        {!!$link->link_gfom!!}
                     </div>
                 </div>
             </div>
