@@ -157,7 +157,7 @@ class HomeController extends Controller
     public function peserta_import_excel(Request $request) 
 	{
 		// validasi
-        try {
+        // try {
             //code...
             $this->validate($request, [
                 'file' => 'required|mimes:csv,xls,xlsx'
@@ -188,12 +188,12 @@ class HomeController extends Controller
      
             // alihkan halaman kembali
             return redirect()->back();
-        } catch (\Throwable $th) {
-             // notifikasi dengan session
-             Alert::error('Error', '!!!'.$th);
+        // } catch (\Throwable $th) {
+        //      // notifikasi dengan session
+        //      Alert::error('Error', '!!!'.$th);
      
-             // alihkan halaman kembali
-             return redirect()->back();
+        //      // alihkan halaman kembali
+        //      return redirect()->back();
         }
     }
     
