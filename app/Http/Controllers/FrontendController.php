@@ -9,6 +9,9 @@ class FrontendController extends Controller
 {
     public $searching;
 
+    public $tes_online;
+
+
     public function index(){
         $vacancy = \App\Vacancy::where('switch',1)->orderBy('id','DESC')->limit(3)->get();
         $vacancy2 = \App\Vacancy::where('switch',1)->orderBy('id','DESC')->get();
@@ -111,7 +114,11 @@ class FrontendController extends Controller
     }
 
     public function front_test_online($id){
-        return $id;
+        $this->tes_online = $id;
+
+        $tes_online = $this->tes_online;
+
+        return view('daftar_loker',compact('tes_online'));
     }
 
 
