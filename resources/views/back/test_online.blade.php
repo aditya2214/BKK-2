@@ -58,7 +58,7 @@
         <br>
         <form action="{{ url ('storeLinkGform/'.$pilih_loker) }}" method="get">
             <div class="form-group">
-                <label for="">Tambah Link Tes</label>
+                <label for="">Tambah Link Tes {{$vacancy2->title_vacancy}}</label>
                 <input type="text" name="link" id="link" required class="form-control">
             </div>
             <div class="form-group">
