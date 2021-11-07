@@ -30,22 +30,40 @@ class FrontendController extends Controller
 
     // }
 
-    public function masukan_kode($id){
+    public function masukan_kode(Request $request, $id){
         $cek_kode_vacancy = \App\Vacancy::where('id',$id)->first();
+        $tes_ol = $request->tes_ol;
 
-        return view('front.kode_vacancy',compact('cek_kode_vacancy'));
+        return view('front.kode_vacancy',compact('cek_kode_vacancy','tes_ol'));
     }
 
     public function absen(Request $request,$id){
-        $cek_kode_vacancy = \App\Vacancy::where('id',$id)->first();
-        $cek_request = $request->kode_loker;
+        if ($request->tes_ol == 99) {
+           
+            $cek_kode_vacancy = \App\Vacancy::where('id',$id)->first();
+            $cek_request = $request->kode_loker;
+            $link = \App\LinkGform::where('id_loker',$id)->first();
 
-        if ($cek_request == $cek_kode_vacancy->kode_vacancy) {
-            Alert::success('Berhasil', 'Silahkan Isi Biodata Anda!!!');
-            return view('front.form_absensi',compact('cek_kode_vacancy'));
+            if ($cek_request == $cek_kode_vacancy->kode_vacancy) {
+                Alert::success('Berhasil', 'Silahkan Isi Biodata Anda!!!');
+                return view('front.form_absensi',compact('cek_kode_vacancy'));
+            }else{
+                Alert::error('Gagal', 'Kode Tes Salah!!!');
+                return redirect('https://'.$link);
+            }
         }else{
-            Alert::error('Gagal', 'Kode Tes Salah!!!');
-            return redirect()->back();
+
+       
+            $cek_kode_vacancy = \App\Vacancy::where('id',$id)->first();
+            $cek_request = $request->kode_loker;
+
+            if ($cek_request == $cek_kode_vacancy->kode_vacancy) {
+                Alert::success('Berhasil', 'Silahkan Isi Biodata Anda!!!');
+                return view('front.form_absensi',compact('cek_kode_vacancy'));
+            }else{
+                Alert::error('Gagal', 'Kode Tes Salah!!!');
+                return redirect()->back();
+            }
         }
     }
 
