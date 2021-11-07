@@ -145,4 +145,17 @@ class FrontendController extends Controller
         return view('front.masukan_kode_tes_online', compact('vacancy'));
     }
 
+    public function absen_tes_online(Request $request,$id){
+        $cek_kode_vacancy = \App\Vacancy::where('id',$id)->first();
+        $link = \App\LinkGform::where('id_loker',$id)->first();
+        $cek_request = $request->kode_loker;
+
+        if ($cek_request == $cek_kode_vacancy->kode_vacancy) {
+            Alert::success('Berhasil', 'Silahkan Isi Biodata Anda!!!');
+            return redirect($link->link_gfom);
+        }else{
+            Alert::error('Gagal', 'Kode Tes Salah!!!');
+            return redirect()->back();
+        }
+    }
 }
