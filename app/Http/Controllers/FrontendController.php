@@ -122,5 +122,19 @@ class FrontendController extends Controller
         return view('front.daftar_loker',compact('tes_online','vacancies'));
     }
 
+    public function storeKodeTes(Request $request, $id){
+        $cek_kode_vacancy = \App\Vacancy::where('id',$id)->first();
+        $link = \App\LinkGform::where('id_loker',$id)->first();
+
+        $cek_request = $request->Kode_tes;
+
+        if ($cek_request == $cek_kode_vacancy->kode_vacancy) {
+            
+            return view('https://'.$link);
+        }else{
+            Alert::error('Gagal', 'Kode Tes Salah!!!');
+            return redirect()->back();
+        }
+    }
 
 }
