@@ -24,7 +24,7 @@ class PesertaImport implements ToModel,WithHeadingRow
             'kabupaten' => $row['kabupaten'],
             'address' => $row['alamat'],
             'place' => $row['tempat'],
-            'date_and_place' =>$row['tgl'],
+            'date_and_place' =>$this->ExcelToPHPObject($row['tgl']),
             'age' => $row['umur'],
             'height' => $row['tinggi_badan'],
             'weight' => $row['berat_badan'],
