@@ -22,7 +22,7 @@
                                         <p class="small text-secondary">{{$vacancy->crated_at}}</p>
                                     </div>
                                 </div>
-                                <p class="small text-secondary">Order from Anand Mhatva recieved for Electronics with 6 quanity.</p>
+                                <p class="small text-secondary">{!!$vacancy->recruitment!!}</p>
                             </div>
                         </div>
                     </a>
