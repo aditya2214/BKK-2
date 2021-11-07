@@ -62,7 +62,7 @@
                         <form method="post" action="/peserta/import_excel" enctype="multipart/form-data">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Import Hasil Seleksi</h5>
+                                    <h5 class="modal-title" id="exampleModalLabel">Import Data Peserta</h5>
                                 </div>
                                 <div class="modal-body">
 
