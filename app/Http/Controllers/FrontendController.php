@@ -119,7 +119,7 @@ class FrontendController extends Controller
         // $tes_online = $this->tes_online;
         $vacancies = \App\Vacancy::OrderBy('id','DESC')->get();
 
-        return view('front.daftar_loker',compact('tes_online','vacancies'));
+        return view('front.daftar_loker',compact('vacancies'));
     }
 
     public function storeKodeTes(Request $request, $id){
