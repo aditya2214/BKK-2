@@ -46,16 +46,6 @@
                 <button type="button" class="btn btn-warning mr-5" data-toggle="modal" data-target="#importpeserta">
                     IMPORT DATA PESERTA
                 </button>
-
-                </div>
-                <div class="float-right">
-                
-                <button type="button" class="btn btn-primary mr-5" data-toggle="modal" data-target="#importExcel">
-                    IMPORT HASIL SELEKSI
-                </button>
-                </div>
-                
-
                 <!-- Import peserta -->
                 <div class="modal fade" id="importpeserta" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
@@ -81,6 +71,17 @@
                         </form>
                     </div>
                 </div>
+
+                </div>
+                <div class="float-right">
+                
+                <button type="button" class="btn btn-primary mr-5" data-toggle="modal" data-target="#importExcel">
+                    IMPORT HASIL SELEKSI
+                </button>
+                </div>
+                
+
+                
 
                 <!-- Import Excel -->
                 <div class="modal fade" id="importExcel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

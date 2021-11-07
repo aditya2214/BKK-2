@@ -176,9 +176,7 @@
 @section('scripts')
 <script>
    $(document).ready(function() {
-    $('#dataTable').DataTable( {
-        dom: 'Bfrtip'
-    } );
+    $('#dataTable').DataTable();
 } );
 
 // Listen for click on toggle checkbox
