@@ -113,10 +113,10 @@ class FrontendController extends Controller
 
     }
 
-    public function front_test_online($id){
-        $this->tes_online = $id;
+    public function front_test_online(){
+        // $this->tes_online = $id;
 
-        $tes_online = $this->tes_online;
+        // $tes_online = $this->tes_online;
         $vacancies = \App\Vacancy::OrderBy('id','DESC')->get();
 
         return view('front.daftar_loker',compact('tes_online','vacancies'));
