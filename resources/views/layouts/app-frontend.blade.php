@@ -78,6 +78,12 @@
                 </a>
             </div>
             <div class="col-auto">
+                <a href="{{ url ('front_test_online/99') }}" class="">
+                <i class="fas fa-signal"></i>
+                    <p>Tes Online</p>
+                </a>
+            </div>
+            <div class="col-auto">
                 <a href="{{ url ('pengumuman') }}" class="">
                 <i class="fas fa-bullhorn"></i>
                     <p>Pengumuman</p>

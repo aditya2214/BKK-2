@@ -110,5 +110,9 @@ class FrontendController extends Controller
 
     }
 
+    public function front_test_online($id){
+        return $id;
+    }
+
 
 }

@@ -22,6 +22,7 @@ Route::post('/storeAbsensi/{id}', 'FrontendController@storeAbsensi')->name('stor
 Route::get('/pengumuman', 'FrontendController@pengumuman')->name('pengumuman');
 Route::post('/searching', 'FrontendController@searching')->name('searching');
 Route::post('/daftarStore/{id}', 'FrontendController@daftarStore')->name('daftarStore');
+Route::get('/front_test_online/{id}', 'FrontendController@front_test_online')->name('front_test_online');
 
 
 Route::get('/logout', function () {
