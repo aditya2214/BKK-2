@@ -25,7 +25,7 @@
                                             <p class="small text-secondary">{{$vacancy->created_at}}</p>
                                         </div>
                                     </div>
-                                    <button class="small">Ikuti Tes</button>
+                                    <button class="btn btn-warning btn-sm">Ikuti Tes</button>
                                 </div>
                             </div>
                         </a>
