@@ -19,10 +19,11 @@
                                         <p class="mb-0">{{$vacancy->title_vacancy}}</p>
                                     </div>
                                     <div class="col-auto pl-0">
+                                        <p>Di Posting TGL :</p>
                                         <p class="small text-secondary">{{$vacancy->created_at}}</p>
                                     </div>
                                 </div>
-                                <p class="small text-secondary">{!!$vacancy->recruitment!!}</p>
+                                <p class="small text-secondary"></p>
                             </div>
                         </div>
                     </a>
