@@ -108,7 +108,7 @@
                     </div>
                 </div>
                 <br><br>
-                    ID LOWONGAN {{$vacancy->id}}
+                    ID LOWONGAN {{$pilih_loker}}
                     <div style="overflow-x:auto;">
                         <table class="table table-bordered" id="dataTable">
                             <thead>
