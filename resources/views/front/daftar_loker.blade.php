@@ -19,9 +19,10 @@
                                         <p class="mb-0">{{$vacancy->title_vacancy}}</p>
                                     </div>
                                     <div class="col-auto pl-0">
-                                        <p class="small text-secondary">{{$vacancy->crated_at}}</p>
+                                        <p class="small text-secondary">{{$vacancy->created_at}}</p>
                                     </div>
                                 </div>
+                                <p class="small text-secondary">{!!$vacancy->recruitment!!}</p>
                             </div>
                         </div>
                     </a>
