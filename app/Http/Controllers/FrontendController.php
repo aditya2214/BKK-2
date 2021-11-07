@@ -139,4 +139,10 @@ class FrontendController extends Controller
         }
     }
 
+    public function masukan_kode_tes_online($id){
+        $vacancy = \App\Vacancy::where('id',$id)->first();
+
+        return view('front.masukan_kode_tes_online', compact('vacancy'));
+    }
+
 }

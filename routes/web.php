@@ -24,7 +24,7 @@ Route::post('/searching', 'FrontendController@searching')->name('searching');
 Route::post('/daftarStore/{id}', 'FrontendController@daftarStore')->name('daftarStore');
 Route::get('/front_test_online', 'FrontendController@front_test_online')->name('front_test_online');
 Route::get('/storeKodeTes/{id}', 'FrontendController@storeKodeTes')->name('storeKodeTes');
-
+Route::get('/masukan_kode_tes_online/{id}', 'FrontendController@masukan_kode_tes_online')->name('masukan_kode_tes_online');
 
 Route::get('/logout', function () {
     Auth::logout();

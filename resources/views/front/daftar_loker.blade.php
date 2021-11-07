@@ -23,32 +23,8 @@
                                             <p class="small text-secondary">{{$vacancy->created_at}}</p>
                                         </div>
                                     </div>
-                                    <button class="btn btn-warning btn-sm " data-toggle="modal" data-target="#{{$vacancy->title_vacancy}}">Ikuti Tes</button>
-                                    <!-- Modal -->
-                                    <div class="modal fade" id="{{$vacancy->title_vacancy}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Masukan Kode Tes {{$vacancy->title_vacancy}}</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <form action="{{ url ('storeKodeTes/'.$vacancy->id) }}" method="get">
-                                        @csrf
-                                            <div class="modal-body">
-                                                <div class="form-group">
-                                                    <input type="text" name="Kode_tes" id="Kode_tes" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                <button class="btn btn-primary">Masuk</button>
-                                            </div>
-                                        </form>
-                                        </div>
-                                    </div>
-                                    </div>
+                                    <a href="{{ url ('masukan_kode_tes_online/'.$vacancy->id) }}" class="btn btn-warning btn-sm " >Ikuti Tes</a>
+                                
                                 </div>
                             </div>
                         </div>
