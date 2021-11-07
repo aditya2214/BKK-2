@@ -7,6 +7,7 @@ use DB,Auth;
 use Alert;
 use App\Exports\SiswaExport;
 use App\Imports\absenSortir2;
+use App\Imports\PesertaImport;
 use Maatwebsite\Excel\Facades\Excel;
 
 class HomeController extends Controller
