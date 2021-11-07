@@ -40,7 +40,7 @@
                 <p class="text-danger">Pilih Loker Terlebih Dulu</p>
                 @else
 
-                <div class="float-right">
+                <div class="float-left">
                 
                 <button type="button" class="btn btn-primary mr-5" data-toggle="modal" data-target="#importpeserta">
                     IMPORT DATA PESERTA
