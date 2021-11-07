@@ -123,8 +123,8 @@ class FrontendController extends Controller
     }
 
     public function storeKodeTes(Request $request, $id){
-        return $id;
-        
+        return $request->all;
+
         $cek_kode_vacancy = \App\Vacancy::where('id',$id)->first();
         $link = \App\LinkGform::where('id_loker',$id)->first();
 
