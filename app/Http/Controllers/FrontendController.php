@@ -30,40 +30,22 @@ class FrontendController extends Controller
 
     // }
 
-    public function masukan_kode(Request $request, $id){
+    public function masukan_kode($id){
         $cek_kode_vacancy = \App\Vacancy::where('id',$id)->first();
-        $tes_ol = $request->tes_ol;
 
-        return view('front.kode_vacancy',compact('cek_kode_vacancy','tes_ol'));
+        return view('front.kode_vacancy',compact('cek_kode_vacancy'));
     }
 
     public function absen(Request $request,$id){
-        if ($request->tes_ol == 99) {
-           
-            $cek_kode_vacancy = \App\Vacancy::where('id',$id)->first();
-            $cek_request = $request->kode_loker;
-            $link = \App\LinkGform::where('id_loker',$id)->first();
+        $cek_kode_vacancy = \App\Vacancy::where('id',$id)->first();
+        $cek_request = $request->kode_loker;
 
-            if ($cek_request == $cek_kode_vacancy->kode_vacancy) {
-                Alert::success('Berhasil', 'Silahkan Isi Biodata Anda!!!');
-                return view('front.form_absensi',compact('cek_kode_vacancy'));
-            }else{
-                Alert::error('Gagal', 'Kode Tes Salah!!!');
-                return redirect('https://'.$link);
-            }
+        if ($cek_request == $cek_kode_vacancy->kode_vacancy) {
+            Alert::success('Berhasil', 'Silahkan Isi Biodata Anda!!!');
+            return view('front.form_absensi',compact('cek_kode_vacancy'));
         }else{
-
-       
-            $cek_kode_vacancy = \App\Vacancy::where('id',$id)->first();
-            $cek_request = $request->kode_loker;
-
-            if ($cek_request == $cek_kode_vacancy->kode_vacancy) {
-                Alert::success('Berhasil', 'Silahkan Isi Biodata Anda!!!');
-                return view('front.form_absensi',compact('cek_kode_vacancy'));
-            }else{
-                Alert::error('Gagal', 'Kode Tes Salah!!!');
-                return redirect()->back();
-            }
+            Alert::error('Gagal', 'Kode Tes Salah!!!');
+            return redirect()->back();
         }
     }
 

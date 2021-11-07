@@ -8,9 +8,6 @@
             <div class="card-body px-0">
                 <div class="list-group list-group-flush">
                  @foreach($vacancies as $vacancy)
-                    <form action="{{ url ('masukan_kode/'.$vacancy->id) }} " method="get">
-                        @csrf
-                        <input type="hidden" name="tes_ol" value="{{$tes_online}}">
                         <a class="list-group-item" href="">
                             <div class="row">
                                 <div class="col-auto align-self-center">
@@ -30,7 +27,6 @@
                                 </div>
                             </div>
                         </a>
-                    </form>
                 @endforeach
                 </div>
             </div>

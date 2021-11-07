@@ -11,7 +11,6 @@
                             @csrf
                             <label class="text-center" for=""><b>KODE LOWONGAN</b></label><br>
                             <input type="password" name="kode_loker" class="form-control" id="">
-                            <input type="hidden" name="tes_ol" value="{{$tes_ol}}">
                             <br>
                             <button class="btn btn-primary form-control btn-sm">Login</button>
                         </form>
