@@ -117,8 +117,9 @@ class FrontendController extends Controller
         $this->tes_online = $id;
 
         $tes_online = $this->tes_online;
+        $vacancies = \App\Vacancy::OrderBy('id','DESC')->get();
 
-        return view('front.daftar_loker',compact('tes_online'));
+        return view('front.daftar_loker',compact('tes_online','vacancies'));
     }
 
 
