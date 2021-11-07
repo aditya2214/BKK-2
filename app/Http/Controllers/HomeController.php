@@ -194,7 +194,7 @@ class HomeController extends Controller
      
         //      // alihkan halaman kembali
         //      return redirect()->back();
-        }
+        // }
     }
     
 
