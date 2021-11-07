@@ -36,15 +36,15 @@
                                         </div>
                                         <form action="{{ url ('storeKodeTes/'.$vacancy->id) }}" method="get">
                                         @csrf
-                                        <div class="modal-body">
-                                            <div class="form-group">
-                                                <input type="text" name="Kode_tes" id="Kode_tes" class="form-control">
+                                            <div class="modal-body">
+                                                <div class="form-group">
+                                                    <input type="text" name="Kode_tes" id="Kode_tes" class="form-control">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary">Masuk</button>
-                                        </div>
+                                            <div class="modal-footer">
+                                                <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <button class="btn btn-primary">Masuk</button>
+                                            </div>
                                         </form>
                                         </div>
                                     </div>
