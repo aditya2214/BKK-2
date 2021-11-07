@@ -40,10 +40,10 @@
                 <p class="text-danger">Pilih Loker Terlebih Dulu</p>
                 @else
                 <p><b>Daftar Peserta {{$vacancy2->title_vacancy}}</b></p>
-                
+
                 <div class="float-left">
                 
-                <button type="button" class="btn btn-primary mr-5" data-toggle="modal" data-target="#importpeserta">
+                <button type="button" class="btn btn-warning mr-5" data-toggle="modal" data-target="#importpeserta">
                     IMPORT DATA PESERTA
                 </button>
 
