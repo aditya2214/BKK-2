@@ -47,20 +47,21 @@
                 <thead>
                     <tr>
                         <th>No</th>
-                        <th>Nama_Lengkap</th>
-                        <th>Jenis_Kelamin</th>
-                        <th>Email</th>
-                        <th>NIK</th>
-                        <th>Kabupaten</th>
-                        <th>Alamat</th>
-                        <th>TTL</th>
-                        <th>Umur</th>
-                        <th>Tinggi_Badan</th>
-                        <th>Berat_Badan</th>
-                        <th>Asal_Sekolah</th>
-                        <th>Tahun_lulus</th>
-                        <th>Pengalaman</th>
-                        <th>No_Handphone</th>
+                        <th>nama_lengkap</th>
+                        <th>jenis_kelamin</th>
+                        <th>email</th>
+                        <th>nik</th>
+                        <th>kabupaten</th>
+                        <th>alamat</th>
+                        <th>tempat</th>
+                        <th>tgl</th>
+                        <th>umur</th>
+                        <th>berat_badan</th>
+                        <th>tinggi_badan</th>
+                        <th>asal_sekolah</th>
+                        <th>tahun_lulus</th>
+                        <th>pengalaman</th>
+                        <th>no_handphone</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -73,7 +74,8 @@
                         <td>{{$get_attendance->nik}}</td>
                         <td>{{$get_attendance->kabupaten}}</td>
                         <td>{!!$get_attendance->address!!}</td>
-                        <td>{{$get_attendance->place}},{{$get_attendance->date_and_place}}</td>
+                        <td>{{$get_attendance->place}}</td>
+                        <td>{{$get_attendance->date_and_place}}</td>
                         <td>{{$get_attendance->age}}</td>
                         <td>{{$get_attendance->height}}</td>
                         <td>{{$get_attendance->weight}}</td>
