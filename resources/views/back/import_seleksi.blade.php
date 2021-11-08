@@ -124,7 +124,8 @@
                                     <th>nik</th>
                                     <th>kabupaten</th>
                                     <th>alamat</th>
-                                    <th>ttl</th>
+                                    <th>tempat</th>
+                                    <th>tgl</th>
                                     <th>umur</th>
                                     <th>tinggi_badan</th>
                                     <th>berat_badan</th>
@@ -181,12 +182,13 @@
                                     <td>{{$get_attendance->nik}}</td>
                                     <td>{{$get_attendance->kabupaten}}</td>
                                     <td>{!!$get_attendance->address!!}</td>
-                                    <td>{{$get_attendance->place}},{{$get_attendance->date_and_place}}</td>
+                                    <td>{{$get_attendance->place}}</td>
+                                    <td>{{$get_attendance->date_and_place}}</td>
                                     <td>{{$get_attendance->age}}</td>
                                     <td>{{$get_attendance->height}}</td>
                                     <td>{{$get_attendance->weight}}</td>
                                     <td>{{$get_attendance->school}}</td>
-                                    <td>{{date('Y m',strtotime($get_attendance->graduation_year))}}</td>
+                                    <td>{{$get_attendance->graduation_year}}</td>
                                     <td>{!!$get_attendance->experience!!}</td>
                                     <td>{{$get_attendance->no_handphone}}</td>
                                 </tr>
