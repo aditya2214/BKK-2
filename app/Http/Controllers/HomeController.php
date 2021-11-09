@@ -110,13 +110,13 @@ class HomeController extends Controller
 
     public function import_seleksi(){
 
-        // $pilih_loker = $this->id_loker;
+        $pilih_loker = $this->id_loker;
         $vacancy = \App\Vacancy::all();
         foreach ($vacancy as $key => $value) {
             # code...
         }
         $vacancy2 = \App\Vacancy::where('id',$value->id)->first();
-        return view('back.import_seleksi',compact('vacancy','vacancy2'));
+        return view('back.import_seleksi',compact('vacancy','vacancy2','pilih_loker'));
     }
 
     public function import_excel(Request $request) 
