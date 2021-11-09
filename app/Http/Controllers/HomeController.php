@@ -111,7 +111,7 @@ class HomeController extends Controller
         $pilih_loker = $this->id_loker;
         $vacancy2 = \App\Vacancy::where('id',$pilih_loker)->first();
         $vacancy = \App\Vacancy::all();
-        return view('back.import_seleksi',compact('vacancy','pilih_loker','$vacancy2');
+        return view('back.import_seleksi',compact('vacancy','pilih_loker','vacancy2'));
     }
 
     public function import_excel(Request $request) 
