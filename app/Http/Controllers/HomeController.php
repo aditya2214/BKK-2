@@ -112,7 +112,10 @@ class HomeController extends Controller
 
         // $pilih_loker = $this->id_loker;
         $vacancy = \App\Vacancy::all();
-        $vacancy2 = \App\Vacancy::where('id',$vacancy->id)->first();
+        foreach ($vacancy as $key => $value) {
+            # code...
+        }
+        $vacancy2 = \App\Vacancy::where('id',$value->id)->first();
         return view('back.import_seleksi',compact('vacancy','vacancy2','pilih_loker'));
     }
 
