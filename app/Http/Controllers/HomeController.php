@@ -482,6 +482,5 @@ class HomeController extends Controller
     public function delete(){
         $delete = \App\absenSortir::truncate();
         $attendance =  \App\Attendance::truncate();
-        $vacancy = \App\Vacancy::truncate();
     }
 }
