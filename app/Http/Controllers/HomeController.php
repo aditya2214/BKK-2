@@ -92,9 +92,10 @@ class HomeController extends Controller
     }
 
     public function daftar_peserta($id){
+        $vacan = \App\Vacancy::where('id',$id)->first();
         $get_attendances = \App\Attendance::where('id_vacancy',$id)->get();
 
-        return view('back.daftar_peserta',compact('get_attendances'));
+        return view('back.daftar_peserta',compact('get_attendances','vacan'));
     }
 
 
