@@ -185,7 +185,7 @@ class HomeController extends Controller
             ]);
 
             // notifikasi dengan session
-            Alert::success('Berhasil', 'Sukses Sortir Data!!!');
+            Alert::success('Berhasil', 'Sukses Import Data Peserta Data!!!');
      
             // alihkan halaman kembali
             return redirect()->back();
