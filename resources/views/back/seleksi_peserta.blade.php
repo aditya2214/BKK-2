@@ -176,7 +176,10 @@
 @section('scripts')
 <script>
    $(document).ready(function() {
-    $('#dataTable').DataTable();
+    $('#dataTable').DataTable( {
+        dom: 'Bfrtip',
+        title : 'Lowongan {{$vacancy2->title_vacancy}}'+'| id_lowongan : {{$vacancy2->id}}'
+    } );
 } );
 
 // Listen for click on toggle checkbox

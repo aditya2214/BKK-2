@@ -213,7 +213,7 @@
         dom: 'Bfrtip',
         buttons: [{
             extend : 'excelHtml5',
-            title : ''
+            title : 'Lowongan {{$vacancy2->title_vacancy}}'+'| id_lowongan : {{$vacancy2->id}}'
         }
         ]
     } );
