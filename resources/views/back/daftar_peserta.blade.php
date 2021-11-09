@@ -56,8 +56,8 @@
                         <th>tempat</th>
                         <th>tgl</th>
                         <th>umur</th>
-                        <th>berat_badan</th>
                         <th>tinggi_badan</th>
+                        <th>berat_badan</th>
                         <th>asal_sekolah</th>
                         <th>tahun_lulus</th>
                         <th>pengalaman</th>
