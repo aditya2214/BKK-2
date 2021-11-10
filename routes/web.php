@@ -65,6 +65,7 @@ Route::get('/pengguna', 'HomeController@pengguna');
 Route::get('/delete_user/{id}', 'HomeController@delete_user')->name('delete_user');
 Route::get('/logs', 'HomeController@logs');
 Route::get('/profile_detail', 'HomeController@profile_detail');
+Route::get('/bersihkan_logs', 'HomeController@bersihkan_logs');
 
 
 Route::get('test', 'HomeController@test')->name('test');

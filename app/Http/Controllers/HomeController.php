@@ -188,7 +188,7 @@ class HomeController extends Controller
             // store log
             $storeLog = \App\Log::create([
                 'id_user' => Auth::user()->id,
-                'aksi' => 'Running Function Seleksi Loker Otomatis' 
+                'aksi' => 'Running Function Import Peserta Otomatis' 
             ]);
 
             // notifikasi dengan session
@@ -419,6 +419,13 @@ class HomeController extends Controller
     public function profile_detail(){
 
         return view('back.profile_detail');
+    }
+
+    public function bersihkan_logs(){
+        $logs = \App\Log::truncate();
+
+        Alert::success('Success', 'Berhasil Hapus Logs');
+        return redirect()->back();
     }
 
 
