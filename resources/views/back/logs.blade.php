@@ -15,9 +15,10 @@
     <div class="col-md-12">
         <div class="card">
             <div class="card-body" style="overflow-x:auto;">
-            <div class="float-right">
-                <a href="{{ url ('bersihkan_logs') }}" class="btn btn-success">Bersihkan Logs</a>
-            </div>
+                <div class="float-right">
+                    <a href="{{ url ('bersihkan_logs') }}" class="btn btn-danger">Bersihkan Logs</a>
+                </div>
+                <br><br>
                 <table class="table" id="dataTable">
                     <thead>
                         <tr>
