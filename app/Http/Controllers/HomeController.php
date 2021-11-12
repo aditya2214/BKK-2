@@ -105,6 +105,12 @@ class HomeController extends Controller
         $vacancy = \App\Vacancy::all();
         $vacancy2 = \App\Vacancy::where('id',$pilih_loker)->first();
 
+        $checkCount = \App\Vacancy::count();
+        if ($checkCount == 0) {
+            Alert::error('Upps', 'Anda Belum Upload Loker Apapun!!!');
+            return redirect('/posting_lowongan');
+        };
+        
         return view('back.seleksi_peserta',compact('vacancy','vacancy2','pilih_loker'));
     }
 
@@ -115,6 +121,13 @@ class HomeController extends Controller
         foreach ($vacancy as $key => $value) {
             # code...
         }
+        
+        $checkCount = \App\Vacancy::count();
+        if ($checkCount == 0) {
+            Alert::error('Upps', 'Anda Belum Upload Loker Apapun!!!');
+            return redirect('/posting_lowongan');
+        };
+
         $vacancy2 = \App\Vacancy::where('id',$value->id)->first();
         return view('back.import_seleksi',compact('vacancy','vacancy2','pilih_loker'));
     }

@@ -45,7 +45,7 @@
                 <!-- Import peserta -->
                 <div class="modal fade" id="importpeserta" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
-                        <form method="post" action="/peserta/import_excel" enctype="multipart/form-data">
+                        <form method="post" action="{{ url ('peserta/import_excel') }}" enctype="multipart/form-data">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="exampleModalLabel">Import Data Peserta</h5>
@@ -147,6 +147,7 @@
                         <input type="text" required name="tes_apa" id="tes_apa" class="form-control">
                     </div>
                     <div class="form-group">
+                        <label for="">Status Peserta</label>
                         <select name="status_tes" id="" class="form-control">
                             <option value="lolos">Lolos</option>
                             <option value="gagal">Gagal</option>

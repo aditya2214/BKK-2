@@ -49,7 +49,7 @@
                 <!-- Import peserta -->
                 <div class="modal fade" id="importpeserta" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
-                        <form method="post" action="/peserta/import_excel" enctype="multipart/form-data">
+                        <form method="post" action="{{ url ('peserta/import_excel') }}" enctype="multipart/form-data">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="exampleModalLabel">Import Data Peserta</h5>
@@ -86,7 +86,7 @@
                 <!-- Import Excel -->
                 <div class="modal fade" id="importExcel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
-                        <form method="post" action="/siswa/import_excel" enctype="multipart/form-data">
+                        <form method="post" action="{{ asset ('siswa/import_excel') }}" enctype="multipart/form-data">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="exampleModalLabel">Import Hasil Seleksi</h5>

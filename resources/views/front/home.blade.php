@@ -60,7 +60,7 @@
                         <div class="card">
                             <div class="card-body p-2">
                                 <div class="avatar avatar-60 rounded mb-1">
-                                    <div class="background"><img src="/img/cv/1.jfif" loading="lazy" alt=""></div>
+                                    <div class="background"><img src="{{ asset ('img/cv/1.jfif') }}" loading="lazy" alt=""></div>
                                 </div>
                                 <p class="text-secondary"><small>Sample CV</small></p>
                                 <a href="https://api.whatsapp.com/send?phone=6281385670066&text=Terima jasa pembuatan CV dan surat lamaran kerja cuma 10K aja. Ayok update CV mu!!! %A0request..." class="btn btn-success btn-sm"> Pesan</a>
@@ -71,7 +71,7 @@
                         <div class="card">
                             <div class="card-body p-2">
                                 <div class="avatar avatar-60 rounded mb-1">
-                                    <div class="background"><img src="/img/cv/2.jfif" loading="lazy" alt=""></div>
+                                    <div class="background"><img src="{{ asset ('img/cv/2.jfif') }}" loading="lazy" alt=""></div>
                                 </div>
                                 <p class="text-secondary"><small>Sample CV</small></p>
                                 <a href="https://api.whatsapp.com/send?phone=6281385670066&text=Terima jasa pembuatan CV dan surat lamaran kerja cuma 10K aja. Ayok update CV mu!!! %A0request..." class="btn btn-success btn-sm"> Pesan</a>
@@ -82,7 +82,7 @@
                         <div class="card">
                             <div class="card-body p-2">
                                 <div class="avatar avatar-60 rounded mb-1">
-                                    <div class="background"><img src="/img/cv/3.jfif" loading="lazy" alt=""></div>
+                                    <div class="background"><img src="{{ asset ('img/cv/3.jfif') }}" loading="lazy" alt=""></div>
                                 </div>
                                 <p class="text-secondary"><small>Sample CV</small></p>
                                 <a href="https://api.whatsapp.com/send?phone=6281385670066&text=Terima jasa pembuatan CV dan surat lamaran kerja cuma 10K aja. Ayok update CV mu!!! %A0request..." class="btn btn-success btn-sm"> Pesan</a>
@@ -93,7 +93,7 @@
                         <div class="card">
                             <div class="card-body p-2">
                                 <div class="avatar avatar-60 rounded mb-1">
-                                    <div class="background"><img src="/img/cv/4.jfif" loading="lazy" alt=""></div>
+                                    <div class="background"><img src="{{ asset ('img/cv/4.jfif') }}" loading="lazy" alt=""></div>
                                 </div>
                                 <p class="text-secondary"><small>Sample CV</small></p>
                                 <a href="https://api.whatsapp.com/send?phone=6281385670066&text=Terima jasa pembuatan CV dan surat lamaran kerja cuma 10K aja. Ayok update CV mu!!! %A0request..." class="btn btn-success btn-sm"> Pesan</a>
@@ -104,7 +104,7 @@
                         <div class="card">
                             <div class="card-body p-2">
                                 <div class="avatar avatar-60 rounded mb-1">
-                                    <div class="background"><img src="/img/cv/5.jfif" loading="lazy" alt=""></div>
+                                    <div class="background"><img src="{{ asset ('img/cv/5.jfif') }}" loading="lazy" alt=""></div>
                                 </div>
                                 <p class="text-secondary"><small>Sample CV</small></p>
                                 <a href="https://api.whatsapp.com/send?phone=6281385670066&text=Terima jasa pembuatan CV dan surat lamaran kerja cuma 10K aja. Ayok update CV mu!!! %A0request..." class="btn btn-success btn-sm"> Pesan</a>
@@ -115,7 +115,7 @@
                         <div class="card">
                             <div class="card-body p-2">
                                 <div class="avatar avatar-60 rounded mb-1">
-                                    <div class="background"><img src="/img/cv/6.jfif" loading="lazy" alt=""></div>
+                                    <div class="background"><img src="{{ asset ('img/cv/6.jfif') }}" loading="lazy" alt=""></div>
                                 </div>
                                 <p class="text-secondary"><small>Sample CV</small></p>
                                 <a href="https://api.whatsapp.com/send?phone=6281385670066&text=Terima jasa pembuatan CV dan surat lamaran kerja cuma 10K aja. Ayok update CV mu!!! %A0request..." class="btn btn-success btn-sm"> Pesan</a>
@@ -126,7 +126,7 @@
                         <div class="card">
                             <div class="card-body p-2">
                                 <div class="avatar avatar-60 rounded mb-1">
-                                    <div class="background"><img src="/img/cv/7.jfif" loading="lazy" alt=""></div>
+                                    <div class="background"><img src="{{ asset ('img/cv/7.jfif') }}" loading="lazy" alt=""></div>
                                 </div>
                                 <p class="text-secondary"><small>Sample CV</small></p>
                                 <a href="https://api.whatsapp.com/send?phone=6281385670066&text=Terima jasa pembuatan CV dan surat lamaran kerja cuma 10K aja. Ayok update CV mu!!! %A0request..." class="btn btn-success btn-sm"> Pesan</a>
@@ -137,7 +137,7 @@
                         <div class="card">
                             <div class="card-body p-2">
                                 <div class="avatar avatar-60 rounded mb-1">
-                                    <div class="background"><img src="/img/cv/8.jfif" loading="lazy" alt=""></div>
+                                    <div class="background"><img src="{{ asset ('img/cv/8.jfif') }}" loading="lazy" alt=""></div>
                                 </div>
                                 <p class="text-secondary"><small>Sample CV</small></p>
                                 <a href="https://api.whatsapp.com/send?phone=6281385670066&text=Terima jasa pembuatan CV dan surat lamaran kerja cuma 10K aja. Ayok update CV mu!!! %A0request..." class="btn btn-success btn-sm"> Pesan</a>
@@ -148,7 +148,7 @@
                         <div class="card">
                             <div class="card-body p-2">
                                 <div class="avatar avatar-60 rounded mb-1">
-                                    <div class="background"><img src="/img/cv/9.jfif" loading="lazy" alt=""></div>
+                                    <div class="background"><img src="{{ asset ('img/cv/9.jfif') }}" loading="lazy" alt=""></div>
                                 </div>
                                 <p class="text-secondary"><small>Sample CV</small></p>
                                 <a href="https://api.whatsapp.com/send?phone=6281385670066&text=Terima jasa pembuatan CV dan surat lamaran kerja cuma 10K aja. Ayok update CV mu!!! %A0request..." class="btn btn-success btn-sm"> Pesan</a>
@@ -159,7 +159,7 @@
                         <div class="card">
                             <div class="card-body p-2">
                                 <div class="avatar avatar-60 rounded mb-1">
-                                    <div class="background"><img src="/img/cv/10.jfif" loading="lazy" alt=""></div>
+                                    <div class="background"><img src="{{ asset ('img/cv/10.jfif') }}" loading="lazy" alt=""></div>
                                 </div>
                                 <p class="text-secondary"><small>Sample CV</small></p>
                                 <a href="https://api.whatsapp.com/send?phone=6281385670066&text=Terima jasa pembuatan CV dan surat lamaran kerja cuma 10K aja. Ayok update CV mu!!! %A0request..." class="btn btn-success btn-sm"> Pesan</a>
@@ -170,7 +170,7 @@
                         <div class="card">
                             <div class="card-body p-2">
                                 <div class="avatar avatar-60 rounded mb-1">
-                                    <div class="background"><img src="/img/cv/11.jfif" loading="lazy" alt=""></div>
+                                    <div class="background"><img src="{{ asset ('img/cv/11.jfif') }}" loading="lazy" alt=""></div>
                                 </div>
                                 <p class="text-secondary"><small>Sample CV</small></p>
                                 <a href="https://api.whatsapp.com/send?phone=6281385670066&text=Terima jasa pembuatan CV dan surat lamaran kerja cuma 10K aja. Ayok update CV mu!!! %A0request..." class="btn btn-success btn-sm"> Pesan</a>
@@ -186,27 +186,27 @@
                 <div class="card-body text-center ">
                     <div class="row justify-content-equal no-gutters">
                         <div class="col-4 col-md-2 mb-3">
-                            <div class="icon icon-50 rounded-circle mb-1 bg-default-light text-default"><img src="/img/kiic.jpg" style="width:100px;" alt=""></div>
+                            <div class="icon icon-50 rounded-circle mb-1 bg-default-light text-default"><img src="{{ asset ('img/kiic.jpg') }}" style="width:100px;" alt=""></div>
                             <p class="text-secondary"><small>KIIC</small></p>
                         </div>
                         <div class="col-4 col-md-2 mb-3">
-                            <div class="icon icon-50 rounded-circle mb-1 bg-default-light text-default"><img src="/img/kim.jpg" style="width:100px;" alt=""></div>
+                            <div class="icon icon-50 rounded-circle mb-1 bg-default-light text-default"><img src="{{ asset ('img/kim.jpg') }}" style="width:100px;" alt=""></div>
                             <p class="text-secondary"><small>KIM</small></p>
                         </div>
                         <div class="col-4 col-md-2 mb-3">
-                            <div class="icon icon-50 rounded-circle mb-1 bg-default-light text-default"><img src="/img/surcip.jpg" style="width:100px;" alt=""></div>
+                            <div class="icon icon-50 rounded-circle mb-1 bg-default-light text-default"><img src="{{ asset ('img/surcip.jpg') }}" style="width:100px;" alt=""></div>
                             <p class="text-secondary"><small>SURYA CIPTA</small></p>
                         </div>
                         <div class="col-4 col-md-2 mb-3">
-                            <div class="icon icon-50 rounded-circle mb-1 bg-default-light text-default"><img src="/img/indotaisei.jpg" style="width:100px;" alt=""></div>
+                            <div class="icon icon-50 rounded-circle mb-1 bg-default-light text-default"><img src="{{ asset ('img/indotaisei.jpg') }}" style="width:100px;" alt=""></div>
                             <p class="text-secondary"><small>INDOTAISEI</small></p>
                         </div>
                         <div class="col-4 col-md-2 mb-3">
-                            <div class="icon icon-50 rounded-circle mb-1 bg-default-light text-default"><img src="/img/bic.jpg" style="width:100px;" alt=""></div>
+                            <div class="icon icon-50 rounded-circle mb-1 bg-default-light text-default"><img src="{{ asset ('img/bic.jpg') }}" style="width:100px;" alt=""></div>
                             <p class="text-secondary"><small>BIC</small></p>
                         </div>
                         <div class="col-4 col-md-2 mb-3">
-                            <div class="icon icon-50 rounded-circle mb-1 bg-default-light text-default"><img src="/img/mm2100.jpg" style="width:100px;" alt=""></div>
+                            <div class="icon icon-50 rounded-circle mb-1 bg-default-light text-default"><img src="{{ asset ('img/mm2100.jpg') }}" style="width:100px;" alt=""></div>
                             <p class="text-secondary"><small>MM2100</small></p>
                         </div>
                     </div>
@@ -267,22 +267,22 @@
                             <tr>
                                 <td>
                                 
-                                    <img src="/img/test/1.jpeg" style="width:300px;" loading="lazy" alt="">
+                                    <img src="{{ asset ('img/test/1.jpeg') }}" style="width:300px;" loading="lazy" alt="">
                                 
                                 </td>
                                 <td>
                                 
-                                    <img src="/img/test/2.jpeg" style="width:300px;" loading="lazy" alt="">
+                                    <img src="{{ asset ('img/test/2.jpeg') }}" style="width:300px;" loading="lazy" alt="">
                                 
                                 </td>
                                 <td>
                                 
-                                    <img src="/img/test/3.jpeg" style="width:300px;" loading="lazy" alt="">
+                                    <img src="{{ asset ('img/test/3.jpeg') }}" style="width:300px;" loading="lazy" alt="">
                                 
                                 </td>
                                 <td>
                                 
-                                    <img src="/img/test/4.jpeg" style="width:300px;" loading="lazy" alt="">
+                                    <img src="{{ asset ('img/test/4.jpeg') }}" style="width:300px;" loading="lazy" alt="">
                                 
                                 </td>
                             </tr>
@@ -376,7 +376,7 @@
                     <div class="card border-0 mb-4">
                         <div class="card-body">
                             <div class="avatar avatar-60 bg-default-light rounded-circle text-default">
-                                <img src="/img/1.jpg" style="width:100px" alt="">
+                                <img src="{{ asset ('img/1.jpg') }}" style="width:100px" alt="">
                             </div>
                             <h3 class="mt-3 mb-0 font-weight-normal">2015</h3>
                             <p class="text-secondary small">PT EXEDY INDONESIA</p>
@@ -387,7 +387,7 @@
                     <div class="card border-0 mb-4">
                         <div class="card-body">
                             <div class="avatar avatar-60 bg-default-light rounded-circle text-default">
-                                <img src="/img/2.jpg" style="width:100px" alt="">
+                                <img src="{{ asset ('img/2.jpg') }}" style="width:100px" alt="">
                             </div>
                             <h3 class="mt-3 mb-0 font-weight-normal">2015</h3>
                             <p class="text-secondary small">PT Yamaha Motor Manufacturing West Java</p>
@@ -398,7 +398,7 @@
                     <div class="card border-0 mb-4">
                         <div class="card-body">
                             <div class="avatar avatar-60 bg-default-light rounded-circle text-default">
-                                <img src="/img/3.jpg" style="width:100px" alt="">
+                                <img src="{{ asset ('img/3.jpg') }}" style="width:100px" alt="">
                             </div>
                             <h3 class="mt-3 mb-0 font-weight-normal">2015</h3>
                             <p class="text-secondary small">PT MUSASHI AUTO PART INDONESIA</p>
@@ -409,7 +409,7 @@
                     <div class="card border-0 mb-4">
                         <div class="card-body">
                             <div class="avatar avatar-60 bg-default-light rounded-circle text-default">
-                                <img src="/img/4.jpg" style="width:100px" alt="">
+                                <img src="{{ asset ('img/4.jpg') }}" style="width:100px" alt="">
                             </div>
                             <h3 class="mt-3 mb-0 font-weight-normal">2021</h3>
                             <p class="text-secondary small">PT JVC ELECTRONIK INDONESIA</p>
@@ -424,7 +424,7 @@
                 <div class="card-body text-left text-md-center">
                     <p class="text-secondary">Tentang Kami</p>
                     <div class="row my-3 justify-content-center">
-                        <div class="col-10 col-md-4 mx-auto"><img src="/img/tk.png" alt="" class="mw-100"></div>
+                        <div class="col-10 col-md-4 mx-auto"><img src="{{ asset ('img/tk.png" alt="" class="mw-100"></div>
                     </div>
                     <p class="text-secondary mt-3">Bursa Kerja Khusus (BKK) adalah sebuah lembaga yang dibentuk di Sekolah Menengah Kejuruan Negeri dan Swasta, sebagai unit pelaksana yang memberikan pelayanan dan informasi lowongan kerja, pelaksana pemasaran, penyaluran dan penempatan tenaga kerja, merupakan mitra Dinas Tenaga Kerja dan Transmigrasi.</p>
                     <a href="about.html" class="btn btn-sm btn-default rounded">Read more</a>
